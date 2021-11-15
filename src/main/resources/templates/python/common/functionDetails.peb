@@ -1,0 +1,21 @@
+{# @pebvariable name="symbol" type="com.kite.intellij.backend.model.SymbolExt" #}
+{# @pebvariable name="value" type="com.kite.intellij.backend.model.ValueExt" #}
+
+{# Context:
+    symbol
+    context         of type com.kite.intellij.lang.documentation.linkHandler.KiteLinkData
+
+    value           of type com.kite.intellij.backend.model.ValueExt
+      -or-
+    symbol          of type com.kite.intellij.backend.model.SymbolExt
+#}
+
+{% set value = value == null ? symbol.firstValue : value %}
+{% set detail = value.detail %}
+
+<table>
+    <tr>
+        <td class="code style-text">{{- functionSignature(symbol=symbol, value=value, showNamespace=false, showReturn=false, showParameters=false) -}}</td>
+        <td class="align-right"><span class="hover-hint">{{- value.kind | escape("html") -}}</span></td>
+    </tr>
+</table>

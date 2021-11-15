@@ -1,0 +1,138 @@
+<idea-plugin url="http://help.kite.com/category/45-intellij-pycharm-integration">
+    <id>com.kite.intellij</id>
+    <name>Kite AI Code AutoComplete: Python Java JS Go HTML PHP C++ &amp; More</name>
+    <version>1.9.5</version>
+    <vendor email="support@kite.com" url="https://kite.com/">Kite</vendor>
+    <category>Languages</category>
+    <idea-version since-build="211.0"/>
+
+    <depends>com.intellij.modules.lang</depends>
+    <!-- Any IDE with Python support -->
+    <depends optional="true" config-file="kite-python.xml">com.intellij.modules.python</depends>
+    <!-- PyCharm Professional / IntelliJ Ultimate + Python plugin -->
+    <depends optional="true" config-file="kite-jupyter.xml">Pythonid</depends>
+
+    <!--@formatter:off-->
+    <extensionPoints>
+        <extensionPoint name="kiteLinkHandler" interface="com.kite.intellij.lang.documentation.linkHandler.LinkHandler"/>
+        <extensionPoint name="pluginInfo" interface="com.kite.intellij.PluginInfo"/>
+        <extensionPoint name="kiteDocPsiLocator" interface="com.kite.intellij.lang.documentation.KiteDocPsiLocator" />
+        <extensionPoint name="kiteLangSupport" interface="com.kite.intellij.lang.LangSupportEP"  />
+    </extensionPoints>
+    <!--@formatter:on-->
+
+    <!--@formatter:off-->
+    <applicationListeners>
+        <listener topic="com.intellij.openapi.project.ProjectManagerListener"
+                  class="com.kite.intellij.welcome.KiteWelcomeProjectListener"/>
+
+        <listener topic="com.intellij.openapi.project.ProjectManagerListener"
+                  class="com.kite.intellij.startup.KiteProjectManagerListener"
+                  activeInTestMode="false" activeInHeadlessMode="false"/>
+        <listener topic="com.intellij.openapi.project.ProjectManagerListener"
+                  class="com.kite.intellij.notifications.KiteServiceNotificationsListener"
+                  activeInTestMode="false" activeInHeadlessMode="false"/>
+    </applicationListeners>
+
+    <project-components>
+        <component>
+            <interface-class>com.kite.intellij.editor.events.EditorEventListener</interface-class>
+            <implementation-class>com.kite.intellij.editor.events.DefaultEditorEventListener</implementation-class>
+            <!--suppress PluginXmlValidity -->
+            <headless-implementation-class>com.kite.intellij.editor.events.TestcaseEditorEventListener</headless-implementation-class>
+        </component>
+
+        <!--Displays a warning message on project open if the current platform is unsupported-->
+        <component>
+            <implementation-class>com.kite.intellij.platform.KitePlatformComponent</implementation-class>
+        </component>
+    </project-components>
+
+    <extensions defaultExtensionNs="com.intellij">
+        <!-- services -->
+        <applicationService serviceInterface="com.kite.intellij.backend.KiteApiService"
+                            serviceImplementation="com.kite.intellij.backend.DefaultKiteApiService"
+                            testServiceImplementation="com.kite.intellij.backend.MockKiteApiService" />
+        <applicationService serviceInterface="com.kite.intellij.backend.http.KiteHttpConnection"
+                            serviceImplementation="com.kite.intellij.backend.http.JettyAsyncHttpConnection"
+                            testServiceImplementation="com.kite.intellij.backend.http.test.DelegatingHeadlessKiteHttpConnection" />
+        <applicationService serviceInterface="com.kite.intellij.platform.fs.CanonicalFilePathFactory"
+                            serviceImplementation="com.kite.intellij.platform.fs.DefaultCanonicalFilePathFactory" />
+        <applicationService id="kite.langService"
+                            serviceImplementation="com.kite.intellij.lang.KiteLanguageSupport"/>
+        <applicationService id="kite.settingsService"
+                            serviceImplementation="com.kite.intellij.settings.KiteSettingsService"/>
+        <applicationService serviceInterface="com.kite.intellij.platform.KiteDetector"
+                            serviceImplementation="com.kite.intellij.platform.KiteDetector"
+                            testServiceImplementation="com.kite.intellij.platform.MockKiteDetector"/>
+        <applicationService id="kite.serverSettingsService"
+                            serviceInterface="com.kite.intellij.backend.KiteServerSettingsService"
+                            serviceImplementation="com.kite.intellij.backend.KiteServerSettingsServiceImpl"
+                            testServiceImplementation="com.kite.intellij.backend.MockKiteServerSettingsService"/>
+        <applicationService id="kite.installService"
+                            serviceInterface="com.kite.intellij.platform.KiteInstallService"
+                            serviceImplementation="com.kite.intellij.platform.DefaultKiteInstallService"
+                            testServiceImplementation="com.kite.intellij.platform.MockKiteInstallService"/>
+
+        <projectService id="kite.docService"
+                        serviceImplementation="com.kite.intellij.lang.documentation.KiteDocumentationRendererService"/>
+        <projectService serviceInterface="com.kite.intellij.action.signatureInfo.KiteSignaturePopupManager"
+                        serviceImplementation="com.kite.intellij.action.signatureInfo.KiteSignaturePopupManager"
+                        testServiceImplementation="com.kite.intellij.action.signatureInfo.MockKiteSignaturePopupManager" />
+        <projectService serviceImplementation="com.kite.intellij.KiteProjectLifecycleService"/>
+
+        <actionPromoter id="kite.actionPromoter" implementation="com.kite.intellij.action.KiteParamActionPromoter"/>
+
+        <statusBarWidgetProvider implementation="com.kite.intellij.status.KiteStatusBarWidgetProvider"/>
+
+        <preloadingActivity implementation="com.kite.intellij.startup.NotificationRegistration" order="first" />
+
+        <applicationConfigurable id="kite.configurable"
+                                 groupId="language"
+                                 displayName="Kite"
+                                 provider="com.kite.intellij.settings.KiteConfigurableFactory"/>
+
+        <!-- live onboarding, plugin agnostic -->
+        <nonProjectFileWritingAccessExtension implementation="com.kite.intellij.welcome.LiveOnboardingWriteAccess" />
+
+        <!-- enabled for all languages -->
+        <completion.contributor language="any" id="kite.allLexicalCompletions" order="first"
+                                implementationClass="com.kite.intellij.editor.completion.KiteCompletionContributor"/>
+
+        <intentionAction>
+            <className>com.kite.intellij.codeFinder.KiteFindRelatedCodeIntention</className>
+            <category>Kite</category>
+            <descriptionDirectoryName>kiteCodeNavIntention</descriptionDirectoryName>
+        </intentionAction>
+    </extensions>
+
+    <extensions defaultExtensionNs="com.kite.intellij">
+        <pluginInfo implementation="com.kite.intellij.KiteRuntimeInfo"/>
+
+        <kiteLinkHandler implementation="com.kite.intellij.lang.documentation.linkHandler.KiteExternalDocumentationLinkHandler"/>
+        <kiteLinkHandler implementation="com.kite.intellij.lang.documentation.linkHandler.KiteSignatureInfoLinkHandler"/>
+        <kiteLinkHandler implementation="com.kite.intellij.lang.documentation.linkHandler.KiteDocumentHttpLinkHandler"/>
+        <kiteLinkHandler implementation="com.kite.intellij.lang.documentation.linkHandler.KiteDocumentFileLinkHandler"/>
+        <kiteLinkHandler implementation="com.kite.intellij.lang.documentation.linkHandler.KiteEmptyContentLinkHandler"/>
+
+        <kiteLangSupport implementation="com.kite.intellij.lang.KiteAllLexicalLanguageSupport"/>
+        <kiteLangSupport implementation="com.kite.intellij.lang.KiteCodeFinderLanguageSupport"/>
+    </extensions>
+
+    <actions>
+        <action class="com.kite.intellij.action.KiteDocsAtCaretAction" id="kite.docsAtCaret" text="Kite: Docs at Cursor" />
+        <action class="com.kite.intellij.action.KiteOpenCopilotAction" id="kite.openCopilot" text="Kite: Open Copilot" />
+        <action class="com.kite.intellij.action.KiteOpenSettingsLinkAction" id="kite.openGeneralSettings" text="Kite: General Settings" />
+        <action class="com.kite.intellij.action.KiteShowSettingsAction" id="kite.openPluginSettings" text="Kite: Editor Plugin Settings" />
+        <action class="com.kite.intellij.action.KiteShowStatusAction" id="kite.openStatus" text="Kite: Status" />
+        <action class="com.kite.intellij.action.KiteHelpAction" id="kite.openHelp" text="Kite: Help" />
+
+        <action class="com.kite.intellij.codeFinder.KiteFindRelatedFromFileAction" id="kite.codenav.findRelatedFromFile" text="Kite: Find Related Code From File" />
+        <action class="com.kite.intellij.codeFinder.KiteFindRelatedFromLineAction" id="kite.codenav.findRelatedFromLine" text="Kite: Find Related Code From Line" />
+
+        <action class="com.kite.intellij.welcome.KitePythonOnboardingAction" id="kite.tutorial.python" text="Kite: Python Tutorial" description="Opens Kite's onboarding Python file in a new editor." />
+        <action class="com.kite.intellij.welcome.KiteGoOnboardingAction" id="kite.tutorial.go" text="Kite: Go Tutorial" description="Opens Kite's onboarding Go file in a new editor." />
+        <action class="com.kite.intellij.welcome.KiteJavaScriptOnboardingAction" id="kite.tutorial.js" text="Kite: JavaScript Tutorial" description="Opens Kite's onboarding JavaScript file in a new editor." />
+    </actions>
+    <!--@formatter:on-->
+</idea-plugin>

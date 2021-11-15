@@ -1,0 +1,21 @@
+{
+  "completions": [
+    {
+      "snippet": {
+        "text": "[\"foo\"]",
+        "placeholders": []
+      },
+      "replace": {
+        "begin": 32,
+        "end": 39
+      },
+      "display": "[\"foo\"]",
+      "documentation": {
+        "text": ""
+      },
+      "web_id": "__builtin__.str",
+      "hint": "str",
+      "smart": false
+    }
+  ]
+}

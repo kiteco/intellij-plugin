@@ -1,0 +1,252 @@
+<html>
+<head>
+<style type="text/css">
+html, body, div, p, pre, code, h1, h2, h3, h4, h5, table, td, tr, th {
+margin: 0;
+padding: 0;
+border: none;
+outline: none;
+}
+html {
+color: #0000ff;
+font-family: "font-name-text","Verdana","sans-serif";
+font-size: 15px;
+}
+/* don't render the text style's background as this style is special */
+.style-text.op-33, .op-33 .style-text{color: #545454;}
+.style-text.op-40, .op-40 .style-text{color: #666666;}
+.style-text.op-50, .op-50 .style-text{color: #7f7f7f;}
+.style-text.op-67, .op-67 .style-text{color: #aaaaaa;}
+.style-text.op-75, .op-75 .style-text{color: #bfbfbf;}
+.style-text.op-80, .op-80 .style-text{color: #cccccc;}
+.style-text, .style-text.op-100, .op-100 .style-text{color: #ffffff;}
+.style-call.op-33, .op-33 .style-call{color: #545454;}
+.style-call.op-40, .op-40 .style-call{color: #666666;}
+.style-call.op-50, .op-50 .style-call{color: #7f7f7f;}
+.style-call.op-67, .op-67 .style-call{color: #aaaaaa;}
+.style-call.op-75, .op-75 .style-call{color: #bfbfbf;}
+.style-call.op-80, .op-80 .style-call{color: #cccccc;}
+.style-call, .style-call.op-100, .op-100 .style-call{color: #ffffff;}
+.style-paren.op-33, .op-33 .style-paren{color: #545454;}
+.style-paren.op-40, .op-40 .style-paren{color: #666666;}
+.style-paren.op-50, .op-50 .style-paren{color: #7f7f7f;}
+.style-paren.op-67, .op-67 .style-paren{color: #aaaaaa;}
+.style-paren.op-75, .op-75 .style-paren{color: #bfbfbf;}
+.style-paren.op-80, .op-80 .style-paren{color: #cccccc;}
+.style-paren, .style-paren.op-100, .op-100 .style-paren{color: #ffffff;}
+.style-param.op-33, .op-33 .style-param{color: #545454;}
+.style-param.op-40, .op-40 .style-param{color: #666666;}
+.style-param.op-50, .op-50 .style-param{color: #7f7f7f;}
+.style-param.op-67, .op-67 .style-param{color: #aaaaaa;}
+.style-param.op-75, .op-75 .style-param{color: #bfbfbf;}
+.style-param.op-80, .op-80 .style-param{color: #cccccc;}
+.style-param, .style-param.op-100, .op-100 .style-param{color: #ffffff;}
+.style-comma.op-33, .op-33 .style-comma{color: #545454;}
+.style-comma.op-40, .op-40 .style-comma{color: #666666;}
+.style-comma.op-50, .op-50 .style-comma{color: #7f7f7f;}
+.style-comma.op-67, .op-67 .style-comma{color: #aaaaaa;}
+.style-comma.op-75, .op-75 .style-comma{color: #bfbfbf;}
+.style-comma.op-80, .op-80 .style-comma{color: #cccccc;}
+.style-comma, .style-comma.op-100, .op-100 .style-comma{color: #ffffff;}
+.style-kw-arg.op-33, .op-33 .style-kw-arg{color: #545454;}
+.style-kw-arg.op-40, .op-40 .style-kw-arg{color: #666666;}
+.style-kw-arg.op-50, .op-50 .style-kw-arg{color: #7f7f7f;}
+.style-kw-arg.op-67, .op-67 .style-kw-arg{color: #aaaaaa;}
+.style-kw-arg.op-75, .op-75 .style-kw-arg{color: #bfbfbf;}
+.style-kw-arg.op-80, .op-80 .style-kw-arg{color: #cccccc;}
+.style-kw-arg, .style-kw-arg.op-100, .op-100 .style-kw-arg{color: #ffffff;}
+.style-opsign-arg.op-33, .op-33 .style-opsign-arg{color: #545454;}
+.style-opsign-arg.op-40, .op-40 .style-opsign-arg{color: #666666;}
+.style-opsign-arg.op-50, .op-50 .style-opsign-arg{color: #7f7f7f;}
+.style-opsign-arg.op-67, .op-67 .style-opsign-arg{color: #aaaaaa;}
+.style-opsign-arg.op-75, .op-75 .style-opsign-arg{color: #bfbfbf;}
+.style-opsign-arg.op-80, .op-80 .style-opsign-arg{color: #cccccc;}
+.style-opsign-arg, .style-opsign-arg.op-100, .op-100 .style-opsign-arg{color: #ffffff;}
+.style-builtin-name.op-33, .op-33 .style-builtin-name{color: #545454;}
+.style-builtin-name.op-40, .op-40 .style-builtin-name{color: #666666;}
+.style-builtin-name.op-50, .op-50 .style-builtin-name{color: #7f7f7f;}
+.style-builtin-name.op-67, .op-67 .style-builtin-name{color: #aaaaaa;}
+.style-builtin-name.op-75, .op-75 .style-builtin-name{color: #bfbfbf;}
+.style-builtin-name.op-80, .op-80 .style-builtin-name{color: #cccccc;}
+.style-builtin-name, .style-builtin-name.op-100, .op-100 .style-builtin-name{color: #ffffff;}
+.style-bracket.op-33, .op-33 .style-bracket{color: #545454;}
+.style-bracket.op-40, .op-40 .style-bracket{color: #666666;}
+.style-bracket.op-50, .op-50 .style-bracket{color: #7f7f7f;}
+.style-bracket.op-67, .op-67 .style-bracket{color: #aaaaaa;}
+.style-bracket.op-75, .op-75 .style-bracket{color: #bfbfbf;}
+.style-bracket.op-80, .op-80 .style-bracket{color: #cccccc;}
+.style-bracket, .style-bracket.op-100, .op-100 .style-bracket{color: #ffffff;}
+.style-unused.op-33, .op-33 .style-unused{color: #545454;}
+.style-unused.op-40, .op-40 .style-unused{color: #666666;}
+.style-unused.op-50, .op-50 .style-unused{color: #7f7f7f;}
+.style-unused.op-67, .op-67 .style-unused{color: #aaaaaa;}
+.style-unused.op-75, .op-75 .style-unused{color: #bfbfbf;}
+.style-unused.op-80, .op-80 .style-unused{color: #cccccc;}
+.style-unused, .style-unused.op-100, .op-100 .style-unused{color: #ffffff;}
+.style-link.op-33, .op-33 .style-link{color: #545454;}
+.style-link.op-40, .op-40 .style-link{color: #666666;}
+.style-link.op-50, .op-50 .style-link{color: #7f7f7f;}
+.style-link.op-67, .op-67 .style-link{color: #aaaaaa;}
+.style-link.op-75, .op-75 .style-link{color: #bfbfbf;}
+.style-link.op-80, .op-80 .style-link{color: #cccccc;}
+.style-link, .style-link.op-100, .op-100 .style-link{color: #ffffff;}
+.style-text.active, .active .style-text,
+.style-param.active, .active .style-param,
+.style-kw-arg.active, .active .style-kw-arg {
+background-color: #0000ff !important;
+font-style: italic;
+}
+a.active.style-text {
+background-color: #0000ff !important;
+text-decoration: underline;
+}
+.kite-link, .kite-link-flow, .open-docs-link {
+height: 12px;
+line-height: 12px;
+text-align: right;
+}
+body.hover .kite-link-flow,
+body.signatures .kite-link-flow {
+text-align: left;
+}
+.report-section {
+margin-top: 0.75em;
+}
+.report-content {
+margin-left: 0.5em;
+}
+.align-right {
+text-align: right;
+}
+.hover-hint {
+color: #7f7f7f;
+}
+a.op-33, .op-33 a{color: #545454;}
+a.op-40, .op-40 a{color: #666666;}
+a.op-50, .op-50 a{color: #7f7f7f;}
+a.op-67, .op-67 a{color: #aaaaaa;}
+a.op-75, .op-75 a{color: #bfbfbf;}
+a.op-80, .op-80 a{color: #cccccc;}
+a, a.op-100, .op-100 a{color: #ffffff;}
+a {
+text-decoration: none;
+}
+a:hover {
+text-decoration: underline;
+}
+.code, code, pre {
+font-family: "font-name-editor", monospace;
+}
+pre {
+margin: 0.5em 0.75em;
+white-space: pre-wrap;
+}
+table {
+border-collapse: collapse;
+border-spacing: 0;
+width:100%;
+}
+.heading table {
+width: auto;
+}
+.heading td {
+vertical-align: middle;
+}
+.heading .heading-text {
+color: #aaaaaa;
+}
+.heading .heading-text.active {
+color: #ffffff;
+font-style: normal;
+}
+.heading a.toggle-link {
+color: #7f7f7f;
+margin-left: 1.25em;
+}
+.content-container {
+background-color: #0000ff;
+font-size: 0.9em;
+padding: 0.4em 0.6em;
+}
+body.signatures a.open-docs-link,
+body.signatures a.show-popular-patterns-link,
+body.signatures a.show-kwargs-link {
+color: #7f7f7f;
+margin-right: 0.75em;
+}
+a.link {
+font-size: 10px;
+}
+.heading a.toggle-link:hover,
+body.signatures a.open-docs-link:hover,
+body.signatures a.show-popular-patterns-link:hover,
+body.signatures a.show-kwargs-link:hover {
+color: #ffffff;
+}
+body.hover a.footer-link {
+color: #7f7f7f;
+margin-right: 0.75em;
+}
+body.hover a.footer-link:hover {
+color: #ffffff;
+}
+.signature-info, .signature-pattern {
+padding-left: 1em;
+text-indent: -1em;
+}
+.inferred-kwarg, .signature-pattern {
+margin-top: 0.25em;
+}
+.signature-pattern .style-param {
+color: #7f7f7f;
+}
+.signature-pattern .style-kw-arg {
+color: #7f7f7f;
+}
+.signature-pattern .style-opsign-arg {
+color: #7f7f7f;
+}
+.footer {
+margin-top: 0.75em;
+}
+.footer td {
+height: 100%;
+vertical-align: middle;
+}
+.footer td.icon-container {
+width: 12px;
+}
+.footer td.icon-container img {
+height: 12px;
+vertical-align: middle;
+width: 12px;
+}
+</style>
+</head>
+<body id="short" class="hover">
+<div class="content-container">
+<div class="page-start">
+<table>
+<tbody>
+<tr>
+<td class="code style-text"><span class="code style-text">acorr</span></td>
+<td class="align-right"><span class="hover-hint">function</span></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="footer">
+<div class="kite-link-flow">
+<table>
+<tbody>
+<tr>
+<td class="text"> <a class="link footer-link" href="file:/usr/local/lib/python2.7/dist-packages/matplotlib/pyplot.py?line=2519">Def</a> <a class="link footer-link" href="kite://docs/matplotlib.pyplot.acorr">Docs</a> </td>
+<td class="icon-container"><img class="kite-logo" src="/icons/kite_mini_disabled.png" /></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>

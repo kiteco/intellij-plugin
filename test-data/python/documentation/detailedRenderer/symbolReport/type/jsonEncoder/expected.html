@@ -1,0 +1,114 @@
+<div class="page-start">
+<table class="kite-table">
+<tbody>
+<tr>
+<td class="small type-name"><span class="function-name">JSONEncoder</span><span>(</span><span class="function-param">&nbsp;skipkeys, ensure_ascii, check_circular, allow_nan, sort_keys, indent, separators, encoding, default</span><span> )</span></td>
+<td class="small lower_opacity aligned_right">type</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="report-section report-section-docs">
+<h2>Description</h2>
+<div class="report-content">
+<p>Extensible JSON encoder for Python data structures.</p>
+<p>Supports the following objects and types by default:</p>
+<table>
+<tbody>
+<tr>
+<th>Python</th>
+<th>JSON</th>
+</tr>
+<tr>
+<td>dict</td>
+<td>object</td>
+</tr>
+<tr>
+<td>list, tuple</td>
+<td>array</td>
+</tr>
+<tr>
+<td>str, unicode</td>
+<td>string</td>
+</tr>
+<tr>
+<td>int, long, float</td>
+<td>number</td>
+</tr>
+<tr>
+<td>True</td>
+<td>true</td>
+</tr>
+<tr>
+<td>False</td>
+<td>false</td>
+</tr>
+<tr>
+<td>None</td>
+<td>null</td>
+</tr>
+</tbody>
+</table>
+<p>To extend this to recognize other objects, subclass and implement a <a class="internal_link" href="#json.JSONEncoder.default"><code>default()</code></a> method with another method that returns a serializable object for <code>o</code> if possible, otherwise it should call the superclass implementation (to raise <a class="internal_link" href="#exceptions.TypeError"><code>TypeError</code></a>).</p>
+<p>If <em>skipkeys</em> is <code>False</code> (the default), then it is a <a class="internal_link" href="#exceptions.TypeError"><code>TypeError</code></a> to attempt encoding of keys that are not str, int, long, float or None. If <em>skipkeys</em> is <code>True</code>, such items are simply skipped.</p>
+<p>If <em>ensure_ascii</em> is <code>True</code> (the default), all non-ASCII characters in the output are escaped with <code>\uXXXX</code> sequences, and the results are <a><code>str</code></a> instances consisting of ASCII characters only. If <em>ensure_ascii</em> is <code>False</code>, a result may be a <a><code>unicode</code></a> instance. This usually happens if the input contains unicode strings or the <em>encoding</em> parameter is used.</p>
+<p>If <em>check_circular</em> is <code>True</code> (the default), then lists, dicts, and custom encoded objects will be checked for circular references during encoding to prevent an infinite recursion (which would cause an <a class="internal_link" href="#exceptions.OverflowError"><code>OverflowError</code></a>). Otherwise, no such check takes place.</p>
+<p>If <em>allow_nan</em> is <code>True</code> (the default), then <code>NaN</code>, <code>Infinity</code>, and <code>-Infinity</code> will be encoded as such. This behavior is not JSON specification compliant, but is consistent with most JavaScript based encoders and decoders. Otherwise, it will be a <a class="internal_link" href="#exceptions.ValueError"><code>ValueError</code></a> to encode such floats.</p>
+<p>If <em>sort_keys</em> is <code>True</code> (default <code>False</code>), then the output of dictionaries will be sorted by key; this is useful for regression tests to ensure that JSON serializations can be compared on a day-to-day basis.</p>
+<p>If <em>indent</em> is a non-negative integer (it is <code>None</code> by default), then JSON array elements and object members will be pretty-printed with that indent level. An indent level of 0 will only insert newlines. <code>None</code> is the most compact representation.</p>
+<p>Note</p>
+<p>Since the default item separator is <code>',</code><code> </code><code>'</code>, the output might include trailing whitespace when <em>indent</em> is specified. You can use <code>separators=(',',</code><code> </code><code>':</code><code> </code><code>')</code> to avoid this.</p>
+<p>If specified, <em>separators</em> should be an <code>(item_separator,</code><code> </code><code>key_separator)</code> tuple. The default is <code>(',</code><code> </code><code>',</code><code> </code><code>':</code><code> </code><code>')</code>. To get the most compact JSON representation, you should specify <code>(',',</code><code> </code><code>':')</code> to eliminate whitespace.</p>
+<p>If specified, <em>default</em> is a function that gets called for objects that can’t otherwise be serialized. It should return a JSON encodable version of the object or raise a <a class="internal_link" href="#exceptions.TypeError"><code>TypeError</code></a>.</p>
+<p>If <em>encoding</em> is not <code>None</code>, then all input strings will be transformed into unicode using that encoding prior to JSON-encoding. The default is UTF-8.</p>
+<dl class="method">
+<dt>
+<code>default</code>(
+<em>o</em>)
+</dt>
+<dd>
+<p>Implement this method in a subclass such that it returns a serializable object for <em>o</em>, or calls the base implementation (to raise a <a class="internal_link" href="#exceptions.TypeError"><code>TypeError</code></a>).</p>
+<p>For example, to support arbitrary iterators, you could implement default like this:</p>
+<pre class="lang-python"><code>def default(self, o):
+try:
+iterable = iter(o)
+except TypeError:
+pass
+else:
+return list(iterable)
+# Let the base class default method raise the TypeError
+return JSONEncoder.default(self, o)
+</code></pre>
+</dd>
+</dl>
+<dl class="method">
+<dt>
+<code>encode</code>(
+<em>o</em>)
+</dt>
+<dd>
+<p>Return a JSON string representation of a Python data structure, <em>o</em>. For example:</p>
+<pre class="lang-python"><code>&gt;&gt;&gt; JSONEncoder().encode({"foo": ["bar", "baz"]})
+'{"foo": ["bar", "baz"]}'
+</code></pre>
+</dd>
+</dl>
+<dl class="method">
+<dt>
+<code>iterencode</code>(
+<em>o</em>)
+</dt>
+<dd>
+<p>Encode the given object, <em>o</em>, and yield each string representation as available. For example:</p>
+<pre class="lang-python"><code>for chunk in JSONEncoder().iterencode(bigobject):
+mysocket.write(chunk)
+</code></pre>
+</dd>
+</dl>
+</div>
+</div>
+<div class="buffer-zone"></div>
+<div class="kite-link">
+<a class="open-in-web-link" href="kite-internal:/externalDocs?id=python%3Bjson.JSONEncoder">Open in Web</a>
+<img class="kite-logo kite-logo_small-margin" src="/icons/kite_small_disabled.png" width="16" height="16" />
+</div>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns="http://www.w3.org/2000/svg"
+   viewBox="0 0 16 16"
+   version="1.1"
+   width="16"
+   height="16">
+  <title id="title6">kite-small-dark</title>
+  <g transform="matrix(0.09902391,0,0,0.09902391,2.4705049,0.9999998)">
+    <g>
+      <polygon
+         class="cls-1"
+         points="36.66,100.95 84.01,141.38 99.68,80.81 58.52,59.82 "
+         id="polygon8"
+         style="fill:#ffffff" />
+      <polygon
+         class="cls-1"
+         points="0,69.64 27.45,93.08 54.14,45.95 102.71,69.09 111.68,34.43 39.44,0 "
+         id="polygon10"
+         style="fill:#ffffff" />
+    </g>
+  </g>
+</svg>

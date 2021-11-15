@@ -1,0 +1,123 @@
+{# Shared macros #}
+
+{% macro nameIdLink(typeName, typeId, target=null, class="") %}
+    {%- filter trim | raw -%}
+        <span {%if class is not empty%}class="{{class | escape("html")}}"{% endif %}>{{ typeName | escape("html") }}</span>
+    {%- endfilter -%}
+{% endmacro %}
+
+{# Prints a type list of union entries.
+ @param union, type Union | Iterable<Value>
+ @delimiter, type string, default value |
+#}
+{% macro types(values, class, delimiter=' | ', linkTarget=null) %}
+    {%- for v in values -%}
+        {%- if v.typeId is not empty -%}
+            {{- nameIdLink(v.type, v.typeId, target=linkTarget) -}}
+        {%- else -%}
+            {{- v.type -}}
+        {%- endif -%}{%- if loop.last == false -%}{{delimiter}}{%- endif -%}
+    {%- endfor -%}
+{% endmacro %}
+
+{# Prints representations for each union entry
+ @param union, type Union | Iterable<Value>
+ @delimiter, type string, default value |
+#}
+{% macro representations(values, class, delimiter=' | ', linkTarget=null) %}
+    {%- for v in values -%}
+        {%- if v.typeId is not empty -%}
+            {{- nameIdLink(v.representation, v.typeId, target=linkTarget, class=class) -}}
+        {%- else -%}
+            {{- v.representation -}}
+        {%- endif -%}{%- if loop.last == false -%}{{delimiter}}{%- endif -%}
+    {%- endfor -%}
+{% endmacro %}
+
+{# Prints a list of union values.
+ @param union, type Union | Iterable<Value>
+ @delimiter, type string, default value |
+#}
+{% macro values(values, class, delimiter=' | ', linkTarget=null) %}
+    {%- for v in values -%}
+        {%- if v.id.value is not empty -%}
+            {{- nameIdLink(v.representation, v.id, target=linkTarget) -}}
+        {%- else -%}
+            {{- v.type -}}
+        {%- endif -%}{%if loop.last == false %}{{delimiter}}{% endif %}
+    {%endfor%}
+{% endmacro %}
+
+{% macro namespace(symbolOrValue) %}
+    {%- if symbolOrValue.namespace.id.value is not empty and symbolOrValue.namespace.representation is not empty -%}{{- nameIdLink(symbolOrValue.namespace.representation, symbolOrValue.namespace, class="lower_opacity namespace") -}}.
+    {%- elseif symbolOrValue.namespace.representation is not empty -%}{{- nameIdLink(symbolOrValue.namespace.representation, null, class="lower_opacity namespace") -}}.
+    {%- endif -%}
+{% endmacro %}
+
+{# Context:
+    value with type com.kite.intellij.backend.model.ValueExt
+     -or-
+    symbol with type com.kite.intellij.backend.model.SymbolExt
+#}
+{% macro functionSignature(symbol=null, value=null, showLink=false, showNamespace=false, showReturn=false, showParameters=true) %}
+    {%- set value = (value == null) ? symbol.firstValue : value -%}
+    {%- filter trim | raw -%}
+        {%- if showNamespace == true -%}{{- namespace(symbol) -}}{%- endif -%}
+        {{- functionSignatureNamed(name=(value != null ? value.representation : symbol.name), nameTarget=null, function=value.detail, showReturn=showReturn, showParameters=showParameters) -}}
+    {%- endfilter -%}
+{% endmacro %}
+
+{# Context:
+    value with type com.kite.intellij.backend.model.ValueExt
+     -or-
+    symbol with type com.kite.intellij.backend.model.SymbolExt
+#}
+{% macro functionSignatureNamed(name=null, nameTarget=null, function=null, showReturn=false, showParameters=true) %}
+    {%- filter trim | raw -%}
+        <span class="code style-text">{{- name | escape("html") -}}</span>
+        {%- if showParameters -%}
+            <span class="style-paren">(</span>{%- if function.anyParameterAvailable -%}<span class="function-param">&#160;{{- function.parameterNames | join(', ') | escape("html") -}}
+                {%- if function.vararg is not null -%}
+                    {%- if function.isParametersAvailable == true -%},{%- endif -%}&#160;*{{- function.vararg.name | escape("html") -}}
+                {%- endif -%}
+                {%- if function.kwarg is not null -%}
+                    {%- if function.isParametersAvailable == true or function.vararg is not null -%},{%- endif -%}
+                    &#160;**{{- function.kwarg.name | escape("html") -}}
+                {%- endif -%}
+                </span>{%- endif -%}<span class="style-paren">)</span>
+            {%- endif -%}
+            {%- if showReturn == true -%}
+                {% if function.returnAnnotation is not empty %} → {{ types(function.returnAnnotation) }} {% elseif function.returnValue is not empty %} → {{ types(function.returnValue) }}
+            {%- endif -%}
+        {%- endif -%}
+    {%- endfilter -%}
+{% endmacro %}
+
+
+{# Context:
+    symbol with type com.kite.intellij.backend.model.SymbolExt
+#}
+{% macro moduleSignature(symbol) %}
+    {{- symbol.name -}}
+{% endmacro %}
+
+
+{# Context:
+    symbol with type com.kite.intellij.backend.model.SymbolExt
+#}
+{% macro typeSignature(symbol) %}
+    {{- symbol.name -}}
+{% endmacro %}
+
+{# Context:
+    symbol with type com.kite.intellij.backend.model.SymbolExt
+#}
+{% macro instanceSignature(symbol) %}
+    {{- symbol.name -}}
+{% endmacro %}
+
+{% macro kiteLogoUrl(dark, hiDPI) %}
+    {%- set suffix = (hiDPI == true ? "@2x" : "") -%}
+    {%- set iconPath = "/icons/kite_mini_disabled" + suffix + ".png" -%}
+    {{- iconPath | kiteClasspathUrl -}}
+{% endmacro %}

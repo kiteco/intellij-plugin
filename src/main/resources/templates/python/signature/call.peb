@@ -1,0 +1,52 @@
+{# @pebvariable name="call" type="com.kite.intellij.backend.model.Call" #}
+{# @pebvariable name="context" type="com.kite.intellij.lang.documentation.linkHandler.SignatureLinkData" #}
+
+{#  Renders a single call
+    Context:
+           call
+        context
+#}
+
+{# Renders a parameter of the callee.
+ @param param The parameter definition to render
+ @param argIndex The index of the current parameter
+ @param isVararg=false
+ @param isKwarg=false
+ @param isActive=false
+#}
+{% macro parameter(param, argIndex, isVararg = false, isKwarg = false, isActive = false) %}
+    {%- set argPrefix=isVararg ? "*" : (isKwarg ? "**" : "") -%}
+    {%- set class=isActive ? "op-100" : "op-40" -%}
+    {%- set nameClass=isActive ? "active" : "" -%}
+    {%- set argStyle=isKwarg or param.defaultValue is not null ? "style-kw-arg" : "style-param" -%}
+    {%- filter trim | raw -%}
+    <span class="{{ class | escape("html")}}"><span class="{{ nameClass | escape("html")}} {{ argStyle | escape("html")}}">{{- argPrefix -}}{{- param.name | escape("html") -}}</span>{%- if param.defaultValue is not null -%}<span class="style-opsign-arg">=</span><span class="style-param">{{- param.defaultValue.first.representation | escape("html") -}}</span>{%- endif -%}</span>
+    {%- endfilter -%}
+{% endmacro %}
+
+{# Render the callee #}
+{%- set function = call.callee.detail.constructor | default(call.callee.detail) -%}
+{%- set argIndex = context.argIndex.present ? context.argIndex.asInt : call.argIndex -%}
+{%- set inKwargs = context.inKwargs -%}
+{%- set kwArgIndex = inKwargs and call.inKwargs ? call.argIndex : null -%}
+{%- set expandPopularPatterns = context.expandPopularPatterns -%}
+
+<div class="signature-info code">
+    <span class="function-name style-call">{{- call.callee.representation | default(call.funcName) | escape("html") -}}</span><span class="open-parens style-paren">(</span>
+    {%- if function.vararg is not null -%}
+        {{- parameter("param"=function.vararg, "isVararg"=true, "argIndex"=(function.parameters|length), "isActive"=(inKwargs == false and (argIndex == function.parameters | length))) -}}
+        {%- set hasArgs = true -%}
+    {%- endif -%}
+
+    {%- if hasArgs -%}<span class="style-comma">,</span><span> </span>{%- endif -%}
+    {%- for param in function.parameters %}{{- parameter(param, loop.index, "isActive"=(loop.index == argIndex and inKwargs == false)) -}}{%- if not loop.last -%}<span class="style-comma">,</span><span> </span>{%- endif -%}{%- endfor -%}
+    {%- set hasArgs = function.parameters is not empty -%}
+
+    {# insert optional ',' and the kwarg parameter #}
+    {%- if function.kwarg is not null -%}
+        {%- if hasArgs -%}<span class="style-comma">,</span><span> </span>{%- endif -%}
+        {{- parameter("param"=function.kwarg, "isKwarg"=true, "isActive"=inKwargs) -}}
+    {%- endif -%}
+    <span class="style-paren">)</span>
+    {%- if function.returnValue.types is not empty -%}&#160;→&#160;<span class="style-builtin-name op-67">{{- types(function.returnValue, "class"="type", linkTarget="detailPanel") -}}</span>{%- endif -%}
+</div>

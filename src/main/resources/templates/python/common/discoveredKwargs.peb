@@ -1,0 +1,51 @@
+{# @pebvariable name="context" type="com.kite.intellij.lang.documentation.linkHandler.SignatureLinkData" #}
+{# @pebvariable name="function" type="com.kite.intellij.backend.model.PythonFunctionDetails" #}
+{# @pebvariable name="argIndex" type="java.lang.Integer" #}
+{# @pebvariable name="linkSection" type="java.lang.Boolean" #}
+
+{#  Snippet to render popular patterns.
+    Context:
+        context
+        linkSection
+        function
+        argIndex
+#}
+
+{% if function.kwargParameters is not empty %}
+    {% set heading = (heading != null) ? heading : ("**" + (function.hasKwarg() ? function.kwarg.name : "kwargs")) %}
+    {% set link = context | kiteSignatureInfoLink("expandKwargs"=not context.expandKwargs) %}
+
+    {% if linkSection %}
+        {% if not context.expandKwargs %}
+            <a class="link toggle-link show-kwargs-link {% if context.inKwargs %}style-text active{% endif %}" href="{{ link | escape("html") }}">{{ heading | escape("html")}}</a>
+        {% endif %}
+    {% elseif context.expandKwargs %}
+        <div class="signature-details">
+            <div class="report-section">
+                <div class="heading">
+                    <table>
+                        <tr>
+                            <td><span class="heading-text {% if not context.expandKwargs and context.inKwargs %}style-text active{% endif %}">{{ heading | escape("html")}}</span></td>
+                            <td><a class="link toggle-link" href="{{ link | escape("html") }}">{% if context.expandKwargs %}Hide{% else %}Show{% endif %}</a></td>
+                        </tr>
+                    </table>
+                </div>
+                {% if context.expandKwargs %}
+                    <div class="report-content op-40">
+                        {% for kwarg in function.kwargParameters %}
+                            {% set activeClass = argIndex is not null and loop.index == argIndex ? "active op-100" : "" %}
+                            <div class="inferred-kwarg code {{ activeClass | escape("html")}}">
+                                <span class="style-param">{{- kwarg.name | escape("html") -}}</span>
+                                {%- if kwarg.inferredValue.size is not empty -%}
+                                    <span class="style-opsign-arg">:</span>&#160;<span class="style-bracket">[</span>{{- representations(kwarg.inferredValue, "style-builtin-name", "<span class=\"style-comma\">,</span><span> </span>") -}}<span class="style-bracket">]</span>
+                                {%- else -%}
+                                    <span class="style-opsign-arg">:</span>&#160;<span class="style-bracket">[</span><span class="style-unused">&lt;unknown&gt;</span><span class="style-bracket">]</span>
+                                {%- endif -%}
+                            </div>
+                        {% endfor %}
+                    </div>
+                {% endif %}
+            </div>
+        </div>
+    {% endif %}
+{% endif %}

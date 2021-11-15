@@ -1,0 +1,27 @@
+{
+  "language": "python",
+  "part_of_syntax": "name",
+  "symbol": [
+    {
+      "id": "python;requests id",
+      "name": "requests",
+      "namespace": null,
+      "value": [
+      ],
+      "synopsis": ""
+    }
+  ],
+  "report": {
+    "definition": {
+      "filename": "",
+      "line": 1
+    },
+    "description_text": "text report",
+    "description_html": "html report",
+    "examples": [],
+    "usages": null,
+    "total_usages": 0,
+    "links": [],
+    "total_links": 50
+  }
+}

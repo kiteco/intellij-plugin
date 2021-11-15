@@ -1,0 +1,59 @@
+{
+  "part_of_syntax": "name",
+  "symbol": [
+    {
+      "id": "",
+      "name": "self",
+      "namespace": null,
+      "value": [
+        {
+          "id": "",
+          "kind": "instance",
+          "repr": "AddNumToPic",
+          "type": "AddNumToPic",
+          "type_id": "",
+          "synopsis": "",
+          "details": {
+            "instance": {
+              "type": [
+                {
+                  "id": "",
+                  "kind": "type",
+                  "repr": "AddNumToPic",
+                  "type": "type",
+                  "type_id": "__builtin__.type"
+                }
+              ]
+            }
+          }
+        }
+      ],
+      "synopsis": ""
+    }
+  ],
+  "report": {
+    "definition": null,
+    "description_text": "No documentation available",
+    "description_html": "<body><p>No documentation available</p></body>",
+    "examples": null,
+    "usages": [
+      {
+        "code": "        self.font = None",
+        "filename": "/Users/user/IdeaProjects/kitePython/test.py",
+        "line": 2,
+        "begin_bytes": 59,
+        "begin_runes": 59
+      },
+      {
+        "code": "        self.img = None",
+        "filename": "/Users/user/IdeaProjects/kitePython/test.py",
+        "line": 3,
+        "begin_bytes": 84,
+        "begin_runes": 84
+      }
+    ],
+    "total_usages": 2,
+    "links": null,
+    "total_links": 0
+  }
+}

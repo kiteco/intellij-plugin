@@ -1,0 +1,15 @@
+{# @pebvariable name="symbol" type="com.kite.intellij.backend.model.SymbolExt" #}
+
+{# Renders the details of an unknown definition.
+   Context:
+        symbol
+#}
+
+{% set titleClass = "small" %}
+
+<table class="kite-table">
+    <tr>
+        <td class="{{ titleClass | escape("html")}} unknown-name">{{ symbol.name }}</td>
+        <td class="{{ titleClass | escape("html")}} lower_opacity aligned_right">{{symbol.firstValue.kind}}</td>{# vertical-align:top aligns if the arguments wrap #}
+    </tr>
+</table>

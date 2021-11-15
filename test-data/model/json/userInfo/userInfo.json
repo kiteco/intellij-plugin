@@ -1,0 +1,9 @@
+{
+  "id": 42,
+  "name": "Firstname Lastname",
+  "email": "mail@example.com",
+  "bio": "",
+  "email_verified": true,
+  "is_internal": true,
+  "unsubscribed": false
+}

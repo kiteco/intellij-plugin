@@ -1,0 +1,168 @@
+{
+  "part_of_syntax": "name",
+  "symbol": [
+    {
+      "id": "",
+      "name": "matplotlib",
+      "namespace": null,
+      "value": [
+        {
+          "id": "matplotlib",
+          "kind": "module",
+          "repr": "matplotlib",
+          "type": "module",
+          "type_id": "__builtin__.module",
+          "synopsis": "This is an object-oriented plotting library.\nA procedural interface is provided by the companion pyplot module,\nwhich may be imported directly, e.g.:",
+          "details": {
+            "module": {
+              "members": [
+                {
+                  "id": "",
+                  "name": "absolute_import",
+                  "namespace": {
+                    "id": "matplotlib",
+                    "kind": "module",
+                    "repr": "matplotlib",
+                    "type": "module",
+                    "type_id": "__builtin__.module"
+                  },
+                  "value": [
+                    {
+                      "id": "",
+                      "kind": "instance",
+                      "repr": "",
+                      "type": "",
+                      "type_id": ""
+                    }
+                  ]
+                },
+                {
+                  "id": "matplotlib.afm",
+                  "name": "afm",
+                  "namespace": {
+                    "id": "matplotlib",
+                    "kind": "module",
+                    "repr": "matplotlib",
+                    "type": "module",
+                    "type_id": "__builtin__.module"
+                  },
+                  "value": [
+                    {
+                      "id": "matplotlib.afm",
+                      "kind": "module",
+                      "repr": "matplotlib.afm",
+                      "type": "type",
+                      "type_id": "__builtin__.type"
+                    }
+                  ]
+                },
+                {
+                  "id": "matplotlib.animation",
+                  "name": "animation",
+                  "namespace": {
+                    "id": "matplotlib",
+                    "kind": "module",
+                    "repr": "matplotlib",
+                    "type": "module",
+                    "type_id": "__builtin__.module"
+                  },
+                  "value": [
+                    {
+                      "id": "matplotlib.animation",
+                      "kind": "module",
+                      "repr": "matplotlib.animation",
+                      "type": "type",
+                      "type_id": "__builtin__.type"
+                    }
+                  ]
+                },
+                {
+                  "id": "matplotlib.artist",
+                  "name": "artist",
+                  "namespace": {
+                    "id": "matplotlib",
+                    "kind": "module",
+                    "repr": "matplotlib",
+                    "type": "module",
+                    "type_id": "__builtin__.module"
+                  },
+                  "value": [
+                    {
+                      "id": "matplotlib.artist",
+                      "kind": "module",
+                      "repr": "matplotlib.artist",
+                      "type": "type",
+                      "type_id": "__builtin__.type"
+                    }
+                  ]
+                },
+                {
+                  "id": "matplotlib.axes",
+                  "name": "axes",
+                  "namespace": {
+                    "id": "matplotlib",
+                    "kind": "module",
+                    "repr": "matplotlib",
+                    "type": "module",
+                    "type_id": "__builtin__.module"
+                  },
+                  "value": [
+                    {
+                      "id": "matplotlib.axes",
+                      "kind": "module",
+                      "repr": "matplotlib.axes",
+                      "type": "type",
+                      "type_id": "__builtin__.type"
+                    }
+                  ]
+                }
+              ],
+              "total_members": 192
+            }
+          }
+        }
+      ],
+      "synopsis": ""
+    }
+  ],
+  "report": {
+    "definition": {
+      "filename": "/usr/local/lib/python2.7/dist-packages/matplotlib/__init__.py",
+      "line": 1
+    },
+    "description_text": "This is an object-oriented plotting library.\nA procedural interface is provided by the companion pyplot module,\nwhich may be imported directly, e.g.:",
+    "description_html": "<body>\n\n\n<p>This is an object-oriented plotting library.</p>\n<p>A procedural interface is provided by the companion pyplot module,\nwhich may be imported directly, e.g.:</p>\n<pre class=\"lang-python\"><code>import matplotlib.pyplot as plt\n</code></pre>\n<p>or using ipython:</p>\n<pre class=\"lang-python\"><code>ipython\n</code></pre>\n<p>at your terminal, followed by:</p>\n<pre class=\"lang-python\"><code>In [1]: %matplotlib\nIn [2]: import matplotlib.pyplot as plt\n</code></pre>\n<p>at the ipython shell prompt.</p>\n<p>For the most part, direct use of the object-oriented library is\nencouraged when programming; pyplot is primarily for working\ninteractively.  The\nexceptions are the pyplot commands <a href=\"#matplotlib.pyplot.figure\" class=\"internal_link\">figure</a>,\n<a href=\"#matplotlib.pyplot.subplot\" class=\"internal_link\">subplot</a>,\n<a href=\"#matplotlib.pyplot.subplots\" class=\"internal_link\">subplots</a>, and\n<a href=\"#pyplot.savefig\" class=\"internal_link\">savefig</a>, which can greatly simplify scripting.</p>\n<p>Modules include:</p>\n\n<dl class=\"plainlist\"><dt><a href=\"#matplotlib.axes\" class=\"internal_link\">axes</a></dt><dd>defines the <a href=\"#matplotlib.axes.Axes\" class=\"internal_link\">Axes</a> class.  Most pylab\ncommands are wrappers for <a href=\"#matplotlib.axes.Axes\" class=\"internal_link\">Axes</a>\nmethods.  The axes module is the highest level of OO access to\nthe library.</dd><dt><a href=\"#matplotlib.figure\" class=\"internal_link\">figure</a></dt><dd>defines the <a href=\"#matplotlib.figure.Figure\" class=\"internal_link\">Figure</a> class.</dd><dt><a href=\"#matplotlib.artist\" class=\"internal_link\">artist</a></dt><dd>defines the <a href=\"#matplotlib.artist.Artist\" class=\"internal_link\">Artist</a> base class for\nall classes that draw things.</dd><dt><a href=\"#matplotlib.lines\" class=\"internal_link\">lines</a></dt><dd>defines the <a href=\"#matplotlib.lines.Line2D\" class=\"internal_link\">Line2D</a> class for\ndrawing lines and markers</dd><dt><a href=\"#matplotlib.patches\" class=\"internal_link\">patches</a></dt><dd>defines classes for drawing polygons</dd><dt><a href=\"#matplotlib.text\" class=\"internal_link\">text</a></dt><dd>defines the <a href=\"#matplotlib.text.Text\" class=\"internal_link\">Text</a>,\n<a href=\"#matplotlib.text.TextWithDash\" class=\"internal_link\">TextWithDash</a>, and\n<a href=\"#matplotlib.text.Annotate\" class=\"internal_link\">Annotate</a> classes</dd><dt><a href=\"#matplotlib.image\" class=\"internal_link\">image</a></dt><dd>defines the <a href=\"#matplotlib.image.AxesImage\" class=\"internal_link\">AxesImage</a> and\n<a href=\"#matplotlib.image.FigureImage\" class=\"internal_link\">FigureImage</a> classes</dd><dt><a href=\"#matplotlib.collections\" class=\"internal_link\">collections</a></dt><dd>classes for efficient drawing of groups of lines or polygons</dd><dt><a href=\"#matplotlib.colors\" class=\"internal_link\">colors</a></dt><dd>classes for interpreting color specifications and for making\ncolormaps</dd><dt><a href=\"#matplotlib.cm\" class=\"internal_link\">cm</a></dt><dd>colormaps and the <a href=\"#matplotlib.image.ScalarMappable\" class=\"internal_link\">ScalarMappable</a>\nmixin class for providing color mapping functionality to other\nclasses</dd><dt><a href=\"#matplotlib.ticker\" class=\"internal_link\">ticker</a></dt><dd>classes for calculating tick mark locations and for formatting\ntick labels</dd><dt><a href=\"#matplotlib.backends\" class=\"internal_link\">backends</a></dt><dd>a subpackage with modules for various gui libraries and output\nformats</dd></dl>\n\n<p>The base matplotlib namespace includes:</p>\n\n<dl class=\"plainlist\"><dt><a href=\"#matplotlib.rcParams\" class=\"internal_link\">rcParams</a></dt><dd>a global dictionary of default configuration settings.  It is\ninitialized by code which may be overridded by a matplotlibrc\nfile.</dd><dt><a href=\"#matplotlib.rc\" class=\"internal_link\">rc</a></dt><dd>a function for setting groups of rcParams values</dd><dt><a href=\"#matplotlib.use\" class=\"internal_link\">use</a></dt><dd>a function for setting the matplotlib backend.  If used, this\nfunction must be called immediately after importing matplotlib\nfor the first time.  In particular, it must be called\n<strong>before</strong> importing pylab (if pylab is imported).</dd></dl>\n\n<p>matplotlib was initially written by John D. Hunter (1968-2012) and is now\ndeveloped and maintained by a host of others.</p>\n<p>Occasionally the internal documentation (python docstrings) will refer\nto MATLAB&amp;reg;, a registered trademark of The MathWorks, Inc.</p>\n</body>",
+    "examples": [
+      {
+        "id": 1854,
+        "title": "Plot a line graph"
+      },
+      {
+        "id": 2199,
+        "title": "Plot a box plot"
+      },
+      {
+        "id": 1883,
+        "title": "Plot a colormap with a colorbar"
+      },
+      {
+        "id": 1889,
+        "title": "Plot a barplot with error bars"
+      },
+      {
+        "id": 2195,
+        "title": "Plot a grouped barplot"
+      }
+    ],
+    "usages": [
+      {
+        "code": "matplotlib.pyplot.plot()",
+        "filename": "/Users/user/IdeaProjects/kitePython/Python-Algorithms/test2.py",
+        "line": 1,
+        "begin_bytes": 18,
+        "begin_runes": 18
+      }
+    ],
+    "total_usages": 1
+  }
+}

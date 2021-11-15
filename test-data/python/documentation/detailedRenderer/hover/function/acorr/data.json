@@ -1,0 +1,92 @@
+{
+  "part_of_syntax": "attr",
+  "symbol": [
+    {
+      "id": "matplotlib.pyplot.acorr",
+      "name": "acorr",
+      "namespace": {
+        "id": "matplotlib.pyplot",
+        "kind": "module",
+        "repr": "matplotlib.pyplot",
+        "type": "module",
+        "type_id": ""
+      },
+      "value": [
+        {
+          "id": "matplotlib.pyplot.acorr",
+          "kind": "function",
+          "repr": "acorr",
+          "type": "function",
+          "type_id": "",
+          "synopsis": "Plot the autocorrelation of x.",
+          "details": {
+            "function": {
+              "parameters": [
+                {
+                  "name": "x",
+                  "default_value": null,
+                  "inferred_value": null,
+                  "annotation": null,
+                  "keyword_only": false,
+                  "synopsis": ""
+                },
+                {
+                  "name": "hold",
+                  "default_value": null,
+                  "inferred_value": null,
+                  "annotation": null,
+                  "keyword_only": false,
+                  "synopsis": ""
+                },
+                {
+                  "name": "data",
+                  "default_value": null,
+                  "inferred_value": null,
+                  "annotation": null,
+                  "keyword_only": false,
+                  "synopsis": ""
+                }
+              ],
+              "return_value": null,
+              "language_details": {
+                "python": {
+                  "kwarg": {
+                    "name": "kwargs",
+                    "default_value": null,
+                    "inferred_value": null,
+                    "annotation": null,
+                    "keyword_only": false,
+                    "synopsis": ""
+                  },
+                  "return_annotation": null
+                }
+              }
+            }
+          }
+        }
+      ],
+      "synopsis": ""
+    }
+  ],
+  "report": {
+    "definition": {
+      "filename": "/usr/local/lib/python2.7/dist-packages/matplotlib/pyplot.py",
+      "line": 2519
+    },
+    "description_text": "Plot the autocorrelation of x.",
+    "description_html": "<body>\n\n\n<p>Plot the autocorrelation of <i>x</i>.</p>\n\n<h1>Parameters</h1>\n<p>x : sequence of scalar</p>\n<p>hold : boolean, optional, default: True</p>\n<dl class=\"plainlist\"><dt>detrend <span>:</span> <span>callable, optional, default: <i>mlab.detrend_none</i></span></dt><dd>x is detrended by the <i>detrend</i> callable. Default is no\nnormalization.</dd><dt>normed <span>:</span> <span>boolean, optional, default: True</span></dt><dd>if True, normalize the data by the autocorrelation at the 0-th\nlag.</dd><dt>usevlines <span>:</span> <span>boolean, optional, default: True</span></dt><dd>if True, Axes.vlines is used to plot the vertical lines from the\norigin to the acorr. Otherwise, Axes.plot is used.</dd><dt>maxlags <span>:</span> <span>integer, optional, default: 10</span></dt><dd>number of lags to show. If None, will return all 2 * len(x) - 1\nlags.</dd></dl>\n\n\n<h1>Returns</h1>\n<p>(lags, c, line, b) : where:</p>\n\n<ul><li><i>lags</i> are a length 2`maxlags+1 lag vector.</li><li><i>c</i> is the 2`maxlags+1 auto correlation vectorI</li><li><i>line</i> is a <i>~matplotlib.lines.Line2D</i> instance returned by\n<i>plot</i>.</li><li><i>b</i> is the x-axis.</li></ul>\n\n\n\n<h1>Other parameters</h1>\n<dl class=\"plainlist\"><dt>linestyle <span>:</span> <span><i>~matplotlib.lines.Line2D</i> prop, optional, default: None</span></dt><dd>Only used if usevlines is False.</dd></dl>\n<p>marker : string, optional, default: &#39;o&#39;</p>\n\n\n<h1>Notes</h1>\n<p>The cross correlation is performed with <a href=\"#numpy.core.numeric.correlate\" class=\"internal_link\">correlate</a> with\n<i>mode</i> = 2.</p>\n\n\n<h1>How to</h1>\n<p><i>~matplotlib.pyplot.xcorr</i> is top graph, and\n<i>~matplotlib.pyplot.acorr</i> is bottom graph.</p>\n\n\n<h1>Notes</h1>\n<p>In addition to the above described arguments, this function can take a\n<strong>data</strong> keyword argument. If such a <strong>data</strong> argument is given, the\nfollowing arguments are replaced by <strong>data[&lt;arg&gt;]</strong>:</p>\n<ul><li>All arguments with the following names: &#39;x&#39;.</li></ul>\n<p>Additional kwargs: hold = [True|False] overrides default hold state</p>\n\n</body>",
+    "examples": null,
+    "usages": [
+      {
+        "code": "matplotlib.pyplot.acorr()",
+        "filename": "/Users/user/IdeaProjects/kitePython/Python-Algorithms/test4.py",
+        "line": 3,
+        "begin_bytes": 27,
+        "begin_runes": 27
+      }
+    ],
+    "total_usages": 1,
+    "links": null,
+    "total_links": 0
+  }
+}

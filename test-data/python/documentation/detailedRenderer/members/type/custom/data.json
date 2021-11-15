@@ -1,0 +1,977 @@
+{
+  "total": 25,
+  "start": 0,
+  "end": 25,
+  "members": [
+    {
+      "id": "3691;9fba1c5b3fa5cc958a01564b6dfa5471;:Users:user:python:chen2aaron:0000:img.py;AddNumToPic;draw_text",
+      "name": "draw_text",
+      "namespace": {
+        "id": "3691;9fba1c5b3fa5cc958a01564b6dfa5471;:Users:user:python:chen2aaron:0000:img.py;AddNumToPic",
+        "kind": "type",
+        "repr": "AddNumToPic",
+        "type": "type",
+        "type_id": "__builtin__.type"
+      },
+      "value": [
+        {
+          "id": "3691;9fba1c5b3fa5cc958a01564b6dfa5471;:Users:user:python:chen2aaron:0000:img.py;AddNumToPic.draw_text",
+          "kind": "function",
+          "repr": "AddNumToPic.draw_text",
+          "type": "FunctionType",
+          "type_id": "types.FunctionType",
+          "synopsis": "",
+          "details": {
+            "function": {
+              "receiver": {
+                "name": "self",
+                "default_value": null,
+                "inferred_value": [
+                  {
+                    "id": "",
+                    "kind": "instance",
+                    "repr": "AddNumToPic",
+                    "type": "AddNumToPic",
+                    "type_id": "3691;9fba1c5b3fa5cc958a01564b6dfa5471;:Users:user:python:chen2aaron:0000:img.py;AddNumToPic"
+                  }
+                ],
+                "annotation": null,
+                "keyword_only": false,
+                "synopsis": ""
+              },
+              "parameters": [
+                {
+                  "name": "str",
+                  "default_value": null,
+                  "inferred_value": [
+                    {
+                      "id": "",
+                      "kind": "instance",
+                      "repr": "str",
+                      "type": "str",
+                      "type_id": "__builtin__.str"
+                    }
+                  ],
+                  "annotation": null,
+                  "keyword_only": false,
+                  "synopsis": ""
+                },
+                {
+                  "name": "color",
+                  "default_value": null,
+                  "inferred_value": [
+                    {
+                      "id": "",
+                      "kind": "instance",
+                      "repr": "str",
+                      "type": "str",
+                      "type_id": "__builtin__.str"
+                    }
+                  ],
+                  "annotation": null,
+                  "keyword_only": false,
+                  "synopsis": ""
+                },
+                {
+                  "name": "ttf",
+                  "default_value": null,
+                  "inferred_value": [
+                    {
+                      "id": "__builtin__.None",
+                      "kind": "instance",
+                      "repr": "types.NoneType",
+                      "type": "NoneType",
+                      "type_id": "types.NoneType"
+                    }
+                  ],
+                  "annotation": null,
+                  "keyword_only": false,
+                  "synopsis": ""
+                }
+              ],
+              "return_value": [
+                {
+                  "id": "__builtin__.True",
+                  "kind": "instance",
+                  "repr": "bool",
+                  "type": "bool",
+                  "type_id": "__builtin__.bool"
+                }
+              ],
+              "return_annotation": null
+            }
+          }
+        }
+      ],
+      "synopsis": ""
+    },
+    {
+      "id": "3691;9fba1c5b3fa5cc958a01564b6dfa5471;:Users:user:python:chen2aaron:0000:img.py;AddNumToPic;font",
+      "name": "font",
+      "namespace": {
+        "id": "3691;9fba1c5b3fa5cc958a01564b6dfa5471;:Users:user:python:chen2aaron:0000:img.py;AddNumToPic",
+        "kind": "type",
+        "repr": "AddNumToPic",
+        "type": "type",
+        "type_id": "__builtin__.type"
+      },
+      "value": [
+        {
+          "id": "__builtin__.None",
+          "kind": "instance",
+          "repr": "types.NoneType",
+          "type": "NoneType",
+          "type_id": "types.NoneType",
+          "synopsis": "",
+          "details": {
+            "instance": {
+              "type": [
+                {
+                  "id": "types.NoneType",
+                  "kind": "type",
+                  "repr": "types.NoneType",
+                  "type": "type",
+                  "type_id": "__builtin__.type"
+                }
+              ]
+            }
+          }
+        }
+      ],
+      "synopsis": ""
+    },
+    {
+      "id": "3691;9fba1c5b3fa5cc958a01564b6dfa5471;:Users:user:python:chen2aaron:0000:img.py;AddNumToPic;img",
+      "name": "img",
+      "namespace": {
+        "id": "3691;9fba1c5b3fa5cc958a01564b6dfa5471;:Users:user:python:chen2aaron:0000:img.py;AddNumToPic",
+        "kind": "type",
+        "repr": "AddNumToPic",
+        "type": "type",
+        "type_id": "__builtin__.type"
+      },
+      "value": [
+        {
+          "id": "__builtin__.None",
+          "kind": "instance",
+          "repr": "types.NoneType",
+          "type": "NoneType",
+          "type_id": "types.NoneType",
+          "synopsis": "",
+          "details": {
+            "instance": {
+              "type": [
+                {
+                  "id": "types.NoneType",
+                  "kind": "type",
+                  "repr": "types.NoneType",
+                  "type": "type",
+                  "type_id": "__builtin__.type"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "id": "__builtin__.True",
+          "kind": "instance",
+          "repr": "bool",
+          "type": "bool",
+          "type_id": "__builtin__.bool",
+          "synopsis": "",
+          "details": {
+            "instance": {
+              "type": [
+                {
+                  "id": "__builtin__.bool",
+                  "kind": "type",
+                  "repr": "bool",
+                  "type": "type",
+                  "type_id": "__builtin__.type"
+                }
+              ]
+            }
+          }
+        }
+      ],
+      "synopsis": ""
+    },
+    {
+      "id": "3691;9fba1c5b3fa5cc958a01564b6dfa5471;:Users:user:python:chen2aaron:0000:img.py;AddNumToPic;open",
+      "name": "open",
+      "namespace": {
+        "id": "3691;9fba1c5b3fa5cc958a01564b6dfa5471;:Users:user:python:chen2aaron:0000:img.py;AddNumToPic",
+        "kind": "type",
+        "repr": "AddNumToPic",
+        "type": "type",
+        "type_id": "__builtin__.type"
+      },
+      "value": [
+        {
+          "id": "3691;9fba1c5b3fa5cc958a01564b6dfa5471;:Users:user:python:chen2aaron:0000:img.py;AddNumToPic.open",
+          "kind": "function",
+          "repr": "AddNumToPic.open",
+          "type": "FunctionType",
+          "type_id": "types.FunctionType",
+          "synopsis": "",
+          "details": {
+            "function": {
+              "receiver": {
+                "name": "self",
+                "default_value": null,
+                "inferred_value": [
+                  {
+                    "id": "",
+                    "kind": "instance",
+                    "repr": "AddNumToPic",
+                    "type": "AddNumToPic",
+                    "type_id": "3691;9fba1c5b3fa5cc958a01564b6dfa5471;:Users:user:python:chen2aaron:0000:img.py;AddNumToPic"
+                  }
+                ],
+                "annotation": null,
+                "keyword_only": false,
+                "synopsis": ""
+              },
+              "parameters": [
+                {
+                  "name": "img_path",
+                  "default_value": null,
+                  "inferred_value": [
+                    {
+                      "id": "",
+                      "kind": "instance",
+                      "repr": "AddNumToPic",
+                      "type": "AddNumToPic",
+                      "type_id": "3691;9fba1c5b3fa5cc958a01564b6dfa5471;:Users:user:python:chen2aaron:0000:img.py;AddNumToPic"
+                    }
+                  ],
+                  "annotation": null,
+                  "keyword_only": false,
+                  "synopsis": ""
+                }
+              ],
+              "return_value": [
+                {
+                  "id": "__builtin__.True",
+                  "kind": "instance",
+                  "repr": "bool",
+                  "type": "bool",
+                  "type_id": "__builtin__.bool"
+                }
+              ],
+              "return_annotation": null
+            }
+          }
+        }
+      ],
+      "synopsis": ""
+    },
+    {
+      "id": "3691;9fba1c5b3fa5cc958a01564b6dfa5471;:Users:user:python:chen2aaron:0000:img.py;AddNumToPic;set_font",
+      "name": "set_font",
+      "namespace": {
+        "id": "3691;9fba1c5b3fa5cc958a01564b6dfa5471;:Users:user:python:chen2aaron:0000:img.py;AddNumToPic",
+        "kind": "type",
+        "repr": "AddNumToPic",
+        "type": "type",
+        "type_id": "__builtin__.type"
+      },
+      "value": [
+        {
+          "id": "3691;9fba1c5b3fa5cc958a01564b6dfa5471;:Users:user:python:chen2aaron:0000:img.py;AddNumToPic.set_font",
+          "kind": "function",
+          "repr": "AddNumToPic.set_font",
+          "type": "FunctionType",
+          "type_id": "types.FunctionType",
+          "synopsis": "",
+          "details": {
+            "function": {
+              "receiver": {
+                "name": "self",
+                "default_value": null,
+                "inferred_value": [
+                  {
+                    "id": "",
+                    "kind": "instance",
+                    "repr": "AddNumToPic",
+                    "type": "AddNumToPic",
+                    "type_id": "3691;9fba1c5b3fa5cc958a01564b6dfa5471;:Users:user:python:chen2aaron:0000:img.py;AddNumToPic"
+                  }
+                ],
+                "annotation": null,
+                "keyword_only": false,
+                "synopsis": ""
+              },
+              "parameters": [
+                {
+                  "name": "font_path",
+                  "default_value": null,
+                  "inferred_value": [
+                    {
+                      "id": "",
+                      "kind": "instance",
+                      "repr": "str",
+                      "type": "str",
+                      "type_id": "__builtin__.str"
+                    }
+                  ],
+                  "annotation": null,
+                  "keyword_only": false,
+                  "synopsis": ""
+                },
+                {
+                  "name": "size",
+                  "default_value": null,
+                  "inferred_value": [
+                    {
+                      "id": "",
+                      "kind": "instance",
+                      "repr": "int",
+                      "type": "int",
+                      "type_id": "__builtin__.int"
+                    }
+                  ],
+                  "annotation": null,
+                  "keyword_only": false,
+                  "synopsis": ""
+                }
+              ],
+              "return_value": [
+                {
+                  "id": "__builtin__.True",
+                  "kind": "instance",
+                  "repr": "bool",
+                  "type": "bool",
+                  "type_id": "__builtin__.bool"
+                }
+              ],
+              "return_annotation": null
+            }
+          }
+        }
+      ],
+      "synopsis": ""
+    },
+    {
+      "id": "3691;9fba1c5b3fa5cc958a01564b6dfa5471;:Users:user:python:chen2aaron:0000:img.py;AddNumToPic;__bases__",
+      "name": "__bases__",
+      "namespace": {
+        "id": "3691;9fba1c5b3fa5cc958a01564b6dfa5471;:Users:user:python:chen2aaron:0000:img.py;AddNumToPic",
+        "kind": "type",
+        "repr": "AddNumToPic",
+        "type": "type",
+        "type_id": "__builtin__.type"
+      },
+      "value": [
+        {
+          "id": "",
+          "kind": "instance",
+          "repr": "list",
+          "type": "list",
+          "type_id": "__builtin__.list",
+          "synopsis": "",
+          "details": {
+            "instance": {
+              "type": [
+                {
+                  "id": "__builtin__.list",
+                  "kind": "type",
+                  "repr": "list",
+                  "type": "type",
+                  "type_id": "__builtin__.type"
+                }
+              ]
+            }
+          }
+        }
+      ],
+      "synopsis": ""
+    },
+    {
+      "id": "3691;9fba1c5b3fa5cc958a01564b6dfa5471;:Users:user:python:chen2aaron:0000:img.py;AddNumToPic;__class__",
+      "name": "__class__",
+      "namespace": {
+        "id": "3691;9fba1c5b3fa5cc958a01564b6dfa5471;:Users:user:python:chen2aaron:0000:img.py;AddNumToPic",
+        "kind": "type",
+        "repr": "AddNumToPic",
+        "type": "type",
+        "type_id": "__builtin__.type"
+      },
+      "value": [
+        {
+          "id": "3691;9fba1c5b3fa5cc958a01564b6dfa5471;:Users:user:python:chen2aaron:0000:img.py;AddNumToPic",
+          "kind": "type",
+          "repr": "AddNumToPic",
+          "type": "type",
+          "type_id": "__builtin__.type",
+          "synopsis": "",
+          "details": {
+            "type": {
+              "bases": [
+                {
+                  "id": "__builtin__.object",
+                  "name": "object",
+                  "module": "__builtin__",
+                  "module_id": "__builtin__"
+                }
+              ],
+              "components": null,
+              "members": [
+                {
+                  "id": "3691;9fba1c5b3fa5cc958a01564b6dfa5471;:Users:user:python:chen2aaron:0000:img.py;AddNumToPic;draw_text",
+                  "name": "draw_text",
+                  "namespace": {
+                    "id": "3691;9fba1c5b3fa5cc958a01564b6dfa5471;:Users:user:python:chen2aaron:0000:img.py;AddNumToPic",
+                    "kind": "type",
+                    "repr": "AddNumToPic",
+                    "type": "type",
+                    "type_id": "__builtin__.type"
+                  },
+                  "value": [
+                    {
+                      "id": "3691;9fba1c5b3fa5cc958a01564b6dfa5471;:Users:user:python:chen2aaron:0000:img.py;AddNumToPic.draw_text",
+                      "kind": "function",
+                      "repr": "AddNumToPic.draw_text",
+                      "type": "FunctionType",
+                      "type_id": "types.FunctionType"
+                    }
+                  ]
+                },
+                {
+                  "id": "3691;9fba1c5b3fa5cc958a01564b6dfa5471;:Users:user:python:chen2aaron:0000:img.py;AddNumToPic;font",
+                  "name": "font",
+                  "namespace": {
+                    "id": "3691;9fba1c5b3fa5cc958a01564b6dfa5471;:Users:user:python:chen2aaron:0000:img.py;AddNumToPic",
+                    "kind": "type",
+                    "repr": "AddNumToPic",
+                    "type": "type",
+                    "type_id": "__builtin__.type"
+                  },
+                  "value": [
+                    {
+                      "id": "__builtin__.None",
+                      "kind": "instance",
+                      "repr": "types.NoneType",
+                      "type": "NoneType",
+                      "type_id": "types.NoneType"
+                    }
+                  ]
+                },
+                {
+                  "id": "3691;9fba1c5b3fa5cc958a01564b6dfa5471;:Users:user:python:chen2aaron:0000:img.py;AddNumToPic;img",
+                  "name": "img",
+                  "namespace": {
+                    "id": "3691;9fba1c5b3fa5cc958a01564b6dfa5471;:Users:user:python:chen2aaron:0000:img.py;AddNumToPic",
+                    "kind": "type",
+                    "repr": "AddNumToPic",
+                    "type": "type",
+                    "type_id": "__builtin__.type"
+                  },
+                  "value": [
+                    {
+                      "id": "__builtin__.None",
+                      "kind": "instance",
+                      "repr": "types.NoneType",
+                      "type": "NoneType",
+                      "type_id": "types.NoneType"
+                    },
+                    {
+                      "id": "__builtin__.True",
+                      "kind": "instance",
+                      "repr": "bool",
+                      "type": "bool",
+                      "type_id": "__builtin__.bool"
+                    }
+                  ]
+                },
+                {
+                  "id": "3691;9fba1c5b3fa5cc958a01564b6dfa5471;:Users:user:python:chen2aaron:0000:img.py;AddNumToPic;open",
+                  "name": "open",
+                  "namespace": {
+                    "id": "3691;9fba1c5b3fa5cc958a01564b6dfa5471;:Users:user:python:chen2aaron:0000:img.py;AddNumToPic",
+                    "kind": "type",
+                    "repr": "AddNumToPic",
+                    "type": "type",
+                    "type_id": "__builtin__.type"
+                  },
+                  "value": [
+                    {
+                      "id": "3691;9fba1c5b3fa5cc958a01564b6dfa5471;:Users:user:python:chen2aaron:0000:img.py;AddNumToPic.open",
+                      "kind": "function",
+                      "repr": "AddNumToPic.open",
+                      "type": "FunctionType",
+                      "type_id": "types.FunctionType"
+                    }
+                  ]
+                },
+                {
+                  "id": "3691;9fba1c5b3fa5cc958a01564b6dfa5471;:Users:user:python:chen2aaron:0000:img.py;AddNumToPic;set_font",
+                  "name": "set_font",
+                  "namespace": {
+                    "id": "3691;9fba1c5b3fa5cc958a01564b6dfa5471;:Users:user:python:chen2aaron:0000:img.py;AddNumToPic",
+                    "kind": "type",
+                    "repr": "AddNumToPic",
+                    "type": "type",
+                    "type_id": "__builtin__.type"
+                  },
+                  "value": [
+                    {
+                      "id": "3691;9fba1c5b3fa5cc958a01564b6dfa5471;:Users:user:python:chen2aaron:0000:img.py;AddNumToPic.set_font",
+                      "kind": "function",
+                      "repr": "AddNumToPic.set_font",
+                      "type": "FunctionType",
+                      "type_id": "types.FunctionType"
+                    }
+                  ]
+                }
+              ],
+              "total_members": 25
+            }
+          }
+        }
+      ],
+      "synopsis": ""
+    },
+    {
+      "id": "",
+      "name": "__delattr__",
+      "namespace": {
+        "id": "3691;9fba1c5b3fa5cc958a01564b6dfa5471;:Users:user:python:chen2aaron:0000:img.py;AddNumToPic",
+        "kind": "type",
+        "repr": "AddNumToPic",
+        "type": "type",
+        "type_id": "__builtin__.type"
+      },
+      "value": null,
+      "synopsis": ""
+    },
+    {
+      "id": "3691;9fba1c5b3fa5cc958a01564b6dfa5471;:Users:user:python:chen2aaron:0000:img.py;AddNumToPic;__dict__",
+      "name": "__dict__",
+      "namespace": {
+        "id": "3691;9fba1c5b3fa5cc958a01564b6dfa5471;:Users:user:python:chen2aaron:0000:img.py;AddNumToPic",
+        "kind": "type",
+        "repr": "AddNumToPic",
+        "type": "type",
+        "type_id": "__builtin__.type"
+      },
+      "value": null,
+      "synopsis": ""
+    },
+    {
+      "id": "3691;9fba1c5b3fa5cc958a01564b6dfa5471;:Users:user:python:chen2aaron:0000:img.py;AddNumToPic;__doc__",
+      "name": "__doc__",
+      "namespace": {
+        "id": "3691;9fba1c5b3fa5cc958a01564b6dfa5471;:Users:user:python:chen2aaron:0000:img.py;AddNumToPic",
+        "kind": "type",
+        "repr": "AddNumToPic",
+        "type": "type",
+        "type_id": "__builtin__.type"
+      },
+      "value": [
+        {
+          "id": "",
+          "kind": "instance",
+          "repr": "str",
+          "type": "str",
+          "type_id": "__builtin__.str",
+          "synopsis": "",
+          "details": {
+            "instance": {
+              "type": [
+                {
+                  "id": "__builtin__.str",
+                  "kind": "type",
+                  "repr": "str",
+                  "type": "type",
+                  "type_id": "__builtin__.type"
+                }
+              ]
+            }
+          }
+        }
+      ],
+      "synopsis": ""
+    },
+    {
+      "id": "",
+      "name": "__format__",
+      "namespace": {
+        "id": "3691;9fba1c5b3fa5cc958a01564b6dfa5471;:Users:user:python:chen2aaron:0000:img.py;AddNumToPic",
+        "kind": "type",
+        "repr": "AddNumToPic",
+        "type": "type",
+        "type_id": "__builtin__.type"
+      },
+      "value": null,
+      "synopsis": ""
+    },
+    {
+      "id": "",
+      "name": "__getattribute__",
+      "namespace": {
+        "id": "3691;9fba1c5b3fa5cc958a01564b6dfa5471;:Users:user:python:chen2aaron:0000:img.py;AddNumToPic",
+        "kind": "type",
+        "repr": "AddNumToPic",
+        "type": "type",
+        "type_id": "__builtin__.type"
+      },
+      "value": null,
+      "synopsis": ""
+    },
+    {
+      "id": "",
+      "name": "__hash__",
+      "namespace": {
+        "id": "3691;9fba1c5b3fa5cc958a01564b6dfa5471;:Users:user:python:chen2aaron:0000:img.py;AddNumToPic",
+        "kind": "type",
+        "repr": "AddNumToPic",
+        "type": "type",
+        "type_id": "__builtin__.type"
+      },
+      "value": null,
+      "synopsis": ""
+    },
+    {
+      "id": "3691;9fba1c5b3fa5cc958a01564b6dfa5471;:Users:user:python:chen2aaron:0000:img.py;AddNumToPic;__init__",
+      "name": "__init__",
+      "namespace": {
+        "id": "3691;9fba1c5b3fa5cc958a01564b6dfa5471;:Users:user:python:chen2aaron:0000:img.py;AddNumToPic",
+        "kind": "type",
+        "repr": "AddNumToPic",
+        "type": "type",
+        "type_id": "__builtin__.type"
+      },
+      "value": [
+        {
+          "id": "3691;9fba1c5b3fa5cc958a01564b6dfa5471;:Users:user:python:chen2aaron:0000:img.py;AddNumToPic.__init__",
+          "kind": "function",
+          "repr": "AddNumToPic.__init__",
+          "type": "FunctionType",
+          "type_id": "types.FunctionType",
+          "synopsis": "",
+          "details": {
+            "function": {
+              "receiver": {
+                "name": "self",
+                "default_value": null,
+                "inferred_value": [
+                  {
+                    "id": "",
+                    "kind": "instance",
+                    "repr": "AddNumToPic",
+                    "type": "AddNumToPic",
+                    "type_id": "3691;9fba1c5b3fa5cc958a01564b6dfa5471;:Users:user:python:chen2aaron:0000:img.py;AddNumToPic"
+                  }
+                ],
+                "annotation": null,
+                "keyword_only": false,
+                "synopsis": ""
+              },
+              "parameters": null,
+              "return_value": [
+                {
+                  "id": "",
+                  "kind": "instance",
+                  "repr": "AddNumToPic",
+                  "type": "AddNumToPic",
+                  "type_id": "3691;9fba1c5b3fa5cc958a01564b6dfa5471;:Users:user:python:chen2aaron:0000:img.py;AddNumToPic"
+                }
+              ],
+              "return_annotation": null
+            }
+          }
+        }
+      ],
+      "synopsis": ""
+    },
+    {
+      "id": "3691;9fba1c5b3fa5cc958a01564b6dfa5471;:Users:user:python:chen2aaron:0000:img.py;AddNumToPic;__module__",
+      "name": "__module__",
+      "namespace": {
+        "id": "3691;9fba1c5b3fa5cc958a01564b6dfa5471;:Users:user:python:chen2aaron:0000:img.py;AddNumToPic",
+        "kind": "type",
+        "repr": "AddNumToPic",
+        "type": "type",
+        "type_id": "__builtin__.type"
+      },
+      "value": [
+        {
+          "id": "3691;9fba1c5b3fa5cc958a01564b6dfa5471;:Users:user:python:chen2aaron:0000:img.py;",
+          "kind": "module",
+          "repr": "img",
+          "type": "ModuleType",
+          "type_id": "types.ModuleType",
+          "synopsis": "",
+          "details": {
+            "module": {
+              "members": [
+                {
+                  "id": "3691;9fba1c5b3fa5cc958a01564b6dfa5471;:Users:user:python:chen2aaron:0000:img.py;;AddNumToPic",
+                  "name": "AddNumToPic",
+                  "namespace": {
+                    "id": "3691;9fba1c5b3fa5cc958a01564b6dfa5471;:Users:user:python:chen2aaron:0000:img.py;",
+                    "kind": "module",
+                    "repr": "img",
+                    "type": "ModuleType",
+                    "type_id": "types.ModuleType"
+                  },
+                  "value": [
+                    {
+                      "id": "3691;9fba1c5b3fa5cc958a01564b6dfa5471;:Users:user:python:chen2aaron:0000:img.py;AddNumToPic",
+                      "kind": "type",
+                      "repr": "AddNumToPic",
+                      "type": "type",
+                      "type_id": "__builtin__.type"
+                    }
+                  ]
+                },
+                {
+                  "id": "3691;9fba1c5b3fa5cc958a01564b6dfa5471;:Users:user:python:chen2aaron:0000:img.py;;Image",
+                  "name": "Image",
+                  "namespace": {
+                    "id": "3691;9fba1c5b3fa5cc958a01564b6dfa5471;:Users:user:python:chen2aaron:0000:img.py;",
+                    "kind": "module",
+                    "repr": "img",
+                    "type": "ModuleType",
+                    "type_id": "types.ModuleType"
+                  },
+                  "value": [
+                    {
+                      "id": "PIL.Image",
+                      "kind": "module",
+                      "repr": "PIL.Image",
+                      "type": "module",
+                      "type_id": ""
+                    },
+                    {
+                      "id": "",
+                      "kind": "instance",
+                      "repr": "AddNumToPic",
+                      "type": "AddNumToPic",
+                      "type_id": "3691;9fba1c5b3fa5cc958a01564b6dfa5471;:Users:user:python:chen2aaron:0000:img.py;AddNumToPic"
+                    }
+                  ]
+                },
+                {
+                  "id": "3691;9fba1c5b3fa5cc958a01564b6dfa5471;:Users:user:python:chen2aaron:0000:img.py;;ImageDraw",
+                  "name": "ImageDraw",
+                  "namespace": {
+                    "id": "3691;9fba1c5b3fa5cc958a01564b6dfa5471;:Users:user:python:chen2aaron:0000:img.py;",
+                    "kind": "module",
+                    "repr": "img",
+                    "type": "ModuleType",
+                    "type_id": "types.ModuleType"
+                  },
+                  "value": [
+                    {
+                      "id": "PIL.ImageDraw",
+                      "kind": "module",
+                      "repr": "PIL.ImageDraw",
+                      "type": "module",
+                      "type_id": ""
+                    }
+                  ]
+                },
+                {
+                  "id": "3691;9fba1c5b3fa5cc958a01564b6dfa5471;:Users:user:python:chen2aaron:0000:img.py;;ImageFont",
+                  "name": "ImageFont",
+                  "namespace": {
+                    "id": "3691;9fba1c5b3fa5cc958a01564b6dfa5471;:Users:user:python:chen2aaron:0000:img.py;",
+                    "kind": "module",
+                    "repr": "img",
+                    "type": "ModuleType",
+                    "type_id": "types.ModuleType"
+                  },
+                  "value": [
+                    {
+                      "id": "PIL.ImageFont",
+                      "kind": "module",
+                      "repr": "PIL.ImageFont",
+                      "type": "module",
+                      "type_id": ""
+                    }
+                  ]
+                },
+                {
+                  "id": "3691;9fba1c5b3fa5cc958a01564b6dfa5471;:Users:user:python:chen2aaron:0000:img.py;;pic",
+                  "name": "pic",
+                  "namespace": {
+                    "id": "3691;9fba1c5b3fa5cc958a01564b6dfa5471;:Users:user:python:chen2aaron:0000:img.py;",
+                    "kind": "module",
+                    "repr": "img",
+                    "type": "ModuleType",
+                    "type_id": "types.ModuleType"
+                  },
+                  "value": [
+                    {
+                      "id": "",
+                      "kind": "instance",
+                      "repr": "AddNumToPic",
+                      "type": "AddNumToPic",
+                      "type_id": "3691;9fba1c5b3fa5cc958a01564b6dfa5471;:Users:user:python:chen2aaron:0000:img.py;AddNumToPic"
+                    }
+                  ]
+                }
+              ],
+              "total_members": 10
+            }
+          }
+        }
+      ],
+      "synopsis": ""
+    },
+    {
+      "id": "3691;9fba1c5b3fa5cc958a01564b6dfa5471;:Users:user:python:chen2aaron:0000:img.py;AddNumToPic;__name__",
+      "name": "__name__",
+      "namespace": {
+        "id": "3691;9fba1c5b3fa5cc958a01564b6dfa5471;:Users:user:python:chen2aaron:0000:img.py;AddNumToPic",
+        "kind": "type",
+        "repr": "AddNumToPic",
+        "type": "type",
+        "type_id": "__builtin__.type"
+      },
+      "value": [
+        {
+          "id": "",
+          "kind": "instance",
+          "repr": "str",
+          "type": "str",
+          "type_id": "__builtin__.str",
+          "synopsis": "",
+          "details": {
+            "instance": {
+              "type": [
+                {
+                  "id": "__builtin__.str",
+                  "kind": "type",
+                  "repr": "str",
+                  "type": "type",
+                  "type_id": "__builtin__.type"
+                }
+              ]
+            }
+          }
+        }
+      ],
+      "synopsis": ""
+    },
+    {
+      "id": "",
+      "name": "__new__",
+      "namespace": {
+        "id": "3691;9fba1c5b3fa5cc958a01564b6dfa5471;:Users:user:python:chen2aaron:0000:img.py;AddNumToPic",
+        "kind": "type",
+        "repr": "AddNumToPic",
+        "type": "type",
+        "type_id": "__builtin__.type"
+      },
+      "value": null,
+      "synopsis": ""
+    },
+    {
+      "id": "",
+      "name": "__reduce__",
+      "namespace": {
+        "id": "3691;9fba1c5b3fa5cc958a01564b6dfa5471;:Users:user:python:chen2aaron:0000:img.py;AddNumToPic",
+        "kind": "type",
+        "repr": "AddNumToPic",
+        "type": "type",
+        "type_id": "__builtin__.type"
+      },
+      "value": null,
+      "synopsis": ""
+    },
+    {
+      "id": "",
+      "name": "__reduce_ex__",
+      "namespace": {
+        "id": "3691;9fba1c5b3fa5cc958a01564b6dfa5471;:Users:user:python:chen2aaron:0000:img.py;AddNumToPic",
+        "kind": "type",
+        "repr": "AddNumToPic",
+        "type": "type",
+        "type_id": "__builtin__.type"
+      },
+      "value": null,
+      "synopsis": ""
+    },
+    {
+      "id": "",
+      "name": "__repr__",
+      "namespace": {
+        "id": "3691;9fba1c5b3fa5cc958a01564b6dfa5471;:Users:user:python:chen2aaron:0000:img.py;AddNumToPic",
+        "kind": "type",
+        "repr": "AddNumToPic",
+        "type": "type",
+        "type_id": "__builtin__.type"
+      },
+      "value": null,
+      "synopsis": ""
+    },
+    {
+      "id": "",
+      "name": "__setattr__",
+      "namespace": {
+        "id": "3691;9fba1c5b3fa5cc958a01564b6dfa5471;:Users:user:python:chen2aaron:0000:img.py;AddNumToPic",
+        "kind": "type",
+        "repr": "AddNumToPic",
+        "type": "type",
+        "type_id": "__builtin__.type"
+      },
+      "value": null,
+      "synopsis": ""
+    },
+    {
+      "id": "",
+      "name": "__sizeof__",
+      "namespace": {
+        "id": "3691;9fba1c5b3fa5cc958a01564b6dfa5471;:Users:user:python:chen2aaron:0000:img.py;AddNumToPic",
+        "kind": "type",
+        "repr": "AddNumToPic",
+        "type": "type",
+        "type_id": "__builtin__.type"
+      },
+      "value": null,
+      "synopsis": ""
+    },
+    {
+      "id": "",
+      "name": "__str__",
+      "namespace": {
+        "id": "3691;9fba1c5b3fa5cc958a01564b6dfa5471;:Users:user:python:chen2aaron:0000:img.py;AddNumToPic",
+        "kind": "type",
+        "repr": "AddNumToPic",
+        "type": "type",
+        "type_id": "__builtin__.type"
+      },
+      "value": null,
+      "synopsis": ""
+    },
+    {
+      "id": "",
+      "name": "__subclasshook__",
+      "namespace": {
+        "id": "3691;9fba1c5b3fa5cc958a01564b6dfa5471;:Users:user:python:chen2aaron:0000:img.py;AddNumToPic",
+        "kind": "type",
+        "repr": "AddNumToPic",
+        "type": "type",
+        "type_id": "__builtin__.type"
+      },
+      "value": null,
+      "synopsis": ""
+    },
+    {
+      "id": "",
+      "name": "__weakref__",
+      "namespace": {
+        "id": "3691;9fba1c5b3fa5cc958a01564b6dfa5471;:Users:user:python:chen2aaron:0000:img.py;AddNumToPic",
+        "kind": "type",
+        "repr": "AddNumToPic",
+        "type": "type",
+        "type_id": "__builtin__.type"
+      },
+      "value": null,
+      "synopsis": ""
+    }
+  ]
+}

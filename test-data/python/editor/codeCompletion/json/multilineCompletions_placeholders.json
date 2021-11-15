@@ -1,0 +1,27 @@
+{
+  "http_status": 200,
+  "offset_encoding": "utf-16",
+  "completions": [
+    {
+      "snippet": {
+        "placeholders": [
+          {
+            "begin": 18,
+            "end": 18
+          }
+        ],
+        "text": "str\n    def parse()"
+      },
+      "replace": {
+        "begin": 44,
+        "end": 44
+      },
+      "display": "str ⏎ def parse(",
+      "documentation": {
+        "text": ""
+      },
+      "hint": "",
+      "smart": true
+    }
+  ]
+}

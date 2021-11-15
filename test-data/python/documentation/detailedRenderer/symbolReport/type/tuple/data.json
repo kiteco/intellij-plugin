@@ -1,0 +1,226 @@
+{
+  "language": "python",
+  "symbol": {
+    "id": "python;__builtin__.tuple",
+    "name": "tuple",
+    "namespace": {
+      "id": "python;__builtin__",
+      "kind": "module",
+      "repr": "__builtin__",
+      "type": "module",
+      "type_id": ""
+    },
+    "value": [
+      {
+        "id": "python;__builtin__.tuple",
+        "kind": "type",
+        "repr": "tuple",
+        "type": "type",
+        "type_id": "python;__builtin__.type",
+        "synopsis": "Return a tuple whose items are the same and in the same order as iterable‘s\nitems.  iterable may be a sequence, a container that supports iteration, or an\niterator object. If iterable is already a tuple, it is returned unchanged.\nFor instance, tuple('abc') returns ('a', 'b', 'c') and tuple([1, 2,\n3]) returns (1, 2, 3).  If no argument is given, returns a new empty\ntuple, ().\ntuple is an immutable sequence type, as documented in\nSequence Types — str, unicode, list, tuple, bytearray, buffer, xrange.",
+        "details": {
+          "function": null,
+          "type": {
+            "components": null,
+            "members": [
+              {
+                "id": "python;__builtin__.tuple.index",
+                "name": "index",
+                "namespace": {
+                  "id": "python;__builtin__.tuple",
+                  "kind": "type",
+                  "repr": "tuple",
+                  "type": "type",
+                  "type_id": "python;__builtin__.type"
+                },
+                "value": [
+                  {
+                    "id": "python;__builtin__.tuple.index",
+                    "kind": "function",
+                    "repr": "tuple.index",
+                    "type": "",
+                    "type_id": ""
+                  }
+                ]
+              },
+              {
+                "id": "python;__builtin__.tuple.mro",
+                "name": "mro",
+                "namespace": {
+                  "id": "python;__builtin__.tuple",
+                  "kind": "type",
+                  "repr": "tuple",
+                  "type": "type",
+                  "type_id": "python;__builtin__.type"
+                },
+                "value": [
+                  {
+                    "id": "python;__builtin__.type.mro",
+                    "kind": "function",
+                    "repr": "type.mro",
+                    "type": "",
+                    "type_id": ""
+                  }
+                ]
+              },
+              {
+                "id": "python;__builtin__.tuple.count",
+                "name": "count",
+                "namespace": {
+                  "id": "python;__builtin__.tuple",
+                  "kind": "type",
+                  "repr": "tuple",
+                  "type": "type",
+                  "type_id": "python;__builtin__.type"
+                },
+                "value": [
+                  {
+                    "id": "python;__builtin__.tuple.count",
+                    "kind": "function",
+                    "repr": "tuple.count",
+                    "type": "",
+                    "type_id": ""
+                  }
+                ]
+              }
+            ],
+            "total_members": 3,
+            "language_details": {
+              "python": {
+                "bases": null,
+                "constructor": {
+                  "parameters": [
+                    {
+                      "name": "iterable",
+                      "inferred_value": null,
+                      "synopsis": "",
+                      "language_details": {
+                        "python": {
+                          "default_value": [
+                            {
+                              "id": "",
+                              "kind": "instance",
+                              "repr": "...",
+                              "type": "str",
+                              "type_id": "python;__builtin__.str"
+                            }
+                          ],
+                          "annotation": null,
+                          "keyword_only": false
+                        }
+                      }
+                    }
+                  ],
+                  "return_value": null,
+                  "signatures": [
+                    {
+                      "args": null,
+                      "language_details": {
+                        "python": {
+                          "kwargs": null
+                        }
+                      }
+                    }
+                  ],
+                  "language_details": {
+                    "python": {
+                      "receiver": {
+                        "name": "self",
+                        "inferred_value": null,
+                        "synopsis": "",
+                        "language_details": {
+                          "python": null
+                        }
+                      },
+                      "return_annotation": null
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "instance": null,
+          "module": null
+        },
+        "ancestors": [
+          {
+            "id": "python;__builtin__",
+            "name": "__builtin__"
+          }
+        ]
+      }
+    ],
+    "synopsis": ""
+  },
+  "report": {
+    "definition": null,
+    "description_text": "Return a tuple whose items are the same and in the same order as iterable‘s\nitems.  iterable may be a sequence, a container that supports iteration, or an\niterator object. If iterable is already a tuple, it is returned unchanged.\nFor instance, tuple('abc') returns ('a', 'b', 'c') and tuple([1, 2,\n3]) returns (1, 2, 3).  If no argument is given, returns a new empty\ntuple, ().\ntuple is an immutable sequence type, as documented in\nSequence Types — str, unicode, list, tuple, bytearray, buffer, xrange. For other containers see the built in dict,\nlist, and set classes, and the collections module.",
+    "description_html": "\u003cbody\u003e\u003cp\u003eReturn a tuple whose items are the same and in the same order as \u003cem\u003eiterable\u003c/em\u003e‘s\nitems.  \u003cem\u003eiterable\u003c/em\u003e may be a sequence, a container that supports iteration, or an\niterator object. If \u003cem\u003eiterable\u003c/em\u003e is already a tuple, it is returned unchanged.\nFor instance, \u003ccode\u003etuple(\u0026#39;abc\u0026#39;)\u003c/code\u003e returns \u003ccode\u003e(\u0026#39;a\u0026#39;,\u003c/code\u003e\u003ccode\u003e \u003c/code\u003e\u003ccode\u003e\u0026#39;b\u0026#39;,\u003c/code\u003e\u003ccode\u003e \u003c/code\u003e\u003ccode\u003e\u0026#39;c\u0026#39;)\u003c/code\u003e and \u003ccode\u003etuple([1,\u003c/code\u003e\u003ccode\u003e \u003c/code\u003e\u003ccode\u003e2,\u003c/code\u003e\u003ccode\u003e\n\u003c/code\u003e\u003ccode\u003e3])\u003c/code\u003e returns \u003ccode\u003e(1,\u003c/code\u003e\u003ccode\u003e \u003c/code\u003e\u003ccode\u003e2,\u003c/code\u003e\u003ccode\u003e \u003c/code\u003e\u003ccode\u003e3)\u003c/code\u003e.  If no argument is given, returns a new empty\ntuple, \u003ccode\u003e()\u003c/code\u003e.\u003c/p\u003e\u003cp\u003e\u003ca class=\"internal_link\" href=\"#tuple\"\u003e\u003ccode\u003etuple\u003c/code\u003e\u003c/a\u003e is an immutable sequence type, as documented in\n\u003ca\u003e\u003cem\u003eSequence Types — str, unicode, list, tuple, bytearray, buffer, xrange\u003c/em\u003e\u003c/a\u003e. For other containers see the built in \u003ca class=\"internal_link\" href=\"#dict\"\u003e\u003ccode\u003edict\u003c/code\u003e\u003c/a\u003e,\n\u003ca class=\"internal_link\" href=\"#list\"\u003e\u003ccode\u003elist\u003c/code\u003e\u003c/a\u003e, and \u003ca class=\"internal_link\" href=\"#set\"\u003e\u003ccode\u003eset\u003c/code\u003e\u003c/a\u003e classes, and the \u003ca\u003e\u003ccode\u003ecollections\u003c/code\u003e\u003c/a\u003e module.\u003c/p\u003e\u003c/body\u003e",
+    "examples": [
+      {
+        "id": 3786,
+        "title": "Partition a string at a substring"
+      },
+      {
+        "id": 3847,
+        "title": "Pop an arbitrary item off of a dictionary"
+      },
+      {
+        "id": 3790,
+        "title": "Partition a string at the last occurrence of a substring"
+      },
+      {
+        "id": 2328,
+        "title": "Compute the quotient and remainder of dividing two numbers"
+      },
+      {
+        "id": 2433,
+        "title": "Check if an object is an instance of a class"
+      },
+      {
+        "id": 3329,
+        "title": "Check if a value is a tuple"
+      }
+    ],
+    "usages": null,
+    "total_usages": 0,
+    "links": [
+      {
+        "title": "Python MySQLdb converters isn't working",
+        "url": "https://stackoverflow.com/questions/12898516",
+        "stackoverflow": {
+          "score": 5
+        }
+      },
+      {
+        "title": "Rally pyral sdk error with a query with more than two terms. (Error parsing expression -- expected \")\" but saw \"AND\" instead.)",
+        "url": "https://stackoverflow.com/questions/14675004",
+        "stackoverflow": {
+          "score": 2
+        }
+      },
+      {
+        "title": "Python windows privilege escalation",
+        "url": "https://stackoverflow.com/questions/31480571",
+        "stackoverflow": {
+          "score": 2
+        }
+      },
+      {
+        "title": "Cross py2 and py3 way of checking for tuple type?",
+        "url": "https://stackoverflow.com/questions/31703774",
+        "stackoverflow": {
+          "score": 0
+        }
+      },
+      {
+        "title": "What characters need to be escaped for JSON.parse",
+        "url": "https://stackoverflow.com/questions/17563643",
+        "stackoverflow": {
+          "score": -1
+        }
+      }
+    ],
+    "total_links": 5
+  }
+}

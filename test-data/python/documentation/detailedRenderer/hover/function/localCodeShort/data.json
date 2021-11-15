@@ -1,0 +1,98 @@
+{
+  "language": "python",
+  "part_of_syntax": "name",
+  "symbol": [
+    {
+      "id": "python;34408;d41d8cd98f00b204e9800998ecf8427e;:home:user:python-test:TestModule:whitelisted:foo.py;;mine2",
+      "name": "mine2",
+      "namespace": {
+        "id": "python;34408;d41d8cd98f00b204e9800998ecf8427e;:home:userpython-test:TestModule:whitelisted:foo.py;",
+        "kind": "module",
+        "repr": "foo",
+        "type": "ModuleType",
+        "type_id": "python;types.ModuleType"
+      },
+      "value": [
+        {
+          "id": "python;34408;d41d8cd98f00b204e9800998ecf8427e;:home:user:python-test:TestModule:whitelisted:foo.py;mine2",
+          "kind": "function",
+          "repr": "mine2",
+          "type": "FunctionType",
+          "type_id": "python;types.FunctionType",
+          "synopsis": "",
+          "details": {
+            "function": {
+              "parameters": null,
+              "return_value": [
+                {
+                  "id": "",
+                  "kind": "instance",
+                  "repr": "123",
+                  "type": "int",
+                  "type_id": "python;__builtin__.int"
+                }
+              ],
+              "signatures": [
+                {
+                  "args": null,
+                  "language_details": {
+                    "python": {
+                      "kwargs": null
+                    }
+                  }
+                }
+              ],
+              "language_details": {
+                "python": {
+                  "return_annotation": null
+                }
+              }
+            },
+            "type": null,
+            "instance": null,
+            "module": null
+          },
+          "ancestors": [
+            {
+              "id": "python;34408;d41d8cd98f00b204e9800998ecf8427e;:home:user:source:python-test:TestModule:whitelisted;",
+              "name": "whitelisted"
+            },
+            {
+              "id": "python;34408;d41d8cd98f00b204e9800998ecf8427e;:home:user:source:python-test:TestModule:whitelisted:foo.py;",
+              "name": "foo"
+            }
+          ]
+        }
+      ],
+      "synopsis": ""
+    }
+  ],
+  "report": {
+    "definition": {
+      "filename": "/home/user/python-test/TestModule/whitelisted/foo.py",
+      "line": 6
+    },
+    "description_text": "",
+    "description_html": "",
+    "examples": null,
+    "usages": [
+      {
+        "code": "mine2()",
+        "filename": "/home/user/python-test/TestModule/whitelisted/foo.py",
+        "line": 9,
+        "begin_bytes": 65,
+        "begin_runes": 65
+      },
+      {
+        "code": "mine2()",
+        "filename": "/home/user/python-test/TestModule/whitelisted/foo.py",
+        "line": 12,
+        "begin_bytes": 68,
+        "begin_runes": 68
+      }
+    ],
+    "total_usages": 2,
+    "links": null,
+    "total_links": 0
+  }
+}

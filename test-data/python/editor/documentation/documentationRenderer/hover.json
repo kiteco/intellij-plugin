@@ -1,0 +1,25 @@
+{
+  "part_of_syntax": "name",
+  "symbol": [
+    {
+      "id": "",
+      "name": "print",
+      "namespace": null,
+      "value": [
+        {
+          "id": "__builtin__.print",
+          "kind": "function",
+          "repr": "external:__builtin__.print",
+          "type": "builtin_function_or_method",
+          "type_id": "__builtin__.builtin_function_or_method",
+          "synopsis": "Print objects to the stream file, separated by sep and followed by\nend.  sep, end and file, if present, must be given as keyword\narguments.\nAll non-keyword arguments are converted to strings like str() does and\nwritten to the stream, separated by sep and followed by end.  Both sep\nand end must be strings; they can also be None, which means to use the\ndefault values.  If no objects are given, print() will just write\nend.\nThe file argument must be an object with a write(string) method; if it\nis not present or None, sys.stdout will be used.  Output buffering\nis determined by file.  Use file.flush() to ensure, for instance,\nimmediate appearance on a screen.\nNote\nThis function is not normally available as a built-in since the name\nprint is recognized as the print statement.  To disable the\nstatement and use the print() function, use this future statement at\nthe top of your module:"
+        }
+      ],
+      "synopsis": "symbol `print`"
+    }
+  ],
+  "report": {
+    "description_text": "Print objects to the stream file, separated by sep and followed by\nend.  sep, end and file, if present, must be given as keyword\narguments.\nAll non-keyword arguments are converted to strings like str() does and\nwritten to the stream, separated by sep and followed by end.  Both sep\nand end must be strings; they can also be None, which means to use the\ndefault values.  If no objects are given, print() will just write\nend.\nThe file argument must be an object with a write(string) method; if it\nis not present or None, sys.stdout will be used.  Output buffering\nis determined by file.  Use file.flush() to ensure, for instance,\nimmediate appearance on a screen.\nNote\nThis function is not normally available as a built-in since the name\nprint is recognized as the print statement.  To disable the\nstatement and use the print() function, use this future statement at\nthe top of your module:",
+    "description_html": "<body><p>Print <em>objects</em> to the stream <em>file</em>, separated by <em>sep</em> and followed by\n<em>end</em>.  <em>sep</em>, <em>end</em> and <em>file</em>, if present, must be given as keyword\narguments.</p><p>All non-keyword arguments are converted to strings like <a class=\"internal_link\" href=\"#str\"><code>str()</code></a> does and\nwritten to the stream, separated by <em>sep</em> and followed by <em>end</em>.  Both <em>sep</em>\nand <em>end</em> must be strings; they can also be <code>None</code>, which means to use the\ndefault values.  If no <em>objects</em> are given, <a class=\"internal_link\" href=\"#print\"><code>print()</code></a> will just write\n<em>end</em>.</p><p>The <em>file</em> argument must be an object with a <code>write(string)</code> method; if it\nis not present or <code>None</code>, <a class=\"internal_link\" href=\"#sys.stdout\"><code>sys.stdout</code></a> will be used.  Output buffering\nis determined by <em>file</em>.  Use <code>file.flush()</code> to ensure, for instance,\nimmediate appearance on a screen.</p>\n<p>Note</p>\n<p>This function is not normally available as a built-in since the name\n<code>print</code> is recognized as the <a class=\"internal_link\" href=\"#print\"><code>print</code></a> statement.  To disable the\nstatement and use the <a class=\"internal_link\" href=\"#print\"><code>print()</code></a> function, use this future statement at\nthe top of your module:</p>\n<pre class=\"lang-python\"><code>from __future__ import print_function\n</code></pre>\n\n<p>\n<span class=\"versionadded\">New in version 2.6.</span></p></body>"
+  }
+}

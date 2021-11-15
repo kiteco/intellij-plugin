@@ -1,0 +1,136 @@
+{
+  "symbol": {
+    "id": "",
+    "name": "",
+    "namespace": {
+      "id": "",
+      "kind": "unknown",
+      "repr": "",
+      "type": "",
+      "type_id": ""
+    },
+    "value": [
+      {
+        "id": "",
+        "kind": "instance",
+        "repr": "",
+        "type": "NoneType",
+        "type_id": "",
+        "synopsis": "When set to a value other than None, this variable defines the\ndefault value for the dir argument to all the functions defined in this\nmodule.\nIf tempdir is unset or None at any call to any of the above\nfunctions, Python searches a standard list of directories and sets\ntempdir to the first one which the calling user can create files in.\nThe list is:",
+        "details": {
+          "instance": {
+            "type": [
+              {
+                "id": "",
+                "kind": "type",
+                "repr": "NoneType",
+                "type": "type",
+                "type_id": "__builtin__.type"
+              }
+            ]
+          }
+        }
+      }
+    ],
+    "synopsis": ""
+  },
+  "report": {
+    "definition": null,
+    "description_text": "When set to a value other than None, this variable defines the\ndefault value for the dir argument to all the functions defined in this\nmodule.\nIf tempdir is unset or None at any call to any of the above\nfunctions, Python searches a standard list of directories and sets\ntempdir to the first one which the calling user can create files in.\nThe list is:",
+    "description_html": "<body><p>When set to a value other than <code>None</code>, this variable defines the\ndefault value for the <em>dir</em> argument to all the functions defined in this\nmodule.</p><p>If <code>tempdir</code> is unset or <code>None</code> at any call to any of the above\nfunctions, Python searches a standard list of directories and sets\n<em>tempdir</em> to the first one which the calling user can create files in.\nThe list is:</p><ol><li>The directory named by the <span></span><code>TMPDIR</code> environment variable.</li><li>The directory named by the <span></span><code>TEMP</code> environment variable.</li><li>The directory named by the <span></span><code>TMP</code> environment variable.</li><li>A platform-specific location:<ul><li>On RiscOS, the directory named by the <span></span><code>Wimp$ScrapDir</code> environment\nvariable.</li><li>On Windows, the directories <code>C:\\TEMP</code>, <code>C:\\TMP</code>,\n<code>\\TEMP</code>, and <code>\\TMP</code>, in that order.</li><li>On all other platforms, the directories <code>/tmp</code>, <code>/var/tmp</code>, and\n<code>/usr/tmp</code>, in that order.</li></ul>\n</li><li>As a last resort, the current working directory.</li></ol></body>",
+    "examples": [
+      {
+        "id": 1612,
+        "title": "Retrieve the response encoding"
+      },
+      {
+        "id": 3487,
+        "title": "Create an XML element"
+      },
+      {
+        "id": 1609,
+        "title": "Retrieve the response status code"
+      },
+      {
+        "id": 4943,
+        "title": "Get the HTTP request headers"
+      },
+      {
+        "id": 5402,
+        "title": "Create a new axis of length 1"
+      },
+      {
+        "id": 3450,
+        "title": "Get the tag name of an XML element"
+      },
+      {
+        "id": 770,
+        "title": "Assign a temporary directory to the tempfile module"
+      },
+      {
+        "id": 3446,
+        "title": "Generate a string representation of an XML element"
+      },
+      {
+        "id": 3667,
+        "title": "Find the parent of a node"
+      },
+      {
+        "id": 3469,
+        "title": "Get the text of an XML element"
+      },
+      {
+        "id": 4636,
+        "title": "Send the URL parameters of a GET request in order"
+      },
+      {
+        "id": 3460,
+        "title": "Get the attribute dictionary of an XML element"
+      },
+      {
+        "id": 3453,
+        "title": "Get a descendant of an XML element using indices"
+      },
+      {
+        "id": 3596,
+        "title": "Insert a subelement into an XML element"
+      },
+      {
+        "id": 4071,
+        "title": "Access the properties of a DOM attribute"
+      },
+      {
+        "id": 3669,
+        "title": "Get the adjacent siblings of a node"
+      },
+      {
+        "id": 3445,
+        "title": "Write an `ElementTree` to a file"
+      },
+      {
+        "id": 4525,
+        "title": "Get human-readable names for coordinates using convenience functions"
+      },
+      {
+        "id": 3491,
+        "title": "Add an element as the last child of another XML element"
+      },
+      {
+        "id": 3589,
+        "title": "Retrieve the tag of an XML element with a namespace"
+      },
+      {
+        "id": 3672,
+        "title": "Get the properties of the namespace of a node"
+      },
+      {
+        "id": 4712,
+        "title": "Iterate over all non-empty cells in a workbook"
+      }
+    ],
+    "usages": null,
+    "total_usages": 0,
+    "links": null,
+    "total_links": 0
+  }
+}

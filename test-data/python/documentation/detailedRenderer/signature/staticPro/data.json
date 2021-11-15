@@ -1,0 +1,249 @@
+{
+  "language": "python",
+  "calls": [
+    {
+      "callee": {
+        "id": "python;;;;__builtin__.int",
+        "kind": "type",
+        "repr": "int",
+        "type": "type",
+        "type_id": "python;;;;__builtin__.type",
+        "synopsis": "Convert a number or string x to an integer, or return 0 if no\narguments are given.  If x is a number, it can be a plain integer, a long\ninteger, or a floating point number.  If x is floating point, the conversion\ntruncates towards zero.  If the argument is outside the integer range, the\nfunction returns a long object instead.\nIf x is not a number or if base is given, then x must be a string or\nUnicode object representing an integer literal in radix\nbase.  Optionally, the literal can be\npreceded by + or - (with no space in between) and surrounded by\nwhitespace.  A base-n literal consists of the digits 0 to n-1, with a\nto z (or A to Z) having\nvalues 10 to 35.  The default base is 10. The allowed values are 0 and 2-36.\nBase-2, -8, and -16 literals can be optionally prefixed with 0b/0B,\n0o/0O/0, or 0x/0X, as with integer literals in code.\nBase 0 means to interpret the string exactly as an integer literal, so that\nthe actual base is 2, 8, 10, or 16.\nThe integer type is described in Numeric Types — int, float, long, complex.",
+        "details": {
+          "function": null,
+          "type": {
+            "components": null,
+            "members": [
+              {
+                "id": "python;;;;__builtin__.int;bit_length",
+                "name": "bit_length",
+                "parent": {
+                  "id": "python;;;;__builtin__.int",
+                  "name": "int"
+                },
+                "namespace": {
+                  "id": "python;;;;__builtin__.int",
+                  "kind": "type",
+                  "repr": "int",
+                  "type": "type",
+                  "type_id": "python;;;;__builtin__.type"
+                },
+                "value": [
+                  {
+                    "id": "python;;;;__builtin__.int.bit_length",
+                    "kind": "function",
+                    "repr": "int.bit_length",
+                    "type": "",
+                    "type_id": ""
+                  }
+                ]
+              },
+              {
+                "id": "",
+                "name": "mro",
+                "parent": {
+                  "id": "python;;;;__builtin__.int",
+                  "name": "int"
+                },
+                "namespace": {
+                  "id": "python;;;;__builtin__.int",
+                  "kind": "type",
+                  "repr": "int",
+                  "type": "type",
+                  "type_id": "python;;;;__builtin__.type"
+                },
+                "value": [
+                  {
+                    "id": "python;;;;__builtin__.type.mro",
+                    "kind": "function",
+                    "repr": "type.mro",
+                    "type": "",
+                    "type_id": ""
+                  }
+                ]
+              },
+              {
+                "id": "python;;;;__builtin__.int;conjugate",
+                "name": "conjugate",
+                "parent": {
+                  "id": "python;;;;__builtin__.int",
+                  "name": "int"
+                },
+                "namespace": {
+                  "id": "python;;;;__builtin__.int",
+                  "kind": "type",
+                  "repr": "int",
+                  "type": "type",
+                  "type_id": "python;;;;__builtin__.type"
+                },
+                "value": [
+                  {
+                    "id": "python;;;;__builtin__.int.conjugate",
+                    "kind": "function",
+                    "repr": "int.conjugate",
+                    "type": "",
+                    "type_id": ""
+                  }
+                ]
+              },
+              {
+                "id": "python;;;;__builtin__.int;real",
+                "name": "real",
+                "parent": {
+                  "id": "python;;;;__builtin__.int",
+                  "name": "int"
+                },
+                "namespace": {
+                  "id": "python;;;;__builtin__.int",
+                  "kind": "type",
+                  "repr": "int",
+                  "type": "type",
+                  "type_id": "python;;;;__builtin__.type"
+                },
+                "value": [
+                  {
+                    "id": "python;;;;__builtin__.int.real",
+                    "kind": "unknown",
+                    "repr": "int.real",
+                    "type": "",
+                    "type_id": ""
+                  }
+                ]
+              },
+              {
+                "id": "python;;;;__builtin__.int;imag",
+                "name": "imag",
+                "parent": {
+                  "id": "python;;;;__builtin__.int",
+                  "name": "int"
+                },
+                "namespace": {
+                  "id": "python;;;;__builtin__.int",
+                  "kind": "type",
+                  "repr": "int",
+                  "type": "type",
+                  "type_id": "python;;;;__builtin__.type"
+                },
+                "value": [
+                  {
+                    "id": "python;;;;__builtin__.int.imag",
+                    "kind": "unknown",
+                    "repr": "int.imag",
+                    "type": "",
+                    "type_id": ""
+                  }
+                ]
+              }
+            ],
+            "total_members": 7,
+            "language_details": {
+              "python": {
+                "bases": [
+                  {
+                    "id": "python;;;;__builtin__.object",
+                    "name": "object",
+                    "module": "__builtin__",
+                    "module_id": "python;;;;__builtin__"
+                  }
+                ],
+                "constructor": {
+                  "parameters": [
+                    {
+                      "name": "x",
+                      "inferred_value": null,
+                      "synopsis": "",
+                      "language_details": {
+                        "python": {
+                          "default_value": [
+                            {
+                              "id": "",
+                              "kind": "instance",
+                              "repr": "\"...\"",
+                              "type": "str",
+                              "type_id": "python;;;;__builtin__.str"
+                            }
+                          ],
+                          "annotation": null,
+                          "keyword_only": false
+                        }
+                      }
+                    },
+                    {
+                      "name": "base",
+                      "inferred_value": null,
+                      "synopsis": "",
+                      "language_details": {
+                        "python": {
+                          "default_value": [
+                            {
+                              "id": "",
+                              "kind": "instance",
+                              "repr": "\"...\"",
+                              "type": "str",
+                              "type_id": "python;;;;__builtin__.str"
+                            }
+                          ],
+                          "annotation": null,
+                          "keyword_only": false
+                        }
+                      }
+                    }
+                  ],
+                  "return_value": null,
+                  "signatures": [
+                    {
+                      "args": null,
+                      "language_details": {
+                        "python": {
+                          "kwargs": null
+                        }
+                      }
+                    }
+                  ],
+                  "language_details": {
+                    "python": {
+                      "receiver": {
+                        "name": "self",
+                        "inferred_value": null,
+                        "synopsis": "",
+                        "language_details": {
+                          "python": null
+                        }
+                      },
+                      "return_annotation": null
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "instance": null,
+          "module": null
+        },
+        "ancestors": [
+          {
+            "id": "python;;;;__builtin__",
+            "name": "__builtin__"
+          }
+        ]
+      },
+      "func_name": "int",
+      "signatures": [
+        {
+          "args": null,
+          "language_details": {
+            "python": {
+              "kwargs": null
+            }
+          }
+        }
+      ],
+      "arg_index": 0,
+      "language_details": {
+        "python": {
+          "in_kwargs": false
+        }
+      }
+    }
+  ]
+}

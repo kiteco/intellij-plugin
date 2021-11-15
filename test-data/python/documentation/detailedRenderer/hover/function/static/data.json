@@ -1,0 +1,60 @@
+{
+  "part_of_syntax": "name",
+  "symbol": [
+    {
+      "id": "",
+      "name": "foo2",
+      "namespace": null,
+      "value": [
+        {
+          "id": ":Users:user:Python-Algorithms:test.py;foo2",
+          "kind": "function",
+          "repr": "foo2",
+          "type": "FunctionType",
+          "type_id": "types.FunctionType",
+          "synopsis": "",
+          "details": {
+            "function": {
+              "parameters": null,
+              "return_value": [
+                {
+                  "id": "",
+                  "kind": "instance",
+                  "repr": "int",
+                  "type": "int",
+                  "type_id": "__builtin__.int"
+                },
+                {
+                  "id": "",
+                  "kind": "instance",
+                  "repr": "1",
+                  "type": "int",
+                  "type_id": "__builtin__.int"
+                }
+              ],
+              "return_annotation": null
+            }
+          }
+        }
+      ],
+      "synopsis": ""
+    }
+  ],
+  "report": {
+    "description_text": "",
+    "description_html": "",
+    "examples": null,
+    "usages": [
+      {
+        "code": "foo2()",
+        "filename": "/Users/user/IdeaProjects/kitePython/Python-Algorithms/test.py",
+        "line": 12,
+        "begin_bytes": 118,
+        "begin_runes": 118
+      }
+    ],
+    "total_usages": 1,
+    "links": null,
+    "total_links": 0
+  }
+}

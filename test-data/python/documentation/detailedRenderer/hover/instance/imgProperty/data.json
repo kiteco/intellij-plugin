@@ -1,0 +1,317 @@
+{
+  "part_of_syntax": "attr",
+  "symbol": [
+    {
+      "id": "",
+      "name": "img",
+      "namespace": {
+        "id": "",
+        "kind": "instance",
+        "repr": "AddNumToPic",
+        "type": "AddNumToPic",
+        "type_id": "3691;9fba1c5b3fa5cc958a01564b6dfa5471;:Users:user:python:chen2aaron:0000:img.py;AddNumToPic"
+      },
+      "value": [
+        {
+          "id": "__builtin__.None",
+          "kind": "instance",
+          "repr": "types.NoneType",
+          "type": "NoneType",
+          "type_id": "types.NoneType",
+          "synopsis": "",
+          "details": {
+            "instance": {
+              "type": [
+                {
+                  "id": "types.NoneType",
+                  "kind": "type",
+                  "repr": "types.NoneType",
+                  "type": "type",
+                  "type_id": "__builtin__.type"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "id": "",
+          "kind": "instance",
+          "repr": "NoneType",
+          "type": "NoneType",
+          "type_id": "",
+          "synopsis": "",
+          "details": {
+            "instance": {
+              "type": [
+                {
+                  "id": "",
+                  "kind": "type",
+                  "repr": "NoneType",
+                  "type": "type",
+                  "type_id": "__builtin__.type"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "id": "",
+          "kind": "instance",
+          "repr": "PIL.PngImagePlugin.PngImageFile",
+          "type": "PngImageFile",
+          "type_id": "PIL.PngImagePlugin.PngImageFile",
+          "synopsis": "",
+          "details": {
+            "instance": {
+              "type": [
+                {
+                  "id": "PIL.PngImagePlugin.PngImageFile",
+                  "kind": "type",
+                  "repr": "PIL.PngImagePlugin.PngImageFile",
+                  "type": "type",
+                  "type_id": "__builtin__.type"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "id": "",
+          "kind": "instance",
+          "repr": "PIL.JpegImagePlugin.JpegImageFile",
+          "type": "JpegImageFile",
+          "type_id": "PIL.JpegImagePlugin.JpegImageFile",
+          "synopsis": "",
+          "details": {
+            "instance": {
+              "type": [
+                {
+                  "id": "PIL.JpegImagePlugin.JpegImageFile",
+                  "kind": "type",
+                  "repr": "PIL.JpegImagePlugin.JpegImageFile",
+                  "type": "type",
+                  "type_id": "__builtin__.type"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "id": "",
+          "kind": "instance",
+          "repr": "PIL.GifImagePlugin.GifImageFile",
+          "type": "GifImageFile",
+          "type_id": "PIL.GifImagePlugin.GifImageFile",
+          "synopsis": "",
+          "details": {
+            "instance": {
+              "type": [
+                {
+                  "id": "PIL.GifImagePlugin.GifImageFile",
+                  "kind": "type",
+                  "repr": "PIL.GifImagePlugin.GifImageFile",
+                  "type": "type",
+                  "type_id": "__builtin__.type"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "id": "__builtin__.True",
+          "kind": "instance",
+          "repr": "bool",
+          "type": "bool",
+          "type_id": "__builtin__.bool",
+          "synopsis": "",
+          "details": {
+            "instance": {
+              "type": [
+                {
+                  "id": "__builtin__.bool",
+                  "kind": "type",
+                  "repr": "bool",
+                  "type": "type",
+                  "type_id": "__builtin__.type"
+                }
+              ]
+            }
+          }
+        }
+      ],
+      "synopsis": ""
+    },
+    {
+      "id": "",
+      "name": "img",
+      "namespace": {
+        "id": "",
+        "kind": "instance",
+        "repr": "AddNumToPic",
+        "type": "AddNumToPic",
+        "type_id": "3691;9fba1c5b3fa5cc958a01564b6dfa5471;:Users:user:python:chen2aaron:0000:img.py;AddNumToPic"
+      },
+      "value": [
+        {
+          "id": "__builtin__.None",
+          "kind": "instance",
+          "repr": "types.NoneType",
+          "type": "NoneType",
+          "type_id": "types.NoneType",
+          "synopsis": "",
+          "details": {
+            "instance": {
+              "type": [
+                {
+                  "id": "types.NoneType",
+                  "kind": "type",
+                  "repr": "types.NoneType",
+                  "type": "type",
+                  "type_id": "__builtin__.type"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "id": "",
+          "kind": "instance",
+          "repr": "NoneType",
+          "type": "NoneType",
+          "type_id": "",
+          "synopsis": "",
+          "details": {
+            "instance": {
+              "type": [
+                {
+                  "id": "",
+                  "kind": "type",
+                  "repr": "NoneType",
+                  "type": "type",
+                  "type_id": "__builtin__.type"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "id": "",
+          "kind": "instance",
+          "repr": "PIL.PngImagePlugin.PngImageFile",
+          "type": "PngImageFile",
+          "type_id": "PIL.PngImagePlugin.PngImageFile",
+          "synopsis": "",
+          "details": {
+            "instance": {
+              "type": [
+                {
+                  "id": "PIL.PngImagePlugin.PngImageFile",
+                  "kind": "type",
+                  "repr": "PIL.PngImagePlugin.PngImageFile",
+                  "type": "type",
+                  "type_id": "__builtin__.type"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "id": "",
+          "kind": "instance",
+          "repr": "PIL.JpegImagePlugin.JpegImageFile",
+          "type": "JpegImageFile",
+          "type_id": "PIL.JpegImagePlugin.JpegImageFile",
+          "synopsis": "",
+          "details": {
+            "instance": {
+              "type": [
+                {
+                  "id": "PIL.JpegImagePlugin.JpegImageFile",
+                  "kind": "type",
+                  "repr": "PIL.JpegImagePlugin.JpegImageFile",
+                  "type": "type",
+                  "type_id": "__builtin__.type"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "id": "",
+          "kind": "instance",
+          "repr": "PIL.GifImagePlugin.GifImageFile",
+          "type": "GifImageFile",
+          "type_id": "PIL.GifImagePlugin.GifImageFile",
+          "synopsis": "",
+          "details": {
+            "instance": {
+              "type": [
+                {
+                  "id": "PIL.GifImagePlugin.GifImageFile",
+                  "kind": "type",
+                  "repr": "PIL.GifImagePlugin.GifImageFile",
+                  "type": "type",
+                  "type_id": "__builtin__.type"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "id": "__builtin__.True",
+          "kind": "instance",
+          "repr": "bool",
+          "type": "bool",
+          "type_id": "__builtin__.bool",
+          "synopsis": "",
+          "details": {
+            "instance": {
+              "type": [
+                {
+                  "id": "__builtin__.bool",
+                  "kind": "type",
+                  "repr": "bool",
+                  "type": "type",
+                  "type_id": "__builtin__.type"
+                }
+              ]
+            }
+          }
+        }
+      ],
+      "synopsis": ""
+    }
+  ],
+  "report": {
+    "definition": null,
+    "description_text": "",
+    "description_html": "",
+    "examples": null,
+    "usages": [
+      {
+        "code": "        xSize, ySize = self.img.size",
+        "filename": "/Users/user/IdeaProjects/kitePython/python/chen2aaron/0000/img.py",
+        "line": 30,
+        "begin_bytes": 753,
+        "begin_runes": 649
+      },
+      {
+        "code": "        draw = ImageDraw.Draw(self.img)",
+        "filename": "/Users/user/IdeaProjects/kitePython/python/chen2aaron/0000/img.py",
+        "line": 33,
+        "begin_bytes": 897,
+        "begin_runes": 793
+      },
+      {
+        "code": "        self.img.show()",
+        "filename": "/Users/user/IdeaProjects/kitePython/python/chen2aaron/0000/img.py",
+        "line": 35,
+        "begin_bytes": 970,
+        "begin_runes": 866
+      }
+    ],
+    "total_usages": 5,
+    "links": null,
+    "total_links": 0
+  }
+}

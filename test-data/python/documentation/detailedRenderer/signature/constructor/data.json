@@ -1,0 +1,868 @@
+{
+  "language": "python",
+  "calls": [
+    {
+      "callee": {
+        "id": "python;;;;gevent.pywsgi.WSGIServer",
+        "kind": "type",
+        "repr": "gevent.pywsgi.WSGIServer",
+        "type": "type",
+        "type_id": "python;;;;builtins.type",
+        "synopsis": "A WSGI server based on StreamServer that supports HTTPS.",
+        "details": {
+          "function": null,
+          "type": {
+            "components": null,
+            "members": [
+              {
+                "id": "python;;;;gevent.pywsgi.WSGIServer;serve_forever",
+                "name": "serve_forever",
+                "parent": {
+                  "id": "python;;;;gevent.pywsgi.WSGIServer",
+                  "name": "WSGIServer"
+                },
+                "namespace": {
+                  "id": "python;;;;gevent.pywsgi.WSGIServer",
+                  "kind": "type",
+                  "repr": "gevent.pywsgi.WSGIServer",
+                  "type": "type",
+                  "type_id": "python;;;;builtins.type"
+                },
+                "value": [
+                  {
+                    "id": "python;;;;gevent.pywsgi.WSGIServer.serve_forever",
+                    "kind": "function",
+                    "repr": "gevent.pywsgi.WSGIServer.serve_forever",
+                    "type": "",
+                    "type_id": ""
+                  }
+                ]
+              },
+              {
+                "id": "python;;;;gevent.pywsgi.WSGIServer;stop",
+                "name": "stop",
+                "parent": {
+                  "id": "python;;;;gevent.pywsgi.WSGIServer",
+                  "name": "WSGIServer"
+                },
+                "namespace": {
+                  "id": "python;;;;gevent.pywsgi.WSGIServer",
+                  "kind": "type",
+                  "repr": "gevent.pywsgi.WSGIServer",
+                  "type": "type",
+                  "type_id": "python;;;;builtins.type"
+                },
+                "value": [
+                  {
+                    "id": "python;;;;gevent.pywsgi.WSGIServer.stop",
+                    "kind": "function",
+                    "repr": "gevent.pywsgi.WSGIServer.stop",
+                    "type": "",
+                    "type_id": ""
+                  }
+                ]
+              },
+              {
+                "id": "python;;;;gevent.pywsgi.WSGIServer;start",
+                "name": "start",
+                "parent": {
+                  "id": "python;;;;gevent.pywsgi.WSGIServer",
+                  "name": "WSGIServer"
+                },
+                "namespace": {
+                  "id": "python;;;;gevent.pywsgi.WSGIServer",
+                  "kind": "type",
+                  "repr": "gevent.pywsgi.WSGIServer",
+                  "type": "type",
+                  "type_id": "python;;;;builtins.type"
+                },
+                "value": [
+                  {
+                    "id": "python;;;;gevent.pywsgi.WSGIServer.start",
+                    "kind": "function",
+                    "repr": "gevent.pywsgi.WSGIServer.start",
+                    "type": "",
+                    "type_id": ""
+                  }
+                ]
+              },
+              {
+                "id": "python;;;;gevent.pywsgi.WSGIServer;handler_class",
+                "name": "handler_class",
+                "parent": {
+                  "id": "python;;;;gevent.pywsgi.WSGIServer",
+                  "name": "WSGIServer"
+                },
+                "namespace": {
+                  "id": "python;;;;gevent.pywsgi.WSGIServer",
+                  "kind": "type",
+                  "repr": "gevent.pywsgi.WSGIServer",
+                  "type": "type",
+                  "type_id": "python;;;;builtins.type"
+                },
+                "value": [
+                  {
+                    "id": "python;;;;gevent.pywsgi.WSGIServer.handler_class",
+                    "kind": "type",
+                    "repr": "gevent.pywsgi.WSGIServer.handler_class",
+                    "type": "type",
+                    "type_id": "python;;;;builtins.type"
+                  }
+                ]
+              },
+              {
+                "id": "python;;;;gevent.pywsgi.WSGIServer;start_accepting",
+                "name": "start_accepting",
+                "parent": {
+                  "id": "python;;;;gevent.pywsgi.WSGIServer",
+                  "name": "WSGIServer"
+                },
+                "namespace": {
+                  "id": "python;;;;gevent.pywsgi.WSGIServer",
+                  "kind": "type",
+                  "repr": "gevent.pywsgi.WSGIServer",
+                  "type": "type",
+                  "type_id": "python;;;;builtins.type"
+                },
+                "value": [
+                  {
+                    "id": "python;;;;gevent.pywsgi.WSGIServer.start_accepting",
+                    "kind": "function",
+                    "repr": "gevent.pywsgi.WSGIServer.start_accepting",
+                    "type": "",
+                    "type_id": ""
+                  }
+                ]
+              }
+            ],
+            "total_members": 45,
+            "language_details": {
+              "python": {
+                "bases": [
+                  {
+                    "id": "python;;;;gevent.server.StreamServer",
+                    "name": "StreamServer",
+                    "module": "server",
+                    "module_id": "python;;;;gevent.server"
+                  }
+                ],
+                "constructor": {
+                  "parameters": [
+                    {
+                      "name": "listener",
+                      "inferred_value": null,
+                      "synopsis": "",
+                      "language_details": {
+                        "python": {
+                          "default_value": null,
+                          "annotation": null,
+                          "keyword_only": false
+                        }
+                      }
+                    },
+                    {
+                      "name": "application",
+                      "inferred_value": null,
+                      "synopsis": "",
+                      "language_details": {
+                        "python": {
+                          "default_value": [
+                            {
+                              "id": "python;;;;__builtin__.None",
+                              "kind": "instance",
+                              "repr": "None",
+                              "type": "NoneType",
+                              "type_id": "python;;;;types.NoneType"
+                            }
+                          ],
+                          "annotation": null,
+                          "keyword_only": false
+                        }
+                      }
+                    },
+                    {
+                      "name": "backlog",
+                      "inferred_value": null,
+                      "synopsis": "",
+                      "language_details": {
+                        "python": {
+                          "default_value": [
+                            {
+                              "id": "python;;;;__builtin__.None",
+                              "kind": "instance",
+                              "repr": "None",
+                              "type": "NoneType",
+                              "type_id": "python;;;;types.NoneType"
+                            }
+                          ],
+                          "annotation": null,
+                          "keyword_only": false
+                        }
+                      }
+                    },
+                    {
+                      "name": "spawn",
+                      "inferred_value": null,
+                      "synopsis": "",
+                      "language_details": {
+                        "python": {
+                          "default_value": [
+                            {
+                              "id": "",
+                              "kind": "instance",
+                              "repr": "\"default\"",
+                              "type": "str",
+                              "type_id": "python;;;;__builtin__.str"
+                            }
+                          ],
+                          "annotation": null,
+                          "keyword_only": false
+                        }
+                      }
+                    },
+                    {
+                      "name": "log",
+                      "inferred_value": null,
+                      "synopsis": "",
+                      "language_details": {
+                        "python": {
+                          "default_value": [
+                            {
+                              "id": "",
+                              "kind": "instance",
+                              "repr": "\"default\"",
+                              "type": "str",
+                              "type_id": "python;;;;__builtin__.str"
+                            }
+                          ],
+                          "annotation": null,
+                          "keyword_only": false
+                        }
+                      }
+                    },
+                    {
+                      "name": "error_log",
+                      "inferred_value": null,
+                      "synopsis": "",
+                      "language_details": {
+                        "python": {
+                          "default_value": [
+                            {
+                              "id": "",
+                              "kind": "instance",
+                              "repr": "\"default\"",
+                              "type": "str",
+                              "type_id": "python;;;;__builtin__.str"
+                            }
+                          ],
+                          "annotation": null,
+                          "keyword_only": false
+                        }
+                      }
+                    },
+                    {
+                      "name": "handler_class",
+                      "inferred_value": null,
+                      "synopsis": "",
+                      "language_details": {
+                        "python": {
+                          "default_value": [
+                            {
+                              "id": "python;;;;__builtin__.None",
+                              "kind": "instance",
+                              "repr": "None",
+                              "type": "NoneType",
+                              "type_id": "python;;;;types.NoneType"
+                            }
+                          ],
+                          "annotation": null,
+                          "keyword_only": false
+                        }
+                      }
+                    },
+                    {
+                      "name": "environ",
+                      "inferred_value": null,
+                      "synopsis": "",
+                      "language_details": {
+                        "python": {
+                          "default_value": [
+                            {
+                              "id": "python;;;;__builtin__.None",
+                              "kind": "instance",
+                              "repr": "None",
+                              "type": "NoneType",
+                              "type_id": "python;;;;types.NoneType"
+                            }
+                          ],
+                          "annotation": null,
+                          "keyword_only": false
+                        }
+                      }
+                    }
+                  ],
+                  "return_value": null,
+                  "signatures": [
+                    {
+                      "args": [
+                        {
+                          "name": "address",
+                          "types": [
+                            {
+                              "id": "python;__builtin__.tuple",
+                              "name": "tuple",
+                              "examples": [
+                                "(self.host, self.port)",
+                                "('', 5000)",
+                                "(host, port)"
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "name": "listener",
+                          "types": [
+                            {
+                              "id": "python;flask.app.Flask",
+                              "name": "Flask",
+                              "examples": null
+                            },
+                            {
+                              "id": "python;new.function",
+                              "name": "function",
+                              "examples": null
+                            }
+                          ]
+                        }
+                      ],
+                      "language_details": {
+                        "python": {
+                          "kwargs": null
+                        }
+                      }
+                    },
+                    {
+                      "args": [
+                        {
+                          "name": "address",
+                          "types": [
+                            {
+                              "id": "python;__builtin__.tuple",
+                              "name": "tuple",
+                              "examples": [
+                                "(self.host, self.port)",
+                                "('', 5000)",
+                                "(host, port)"
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "name": "listener",
+                          "types": [
+                            {
+                              "id": "python;flask.app.Flask",
+                              "name": "Flask",
+                              "examples": null
+                            },
+                            {
+                              "id": "python;new.function",
+                              "name": "function",
+                              "examples": null
+                            }
+                          ]
+                        }
+                      ],
+                      "language_details": {
+                        "python": {
+                          "kwargs": [
+                            {
+                              "name": "handler_class",
+                              "types": [
+                                {
+                                  "id": "python;__builtin__.type",
+                                  "name": "type",
+                                  "examples": null
+                                },
+                                {
+                                  "id": "python;types.NoneType",
+                                  "name": "NoneType",
+                                  "examples": null
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      }
+                    },
+                    {
+                      "args": [
+                        {
+                          "name": "address",
+                          "types": [
+                            {
+                              "id": "python;__builtin__.tuple",
+                              "name": "tuple",
+                              "examples": [
+                                "(self.host, self.port)",
+                                "('', 5000)",
+                                "(host, port)"
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "name": "listener",
+                          "types": [
+                            {
+                              "id": "python;flask.app.Flask",
+                              "name": "Flask",
+                              "examples": null
+                            },
+                            {
+                              "id": "python;new.function",
+                              "name": "function",
+                              "examples": null
+                            }
+                          ]
+                        }
+                      ],
+                      "language_details": {
+                        "python": {
+                          "kwargs": [
+                            {
+                              "name": "log",
+                              "types": [
+                                {
+                                  "id": "python;__builtin__.str",
+                                  "name": "str",
+                                  "examples": [
+                                    "\"'default'\"",
+                                    "\"'default' if self._mock_server.debug else None\"",
+                                    "\"'default' if self.__debug else None\""
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      }
+                    },
+                    {
+                      "args": [
+                        {
+                          "name": "address",
+                          "types": [
+                            {
+                              "id": "python;__builtin__.tuple",
+                              "name": "tuple",
+                              "examples": [
+                                "(self.host, self.port)",
+                                "('', 5000)",
+                                "(host, port)"
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "name": "listener",
+                          "types": [
+                            {
+                              "id": "python;flask.app.Flask",
+                              "name": "Flask",
+                              "examples": null
+                            },
+                            {
+                              "id": "python;new.function",
+                              "name": "function",
+                              "examples": null
+                            }
+                          ]
+                        }
+                      ],
+                      "language_details": {
+                        "python": {
+                          "kwargs": [
+                            {
+                              "name": "spawn",
+                              "types": [
+                                {
+                                  "id": "python;__builtin__.str",
+                                  "name": "str",
+                                  "examples": [
+                                    "\"'default'\""
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      }
+                    },
+                    {
+                      "args": [
+                        {
+                          "name": "address",
+                          "types": [
+                            {
+                              "id": "python;__builtin__.tuple",
+                              "name": "tuple",
+                              "examples": [
+                                "(self.host, self.port)",
+                                "('', 5000)",
+                                "(host, port)"
+                              ]
+                            }
+                          ]
+                        }
+                      ],
+                      "language_details": {
+                        "python": {
+                          "kwargs": null
+                        }
+                      }
+                    }
+                  ],
+                  "language_details": {
+                    "python": {
+                      "receiver": {
+                        "name": "self",
+                        "inferred_value": null,
+                        "synopsis": "",
+                        "language_details": {
+                          "python": null
+                        }
+                      },
+                      "kwarg": {
+                        "name": "ssl_args",
+                        "inferred_value": null,
+                        "synopsis": "",
+                        "language_details": {
+                          "python": null
+                        }
+                      },
+                      "kwarg_parameters": [
+                        {
+                          "name": "certfile",
+                          "inferred_value": [
+                            {
+                              "id": "",
+                              "kind": "instance",
+                              "repr": "str",
+                              "type": "str",
+                              "type_id": "python;;;;__builtin__.str"
+                            }
+                          ],
+                          "synopsis": "",
+                          "language_details": {
+                            "python": null
+                          }
+                        },
+                        {
+                          "name": "keyfile",
+                          "inferred_value": [
+                            {
+                              "id": "",
+                              "kind": "instance",
+                              "repr": "str",
+                              "type": "str",
+                              "type_id": "python;;;;__builtin__.str"
+                            }
+                          ],
+                          "synopsis": "",
+                          "language_details": {
+                            "python": null
+                          }
+                        },
+                        {
+                          "name": "ca_certs",
+                          "inferred_value": [
+                            {
+                              "id": "",
+                              "kind": "instance",
+                              "repr": "str",
+                              "type": "str",
+                              "type_id": "python;;;;__builtin__.str"
+                            },
+                            {
+                              "id": "",
+                              "kind": "instance",
+                              "repr": "list",
+                              "type": "list",
+                              "type_id": "python;;;;__builtin__.list"
+                            }
+                          ],
+                          "synopsis": "",
+                          "language_details": {
+                            "python": null
+                          }
+                        },
+                        {
+                          "name": "cert_reqs",
+                          "inferred_value": [
+                            {
+                              "id": "",
+                              "kind": "instance",
+                              "repr": "int",
+                              "type": "int",
+                              "type_id": "python;;;;__builtin__.int"
+                            }
+                          ],
+                          "synopsis": "",
+                          "language_details": {
+                            "python": null
+                          }
+                        }
+                      ],
+                      "return_annotation": null
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "instance": null,
+          "module": null
+        },
+        "ancestors": [
+          {
+            "id": "python;;;;gevent",
+            "name": "gevent"
+          },
+          {
+            "id": "python;;;;gevent.pywsgi",
+            "name": "pywsgi"
+          }
+        ]
+      },
+      "func_name": "WSGIServer",
+      "signatures": [
+        {
+          "args": [
+            {
+              "name": "address",
+              "types": [
+                {
+                  "id": "python;__builtin__.tuple",
+                  "name": "tuple",
+                  "examples": [
+                    "(self.host, self.port)",
+                    "('', 5000)",
+                    "(host, port)"
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "listener",
+              "types": [
+                {
+                  "id": "python;flask.app.Flask",
+                  "name": "Flask",
+                  "examples": null
+                },
+                {
+                  "id": "python;new.function",
+                  "name": "function",
+                  "examples": null
+                }
+              ]
+            }
+          ],
+          "language_details": {
+            "python": {
+              "kwargs": null
+            }
+          }
+        },
+        {
+          "args": [
+            {
+              "name": "address",
+              "types": [
+                {
+                  "id": "python;__builtin__.tuple",
+                  "name": "tuple",
+                  "examples": [
+                    "(self.host, self.port)",
+                    "('', 5000)",
+                    "(host, port)"
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "listener",
+              "types": [
+                {
+                  "id": "python;flask.app.Flask",
+                  "name": "Flask",
+                  "examples": null
+                },
+                {
+                  "id": "python;new.function",
+                  "name": "function",
+                  "examples": null
+                }
+              ]
+            }
+          ],
+          "language_details": {
+            "python": {
+              "kwargs": [
+                {
+                  "name": "handler_class",
+                  "types": [
+                    {
+                      "id": "python;__builtin__.type",
+                      "name": "type",
+                      "examples": null
+                    },
+                    {
+                      "id": "python;types.NoneType",
+                      "name": "NoneType",
+                      "examples": null
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        },
+        {
+          "args": [
+            {
+              "name": "address",
+              "types": [
+                {
+                  "id": "python;__builtin__.tuple",
+                  "name": "tuple",
+                  "examples": [
+                    "(self.host, self.port)",
+                    "('', 5000)",
+                    "(host, port)"
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "listener",
+              "types": [
+                {
+                  "id": "python;flask.app.Flask",
+                  "name": "Flask",
+                  "examples": null
+                },
+                {
+                  "id": "python;new.function",
+                  "name": "function",
+                  "examples": null
+                }
+              ]
+            }
+          ],
+          "language_details": {
+            "python": {
+              "kwargs": [
+                {
+                  "name": "log",
+                  "types": [
+                    {
+                      "id": "python;__builtin__.str",
+                      "name": "str",
+                      "examples": [
+                        "\"'default'\"",
+                        "\"'default' if self._mock_server.debug else None\"",
+                        "\"'default' if self.__debug else None\""
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        },
+        {
+          "args": [
+            {
+              "name": "address",
+              "types": [
+                {
+                  "id": "python;__builtin__.tuple",
+                  "name": "tuple",
+                  "examples": [
+                    "(self.host, self.port)",
+                    "('', 5000)",
+                    "(host, port)"
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "listener",
+              "types": [
+                {
+                  "id": "python;flask.app.Flask",
+                  "name": "Flask",
+                  "examples": null
+                },
+                {
+                  "id": "python;new.function",
+                  "name": "function",
+                  "examples": null
+                }
+              ]
+            }
+          ],
+          "language_details": {
+            "python": {
+              "kwargs": [
+                {
+                  "name": "spawn",
+                  "types": [
+                    {
+                      "id": "python;__builtin__.str",
+                      "name": "str",
+                      "examples": [
+                        "\"'default'\""
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        },
+        {
+          "args": [
+            {
+              "name": "address",
+              "types": [
+                {
+                  "id": "python;__builtin__.tuple",
+                  "name": "tuple",
+                  "examples": [
+                    "(self.host, self.port)",
+                    "('', 5000)",
+                    "(host, port)"
+                  ]
+                }
+              ]
+            }
+          ],
+          "language_details": {
+            "python": {
+              "kwargs": null
+            }
+          }
+        }
+      ],
+      "arg_index": 0,
+      "language_details": {
+        "python": {
+          "in_kwargs": false
+        }
+      }
+    }
+  ]
+}

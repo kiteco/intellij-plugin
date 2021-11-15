@@ -1,0 +1,41 @@
+{
+  "completions": [
+    {
+      "snippet": {
+        "text": "[]int {}",
+        "placeholders": [
+          {
+            "begin": 7,
+            "end": 7
+          }
+        ]
+      },
+      "replace": {
+        "begin": 52,
+        "end": 52
+      },
+      "display": "[]int {",
+      "documentation": {
+        "text": ""
+      },
+      "hint": "prob: 0.628, score: 3.766",
+      "smart": false
+    },
+    {
+      "snippet": {
+        "text": "values, []int",
+        "placeholders": []
+      },
+      "replace": {
+        "begin": 52,
+        "end": 52
+      },
+      "display": "values, []int",
+      "documentation": {
+        "text": ""
+      },
+      "hint": "prob: 0.023, score: 0.253",
+      "smart": false
+    }
+  ]
+}

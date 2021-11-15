@@ -1,0 +1,556 @@
+{
+  "completions": [
+    {
+      "snippet": {
+        "text": "format()",
+        "placeholders": [
+          {
+            "begin": 7,
+            "end": 7
+          }
+        ]
+      },
+      "replace": {
+        "begin": 12,
+        "end": 12
+      },
+      "display": "format(…)",
+      "documentation": {
+        "text": "doc for format()"
+      },
+      "web_id": "__builtin__.str.format",
+      "local_id": "python;;;;__builtin__.str.format",
+      "hint": "function",
+      "smart": false
+    },
+    {
+      "snippet": {
+        "text": "join()",
+        "placeholders": [
+          {
+            "begin": 5,
+            "end": 5
+          }
+        ]
+      },
+      "replace": {
+        "begin": 12,
+        "end": 12
+      },
+      "display": "join(…)",
+      "documentation": {
+        "text": ""
+      },
+      "web_id": "__builtin__.str.join",
+      "local_id": "python;;;;__builtin__.str.join",
+      "hint": "function",
+      "smart": false
+    },
+    {
+      "snippet": {
+        "text": "split()",
+        "placeholders": [
+          {
+            "begin": 6,
+            "end": 6
+          }
+        ]
+      },
+      "replace": {
+        "begin": 12,
+        "end": 12
+      },
+      "display": "split(…)",
+      "documentation": {
+        "text": ""
+      },
+      "web_id": "__builtin__.str.split",
+      "local_id": "python;;;;__builtin__.str.split",
+      "hint": "function",
+      "smart": false,
+      "children": [
+        {
+          "snippet": {
+            "text": "split()",
+            "placeholders": []
+          },
+          "replace": {
+            "begin": 12,
+            "end": 12
+          },
+          "display": "…()",
+          "documentation": {
+            "text": ""
+          },
+          "web_id": "__builtin__.str.split",
+          "local_id": "python;;;;__builtin__.str.split",
+          "hint": "call",
+          "smart": true
+        },
+        {
+          "snippet": {
+            "text": "split(x)",
+            "placeholders": [
+              {
+                "begin": 6,
+                "end": 7
+              }
+            ]
+          },
+          "replace": {
+            "begin": 12,
+            "end": 12
+          },
+          "display": "…(\u003cx\u003e)",
+          "documentation": {
+            "text": ""
+          },
+          "web_id": "__builtin__.str.split",
+          "local_id": "python;;;;__builtin__.str.split",
+          "hint": "call",
+          "smart": true
+        },
+        {
+          "snippet": {
+            "text": "split([sep], [maxsplit])",
+            "placeholders": [
+              {
+                "begin": 6,
+                "end": 11
+              },
+              {
+                "begin": 13,
+                "end": 23
+              }
+            ]
+          },
+          "replace": {
+            "begin": 12,
+            "end": 12
+          },
+          "display": "…(\u003csep\u003e, \u003cmaxsplit\u003e)",
+          "documentation": {
+            "text": ""
+          },
+          "web_id": "__builtin__.str.split",
+          "local_id": "python;;;;__builtin__.str.split",
+          "hint": "call",
+          "smart": false
+        }
+      ]
+    },
+    {
+      "snippet": {
+        "text": "replace()",
+        "placeholders": [
+          {
+            "begin": 8,
+            "end": 8
+          }
+        ]
+      },
+      "replace": {
+        "begin": 12,
+        "end": 12
+      },
+      "display": "replace(…)",
+      "documentation": {
+        "text": ""
+      },
+      "web_id": "__builtin__.str.replace",
+      "local_id": "python;;;;__builtin__.str.replace",
+      "hint": "function",
+      "smart": false,
+      "children": [
+        {
+          "snippet": {
+            "text": "replace([old], [new])",
+            "placeholders": [
+              {
+                "begin": 8,
+                "end": 13
+              },
+              {
+                "begin": 15,
+                "end": 20
+              }
+            ]
+          },
+          "replace": {
+            "begin": 12,
+            "end": 12
+          },
+          "display": "…(\u003cold\u003e, \u003cnew\u003e)",
+          "documentation": {
+            "text": ""
+          },
+          "web_id": "__builtin__.str.replace",
+          "local_id": "python;;;;__builtin__.str.replace",
+          "hint": "call",
+          "smart": false
+        },
+        {
+          "snippet": {
+            "text": "replace([old], [new], [count])",
+            "placeholders": [
+              {
+                "begin": 8,
+                "end": 13
+              },
+              {
+                "begin": 15,
+                "end": 20
+              },
+              {
+                "begin": 22,
+                "end": 29
+              }
+            ]
+          },
+          "replace": {
+            "begin": 12,
+            "end": 12
+          },
+          "display": "…(\u003cold\u003e, \u003cnew\u003e, \u003ccount\u003e)",
+          "documentation": {
+            "text": ""
+          },
+          "web_id": "__builtin__.str.replace",
+          "local_id": "python;;;;__builtin__.str.replace",
+          "hint": "call",
+          "smart": false
+        }
+      ]
+    },
+    {
+      "snippet": {
+        "text": "strip()",
+        "placeholders": [
+          {
+            "begin": 6,
+            "end": 6
+          }
+        ]
+      },
+      "replace": {
+        "begin": 12,
+        "end": 12
+      },
+      "display": "strip(…)",
+      "documentation": {
+        "text": ""
+      },
+      "web_id": "__builtin__.str.strip",
+      "local_id": "python;;;;__builtin__.str.strip",
+      "hint": "function",
+      "smart": false
+    },
+    {
+      "snippet": {
+        "text": "lower()",
+        "placeholders": []
+      },
+      "replace": {
+        "begin": 12,
+        "end": 12
+      },
+      "display": "lower()",
+      "documentation": {
+        "text": ""
+      },
+      "web_id": "__builtin__.str.lower",
+      "local_id": "python;;;;__builtin__.str.lower",
+      "hint": "function",
+      "smart": false
+    },
+    {
+      "snippet": {
+        "text": "encode()",
+        "placeholders": [
+          {
+            "begin": 7,
+            "end": 7
+          }
+        ]
+      },
+      "replace": {
+        "begin": 12,
+        "end": 12
+      },
+      "display": "encode(…)",
+      "documentation": {
+        "text": ""
+      },
+      "web_id": "__builtin__.str.encode",
+      "local_id": "python;;;;__builtin__.str.encode",
+      "hint": "function",
+      "smart": false
+    },
+    {
+      "snippet": {
+        "text": "startswith()",
+        "placeholders": [
+          {
+            "begin": 11,
+            "end": 11
+          }
+        ]
+      },
+      "replace": {
+        "begin": 12,
+        "end": 12
+      },
+      "display": "startswith(…)",
+      "documentation": {
+        "text": ""
+      },
+      "web_id": "__builtin__.str.startswith",
+      "local_id": "python;;;;__builtin__.str.startswith",
+      "hint": "function",
+      "smart": false
+    },
+    {
+      "snippet": {
+        "text": "find()",
+        "placeholders": [
+          {
+            "begin": 5,
+            "end": 5
+          }
+        ]
+      },
+      "replace": {
+        "begin": 12,
+        "end": 12
+      },
+      "display": "find(…)",
+      "documentation": {
+        "text": ""
+      },
+      "web_id": "__builtin__.str.find",
+      "local_id": "python;;;;__builtin__.str.find",
+      "hint": "function",
+      "smart": false
+    },
+    {
+      "snippet": {
+        "text": "decode()",
+        "placeholders": [
+          {
+            "begin": 7,
+            "end": 7
+          }
+        ]
+      },
+      "replace": {
+        "begin": 12,
+        "end": 12
+      },
+      "display": "decode(…)",
+      "documentation": {
+        "text": ""
+      },
+      "web_id": "__builtin__.str.decode",
+      "local_id": "python;;;;__builtin__.str.decode",
+      "hint": "function",
+      "smart": false
+    },
+    {
+      "snippet": {
+        "text": "upper()",
+        "placeholders": []
+      },
+      "replace": {
+        "begin": 12,
+        "end": 12
+      },
+      "display": "upper()",
+      "documentation": {
+        "text": ""
+      },
+      "web_id": "__builtin__.str.upper",
+      "local_id": "python;;;;__builtin__.str.upper",
+      "hint": "function",
+      "smart": false
+    },
+    {
+      "snippet": {
+        "text": "endswith()",
+        "placeholders": [
+          {
+            "begin": 9,
+            "end": 9
+          }
+        ]
+      },
+      "replace": {
+        "begin": 12,
+        "end": 12
+      },
+      "display": "endswith(…)",
+      "documentation": {
+        "text": ""
+      },
+      "web_id": "__builtin__.str.endswith",
+      "local_id": "python;;;;__builtin__.str.endswith",
+      "hint": "function",
+      "smart": false
+    },
+    {
+      "snippet": {
+        "text": "rstrip()",
+        "placeholders": [
+          {
+            "begin": 7,
+            "end": 7
+          }
+        ]
+      },
+      "replace": {
+        "begin": 12,
+        "end": 12
+      },
+      "display": "rstrip(…)",
+      "documentation": {
+        "text": ""
+      },
+      "web_id": "__builtin__.str.rstrip",
+      "local_id": "python;;;;__builtin__.str.rstrip",
+      "hint": "function",
+      "smart": false
+    },
+    {
+      "snippet": {
+        "text": "splitlines()",
+        "placeholders": [
+          {
+            "begin": 11,
+            "end": 11
+          }
+        ]
+      },
+      "replace": {
+        "begin": 12,
+        "end": 12
+      },
+      "display": "splitlines(…)",
+      "documentation": {
+        "text": ""
+      },
+      "web_id": "__builtin__.str.splitlines",
+      "local_id": "python;;;;__builtin__.str.splitlines",
+      "hint": "function",
+      "smart": false
+    },
+    {
+      "snippet": {
+        "text": "count()",
+        "placeholders": [
+          {
+            "begin": 6,
+            "end": 6
+          }
+        ]
+      },
+      "replace": {
+        "begin": 12,
+        "end": 12
+      },
+      "display": "count(…)",
+      "documentation": {
+        "text": ""
+      },
+      "web_id": "__builtin__.str.count",
+      "local_id": "python;;;;__builtin__.str.count",
+      "hint": "function",
+      "smart": false
+    },
+    {
+      "snippet": {
+        "text": "index()",
+        "placeholders": [
+          {
+            "begin": 6,
+            "end": 6
+          }
+        ]
+      },
+      "replace": {
+        "begin": 12,
+        "end": 12
+      },
+      "display": "index(…)",
+      "documentation": {
+        "text": ""
+      },
+      "web_id": "__builtin__.str.index",
+      "local_id": "python;;;;__builtin__.str.index",
+      "hint": "function",
+      "smart": false
+    },
+    {
+      "snippet": {
+        "text": "isdigit()",
+        "placeholders": []
+      },
+      "replace": {
+        "begin": 12,
+        "end": 12
+      },
+      "display": "isdigit()",
+      "documentation": {
+        "text": ""
+      },
+      "web_id": "__builtin__.str.isdigit",
+      "local_id": "python;;;;__builtin__.str.isdigit",
+      "hint": "function",
+      "smart": false
+    },
+    {
+      "snippet": {
+        "text": "lstrip()",
+        "placeholders": [
+          {
+            "begin": 7,
+            "end": 7
+          }
+        ]
+      },
+      "replace": {
+        "begin": 12,
+        "end": 12
+      },
+      "display": "lstrip(…)",
+      "documentation": {
+        "text": ""
+      },
+      "web_id": "__builtin__.str.lstrip",
+      "local_id": "python;;;;__builtin__.str.lstrip",
+      "hint": "function",
+      "smart": false
+    },
+    {
+      "snippet": {
+        "text": "zfill()",
+        "placeholders": [
+          {
+            "begin": 6,
+            "end": 6
+          }
+        ]
+      },
+      "replace": {
+        "begin": 12,
+        "end": 12
+      },
+      "display": "zfill(…)",
+      "documentation": {
+        "text": ""
+      },
+      "web_id": "__builtin__.str.zfill",
+      "local_id": "python;;;;__builtin__.str.zfill",
+      "hint": "function",
+      "smart": false
+    }
+  ]
+}

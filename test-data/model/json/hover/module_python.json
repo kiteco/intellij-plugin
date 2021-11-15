@@ -1,0 +1,219 @@
+{
+  "part_of_syntax": "name",
+  "symbol": [
+    {
+      "id": "",
+      "name": "requests",
+      "namespace": null,
+      "value": [
+        {
+          "id": "requests",
+          "kind": "module",
+          "repr": "external:requests",
+          "type": "module",
+          "type_id": "__builtin__.module",
+          "synopsis": "",
+          "details": {
+            "function": null,
+            "type": null,
+            "instance": null,
+            "module": {
+              "total_members": 10,
+              "members": [
+                {
+                  "id": "requests.models.Response",
+                  "name": "Response",
+                  "namespace": {
+                    "id": "requests",
+                    "kind": "module",
+                    "repr": "external:requests",
+                    "type": "module",
+                    "type_id": "__builtin__.module"
+                  },
+                  "value": [
+                    {
+                      "id": "requests.models.Response",
+                      "kind": "type",
+                      "repr": "external:requests.models.Response",
+                      "type": "type",
+                      "type_id": "__builtin__.type"
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        }
+      ],
+      "synopsis": "symbol `requests`"
+    }
+  ],
+  "report": {
+    "definition": null,
+    "description_text": "text report",
+    "description_html": "html report",
+    "examples": [
+      {
+        "id": 474,
+        "title": "Compute a square root"
+      },
+      {
+        "id": 480,
+        "title": "Compute theÂ floor of a `float`"
+      },
+      {
+        "id": 478,
+        "title": "ComputeÂ the log of number given a base"
+      },
+      {
+        "id": 475,
+        "title": "ComputeÂ the sine of radians"
+      }
+    ],
+    "usages": null,
+    "total_usages": 0,
+    "links": [
+      {
+        "title": "Speed comparison with Project Euler: C vs Python vs Erlang vs Haskell",
+        "url": "https://stackoverflow.com/questions/6964392",
+        "stackoverflow": {
+          "score": 490
+        }
+      },
+      {
+        "title": "ImportError: Cannot import name X",
+        "url": "https://stackoverflow.com/questions/9252543",
+        "stackoverflow": {
+          "score": 167
+        }
+      },
+      {
+        "title": "Safest way to convert float to integer in python?",
+        "url": "https://stackoverflow.com/questions/3387655",
+        "stackoverflow": {
+          "score": 123
+        }
+      },
+      {
+        "title": "When is hash(n) == n in Python?",
+        "url": "https://stackoverflow.com/questions/37612524",
+        "stackoverflow": {
+          "score": 94
+        }
+      },
+      {
+        "title": "Python: why are * and ** faster than / and sqrt()?",
+        "url": "https://stackoverflow.com/questions/8068019",
+        "stackoverflow": {
+          "score": 77
+        }
+      },
+      {
+        "title": "Statistics: combinations in Python",
+        "url": "https://stackoverflow.com/questions/3025162",
+        "stackoverflow": {
+          "score": 73
+        }
+      },
+      {
+        "title": "Python - abs vs fabs",
+        "url": "https://stackoverflow.com/questions/10772302",
+        "stackoverflow": {
+          "score": 63
+        }
+      },
+      {
+        "title": "Haversine Formula in Python (Bearing and Distance between two GPS points)",
+        "url": "https://stackoverflow.com/questions/4913349",
+        "stackoverflow": {
+          "score": 63
+        }
+      },
+      {
+        "title": "How to calculate a mod b in python?",
+        "url": "https://stackoverflow.com/questions/991027",
+        "stackoverflow": {
+          "score": 59
+        }
+      },
+      {
+        "title": "Most useful Python modules from the standard library?",
+        "url": "https://stackoverflow.com/questions/1453952",
+        "stackoverflow": {
+          "score": 50
+        }
+      },
+      {
+        "title": "Log to the base 2 in python",
+        "url": "https://stackoverflow.com/questions/3719631",
+        "stackoverflow": {
+          "score": 47
+        }
+      },
+      {
+        "title": "ImportError: No module named dateutil.parser",
+        "url": "https://stackoverflow.com/questions/20853474",
+        "stackoverflow": {
+          "score": 39
+        }
+      },
+      {
+        "title": "Locating the centroid (center of mass) of spherical polygons",
+        "url": "https://stackoverflow.com/questions/19897187",
+        "stackoverflow": {
+          "score": 37
+        }
+      },
+      {
+        "title": "How to calc square root in python?",
+        "url": "https://stackoverflow.com/questions/9595135",
+        "stackoverflow": {
+          "score": 36
+        }
+      },
+      {
+        "title": "Efficient method of calculating density of irregularly spaced points",
+        "url": "https://stackoverflow.com/questions/6652671",
+        "stackoverflow": {
+          "score": 36
+        }
+      },
+      {
+        "title": "Randomly change the prompt in the Python interpreter",
+        "url": "https://stackoverflow.com/questions/33668998",
+        "stackoverflow": {
+          "score": 36
+        }
+      },
+      {
+        "title": "How to best perform Multiprocessing within requests with the python Tornado server?",
+        "url": "https://stackoverflow.com/questions/15375336",
+        "stackoverflow": {
+          "score": 32
+        }
+      },
+      {
+        "title": "Compare two images the python/linux way",
+        "url": "https://stackoverflow.com/questions/1927660",
+        "stackoverflow": {
+          "score": 31
+        }
+      },
+      {
+        "title": "log2 in python math module",
+        "url": "https://stackoverflow.com/questions/2993214",
+        "stackoverflow": {
+          "score": 31
+        }
+      },
+      {
+        "title": "Why is math.factorial much slower in Python 2.x than 3.x?",
+        "url": "https://stackoverflow.com/questions/9815252",
+        "stackoverflow": {
+          "score": 30
+        }
+      }
+    ],
+    "total_links": 50
+  }
+}

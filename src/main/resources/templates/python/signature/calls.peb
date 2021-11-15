@@ -1,0 +1,41 @@
+{# @pebvariable name="calls" type="com.kite.intellij.backend.model.Calls" #}
+{# @pebvariable name="context" type="com.kite.intellij.lang.documentation.linkHandler.SignatureLinkData" #}
+
+{# Context:
+    calls
+    context
+#}
+
+{% extends "common/base.peb" %}
+
+{% block body %}
+    {% set call = calls.firstCall %}
+    {% if call is not null %}
+        {% include "signature/call.peb" with {"call": call, "context": context} %}
+
+        {%- set function = call.callee.detail.constructor | default(call.callee.detail) -%}
+        {%- set inKwargs = context.inKwargs -%}
+        {%- set kwArgIndex = inKwargs and call.inKwargs ? call.argIndex : null -%}
+        {%- include "common/discoveredKwargs.peb" with {"linkSection": false, "function": function, "argIndex": kwArgIndex} -%}
+        {%- include "common/commonMethods.peb" with {"linkSection": false, "functionName": call.funcName, "signatures": function.signatures, "expand": expandPopularPatterns} -%}
+
+        {% set symbol = call.callee %}
+        {% set linkTarget = symbol.id.value is not empty ? symbol : symbol.firstValue %}
+        <div class="footer">
+            <div class="kite-link-flow">
+                <table>
+                    <tr>
+                        {%- if linkTarget is validId -%}
+                            <td class="text">
+                                <a class="link open-docs-link" href="{{- linkTarget | kiteCopilotDocsLink | escape("html") -}}">Docs</a>
+                                {%- include "common/discoveredKwargs.peb" with {"linkSection": true, "function": function, "argIndex": kwArgIndex} -%}
+                                {%- include "common/commonMethods.peb" with {"linkSection": true, "functionName": call.funcName, "signatures": function.signatures, "expand": expandPopularPatterns} -%}
+                            </td>
+                        {%- endif -%}
+                        <td class="icon-container"><img class="kite-logo" src="{{- kiteLogoUrl(dark, hiDPI) | escape("html") -}}" /></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    {% endif %}
+{% endblock %}

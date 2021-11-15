@@ -1,0 +1,340 @@
+{
+  "calls": [
+    {
+      "callee": {
+        "id": "matplotlib.pyplot.acorr",
+        "kind": "function",
+        "repr": "acorr",
+        "type": "function",
+        "type_id": "",
+        "synopsis": "Plot the autocorrelation of x.",
+        "details": {
+          "function": {
+            "language_details": {
+              "python": {
+                "kwarg": {
+                  "annotation": null,
+                  "default_value": null,
+                  "inferred_value": null,
+                  "keyword_only": false,
+                  "name": "kwargs",
+                  "synopsis": ""
+                },
+                "return_annotation": null
+              }
+            },
+            "parameters": [
+              {
+                "annotation": null,
+                "default_value": null,
+                "inferred_value": null,
+                "keyword_only": false,
+                "name": "x",
+                "synopsis": ""
+              },
+              {
+                "annotation": null,
+                "default_value": null,
+                "inferred_value": null,
+                "keyword_only": false,
+                "name": "hold",
+                "synopsis": ""
+              },
+              {
+                "annotation": null,
+                "default_value": null,
+                "inferred_value": null,
+                "keyword_only": false,
+                "name": "data",
+                "synopsis": ""
+              }
+            ],
+            "return_value": null,
+            "signatures": [
+              {
+                "args": [
+                  {
+                    "name": "x",
+                    "types": [
+                      {
+                        "id": "__builtin__.bool",
+                        "name": "bool",
+                        "examples": null
+                      },
+                      {
+                        "id": "numpy.int64",
+                        "name": "int64",
+                        "examples": null
+                      },
+                      {
+                        "id": "...",
+                        "name": "",
+                        "examples": null
+                      }
+                    ]
+                  }
+                ],
+                "kwargs": [
+                  {
+                    "name": "maxlags",
+                    "types": [
+                      {
+                        "id": "__builtin__.int",
+                        "name": "int",
+                        "examples": [
+                          "200",
+                          "50",
+                          "100"
+                        ]
+                      },
+                      {
+                        "id": "Tix.NoneType",
+                        "name": "NoneType",
+                        "examples": null
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "args": [
+                  {
+                    "name": "x",
+                    "types": [
+                      {
+                        "id": "__builtin__.bool",
+                        "name": "bool",
+                        "examples": null
+                      },
+                      {
+                        "id": "numpy.int64",
+                        "name": "int64",
+                        "examples": null
+                      },
+                      {
+                        "id": "...",
+                        "name": "",
+                        "examples": null
+                      }
+                    ]
+                  }
+                ],
+                "kwargs": [
+                  {
+                    "name": "maxlags",
+                    "types": [
+                      {
+                        "id": "__builtin__.int",
+                        "name": "int",
+                        "examples": [
+                          "200",
+                          "50",
+                          "100"
+                        ]
+                      },
+                      {
+                        "id": "Tix.NoneType",
+                        "name": "NoneType",
+                        "examples": null
+                      }
+                    ]
+                  },
+                  {
+                    "name": "lw",
+                    "types": [
+                      {
+                        "id": "__builtin__.int",
+                        "name": "int",
+                        "examples": [
+                          "2",
+                          "3"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "args": [
+                  {
+                    "name": "x",
+                    "types": [
+                      {
+                        "id": "__builtin__.bool",
+                        "name": "bool",
+                        "examples": null
+                      },
+                      {
+                        "id": "numpy.int64",
+                        "name": "int64",
+                        "examples": null
+                      },
+                      {
+                        "id": "...",
+                        "name": "",
+                        "examples": null
+                      }
+                    ]
+                  }
+                ],
+                "kwargs": [
+                  {
+                    "name": "maxlags",
+                    "types": [
+                      {
+                        "id": "__builtin__.int",
+                        "name": "int",
+                        "examples": [
+                          "200",
+                          "50",
+                          "100"
+                        ]
+                      },
+                      {
+                        "id": "Tix.NoneType",
+                        "name": "NoneType",
+                        "examples": null
+                      }
+                    ]
+                  },
+                  {
+                    "name": "normed",
+                    "types": [
+                      {
+                        "id": "__builtin__.bool",
+                        "name": "bool",
+                        "examples": null
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "args": [
+                  {
+                    "name": "x",
+                    "types": [
+                      {
+                        "id": "__builtin__.bool",
+                        "name": "bool",
+                        "examples": null
+                      },
+                      {
+                        "id": "numpy.int64",
+                        "name": "int64",
+                        "examples": null
+                      },
+                      {
+                        "id": "...",
+                        "name": "",
+                        "examples": null
+                      }
+                    ]
+                  }
+                ],
+                "kwargs": [
+                  {
+                    "name": "maxlags",
+                    "types": [
+                      {
+                        "id": "__builtin__.int",
+                        "name": "int",
+                        "examples": [
+                          "200",
+                          "50",
+                          "100"
+                        ]
+                      },
+                      {
+                        "id": "Tix.NoneType",
+                        "name": "NoneType",
+                        "examples": null
+                      }
+                    ]
+                  },
+                  {
+                    "name": "detrend",
+                    "types": [
+                      {
+                        "id": "new.function",
+                        "name": "function",
+                        "examples": null
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "args": [
+                  {
+                    "name": "x",
+                    "types": [
+                      {
+                        "id": "__builtin__.bool",
+                        "name": "bool",
+                        "examples": null
+                      },
+                      {
+                        "id": "numpy.int64",
+                        "name": "int64",
+                        "examples": null
+                      },
+                      {
+                        "id": "...",
+                        "name": "",
+                        "examples": null
+                      }
+                    ]
+                  }
+                ],
+                "kwargs": [
+                  {
+                    "name": "maxlags",
+                    "types": [
+                      {
+                        "id": "__builtin__.int",
+                        "name": "int",
+                        "examples": [
+                          "200",
+                          "50",
+                          "100"
+                        ]
+                      },
+                      {
+                        "id": "Tix.NoneType",
+                        "name": "NoneType",
+                        "examples": null
+                      }
+                    ]
+                  },
+                  {
+                    "name": "normed",
+                    "types": [
+                      {
+                        "id": "__builtin__.bool",
+                        "name": "bool",
+                        "examples": null
+                      }
+                    ]
+                  },
+                  {
+                    "name": "detrend",
+                    "types": [
+                      {
+                        "id": "new.function",
+                        "name": "function",
+                        "examples": null
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      },
+      "funcName": "accorr",
+      "arg_index": 0
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+<idea-plugin>
+    <!--@formatter:off-->
+    <extensions defaultExtensionNs="com.intellij">
+        <typedHandler implementation="com.kite.intellij.action.signatureInfo.SignatureTypedHandler" order="first" />
+
+        <!-- documentation lookup -->
+        <lang.documentationProvider language="Python" implementationClass="com.kite.intellij.editor.completion.KiteDocumentationProvider" />
+
+        <typedHandler implementation="com.kite.intellij.editor.completion.KitePythonAutocompleteTypedHandler" order="last" />
+    </extensions>
+    <!--@formatter:on-->
+
+    <extensions defaultExtensionNs="com.kite.intellij">
+        <kiteDocPsiLocator implementation="com.kite.intellij.lang.python.PythonDocPsiLocator"/>
+        <kiteLangSupport implementation="com.kite.intellij.lang.KitePythonSupport"/>
+    </extensions>
+</idea-plugin>

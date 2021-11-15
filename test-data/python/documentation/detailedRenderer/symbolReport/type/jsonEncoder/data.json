@@ -1,0 +1,633 @@
+{
+  "language": "python",
+  "symbol": {
+    "id": "python;json.JSONEncoder",
+    "name": "JSONEncoder",
+    "namespace": {
+      "id": "python;json",
+      "kind": "module",
+      "repr": "json",
+      "type": "module",
+      "type_id": ""
+    },
+    "value": [
+      {
+        "id": "python;json.encoder.JSONEncoder",
+        "kind": "type",
+        "repr": "json.encoder.JSONEncoder",
+        "type": "type",
+        "type_id": "python;__builtin__.type",
+        "synopsis": "Extensible JSON encoder for Python data structures.\nSupports the following objects and types by default:",
+        "details": {
+          "function": null,
+          "type": {
+            "components": null,
+            "members": [
+              {
+                "id": "python;json.encoder.JSONEncoder.default",
+                "name": "default",
+                "namespace": {
+                  "id": "python;json.encoder.JSONEncoder",
+                  "kind": "type",
+                  "repr": "json.encoder.JSONEncoder",
+                  "type": "type",
+                  "type_id": "python;__builtin__.type"
+                },
+                "value": [
+                  {
+                    "id": "python;json.encoder.JSONEncoder.default",
+                    "kind": "function",
+                    "repr": "json.encoder.JSONEncoder.default",
+                    "type": "instancemethod",
+                    "type_id": ""
+                  }
+                ]
+              },
+              {
+                "id": "python;json.encoder.JSONEncoder.encode",
+                "name": "encode",
+                "namespace": {
+                  "id": "python;json.encoder.JSONEncoder",
+                  "kind": "type",
+                  "repr": "json.encoder.JSONEncoder",
+                  "type": "type",
+                  "type_id": "python;__builtin__.type"
+                },
+                "value": [
+                  {
+                    "id": "python;json.encoder.JSONEncoder.encode",
+                    "kind": "function",
+                    "repr": "json.encoder.JSONEncoder.encode",
+                    "type": "instancemethod",
+                    "type_id": ""
+                  }
+                ]
+              },
+              {
+                "id": "python;json.encoder.JSONEncoder.mro",
+                "name": "mro",
+                "namespace": {
+                  "id": "python;json.encoder.JSONEncoder",
+                  "kind": "type",
+                  "repr": "json.encoder.JSONEncoder",
+                  "type": "type",
+                  "type_id": "python;__builtin__.type"
+                },
+                "value": [
+                  {
+                    "id": "python;__builtin__.type.mro",
+                    "kind": "function",
+                    "repr": "type.mro",
+                    "type": "",
+                    "type_id": ""
+                  }
+                ]
+              },
+              {
+                "id": "python;json.encoder.JSONEncoder.iterencode",
+                "name": "iterencode",
+                "namespace": {
+                  "id": "python;json.encoder.JSONEncoder",
+                  "kind": "type",
+                  "repr": "json.encoder.JSONEncoder",
+                  "type": "type",
+                  "type_id": "python;__builtin__.type"
+                },
+                "value": [
+                  {
+                    "id": "python;json.encoder.JSONEncoder.iterencode",
+                    "kind": "function",
+                    "repr": "json.encoder.JSONEncoder.iterencode",
+                    "type": "instancemethod",
+                    "type_id": ""
+                  }
+                ]
+              },
+              {
+                "id": "python;json.encoder.JSONEncoder.allow_nan",
+                "name": "allow_nan",
+                "namespace": {
+                  "id": "python;json.encoder.JSONEncoder",
+                  "kind": "type",
+                  "repr": "json.encoder.JSONEncoder",
+                  "type": "type",
+                  "type_id": "python;__builtin__.type"
+                },
+                "value": [
+                  {
+                    "id": "python;json.JSONEncoder.allow_nan",
+                    "kind": "instance",
+                    "repr": "bool",
+                    "type": "bool",
+                    "type_id": "python;__builtin__.bool"
+                  }
+                ]
+              }
+            ],
+            "total_members": 13,
+            "language_details": {
+              "python": {
+                "bases": null,
+                "constructor": {
+                  "parameters": [
+                    {
+                      "name": "skipkeys",
+                      "inferred_value": null,
+                      "synopsis": "",
+                      "language_details": {
+                        "python": {
+                          "default_value": [
+                            {
+                              "id": "",
+                              "kind": "instance",
+                              "repr": "bool",
+                              "type": "bool",
+                              "type_id": "python;__builtin__.bool"
+                            }
+                          ],
+                          "annotation": null,
+                          "keyword_only": false
+                        }
+                      }
+                    },
+                    {
+                      "name": "ensure_ascii",
+                      "inferred_value": null,
+                      "synopsis": "",
+                      "language_details": {
+                        "python": {
+                          "default_value": [
+                            {
+                              "id": "",
+                              "kind": "instance",
+                              "repr": "bool",
+                              "type": "bool",
+                              "type_id": "python;__builtin__.bool"
+                            }
+                          ],
+                          "annotation": null,
+                          "keyword_only": false
+                        }
+                      }
+                    },
+                    {
+                      "name": "check_circular",
+                      "inferred_value": null,
+                      "synopsis": "",
+                      "language_details": {
+                        "python": {
+                          "default_value": [
+                            {
+                              "id": "",
+                              "kind": "instance",
+                              "repr": "bool",
+                              "type": "bool",
+                              "type_id": "python;__builtin__.bool"
+                            }
+                          ],
+                          "annotation": null,
+                          "keyword_only": false
+                        }
+                      }
+                    },
+                    {
+                      "name": "allow_nan",
+                      "inferred_value": null,
+                      "synopsis": "",
+                      "language_details": {
+                        "python": {
+                          "default_value": [
+                            {
+                              "id": "",
+                              "kind": "instance",
+                              "repr": "bool",
+                              "type": "bool",
+                              "type_id": "python;__builtin__.bool"
+                            }
+                          ],
+                          "annotation": null,
+                          "keyword_only": false
+                        }
+                      }
+                    },
+                    {
+                      "name": "sort_keys",
+                      "inferred_value": null,
+                      "synopsis": "",
+                      "language_details": {
+                        "python": {
+                          "default_value": [
+                            {
+                              "id": "",
+                              "kind": "instance",
+                              "repr": "bool",
+                              "type": "bool",
+                              "type_id": "python;__builtin__.bool"
+                            }
+                          ],
+                          "annotation": null,
+                          "keyword_only": false
+                        }
+                      }
+                    },
+                    {
+                      "name": "indent",
+                      "inferred_value": null,
+                      "synopsis": "",
+                      "language_details": {
+                        "python": {
+                          "default_value": [
+                            {
+                              "id": "python;__builtin__.None",
+                              "kind": "instance",
+                              "repr": "None",
+                              "type": "NoneType",
+                              "type_id": "python;types.NoneType"
+                            }
+                          ],
+                          "annotation": null,
+                          "keyword_only": false
+                        }
+                      }
+                    },
+                    {
+                      "name": "separators",
+                      "inferred_value": null,
+                      "synopsis": "",
+                      "language_details": {
+                        "python": {
+                          "default_value": [
+                            {
+                              "id": "python;__builtin__.None",
+                              "kind": "instance",
+                              "repr": "None",
+                              "type": "NoneType",
+                              "type_id": "python;types.NoneType"
+                            }
+                          ],
+                          "annotation": null,
+                          "keyword_only": false
+                        }
+                      }
+                    },
+                    {
+                      "name": "encoding",
+                      "inferred_value": null,
+                      "synopsis": "",
+                      "language_details": {
+                        "python": {
+                          "default_value": [
+                            {
+                              "id": "",
+                              "kind": "instance",
+                              "repr": "str",
+                              "type": "str",
+                              "type_id": "python;__builtin__.str"
+                            }
+                          ],
+                          "annotation": null,
+                          "keyword_only": false
+                        }
+                      }
+                    },
+                    {
+                      "name": "default",
+                      "inferred_value": null,
+                      "synopsis": "",
+                      "language_details": {
+                        "python": {
+                          "default_value": [
+                            {
+                              "id": "python;__builtin__.None",
+                              "kind": "instance",
+                              "repr": "None",
+                              "type": "NoneType",
+                              "type_id": "python;types.NoneType"
+                            }
+                          ],
+                          "annotation": null,
+                          "keyword_only": false
+                        }
+                      }
+                    }
+                  ],
+                  "return_value": null,
+                  "signatures": [
+                    {
+                      "args": null,
+                      "language_details": {
+                        "python": {
+                          "kwargs": null
+                        }
+                      }
+                    },
+                    {
+                      "args": [
+                        {
+                          "name": "False",
+                          "types": [
+                            {
+                              "id": "python;__builtin__.type",
+                              "name": "type",
+                              "examples": null
+                            },
+                            {
+                              "id": "python;__builtin__.bool",
+                              "name": "bool",
+                              "examples": null
+                            }
+                          ]
+                        }
+                      ],
+                      "language_details": {
+                        "python": {
+                          "kwargs": null
+                        }
+                      }
+                    },
+                    {
+                      "args": [
+                        {
+                          "name": "False",
+                          "types": [
+                            {
+                              "id": "python;__builtin__.type",
+                              "name": "type",
+                              "examples": null
+                            },
+                            {
+                              "id": "python;__builtin__.bool",
+                              "name": "bool",
+                              "examples": null
+                            }
+                          ]
+                        },
+                        {
+                          "name": "obj",
+                          "types": [
+                            {
+                              "id": "python;__builtin__.bool",
+                              "name": "bool",
+                              "examples": null
+                            }
+                          ]
+                        }
+                      ],
+                      "language_details": {
+                        "python": {
+                          "kwargs": null
+                        }
+                      }
+                    },
+                    {
+                      "args": null,
+                      "language_details": {
+                        "python": {
+                          "kwargs": [
+                            {
+                              "name": "separators",
+                              "types": [
+                                {
+                                  "id": "python;__builtin__.tuple",
+                                  "name": "tuple",
+                                  "examples": [
+                                    "(',', ':')",
+                                    "(',', ': ')",
+                                    "(',',':')"
+                                  ]
+                                },
+                                {
+                                  "id": "python;Tix.NoneType",
+                                  "name": "NoneType",
+                                  "examples": null
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      }
+                    },
+                    {
+                      "args": null,
+                      "language_details": {
+                        "python": {
+                          "kwargs": [
+                            {
+                              "name": "indent",
+                              "types": [
+                                {
+                                  "id": "python;__builtin__.int",
+                                  "name": "int",
+                                  "examples": [
+                                    "2",
+                                    "4",
+                                    "1"
+                                  ]
+                                },
+                                {
+                                  "id": "python;Tix.NoneType",
+                                  "name": "NoneType",
+                                  "examples": null
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      }
+                    }
+                  ],
+                  "language_details": {
+                    "python": {
+                      "receiver": {
+                        "name": "self",
+                        "inferred_value": null,
+                        "synopsis": "",
+                        "language_details": {
+                          "python": null
+                        }
+                      },
+                      "return_annotation": null
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "instance": null,
+          "module": null
+        },
+        "ancestors": [
+          {
+            "id": "python;json",
+            "name": "json"
+          },
+          {
+            "id": "python;json.encoder",
+            "name": "encoder"
+          }
+        ]
+      }
+    ],
+    "synopsis": ""
+  },
+  "report": {
+    "definition": null,
+    "description_text": "Extensible JSON encoder for Python data structures.\nSupports the following objects and types by default:",
+    "description_html": "\u003cbody\u003e\u003cp\u003eExtensible JSON encoder for Python data structures.\u003c/p\u003e\u003cp\u003eSupports the following objects and types by default:\u003c/p\u003e\u003ctable\u003e\u003ctr valign=\"bottom\"\u003e\u003cth\u003ePython\u003c/th\u003e\u003cth\u003eJSON\u003c/th\u003e\u003c/tr\u003e\u003ctr valign=\"top\"\u003e\u003ctd\u003edict\u003c/td\u003e\u003ctd\u003eobject\u003c/td\u003e\u003c/tr\u003e\u003ctr valign=\"top\"\u003e\u003ctd\u003elist, tuple\u003c/td\u003e\u003ctd\u003earray\u003c/td\u003e\u003c/tr\u003e\u003ctr valign=\"top\"\u003e\u003ctd\u003estr, unicode\u003c/td\u003e\u003ctd\u003estring\u003c/td\u003e\u003c/tr\u003e\u003ctr valign=\"top\"\u003e\u003ctd\u003eint, long, float\u003c/td\u003e\u003ctd\u003enumber\u003c/td\u003e\u003c/tr\u003e\u003ctr valign=\"top\"\u003e\u003ctd\u003eTrue\u003c/td\u003e\u003ctd\u003etrue\u003c/td\u003e\u003c/tr\u003e\u003ctr valign=\"top\"\u003e\u003ctd\u003eFalse\u003c/td\u003e\u003ctd\u003efalse\u003c/td\u003e\u003c/tr\u003e\u003ctr valign=\"top\"\u003e\u003ctd\u003eNone\u003c/td\u003e\u003ctd\u003enull\u003c/td\u003e\u003c/tr\u003e\u003c/table\u003e\u003cp\u003eTo extend this to recognize other objects, subclass and implement a\n\u003ca class=\"internal_link\" href=\"#json.JSONEncoder.default\"\u003e\u003ccode\u003edefault()\u003c/code\u003e\u003c/a\u003e method with another method that returns a serializable object\nfor \u003ccode\u003eo\u003c/code\u003e if possible, otherwise it should call the superclass implementation\n(to raise \u003ca class=\"internal_link\" href=\"#exceptions.TypeError\"\u003e\u003ccode\u003eTypeError\u003c/code\u003e\u003c/a\u003e).\u003c/p\u003e\u003cp\u003eIf \u003cem\u003eskipkeys\u003c/em\u003e is \u003ccode\u003eFalse\u003c/code\u003e (the default), then it is a \u003ca class=\"internal_link\" href=\"#exceptions.TypeError\"\u003e\u003ccode\u003eTypeError\u003c/code\u003e\u003c/a\u003e to\nattempt encoding of keys that are not str, int, long, float or None.  If\n\u003cem\u003eskipkeys\u003c/em\u003e is \u003ccode\u003eTrue\u003c/code\u003e, such items are simply skipped.\u003c/p\u003e\u003cp\u003eIf \u003cem\u003eensure_ascii\u003c/em\u003e is \u003ccode\u003eTrue\u003c/code\u003e (the default), all non-ASCII characters in the\noutput are escaped with \u003ccode\u003e\\uXXXX\u003c/code\u003e sequences, and the results are\n\u003ca\u003e\u003ccode\u003estr\u003c/code\u003e\u003c/a\u003e instances consisting of ASCII characters only. If\n\u003cem\u003eensure_ascii\u003c/em\u003e is \u003ccode\u003eFalse\u003c/code\u003e, a result may be a \u003ca\u003e\u003ccode\u003eunicode\u003c/code\u003e\u003c/a\u003e\ninstance. This usually happens if the input contains unicode strings or the\n\u003cem\u003eencoding\u003c/em\u003e parameter is used.\u003c/p\u003e\u003cp\u003eIf \u003cem\u003echeck_circular\u003c/em\u003e is \u003ccode\u003eTrue\u003c/code\u003e (the default), then lists, dicts, and custom\nencoded objects will be checked for circular references during encoding to\nprevent an infinite recursion (which would cause an \u003ca class=\"internal_link\" href=\"#exceptions.OverflowError\"\u003e\u003ccode\u003eOverflowError\u003c/code\u003e\u003c/a\u003e).\nOtherwise, no such check takes place.\u003c/p\u003e\u003cp\u003eIf \u003cem\u003eallow_nan\u003c/em\u003e is \u003ccode\u003eTrue\u003c/code\u003e (the default), then \u003ccode\u003eNaN\u003c/code\u003e, \u003ccode\u003eInfinity\u003c/code\u003e, and\n\u003ccode\u003e-Infinity\u003c/code\u003e will be encoded as such.  This behavior is not JSON\nspecification compliant, but is consistent with most JavaScript based\nencoders and decoders.  Otherwise, it will be a \u003ca class=\"internal_link\" href=\"#exceptions.ValueError\"\u003e\u003ccode\u003eValueError\u003c/code\u003e\u003c/a\u003e to encode\nsuch floats.\u003c/p\u003e\u003cp\u003eIf \u003cem\u003esort_keys\u003c/em\u003e is \u003ccode\u003eTrue\u003c/code\u003e (default \u003ccode\u003eFalse\u003c/code\u003e), then the output of dictionaries\nwill be sorted by key; this is useful for regression tests to ensure that\nJSON serializations can be compared on a day-to-day basis.\u003c/p\u003e\u003cp\u003eIf \u003cem\u003eindent\u003c/em\u003e is a non-negative integer (it is \u003ccode\u003eNone\u003c/code\u003e by default), then JSON\narray elements and object members will be pretty-printed with that indent\nlevel.  An indent level of 0 will only insert newlines.  \u003ccode\u003eNone\u003c/code\u003e is the most\ncompact representation.\u003c/p\u003e\n\u003cp\u003eNote\u003c/p\u003e\n\u003cp\u003eSince the default item separator is \u003ccode\u003e\u0026#39;,\u003c/code\u003e\u003ccode\u003e \u003c/code\u003e\u003ccode\u003e\u0026#39;\u003c/code\u003e,  the output might include\ntrailing whitespace when \u003cem\u003eindent\u003c/em\u003e is specified.  You can use\n\u003ccode\u003eseparators=(\u0026#39;,\u0026#39;,\u003c/code\u003e\u003ccode\u003e \u003c/code\u003e\u003ccode\u003e\u0026#39;:\u003c/code\u003e\u003ccode\u003e \u003c/code\u003e\u003ccode\u003e\u0026#39;)\u003c/code\u003e to avoid this.\u003c/p\u003e\n\u003cp\u003eIf specified, \u003cem\u003eseparators\u003c/em\u003e should be an \u003ccode\u003e(item_separator,\u003c/code\u003e\u003ccode\u003e \u003c/code\u003e\u003ccode\u003ekey_separator)\u003c/code\u003e\ntuple.  The default is \u003ccode\u003e(\u0026#39;,\u003c/code\u003e\u003ccode\u003e \u003c/code\u003e\u003ccode\u003e\u0026#39;,\u003c/code\u003e\u003ccode\u003e \u003c/code\u003e\u003ccode\u003e\u0026#39;:\u003c/code\u003e\u003ccode\u003e \u003c/code\u003e\u003ccode\u003e\u0026#39;)\u003c/code\u003e.  To get the most compact JSON\nrepresentation, you should specify \u003ccode\u003e(\u0026#39;,\u0026#39;,\u003c/code\u003e\u003ccode\u003e \u003c/code\u003e\u003ccode\u003e\u0026#39;:\u0026#39;)\u003c/code\u003e to eliminate whitespace.\u003c/p\u003e\u003cp\u003eIf specified, \u003cem\u003edefault\u003c/em\u003e is a function that gets called for objects that can’t\notherwise be serialized.  It should return a JSON encodable version of the\nobject or raise a \u003ca class=\"internal_link\" href=\"#exceptions.TypeError\"\u003e\u003ccode\u003eTypeError\u003c/code\u003e\u003c/a\u003e.\u003c/p\u003e\u003cp\u003eIf \u003cem\u003eencoding\u003c/em\u003e is not \u003ccode\u003eNone\u003c/code\u003e, then all input strings will be transformed\ninto unicode using that encoding prior to JSON-encoding.  The default is\nUTF-8.\u003c/p\u003e\u003cdl class=\"method\"\u003e\u003cdt id=\"json.JSONEncoder.default\"\u003e\n\u003ccode\u003edefault\u003c/code\u003e(\u003cem\u003eo\u003c/em\u003e)\u003c/dt\u003e\u003cdd\u003e\u003cp\u003eImplement this method in a subclass such that it returns a serializable\nobject for \u003cem\u003eo\u003c/em\u003e, or calls the base implementation (to raise a\n\u003ca class=\"internal_link\" href=\"#exceptions.TypeError\"\u003e\u003ccode\u003eTypeError\u003c/code\u003e\u003c/a\u003e).\u003c/p\u003e\n\u003cp\u003eFor example, to support arbitrary iterators, you could implement default\nlike this:\u003c/p\u003e\n\u003cpre class=\"lang-python\"\u003e\u003ccode\u003edef default(self, o):\n   try:\n       iterable = iter(o)\n   except TypeError:\n       pass\n   else:\n       return list(iterable)\n   # Let the base class default method raise the TypeError\n   return JSONEncoder.default(self, o)\n\u003c/code\u003e\u003c/pre\u003e\n\n\u003c/dd\u003e\u003c/dl\u003e\u003cdl class=\"method\"\u003e\u003cdt id=\"json.JSONEncoder.encode\"\u003e\n\u003ccode\u003eencode\u003c/code\u003e(\u003cem\u003eo\u003c/em\u003e)\u003c/dt\u003e\u003cdd\u003e\u003cp\u003eReturn a JSON string representation of a Python data structure, \u003cem\u003eo\u003c/em\u003e.  For\nexample:\u003c/p\u003e\n\u003cpre class=\"lang-python\"\u003e\u003ccode\u003e\u0026gt;\u0026gt;\u0026gt; JSONEncoder().encode({\u0026#34;foo\u0026#34;: [\u0026#34;bar\u0026#34;, \u0026#34;baz\u0026#34;]})\n\u0026#39;{\u0026#34;foo\u0026#34;: [\u0026#34;bar\u0026#34;, \u0026#34;baz\u0026#34;]}\u0026#39;\n\u003c/code\u003e\u003c/pre\u003e\n\n\u003c/dd\u003e\u003c/dl\u003e\u003cdl class=\"method\"\u003e\u003cdt id=\"json.JSONEncoder.iterencode\"\u003e\n\u003ccode\u003eiterencode\u003c/code\u003e(\u003cem\u003eo\u003c/em\u003e)\u003c/dt\u003e\u003cdd\u003e\u003cp\u003eEncode the given object, \u003cem\u003eo\u003c/em\u003e, and yield each string representation as\navailable.  For example:\u003c/p\u003e\n\u003cpre class=\"lang-python\"\u003e\u003ccode\u003efor chunk in JSONEncoder().iterencode(bigobject):\n    mysocket.write(chunk)\n\u003c/code\u003e\u003c/pre\u003e\n\n\u003c/dd\u003e\u003c/dl\u003e\u003c/body\u003e",
+    "examples": [
+      {
+        "id": 339,
+        "title": "Encode a `dict` using JSONEncoder"
+      },
+      {
+        "id": 343,
+        "title": "Encode a custom object with an extended JSONEncoder"
+      }
+    ],
+    "usages": null,
+    "total_usages": 0,
+    "links": [
+      {
+        "title": "Format floats with standard json module",
+        "url": "https://stackoverflow.com/questions/1447287",
+        "stackoverflow": {
+          "score": 53
+        }
+      },
+      {
+        "title": "How to change json encoding behaviour for serializable python object?",
+        "url": "https://stackoverflow.com/questions/16405969",
+        "stackoverflow": {
+          "score": 38
+        }
+      },
+      {
+        "title": "Making object JSON serializable with regular encoder",
+        "url": "https://stackoverflow.com/questions/18478287",
+        "stackoverflow": {
+          "score": 36
+        }
+      },
+      {
+        "title": "Encoding nested python object in JSON",
+        "url": "https://stackoverflow.com/questions/5160077",
+        "stackoverflow": {
+          "score": 21
+        }
+      },
+      {
+        "title": "Python to JSON Serialization fails on Decimal",
+        "url": "https://stackoverflow.com/questions/16957275",
+        "stackoverflow": {
+          "score": 17
+        }
+      },
+      {
+        "title": "How to serialize to JSON a list of model objects in django/python",
+        "url": "https://stackoverflow.com/questions/13031058",
+        "stackoverflow": {
+          "score": 11
+        }
+      },
+      {
+        "title": "JSON-encoding very long iterators",
+        "url": "https://stackoverflow.com/questions/12670395",
+        "stackoverflow": {
+          "score": 9
+        }
+      },
+      {
+        "title": "Django : \u003cdjango.utils.functional.__proxy__ object at 0x7feaac2761d0\u003e is not JSON serializable",
+        "url": "https://stackoverflow.com/questions/14890263",
+        "stackoverflow": {
+          "score": 9
+        }
+      },
+      {
+        "title": "Issues with CORS. Flask \u003c-\u003e AngularJS",
+        "url": "https://stackoverflow.com/questions/18583273",
+        "stackoverflow": {
+          "score": 7
+        }
+      },
+      {
+        "title": "Custom JSON Encoder in Python With Precomputed Literal JSON",
+        "url": "https://stackoverflow.com/questions/12397279",
+        "stackoverflow": {
+          "score": 7
+        }
+      },
+      {
+        "title": "Overriding nested JSON encoding of inherited default supported objects like dict, list",
+        "url": "https://stackoverflow.com/questions/16361223",
+        "stackoverflow": {
+          "score": 6
+        }
+      },
+      {
+        "title": "Python FileCookieJar.save() issue",
+        "url": "https://stackoverflow.com/questions/8848663",
+        "stackoverflow": {
+          "score": 4
+        }
+      },
+      {
+        "title": "Parsing datetime in python json loads",
+        "url": "https://stackoverflow.com/questions/30840129",
+        "stackoverflow": {
+          "score": 4
+        }
+      },
+      {
+        "title": "In Python, have json not escape a string",
+        "url": "https://stackoverflow.com/questions/16465223",
+        "stackoverflow": {
+          "score": 4
+        }
+      },
+      {
+        "title": "JSON (de)serializing for nested classes",
+        "url": "https://stackoverflow.com/questions/17838329",
+        "stackoverflow": {
+          "score": 4
+        }
+      },
+      {
+        "title": "JSON dumps Decimal is not serializable",
+        "url": "https://stackoverflow.com/questions/28669647",
+        "stackoverflow": {
+          "score": 4
+        }
+      },
+      {
+        "title": "Why doesn't this custom json encoder work?",
+        "url": "https://stackoverflow.com/questions/13251788",
+        "stackoverflow": {
+          "score": 4
+        }
+      },
+      {
+        "title": "How to use JSONDecoder in Python? Getting only the inner dict to decode",
+        "url": "https://stackoverflow.com/questions/11507983",
+        "stackoverflow": {
+          "score": 3
+        }
+      },
+      {
+        "title": "JsonRpc client in python",
+        "url": "https://stackoverflow.com/questions/26269635",
+        "stackoverflow": {
+          "score": 3
+        }
+      },
+      {
+        "title": "Flask JSONEncoder set ensure_ascii to False",
+        "url": "https://stackoverflow.com/questions/32341363",
+        "stackoverflow": {
+          "score": 3
+        }
+      }
+    ],
+    "total_links": 50
+  }
+}

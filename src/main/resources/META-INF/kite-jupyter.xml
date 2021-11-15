@@ -1,0 +1,5 @@
+<idea-plugin>
+    <extensions defaultExtensionNs="com.kite.intellij">
+        <kiteLangSupport implementation="com.kite.intellij.lang.KiteJupyterNotebookSupport"/>
+    </extensions>
+</idea-plugin>

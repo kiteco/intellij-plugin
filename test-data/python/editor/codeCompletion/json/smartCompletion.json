@@ -1,0 +1,361 @@
+{
+  "completions": [
+    {
+      "snippet": {
+        "text": "kite - argv",
+        "placeholders": []
+      },
+      "replace": {
+        "begin": 15,
+        "end": 15
+      },
+      "display": "argv",
+      "documentation": {
+        "text": "The list of command line arguments passed to a Python script. argv[0] is the script name (it is operating system dependent whether this is a full pathname or not). If the command was executed using the -c command line option to the interpreter, argv[0] is set to the string '-c' . If no script name was passed to the Python interpreter, argv[0] is the empty string.\n\nTo loop over the standard input, or the list of files given on the command line, see the fileinput module."
+      },
+      "web_id": "sys.argv",
+      "local_id": "python;;;;sys.argv",
+      "hint": "list | builtins.list",
+      "smart": true
+    },
+    {
+      "snippet": {
+        "text": "kite - exit()",
+        "placeholders": [
+          {
+            "begin": 5,
+            "end": 5
+          }
+        ]
+      },
+      "replace": {
+        "begin": 15,
+        "end": 15
+      },
+      "display": "exit(…)",
+      "documentation": {
+        "text": "Exit from Python. This is implemented by raising the SystemExit ( #exceptions.SystemExit ) exception, so cleanup actions specified by finally clauses of try statements are honored, and it is possible to intercept the exit attempt at an outer level.\n\nThe optional argument arg can be an integer giving the exit status (defaulting to zero), or another type of object. If it is an integer, zero is considered “successful termination” and any nonzero value is considered “abnormal termination” by"
+      },
+      "web_id": "sys.exit",
+      "local_id": "python;;;;sys.exit",
+      "hint": "function",
+      "smart": true
+    },
+    {
+      "snippet": {
+        "text": "kite - stdout",
+        "placeholders": []
+      },
+      "replace": {
+        "begin": 15,
+        "end": 15
+      },
+      "display": "stdout",
+      "documentation": {
+        "text": "file(name[, mode[, buffering]]) -\u003e file object\n\nOpen a file.  The mode can be 'r', 'w' or 'a' for reading (default),\nwriting or appending.  The file will be created if it doesn't exist\nwhen opened for writing or appending; it will be truncated when\nopened for writing.  Add a 'b' to the mode for binary files.\nAdd a '+' to the mode to allow simultaneous reading and writing.\nIf the buffering argument is given, 0 means unbuffered, 1 means line\nbuffered, and larger numbers specify the buffer size.  T"
+      },
+      "web_id": "sys.stdout",
+      "local_id": "python;;;;sys.stdout",
+      "hint": "file | io.TextIOWrapper",
+      "smart": false
+    },
+    {
+      "snippet": {
+        "text": "kite - stderr",
+        "placeholders": []
+      },
+      "replace": {
+        "begin": 15,
+        "end": 15
+      },
+      "display": "stderr",
+      "documentation": {
+        "text": "file(name[, mode[, buffering]]) -\u003e file object\n\nOpen a file.  The mode can be 'r', 'w' or 'a' for reading (default),\nwriting or appending.  The file will be created if it doesn't exist\nwhen opened for writing or appending; it will be truncated when\nopened for writing.  Add a 'b' to the mode for binary files.\nAdd a '+' to the mode to allow simultaneous reading and writing.\nIf the buffering argument is given, 0 means unbuffered, 1 means line\nbuffered, and larger numbers specify the buffer size.  T"
+      },
+      "web_id": "sys.stderr",
+      "local_id": "python;;;;sys.stderr",
+      "hint": "file | io.TextIOWrapper",
+      "smart": false
+    },
+    {
+      "snippet": {
+        "text": "kite - path",
+        "placeholders": []
+      },
+      "replace": {
+        "begin": 15,
+        "end": 15
+      },
+      "display": "path",
+      "documentation": {
+        "text": "A list of strings that specifies the search path for modules. Initialized from the environment variable PYTHONPATH , plus an installation-dependent default.\n\nAs initialized upon program startup, the first item of this list, path[0] , is the directory containing the script that was used to invoke the Python interpreter. If the script directory is not available (e.g. if the interpreter is invoked interactively or if the script is read from standard input), path[0] is the empty string, which direct"
+      },
+      "web_id": "sys.path",
+      "local_id": "python;;;;sys.path",
+      "hint": "list | builtins.list",
+      "smart": false
+    },
+    {
+      "snippet": {
+        "text": "kite - version_info",
+        "placeholders": []
+      },
+      "replace": {
+        "begin": 15,
+        "end": 15
+      },
+      "display": "version_info",
+      "documentation": {
+        "text": "A tuple containing the five components of the version number: major , minor , micro , releaselevel , and serial . All values except releaselevel are integers; the release level is 'alpha' , 'beta' , 'candidate' , or 'final' . The version_info value corresponding to the Python version 2.0 is (2, 0, 0, 'final', 0) . The components can also be accessed by name, so sys.version_info[0] is equivalent to sys.version_info.major and so on.\n\nNew in version 2.0.\n\nChanged in version 2.7: Added named compone"
+      },
+      "web_id": "sys.version_info",
+      "local_id": "python;;;;sys.version_info",
+      "hint": "sys.version_info.__class__",
+      "smart": false
+    },
+    {
+      "snippet": {
+        "text": "kite - platform",
+        "placeholders": []
+      },
+      "replace": {
+        "begin": 15,
+        "end": 15
+      },
+      "display": "platform",
+      "documentation": {
+        "text": "This string contains a platform identifier that can be used to append platform-specific components to sys.path ( #sys.path ) , for instance.\n\nFor most Unix systems, this is the lowercased OS name as returned by uname -s with the first part of the version as returned by uname -r appended, e.g. 'sunos5' , at the time when Python was built . Unless you want to test for a specific system version, it is therefore recommended to use the following idiom:\n\nif sys.platform.startswith('freebsd'): # FreeBS"
+      },
+      "web_id": "sys.platform",
+      "local_id": "python;;;;sys.platform",
+      "hint": "str | builtins.str",
+      "smart": false
+    },
+    {
+      "snippet": {
+        "text": "kite - exc_info()",
+        "placeholders": []
+      },
+      "replace": {
+        "begin": 15,
+        "end": 15
+      },
+      "display": "exc_info()",
+      "documentation": {
+        "text": "This function returns a tuple of three values that give information about the exception that is currently being handled. The information returned is specific both to the current thread and to the current stack frame. If the current stack frame is not handling an exception, the information is taken from the calling stack frame, or its caller, and so on until a stack frame is found that is handling an exception. Here, “handling an exception” is defined as “executing or having executed an exc"
+      },
+      "web_id": "sys.exc_info",
+      "local_id": "python;;;;sys.exc_info",
+      "hint": "function",
+      "smart": false
+    },
+    {
+      "snippet": {
+        "text": "kite - stdin",
+        "placeholders": []
+      },
+      "replace": {
+        "begin": 15,
+        "end": 15
+      },
+      "display": "stdin",
+      "documentation": {
+        "text": "These objects contain the original values of stdin , stderr and stdout at the start of the program. They are used during finalization, and could be useful to print to the actual standard stream no matter if the sys.std* object has been redirected.\n\nIt can also be used to restore the actual files to known working file objects in case they have been overwritten with a broken object. However, the preferred way to do this is to explicitly save the previous stream before replacing it, and restore the"
+      },
+      "web_id": "sys.stdin",
+      "local_id": "python;;;;sys.stdin",
+      "hint": "file | io.TextIOWrapper",
+      "smart": false
+    },
+    {
+      "snippet": {
+        "text": "kite - modules",
+        "placeholders": []
+      },
+      "replace": {
+        "begin": 15,
+        "end": 15
+      },
+      "display": "modules",
+      "documentation": {
+        "text": "This is a dictionary that maps module names to modules which have already been loaded. This can be manipulated to force reloading of modules and other tricks. Note that removing a module from this dictionary is not the same as calling reload() on the corresponding module object."
+      },
+      "web_id": "sys.modules",
+      "local_id": "python;;;;sys.modules",
+      "hint": "dict | builtins.dict",
+      "smart": false
+    },
+    {
+      "snippet": {
+        "text": "kite - executable",
+        "placeholders": []
+      },
+      "replace": {
+        "begin": 15,
+        "end": 15
+      },
+      "display": "executable",
+      "documentation": {
+        "text": "A string giving the absolute path of the executable binary for the Python interpreter, on systems where this makes sense. If Python is unable to retrieve the real path to its executable, sys.executable ( #sys.executable ) will be an empty string or None ."
+      },
+      "web_id": "sys.executable",
+      "local_id": "python;;;;sys.executable",
+      "hint": "str | builtins.str",
+      "smart": false
+    },
+    {
+      "snippet": {
+        "text": "kite - maxsize",
+        "placeholders": []
+      },
+      "replace": {
+        "begin": 15,
+        "end": 15
+      },
+      "display": "maxsize",
+      "documentation": {
+        "text": "The largest positive integer supported by the platform’s Py_ssize_t type, and thus the maximum size lists, strings, dicts, and many other containers can have."
+      },
+      "web_id": "sys.maxsize",
+      "local_id": "python;;;;sys.maxsize",
+      "hint": "int | builtins.int",
+      "smart": false
+    },
+    {
+      "snippet": {
+        "text": "kite - version",
+        "placeholders": []
+      },
+      "replace": {
+        "begin": 15,
+        "end": 15
+      },
+      "display": "version",
+      "documentation": {
+        "text": "A string containing the version number of the Python interpreter plus additional information on the build number and compiler used. This string is displayed when the interactive interpreter is started. Do not extract version information out of it, rather, use version_info ( #sys.version_info ) and the functions provided by the platform module."
+      },
+      "web_id": "sys.version",
+      "local_id": "python;;;;sys.version",
+      "hint": "str | builtins.str",
+      "smart": false
+    },
+    {
+      "snippet": {
+        "text": "kite - setdefaultencoding()",
+        "placeholders": [
+          {
+            "begin": 19,
+            "end": 19
+          }
+        ]
+      },
+      "replace": {
+        "begin": 15,
+        "end": 15
+      },
+      "display": "setdefaultencoding(…)",
+      "documentation": {
+        "text": "Set the current default string encoding used by the Unicode implementation. If name does not match any available encoding, LookupError ( #exceptions.LookupError ) is raised. This function is only intended to be used by the site module implementation and, where needed, by sitecustomize . Once used by the site module, it is removed from the sys module’s namespace.\n\nNew in version 2.0."
+      },
+      "web_id": "sys.setdefaultencoding",
+      "local_id": "python;;;;sys.setdefaultencoding",
+      "hint": "function",
+      "smart": false
+    },
+    {
+      "snippet": {
+        "text": "kite - _getframe()",
+        "placeholders": [
+          {
+            "begin": 10,
+            "end": 10
+          }
+        ]
+      },
+      "replace": {
+        "begin": 15,
+        "end": 15
+      },
+      "display": "_getframe(…)",
+      "documentation": {
+        "text": "Return a frame object from the call stack. If optional integer depth is given, return the frame object that many calls below the top of the stack. If that is deeper than the call stack, ValueError ( #exceptions.ValueError ) is raised. The default for depth is zero, returning the frame at the top of the call stack.\n\n*CPython implementation detail:* This function should be used for internal and specialized purposes only. It is not guaranteed to exist in all implementations of Python."
+      },
+      "web_id": "sys._getframe",
+      "local_id": "python;;;;sys._getframe",
+      "hint": "function",
+      "smart": false
+    },
+    {
+      "snippet": {
+        "text": "kite - float_info",
+        "placeholders": []
+      },
+      "replace": {
+        "begin": 15,
+        "end": 15
+      },
+      "display": "float_info",
+      "documentation": {
+        "text": "A structseq holding information about the float type. It contains low level information about the precision and internal representation. The values correspond to the various floating-point constants defined in the standard header file float.h for the ‘C’ programming language; see section 5.2.4.2.2 of the 1999 ISO/IEC C standard [C99] , ‘Characteristics of floating types’, for details.\n\nattribute float.h macro explanation\nepsilon DBL_EPSILON difference between 1 and the least value greate"
+      },
+      "web_id": "sys.float_info",
+      "local_id": "python;;;;sys.float_info",
+      "hint": "sys.float_info.__class__",
+      "smart": false
+    },
+    {
+      "snippet": {
+        "text": "kite - getfilesystemencoding()",
+        "placeholders": []
+      },
+      "replace": {
+        "begin": 15,
+        "end": 15
+      },
+      "display": "getfilesystemencoding()",
+      "documentation": {
+        "text": "Return the name of the encoding used to convert Unicode filenames into system file names, or None if the system default encoding is used. The result value depends on the operating system:\n\n* On Mac OS X, the encoding is 'utf-8' .\n* On Unix, the encoding is the user’s preference according to the result of nl_langinfo(CODESET), or None if the nl_langinfo(CODESET) failed.\n* On Windows NT+, file names are Unicode natively, so no conversion is performed. getfilesystemencoding() ( #sys.getfilesystem"
+      },
+      "web_id": "sys.getfilesystemencoding",
+      "local_id": "python;;;;sys.getfilesystemencoding",
+      "hint": "function",
+      "smart": false
+    },
+    {
+      "snippet": {
+        "text": "kite - prefix",
+        "placeholders": []
+      },
+      "replace": {
+        "begin": 15,
+        "end": 15
+      },
+      "display": "prefix",
+      "documentation": {
+        "text": "A string giving the site-specific directory prefix where the platform independent Python files are installed; by default, this is the string '/usr/local' . This can be set at build time with the --prefix argument to the *configure* script. The main collection of Python library modules is installed in the directory prefix /lib/python X.Y while the platform independent header files (all except pyconfig.h ) are stored in prefix /include/python X.Y , where X.Y is the version number of Python, for ex"
+      },
+      "web_id": "sys.prefix",
+      "local_id": "python;;;;sys.prefix",
+      "hint": "str | builtins.str",
+      "smart": false
+    },
+    {
+      "snippet": {
+        "text": "kite - flags",
+        "placeholders": []
+      },
+      "replace": {
+        "begin": 15,
+        "end": 15
+      },
+      "display": "flags",
+      "documentation": {
+        "text": "The struct sequence flags exposes the status of command line flags. The attributes are read only.\n\nattribute flag\ndebug -d\npy3k_warning -3\ndivision_warning -Q\ndivision_new -Qnew\ninspect -i\ninteractive -i\noptimize -O or -OO\ndont_write_bytecode ( #sys.dont_write_bytecode ) -B\nno_user_site -s\nno_site -S\nignore_environment -E\ntabcheck -t or -tt\nverbose -v\nunicode -U\nbytes_warning -b\nhash_randomization -R\n\nNew in version 2.6.\n\nNew in version 2.7.3: The hash_randomization attribute."
+      },
+      "web_id": "sys.flags",
+      "local_id": "python;;;;sys.flags",
+      "hint": "sys.flags.__class__",
+      "smart": false
+    }
+  ]
+}

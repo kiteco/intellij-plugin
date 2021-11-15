@@ -1,0 +1,22 @@
+{# @pebvariable name="symbol" type="com.kite.intellij.backend.model.SymbolExt" #}
+
+{# Renders the details of a type definition.
+   context:
+     symbol         of type com.kite.intellij.backend.model.SymbolExt
+#}
+
+{% set value = symbol != null ? symbol.firstValue : value %}
+{% set detail = value.detail %}
+{% set symbolOrvalue = symbol != null ? symbol : value %}
+{% set name = value != null ? value.representation : symbol.name %}
+
+<table class="kite-table">
+    <tr>
+        {%- if detail.hasConstructor() == true -%}
+            <td>{{- functionSignatureNamed(name=name, nameTarget=null, function=detail.constructor, showReturn=false, showParameters=false) -}}</td>
+        {%- else -%}
+            <td><span class="code style-text">{{- name | escape("html") -}}</span></td>
+        {%- endif -%}
+        <td class="align-right"><span class="hover-hint">{{- value.kind | escape("html") -}}</span></td>
+    </tr>
+</table>

@@ -1,0 +1,76 @@
+{# @pebvariable name="context" type="com.kite.intellij.lang.documentation.linkHandler.SignatureLinkData" #}
+{# @pebvariable name="functionName" type="java.lang.String" #}
+{# @pebvariable name="signatures" type="com.kite.intellij.backend.model.Signature[]" #}
+{# @pebvariable name="heading" type="java.lang.String" #}
+{# @pebvariable name="linkSection" type="java.lang.Boolean" #}
+
+{#  Snippet to render popular patterns.
+    Context:
+        linkSection
+        functionName
+        signatures
+        expandLink
+        expand
+#}
+
+{% if expand is null %}
+    {% set expand=true %}
+{% endif %}
+
+{% if sectionLink is null %}
+    {% set sectionLink="" %}
+{% endif %}
+
+{% if heading is null %}
+    {% set heading="HOW OTHERS USED THIS" %}
+{% endif %}
+
+
+{# Renders a parameterExample definition
+ @param arg The parameterExample to render
+#}
+{% macro parameterExample(arg) %}
+    {%- if arg.isKwarg -%}
+        <span class="style-kw-arg">{{- arg.name | escape("html") -}}</span><span class="style-opsign-arg">=</span>{%- if arg.firstExample -%}<span class="style-param">{{- arg.firstExample | escape("html") -}}</span>{%- elseif arg.hasTypes() -%}<span class="style-unused">&lt;{{- arg.types[0].name | escape("html") -}}&gt;</span>{%- endif -%}
+    {%- else -%}
+        <span class="style-param">{{- arg.name | escape("html") -}}</span>
+    {%- endif -%}
+{% endmacro %}
+
+{# Renders a single signature
+ @param arg The signature to render
+#}
+{% macro renderSignature(name, signature) %}
+    <div class="signature-pattern">
+        <span class="function-name style-call">{{- name -}}</span><span class="open-parens style-paren">(</span>
+            {%- for arg in signature.combinedArgs -%}
+                {{- parameterExample("arg"=arg) -}}{% if loop.last == false %}<span class="style-comma">,</span><span> </span>{% endif %}
+            {%- endfor -%}
+        <span class="style-paren">)</span>
+    </div>
+{% endmacro %}
+
+{% set expand = context.expandPopularPatterns %}
+{% set link = context | kiteSignatureInfoLink("expandPopularPatterns"=not expand) %}
+
+{% if linkSection %}
+    {% if not expand %}
+        <a class="link toggle-link show-popular-patterns-link" href="{{link| escape("html")}}">Examples</a>
+    {% endif %}
+{% elseif expand %}
+    {% if signatures is not empty %}
+        <div class="report-section op-80">
+            <div class="heading">
+                <table>
+                    <tr>
+                        <td><span class="heading-text">{{ heading }}</span></td>
+                        <td><a class="link toggle-link" href="{{link| escape("html")}}">{% if expand %}Hide{% else %}Show{% endif %}</a></td>
+                    </tr>
+                </table>
+            </div>
+            <div class="report-content code">
+                {%- for signature in signatures -%}{{- renderSignature(functionName, signature) -}}{%- endfor -%}
+            </div>
+        </div>
+    {% endif %}
+{% endif %}

@@ -1,0 +1,1001 @@
+{
+  "language": "python",
+  "calls": [
+    {
+      "callee": {
+        "id": "python;matplotlib.pyplot.plot",
+        "kind": "function",
+        "repr": "matplotlib.pyplot.plot",
+        "type": "function",
+        "type_id": "",
+        "synopsis": "Plot lines and/or markers to the\nAxes.  args is a variable length\nargument, allowing for multiple x, y pairs with an\noptional format string.  For example, each of the following is\nlegal:",
+        "details": {
+          "function": {
+            "parameters": null,
+            "return_value": null,
+            "signatures": [
+              {
+                "args": [
+                  {
+                    "name": "x",
+                    "types": [
+                      {
+                        "id": "python;__builtin__.list",
+                        "name": "list",
+                        "examples": [
+                          "[]",
+                          "[0, 1]",
+                          "[0,1]"
+                        ]
+                      },
+                      {
+                        "id": "python;numpy.uint64",
+                        "name": "uint64",
+                        "examples": [
+                          "self.x if x is None else x"
+                        ]
+                      },
+                      {
+                        "id": "python;...",
+                        "name": "",
+                        "examples": null
+                      }
+                    ]
+                  },
+                  {
+                    "name": "y",
+                    "types": [
+                      {
+                        "id": "python;__builtin__.list",
+                        "name": "list",
+                        "examples": [
+                          "[0, 1]",
+                          "[]",
+                          "[0,0]"
+                        ]
+                      },
+                      {
+                        "id": "python;__builtin__.str",
+                        "name": "str",
+                        "examples": [
+                          "\"'r'\"",
+                          "\"'b'\"",
+                          "\"'r-'\""
+                        ]
+                      },
+                      {
+                        "id": "python;...",
+                        "name": "",
+                        "examples": null
+                      }
+                    ]
+                  }
+                ],
+                "language_details": {
+                  "python": {
+                    "kwargs": null
+                  }
+                }
+              },
+              {
+                "args": [
+                  {
+                    "name": "x",
+                    "types": [
+                      {
+                        "id": "python;__builtin__.list",
+                        "name": "list",
+                        "examples": [
+                          "[]",
+                          "[0, 1]",
+                          "[0,1]"
+                        ]
+                      },
+                      {
+                        "id": "python;numpy.uint64",
+                        "name": "uint64",
+                        "examples": [
+                          "self.x if x is None else x"
+                        ]
+                      },
+                      {
+                        "id": "python;...",
+                        "name": "",
+                        "examples": null
+                      }
+                    ]
+                  },
+                  {
+                    "name": "y",
+                    "types": [
+                      {
+                        "id": "python;__builtin__.list",
+                        "name": "list",
+                        "examples": [
+                          "[0, 1]",
+                          "[]",
+                          "[0,0]"
+                        ]
+                      },
+                      {
+                        "id": "python;__builtin__.str",
+                        "name": "str",
+                        "examples": [
+                          "\"'r'\"",
+                          "\"'b'\"",
+                          "\"'r-'\""
+                        ]
+                      },
+                      {
+                        "id": "python;...",
+                        "name": "",
+                        "examples": null
+                      }
+                    ]
+                  },
+                  {
+                    "name": "color",
+                    "types": [
+                      {
+                        "id": "python;__builtin__.str",
+                        "name": "str",
+                        "examples": [
+                          "\"'r'\"",
+                          "\"'o'\"",
+                          "\"'ro'\""
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "language_details": {
+                  "python": {
+                    "kwargs": null
+                  }
+                }
+              },
+              {
+                "args": [
+                  {
+                    "name": "x",
+                    "types": [
+                      {
+                        "id": "python;__builtin__.list",
+                        "name": "list",
+                        "examples": [
+                          "[]",
+                          "[0, 1]",
+                          "[0,1]"
+                        ]
+                      },
+                      {
+                        "id": "python;numpy.uint64",
+                        "name": "uint64",
+                        "examples": [
+                          "self.x if x is None else x"
+                        ]
+                      },
+                      {
+                        "id": "python;...",
+                        "name": "",
+                        "examples": null
+                      }
+                    ]
+                  }
+                ],
+                "language_details": {
+                  "python": {
+                    "kwargs": null
+                  }
+                }
+              },
+              {
+                "args": [
+                  {
+                    "name": "x",
+                    "types": [
+                      {
+                        "id": "python;__builtin__.list",
+                        "name": "list",
+                        "examples": [
+                          "[]",
+                          "[0, 1]",
+                          "[0,1]"
+                        ]
+                      },
+                      {
+                        "id": "python;numpy.uint64",
+                        "name": "uint64",
+                        "examples": [
+                          "self.x if x is None else x"
+                        ]
+                      },
+                      {
+                        "id": "python;...",
+                        "name": "",
+                        "examples": null
+                      }
+                    ]
+                  },
+                  {
+                    "name": "y",
+                    "types": [
+                      {
+                        "id": "python;__builtin__.list",
+                        "name": "list",
+                        "examples": [
+                          "[0, 1]",
+                          "[]",
+                          "[0,0]"
+                        ]
+                      },
+                      {
+                        "id": "python;__builtin__.str",
+                        "name": "str",
+                        "examples": [
+                          "\"'r'\"",
+                          "\"'b'\"",
+                          "\"'r-'\""
+                        ]
+                      },
+                      {
+                        "id": "python;...",
+                        "name": "",
+                        "examples": null
+                      }
+                    ]
+                  }
+                ],
+                "language_details": {
+                  "python": {
+                    "kwargs": [
+                      {
+                        "name": "label",
+                        "types": [
+                          {
+                            "id": "python;__builtin__.str",
+                            "name": "str",
+                            "examples": [
+                              "\"'_nolegend_'\"",
+                              "\"'test error'\"",
+                              "\"'training error'\""
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                }
+              },
+              {
+                "args": [
+                  {
+                    "name": "x",
+                    "types": [
+                      {
+                        "id": "python;__builtin__.list",
+                        "name": "list",
+                        "examples": [
+                          "[]",
+                          "[0, 1]",
+                          "[0,1]"
+                        ]
+                      },
+                      {
+                        "id": "python;numpy.uint64",
+                        "name": "uint64",
+                        "examples": [
+                          "self.x if x is None else x"
+                        ]
+                      },
+                      {
+                        "id": "python;...",
+                        "name": "",
+                        "examples": null
+                      }
+                    ]
+                  },
+                  {
+                    "name": "y",
+                    "types": [
+                      {
+                        "id": "python;__builtin__.list",
+                        "name": "list",
+                        "examples": [
+                          "[0, 1]",
+                          "[]",
+                          "[0,0]"
+                        ]
+                      },
+                      {
+                        "id": "python;__builtin__.str",
+                        "name": "str",
+                        "examples": [
+                          "\"'r'\"",
+                          "\"'b'\"",
+                          "\"'r-'\""
+                        ]
+                      },
+                      {
+                        "id": "python;...",
+                        "name": "",
+                        "examples": null
+                      }
+                    ]
+                  },
+                  {
+                    "name": "color",
+                    "types": [
+                      {
+                        "id": "python;__builtin__.str",
+                        "name": "str",
+                        "examples": [
+                          "\"'r'\"",
+                          "\"'o'\"",
+                          "\"'ro'\""
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "language_details": {
+                  "python": {
+                    "kwargs": [
+                      {
+                        "name": "label",
+                        "types": [
+                          {
+                            "id": "python;__builtin__.str",
+                            "name": "str",
+                            "examples": [
+                              "\"'_nolegend_'\"",
+                              "\"'test error'\"",
+                              "\"'training error'\""
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                }
+              }
+            ],
+            "language_details": {
+              "python": {
+                "vararg": {
+                  "name": "args",
+                  "inferred_value": null,
+                  "synopsis": "",
+                  "language_details": {
+                    "python": null
+                  }
+                },
+                "kwarg": {
+                  "name": "kwargs",
+                  "inferred_value": null,
+                  "synopsis": "",
+                  "language_details": {
+                    "python": null
+                  }
+                },
+                "kwarg_parameters": [
+                  {
+                    "name": "label",
+                    "inferred_value": [
+                      {
+                        "id": "",
+                        "kind": "instance",
+                        "repr": "str",
+                        "type": "str",
+                        "type_id": "python;__builtin__.str"
+                      }
+                    ],
+                    "synopsis": "",
+                    "language_details": {
+                      "python": null
+                    }
+                  },
+                  {
+                    "name": "color",
+                    "inferred_value": [
+                      {
+                        "id": "",
+                        "kind": "instance",
+                        "repr": "str",
+                        "type": "str",
+                        "type_id": "python;__builtin__.str"
+                      }
+                    ],
+                    "synopsis": "",
+                    "language_details": {
+                      "python": null
+                    }
+                  },
+                  {
+                    "name": "linewidth",
+                    "inferred_value": [
+                      {
+                        "id": "",
+                        "kind": "instance",
+                        "repr": "int",
+                        "type": "int",
+                        "type_id": "python;__builtin__.int"
+                      },
+                      {
+                        "id": "",
+                        "kind": "instance",
+                        "repr": "float",
+                        "type": "float",
+                        "type_id": "python;__builtin__.float"
+                      }
+                    ],
+                    "synopsis": "",
+                    "language_details": {
+                      "python": null
+                    }
+                  },
+                  {
+                    "name": "lw",
+                    "inferred_value": [
+                      {
+                        "id": "",
+                        "kind": "instance",
+                        "repr": "int",
+                        "type": "int",
+                        "type_id": "python;__builtin__.int"
+                      },
+                      {
+                        "id": "",
+                        "kind": "instance",
+                        "repr": "float",
+                        "type": "float",
+                        "type_id": "python;__builtin__.float"
+                      }
+                    ],
+                    "synopsis": "",
+                    "language_details": {
+                      "python": null
+                    }
+                  },
+                  {
+                    "name": "linestyle",
+                    "inferred_value": [
+                      {
+                        "id": "",
+                        "kind": "instance",
+                        "repr": "str",
+                        "type": "str",
+                        "type_id": "python;__builtin__.str"
+                      }
+                    ],
+                    "synopsis": "",
+                    "language_details": {
+                      "python": null
+                    }
+                  },
+                  {
+                    "name": "marker",
+                    "inferred_value": [
+                      {
+                        "id": "",
+                        "kind": "instance",
+                        "repr": "str",
+                        "type": "str",
+                        "type_id": "python;__builtin__.str"
+                      }
+                    ],
+                    "synopsis": "",
+                    "language_details": {
+                      "python": null
+                    }
+                  },
+                  {
+                    "name": "markersize",
+                    "inferred_value": [
+                      {
+                        "id": "",
+                        "kind": "instance",
+                        "repr": "int",
+                        "type": "int",
+                        "type_id": "python;__builtin__.int"
+                      },
+                      {
+                        "id": "",
+                        "kind": "instance",
+                        "repr": "float",
+                        "type": "float",
+                        "type_id": "python;__builtin__.float"
+                      }
+                    ],
+                    "synopsis": "",
+                    "language_details": {
+                      "python": null
+                    }
+                  },
+                  {
+                    "name": "alpha",
+                    "inferred_value": [
+                      {
+                        "id": "",
+                        "kind": "instance",
+                        "repr": "float",
+                        "type": "float",
+                        "type_id": "python;__builtin__.float"
+                      }
+                    ],
+                    "synopsis": "",
+                    "language_details": {
+                      "python": null
+                    }
+                  },
+                  {
+                    "name": "c",
+                    "inferred_value": [
+                      {
+                        "id": "",
+                        "kind": "instance",
+                        "repr": "str",
+                        "type": "str",
+                        "type_id": "python;__builtin__.str"
+                      }
+                    ],
+                    "synopsis": "",
+                    "language_details": {
+                      "python": null
+                    }
+                  },
+                  {
+                    "name": "ms",
+                    "inferred_value": [
+                      {
+                        "id": "",
+                        "kind": "instance",
+                        "repr": "int",
+                        "type": "int",
+                        "type_id": "python;__builtin__.int"
+                      },
+                      {
+                        "id": "",
+                        "kind": "instance",
+                        "repr": "float",
+                        "type": "float",
+                        "type_id": "python;__builtin__.float"
+                      }
+                    ],
+                    "synopsis": "",
+                    "language_details": {
+                      "python": null
+                    }
+                  },
+                  {
+                    "name": "markerfacecolor",
+                    "inferred_value": [
+                      {
+                        "id": "",
+                        "kind": "instance",
+                        "repr": "str",
+                        "type": "str",
+                        "type_id": "python;__builtin__.str"
+                      }
+                    ],
+                    "synopsis": "",
+                    "language_details": {
+                      "python": null
+                    }
+                  },
+                  {
+                    "name": "ls",
+                    "inferred_value": [
+                      {
+                        "id": "",
+                        "kind": "instance",
+                        "repr": "str",
+                        "type": "str",
+                        "type_id": "python;__builtin__.str"
+                      }
+                    ],
+                    "synopsis": "",
+                    "language_details": {
+                      "python": null
+                    }
+                  },
+                  {
+                    "name": "markeredgecolor",
+                    "inferred_value": [
+                      {
+                        "id": "",
+                        "kind": "instance",
+                        "repr": "tuple",
+                        "type": "tuple",
+                        "type_id": "python;__builtin__.tuple"
+                      },
+                      {
+                        "id": "",
+                        "kind": "instance",
+                        "repr": "str",
+                        "type": "str",
+                        "type_id": "python;__builtin__.str"
+                      }
+                    ],
+                    "synopsis": "",
+                    "language_details": {
+                      "python": null
+                    }
+                  }
+                ],
+                "return_annotation": null
+              }
+            }
+          },
+          "type": null,
+          "instance": null,
+          "module": null
+        },
+        "Ancestors": [
+          {
+            "id": "python;matplotlib",
+            "name": "matplotlib"
+          },
+          {
+            "id": "python;matplotlib.pyplot",
+            "name": "pyplot"
+          }
+        ]
+      },
+      "funcName": "plog",
+      "signatures": [
+        {
+          "args": [
+            {
+              "name": "x",
+              "types": [
+                {
+                  "id": "python;__builtin__.list",
+                  "name": "list",
+                  "examples": [
+                    "[]",
+                    "[0, 1]",
+                    "[0,1]"
+                  ]
+                },
+                {
+                  "id": "python;numpy.uint64",
+                  "name": "uint64",
+                  "examples": [
+                    "self.x if x is None else x"
+                  ]
+                },
+                {
+                  "id": "python;...",
+                  "name": "",
+                  "examples": null
+                }
+              ]
+            },
+            {
+              "name": "y",
+              "types": [
+                {
+                  "id": "python;__builtin__.list",
+                  "name": "list",
+                  "examples": [
+                    "[0, 1]",
+                    "[]",
+                    "[0,0]"
+                  ]
+                },
+                {
+                  "id": "python;__builtin__.str",
+                  "name": "str",
+                  "examples": [
+                    "\"'r'\"",
+                    "\"'b'\"",
+                    "\"'r-'\""
+                  ]
+                },
+                {
+                  "id": "python;...",
+                  "name": "",
+                  "examples": null
+                }
+              ]
+            }
+          ],
+          "language_details": {
+            "python": {
+              "kwargs": null
+            }
+          }
+        },
+        {
+          "args": [
+            {
+              "name": "x",
+              "types": [
+                {
+                  "id": "python;__builtin__.list",
+                  "name": "list",
+                  "examples": [
+                    "[]",
+                    "[0, 1]",
+                    "[0,1]"
+                  ]
+                },
+                {
+                  "id": "python;numpy.uint64",
+                  "name": "uint64",
+                  "examples": [
+                    "self.x if x is None else x"
+                  ]
+                },
+                {
+                  "id": "python;...",
+                  "name": "",
+                  "examples": null
+                }
+              ]
+            },
+            {
+              "name": "y",
+              "types": [
+                {
+                  "id": "python;__builtin__.list",
+                  "name": "list",
+                  "examples": [
+                    "[0, 1]",
+                    "[]",
+                    "[0,0]"
+                  ]
+                },
+                {
+                  "id": "python;__builtin__.str",
+                  "name": "str",
+                  "examples": [
+                    "\"'r'\"",
+                    "\"'b'\"",
+                    "\"'r-'\""
+                  ]
+                },
+                {
+                  "id": "python;...",
+                  "name": "",
+                  "examples": null
+                }
+              ]
+            },
+            {
+              "name": "color",
+              "types": [
+                {
+                  "id": "python;__builtin__.str",
+                  "name": "str",
+                  "examples": [
+                    "\"'r'\"",
+                    "\"'o'\"",
+                    "\"'ro'\""
+                  ]
+                }
+              ]
+            }
+          ],
+          "language_details": {
+            "python": {
+              "kwargs": null
+            }
+          }
+        },
+        {
+          "args": [
+            {
+              "name": "x",
+              "types": [
+                {
+                  "id": "python;__builtin__.list",
+                  "name": "list",
+                  "examples": [
+                    "[]",
+                    "[0, 1]",
+                    "[0,1]"
+                  ]
+                },
+                {
+                  "id": "python;numpy.uint64",
+                  "name": "uint64",
+                  "examples": [
+                    "self.x if x is None else x"
+                  ]
+                },
+                {
+                  "id": "python;...",
+                  "name": "",
+                  "examples": null
+                }
+              ]
+            }
+          ],
+          "language_details": {
+            "python": {
+              "kwargs": null
+            }
+          }
+        },
+        {
+          "args": [
+            {
+              "name": "x",
+              "types": [
+                {
+                  "id": "python;__builtin__.list",
+                  "name": "list",
+                  "examples": [
+                    "[]",
+                    "[0, 1]",
+                    "[0,1]"
+                  ]
+                },
+                {
+                  "id": "python;numpy.uint64",
+                  "name": "uint64",
+                  "examples": [
+                    "self.x if x is None else x"
+                  ]
+                },
+                {
+                  "id": "python;...",
+                  "name": "",
+                  "examples": null
+                }
+              ]
+            },
+            {
+              "name": "y",
+              "types": [
+                {
+                  "id": "python;__builtin__.list",
+                  "name": "list",
+                  "examples": [
+                    "[0, 1]",
+                    "[]",
+                    "[0,0]"
+                  ]
+                },
+                {
+                  "id": "python;__builtin__.str",
+                  "name": "str",
+                  "examples": [
+                    "\"'r'\"",
+                    "\"'b'\"",
+                    "\"'r-'\""
+                  ]
+                },
+                {
+                  "id": "python;...",
+                  "name": "",
+                  "examples": null
+                }
+              ]
+            }
+          ],
+          "language_details": {
+            "python": {
+              "kwargs": [
+                {
+                  "name": "label",
+                  "types": [
+                    {
+                      "id": "python;__builtin__.str",
+                      "name": "str",
+                      "examples": [
+                        "\"'_nolegend_'\"",
+                        "\"'test error'\"",
+                        "\"'training error'\""
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        },
+        {
+          "args": [
+            {
+              "name": "x",
+              "types": [
+                {
+                  "id": "python;__builtin__.list",
+                  "name": "list",
+                  "examples": [
+                    "[]",
+                    "[0, 1]",
+                    "[0,1]"
+                  ]
+                },
+                {
+                  "id": "python;numpy.uint64",
+                  "name": "uint64",
+                  "examples": [
+                    "self.x if x is None else x"
+                  ]
+                },
+                {
+                  "id": "python;...",
+                  "name": "",
+                  "examples": null
+                }
+              ]
+            },
+            {
+              "name": "y",
+              "types": [
+                {
+                  "id": "python;__builtin__.list",
+                  "name": "list",
+                  "examples": [
+                    "[0, 1]",
+                    "[]",
+                    "[0,0]"
+                  ]
+                },
+                {
+                  "id": "python;__builtin__.str",
+                  "name": "str",
+                  "examples": [
+                    "\"'r'\"",
+                    "\"'b'\"",
+                    "\"'r-'\""
+                  ]
+                },
+                {
+                  "id": "python;...",
+                  "name": "",
+                  "examples": null
+                }
+              ]
+            },
+            {
+              "name": "color",
+              "types": [
+                {
+                  "id": "python;__builtin__.str",
+                  "name": "str",
+                  "examples": [
+                    "\"'r'\"",
+                    "\"'o'\"",
+                    "\"'ro'\""
+                  ]
+                }
+              ]
+            }
+          ],
+          "language_details": {
+            "python": {
+              "kwargs": [
+                {
+                  "name": "label",
+                  "types": [
+                    {
+                      "id": "python;__builtin__.str",
+                      "name": "str",
+                      "examples": [
+                        "\"'_nolegend_'\"",
+                        "\"'test error'\"",
+                        "\"'training error'\""
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        }
+      ],
+      "arg_index": 0,
+      "language_details": {
+        "python": {
+          "in_kwargs": false
+        }
+      }
+    }
+  ]
+}

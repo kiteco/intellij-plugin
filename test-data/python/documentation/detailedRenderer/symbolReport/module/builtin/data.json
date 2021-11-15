@@ -1,0 +1,400 @@
+{
+    "language": "python",
+    "symbol": {
+        "id": "python;__builtin__",
+        "name": "__builtin__",
+        "namespace": {
+            "id": "python;",
+            "kind": "unknown",
+            "repr": "",
+            "type": "",
+            "type_id": "python;"
+        },
+        "value": [
+            {
+                "id": "python;__builtin__",
+                "kind": "module",
+                "repr": "__builtin__",
+                "type": "module",
+                "type_id": "python;",
+                "synopsis": "Built-in functions, exceptions, and other objects.\nNoteworthy: None is the `nil' object; Ellipsis represents `...' in slices.",
+                "detail": {
+                    "members": [
+                        {
+                            "id": "python;__builtin__.abs",
+                            "name": "abs",
+                            "namespace": {
+                                "id": "python;__builtin__",
+                                "kind": "module",
+                                "repr": "__builtin__",
+                                "type": "module",
+                                "type_id": "python;"
+                            },
+                            "value": [
+                                {
+                                    "id": "python;__builtin__.abs",
+                                    "kind": "function",
+                                    "repr": "abs",
+                                    "type": "type",
+                                    "type_id": "python;__builtin__.type"
+                                }
+                            ]
+                        },
+                        {
+                            "id": "python;__builtin__.all",
+                            "name": "all",
+                            "namespace": {
+                                "id": "python;__builtin__",
+                                "kind": "module",
+                                "repr": "__builtin__",
+                                "type": "module",
+                                "type_id": "python;"
+                            },
+                            "value": [
+                                {
+                                    "id": "python;__builtin__.all",
+                                    "kind": "function",
+                                    "repr": "all",
+                                    "type": "type",
+                                    "type_id": "python;__builtin__.type"
+                                }
+                            ]
+                        },
+                        {
+                            "id": "python;__builtin__.any",
+                            "name": "any",
+                            "namespace": {
+                                "id": "python;__builtin__",
+                                "kind": "module",
+                                "repr": "__builtin__",
+                                "type": "module",
+                                "type_id": "python;"
+                            },
+                            "value": [
+                                {
+                                    "id": "python;__builtin__.any",
+                                    "kind": "function",
+                                    "repr": "any",
+                                    "type": "type",
+                                    "type_id": "python;__builtin__.type"
+                                }
+                            ]
+                        },
+                        {
+                            "id": "python;__builtin__.apply",
+                            "name": "apply",
+                            "namespace": {
+                                "id": "python;__builtin__",
+                                "kind": "module",
+                                "repr": "__builtin__",
+                                "type": "module",
+                                "type_id": "python;"
+                            },
+                            "value": [
+                                {
+                                    "id": "python;__builtin__.apply",
+                                    "kind": "function",
+                                    "repr": "apply",
+                                    "type": "type",
+                                    "type_id": "python;__builtin__.type"
+                                }
+                            ]
+                        },
+                        {
+                            "id": "python;exceptions.ArithmeticError",
+                            "name": "ArithmeticError",
+                            "namespace": {
+                                "id": "python;__builtin__",
+                                "kind": "module",
+                                "repr": "__builtin__",
+                                "type": "module",
+                                "type_id": "python;"
+                            },
+                            "value": [
+                                {
+                                    "id": "python;exceptions.ArithmeticError",
+                                    "kind": "type",
+                                    "repr": "ArithmeticError",
+                                    "type": "type",
+                                    "type_id": "python;__builtin__.type"
+                                }
+                            ]
+                        }
+                    ],
+                    "total_members": 141
+                },
+                "details": {
+                    "function": null,
+                    "type": null,
+                    "instance": null,
+                    "module": {
+                        "members": [
+                            {
+                                "id": "python;__builtin__.abs",
+                                "name": "abs",
+                                "namespace": {
+                                    "id": "python;__builtin__",
+                                    "kind": "module",
+                                    "repr": "__builtin__",
+                                    "type": "module",
+                                    "type_id": "python;"
+                                },
+                                "value": [
+                                    {
+                                        "id": "python;__builtin__.abs",
+                                        "kind": "function",
+                                        "repr": "abs",
+                                        "type": "type",
+                                        "type_id": "python;__builtin__.type"
+                                    }
+                                ]
+                            },
+                            {
+                                "id": "python;__builtin__.all",
+                                "name": "all",
+                                "namespace": {
+                                    "id": "python;__builtin__",
+                                    "kind": "module",
+                                    "repr": "__builtin__",
+                                    "type": "module",
+                                    "type_id": "python;"
+                                },
+                                "value": [
+                                    {
+                                        "id": "python;__builtin__.all",
+                                        "kind": "function",
+                                        "repr": "all",
+                                        "type": "type",
+                                        "type_id": "python;__builtin__.type"
+                                    }
+                                ]
+                            },
+                            {
+                                "id": "python;__builtin__.any",
+                                "name": "any",
+                                "namespace": {
+                                    "id": "python;__builtin__",
+                                    "kind": "module",
+                                    "repr": "__builtin__",
+                                    "type": "module",
+                                    "type_id": "python;"
+                                },
+                                "value": [
+                                    {
+                                        "id": "python;__builtin__.any",
+                                        "kind": "function",
+                                        "repr": "any",
+                                        "type": "type",
+                                        "type_id": "python;__builtin__.type"
+                                    }
+                                ]
+                            },
+                            {
+                                "id": "python;__builtin__.apply",
+                                "name": "apply",
+                                "namespace": {
+                                    "id": "python;__builtin__",
+                                    "kind": "module",
+                                    "repr": "__builtin__",
+                                    "type": "module",
+                                    "type_id": "python;"
+                                },
+                                "value": [
+                                    {
+                                        "id": "python;__builtin__.apply",
+                                        "kind": "function",
+                                        "repr": "apply",
+                                        "type": "type",
+                                        "type_id": "python;__builtin__.type"
+                                    }
+                                ]
+                            },
+                            {
+                                "id": "python;exceptions.ArithmeticError",
+                                "name": "ArithmeticError",
+                                "namespace": {
+                                    "id": "python;__builtin__",
+                                    "kind": "module",
+                                    "repr": "__builtin__",
+                                    "type": "module",
+                                    "type_id": "python;"
+                                },
+                                "value": [
+                                    {
+                                        "id": "python;exceptions.ArithmeticError",
+                                        "kind": "type",
+                                        "repr": "ArithmeticError",
+                                        "type": "type",
+                                        "type_id": "python;__builtin__.type"
+                                    }
+                                ]
+                            }
+                        ],
+                        "total_members": 141
+                    }
+                }
+            }
+        ],
+        "synopsis": ""
+    },
+    "report": {
+        "definition": null,
+        "description_text": "Built-in functions, exceptions, and other objects.\nNoteworthy: None is the `nil' object; Ellipsis represents `...' in slices.",
+        "description_html": "<body>\n\n\n<p>Built-in functions, exceptions, and other objects.</p>\n<p>Noteworthy: None is the <a class=\"external_link\" href=\"##id1\">`</a>nil&#39; object; Ellipsis represents <a class=\"external_link\" href=\"##id3\">`</a>...&#39; in slices.</p>\n</body>",
+        "examples": [
+            {
+                "id": 3622,
+                "title": "Generate a range of integers"
+            },
+            {
+                "id": 3607,
+                "title": "Read from a file"
+            }
+        ],
+        "usages": null,
+        "total_usages": 0,
+        "links": [
+            {
+                "title": "super() fails with error: TypeError \"argument 1 must be type, not classobj\"",
+                "url": "https://stackoverflow.com/questions/1713038",
+                "stackoverflow": {
+                    "score": 60
+                }
+            },
+            {
+                "title": "Python: What's the difference between __builtin__ and __builtins__?",
+                "url": "https://stackoverflow.com/questions/11181519",
+                "stackoverflow": {
+                    "score": 49
+                }
+            },
+            {
+                "title": "Where is the __builtin__ module in Python3? Why was it renamed?",
+                "url": "https://stackoverflow.com/questions/9047745",
+                "stackoverflow": {
+                    "score": 33
+                }
+            },
+            {
+                "title": "globals and locals in python exec()",
+                "url": "https://stackoverflow.com/questions/2904274",
+                "stackoverflow": {
+                    "score": 30
+                }
+            },
+            {
+                "title": "Python sort() method on list vs builtin sorted() function",
+                "url": "https://stackoverflow.com/questions/1436962",
+                "stackoverflow": {
+                    "score": 26
+                }
+            },
+            {
+                "title": "Hook the global name lookup in a python interpreter",
+                "url": "https://stackoverflow.com/questions/36835623",
+                "stackoverflow": {
+                    "score": 23
+                }
+            },
+            {
+                "title": "Is it possible to mock Python's built in print function?",
+                "url": "https://stackoverflow.com/questions/12998908",
+                "stackoverflow": {
+                    "score": 18
+                }
+            },
+            {
+                "title": "Return a list of imported Python modules used in a script?",
+                "url": "https://stackoverflow.com/questions/2572582",
+                "stackoverflow": {
+                    "score": 17
+                }
+            },
+            {
+                "title": "Why does this Python code destroy my computer?",
+                "url": "https://stackoverflow.com/questions/11927424",
+                "stackoverflow": {
+                    "score": 17
+                }
+            },
+            {
+                "title": "What is the meaning of \"<\" for Python dictionaries?",
+                "url": "https://stackoverflow.com/questions/23192163",
+                "stackoverflow": {
+                    "score": 16
+                }
+            },
+            {
+                "title": "Why are some python builtin \"functions\" actually types?",
+                "url": "https://stackoverflow.com/questions/14861572",
+                "stackoverflow": {
+                    "score": 12
+                }
+            },
+            {
+                "title": "What could cause a python module to be imported twice?",
+                "url": "https://stackoverflow.com/questions/4798589",
+                "stackoverflow": {
+                    "score": 11
+                }
+            },
+            {
+                "title": "Python identity: Multiple personality disorder, need code shrink",
+                "url": "https://stackoverflow.com/questions/2058948",
+                "stackoverflow": {
+                    "score": 10
+                }
+            },
+            {
+                "title": "print.__doc__ vs getattr(__builtin__,\"print\").__doc__",
+                "url": "https://stackoverflow.com/questions/23951085",
+                "stackoverflow": {
+                    "score": 10
+                }
+            },
+            {
+                "title": "Why are module-level variables in a Python exec inaccessible?",
+                "url": "https://stackoverflow.com/questions/24712192",
+                "stackoverflow": {
+                    "score": 9
+                }
+            },
+            {
+                "title": "Build a PyObject* from a C function?",
+                "url": "https://stackoverflow.com/questions/6626167",
+                "stackoverflow": {
+                    "score": 9
+                }
+            },
+            {
+                "title": "Speed Up Initial Execution of Python Command Line App",
+                "url": "https://stackoverflow.com/questions/7812115",
+                "stackoverflow": {
+                    "score": 9
+                }
+            },
+            {
+                "title": "How to change the value of None in Python?",
+                "url": "https://stackoverflow.com/questions/2535477",
+                "stackoverflow": {
+                    "score": 8
+                }
+            },
+            {
+                "title": "Why is Python saying pow only has 2 arguments",
+                "url": "https://stackoverflow.com/questions/3322272",
+                "stackoverflow": {
+                    "score": 8
+                }
+            },
+            {
+                "title": "Python decorator with multiprocessing fails",
+                "url": "https://stackoverflow.com/questions/9336646",
+                "stackoverflow": {
+                    "score": 8
+                }
+            }
+        ],
+        "total_links": 50
+    }
+}

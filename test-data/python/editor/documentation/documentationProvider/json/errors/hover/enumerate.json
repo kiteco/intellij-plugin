@@ -1,0 +1,32 @@
+{
+  "part_of_syntax": "name",
+  "symbol": [
+    {
+      "id": "",
+      "name": "enumerate",
+      "namespace": null,
+      "value": [
+        {
+          "id": "__builtin__.enumerate",
+          "kind": "function",
+          "repr": "enumerate",
+          "type": "FunctionType",
+          "type_id": "types.FunctionType",
+          "synopsis": ""
+        }
+      ],
+      "synopsis": "symbol `enumerate`"
+    }
+  ],
+  "report": {
+    "definition": null,
+    "description_text": "Return an enumerate object. sequence must be a sequence, an\niterator, or some other object which supports iteration.  The\nnext() method of the iterator returned by enumerate() returns a\ntuple containing a count (from start which defaults to 0) and the\nvalues obtained from iterating over sequence:",
+    "description_html": "<body><p>Return an enumerate object. <em>sequence</em> must be a sequence, an\n<a><em>iterator</em></a>, or some other object which supports iteration.  The\n<code>next()</code> method of the iterator returned by <a class=\"internal_link\" href=\"#enumerate\"><code>enumerate()</code></a> returns a\ntuple containing a count (from <em>start</em> which defaults to 0) and the\nvalues obtained from iterating over <em>sequence</em>:</p><pre class=\"lang-python\"><code>&gt;&gt;&gt; seasons = [&#39;Spring&#39;, &#39;Summer&#39;, &#39;Fall&#39;, &#39;Winter&#39;]\n&gt;&gt;&gt; list(enumerate(seasons))\n[(0, &#39;Spring&#39;), (1, &#39;Summer&#39;), (2, &#39;Fall&#39;), (3, &#39;Winter&#39;)]\n&gt;&gt;&gt; list(enumerate(seasons, start=1))\n[(1, &#39;Spring&#39;), (2, &#39;Summer&#39;), (3, &#39;Fall&#39;), (4, &#39;Winter&#39;)]\n</code></pre>\n<p>Equivalent to:</p><pre class=\"lang-python\"><code>def enumerate(sequence, start=0):\n    n = start\n    for elem in sequence:\n        yield n, elem\n        n += 1\n</code></pre>\n<p>\n<span class=\"versionadded\">New in version 2.3.</span></p><p>\n<span class=\"versionchanged\">Changed in version 2.6: </span>The <em>start</em> parameter was added.</p></body>",
+    "examples": [
+      {
+        "id": 2330,
+        "title": "Enumerate a sequence"
+      }
+    ]
+  }
+}

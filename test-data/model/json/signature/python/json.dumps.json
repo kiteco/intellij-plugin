@@ -1,0 +1,248 @@
+{
+  "language": "python",
+  "calls": [
+    {
+      "funcName": "loads",
+      "callee": {
+        "id": "python;json.loads",
+        "kind": "function",
+        "repr": "json.loads",
+        "type": "function",
+        "type_id": "python;",
+        "synopsis": "Deserialize s (a str or unicode instance containing a JSON\ndocument) to a Python object using this conversion table.\nIf s is a str instance and is encoded with an ASCII based encoding\nother than UTF-8 (e.g. latin-1), then an appropriate encoding name must be\nspecified.  Encodings that are not ASCII based (such as UCS-2) are not\nallowed and should be decoded to unicode first.\nThe other arguments have the same meaning as in load().",
+        "details": {
+          "function": {
+            "parameters": [
+              {
+                "name": "s",
+                "default_value": null,
+                "inferred_value": null,
+                "annotation": null,
+                "keyword_only": false,
+                "synopsis": "",
+                "language_details": {
+                  "python": null
+                }
+              },
+              {
+                "name": "encoding",
+                "default_value": null,
+                "inferred_value": null,
+                "annotation": null,
+                "keyword_only": false,
+                "synopsis": "",
+                "language_details": {
+                  "python": null
+                }
+              },
+              {
+                "name": "cls",
+                "default_value": null,
+                "inferred_value": null,
+                "annotation": null,
+                "keyword_only": false,
+                "synopsis": "",
+                "language_details": {
+                  "python": null
+                }
+              },
+              {
+                "name": "object_hook",
+                "default_value": null,
+                "inferred_value": null,
+                "annotation": null,
+                "keyword_only": false,
+                "synopsis": "",
+                "language_details": {
+                  "python": null
+                }
+              },
+              {
+                "name": "parse_float",
+                "default_value": null,
+                "inferred_value": null,
+                "annotation": null,
+                "keyword_only": false,
+                "synopsis": "",
+                "language_details": {
+                  "python": null
+                }
+              },
+              {
+                "name": "parse_int",
+                "default_value": null,
+                "inferred_value": null,
+                "annotation": null,
+                "keyword_only": false,
+                "synopsis": "",
+                "language_details": {
+                  "python": null
+                }
+              },
+              {
+                "name": "parse_constant",
+                "default_value": null,
+                "inferred_value": null,
+                "annotation": null,
+                "keyword_only": false,
+                "synopsis": "",
+                "language_details": {
+                  "python": null
+                }
+              },
+              {
+                "name": "object_pairs_hook",
+                "default_value": null,
+                "inferred_value": null,
+                "annotation": null,
+                "keyword_only": false,
+                "synopsis": "",
+                "language_details": {
+                  "python": null
+                }
+              }
+            ],
+            "kwarg": {
+              "name": "kw",
+              "default_value": null,
+              "inferred_value": null,
+              "annotation": null,
+              "keyword_only": false,
+              "synopsis": "",
+              "language_details": {
+                "python": null
+              }
+            },
+            "kwarg_parameters": [
+              {
+                "name": "strict",
+                "default_value": null,
+                "inferred_value": [
+                  {
+                    "id": "python;",
+                    "kind": "instance",
+                    "repr": "bool",
+                    "type": "bool",
+                    "type_id": "python;__builtin__.bool"
+                  }
+                ],
+                "annotation": null,
+                "keyword_only": false,
+                "synopsis": "",
+                "language_details": {
+                  "python": null
+                }
+              }
+            ],
+            "return_value": null,
+            "return_annotation": null,
+            "signatures": [
+              {
+                "args": [
+                  {
+                    "name": "s",
+                    "types": [
+                      {
+                        "id": "python;__builtin__.str",
+                        "name": "str",
+                        "examples": [
+                          "\"'{}'\"",
+                          "\"\"{}\"\"",
+                          "\"'utf-8'\""
+                        ]
+                      },
+                      {
+                        "id": "python;__builtin__.property",
+                        "name": "property",
+                        "examples": null
+                      }
+                    ]
+                  }
+                ],
+                "kwargs": null,
+                "language_details": {
+                  "python": null
+                }
+              }
+            ],
+            "language_details": {
+              "python": {
+                "kwarg": {
+                  "name": "kw",
+                  "default_value": null,
+                  "inferred_value": null,
+                  "annotation": null,
+                  "keyword_only": false,
+                  "synopsis": "",
+                  "language_details": {
+                    "python": null
+                  }
+                },
+                "kwarg_parameters": [
+                  {
+                    "name": "strict",
+                    "default_value": null,
+                    "inferred_value": [
+                      {
+                        "id": "python;",
+                        "kind": "instance",
+                        "repr": "bool",
+                        "type": "bool",
+                        "type_id": "python;__builtin__.bool"
+                      }
+                    ],
+                    "annotation": null,
+                    "keyword_only": false,
+                    "synopsis": "",
+                    "language_details": {
+                      "python": null
+                    }
+                  }
+                ],
+                "return_annotation": null
+              }
+            }
+          },
+          "type": null,
+          "instance": null,
+          "module": null
+        }
+      },
+      "signatures": [
+        {
+          "args": [
+            {
+              "name": "s",
+              "types": [
+                {
+                  "id": "python;__builtin__.str",
+                  "name": "str",
+                  "examples": [
+                    "\"'{}'\"",
+                    "\"\"{}\"\"",
+                    "\"'utf-8'\""
+                  ]
+                },
+                {
+                  "id": "python;__builtin__.property",
+                  "name": "property",
+                  "examples": null
+                }
+              ]
+            }
+          ],
+          "kwargs": null,
+          "language_details": {
+            "python": null
+          }
+        }
+      ],
+      "arg_index": 0,
+      "language_details": {
+        "python": {
+          "in_kwargs": false
+        }
+      }
+    }
+  ]
+}

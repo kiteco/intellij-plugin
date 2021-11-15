@@ -1,0 +1,356 @@
+{
+  "part_of_syntax": "name",
+  "symbol": [
+    {
+      "id": "",
+      "name": "str",
+      "namespace": null,
+      "value": [
+        {
+          "id": "__builtin__.str",
+          "kind": "type",
+          "repr": "str",
+          "type": "type",
+          "type_id": "__builtin__.type",
+          "synopsis": "",
+          "details": {
+            "type": {
+              "bases": [
+                {
+                  "id": "__builtin__.object",
+                  "name": "object",
+                  "module": "__builtin__",
+                  "module_id": "__builtin__"
+                }
+              ],
+              "components": null,
+              "members": [
+                {
+                  "id": "",
+                  "name": "capitalize",
+                  "namespace": null,
+                  "value": [
+                    {
+                      "id": "__builtin__.str.capitalize",
+                      "kind": "function",
+                      "repr": "capitalize",
+                      "type": "FunctionType",
+                      "type_id": "types.FunctionType"
+                    }
+                  ]
+                },
+                {
+                  "id": "",
+                  "name": "center",
+                  "namespace": null,
+                  "value": [
+                    {
+                      "id": "__builtin__.str.center",
+                      "kind": "function",
+                      "repr": "center",
+                      "type": "FunctionType",
+                      "type_id": "types.FunctionType"
+                    }
+                  ]
+                },
+                {
+                  "id": "",
+                  "name": "count",
+                  "namespace": null,
+                  "value": [
+                    {
+                      "id": "__builtin__.str.count",
+                      "kind": "function",
+                      "repr": "count",
+                      "type": "FunctionType",
+                      "type_id": "types.FunctionType"
+                    }
+                  ]
+                },
+                {
+                  "id": "",
+                  "name": "decode",
+                  "namespace": null,
+                  "value": [
+                    {
+                      "id": "__builtin__.str.decode",
+                      "kind": "function",
+                      "repr": "decode",
+                      "type": "FunctionType",
+                      "type_id": "types.FunctionType"
+                    }
+                  ]
+                },
+                {
+                  "id": "",
+                  "name": "encode",
+                  "namespace": null,
+                  "value": [
+                    {
+                      "id": "__builtin__.str.encode",
+                      "kind": "function",
+                      "repr": "encode",
+                      "type": "FunctionType",
+                      "type_id": "types.FunctionType"
+                    }
+                  ]
+                }
+              ],
+              "total_members": 71
+            }
+          }
+        }
+      ],
+      "synopsis": ""
+    }
+  ],
+  "report": {
+    "definition": null,
+    "description_text": "Return a string containing a nicely printable representation of an object.  For\nstrings, this returns the string itself.  The difference with repr(object)\nis that str(object) does not always attempt to return a string that is\nacceptable to eval(); its goal is to return a printable string.  If no\nargument is given, returns the empty string, ''.\nFor more information on strings see Sequence Types — str, unicode, list, tuple, bytearray, buffer, xrange which describes sequence\nfunctionality (strings are sequences), and also the string-specific methods\ndescribed in the String Methods section. To output formatted strings\nuse template strings or the % operator described in the\nString Formatting Operations section. In addition see the String Services\nsection. See also unicode().",
+    "description_html": "<body><p>Return a string containing a nicely printable representation of an object.  For\nstrings, this returns the string itself.  The difference with <code>repr(object)</code>\nis that <code>str(object)</code> does not always attempt to return a string that is\nacceptable to <a class=\"internal_link\" href=\"#eval\"><code>eval()</code></a>; its goal is to return a printable string.  If no\nargument is given, returns the empty string, <code>&#39;&#39;</code>.</p><p>For more information on strings see <a><em>Sequence Types — str, unicode, list, tuple, bytearray, buffer, xrange</em></a> which describes sequence\nfunctionality (strings are sequences), and also the string-specific methods\ndescribed in the <a><em>String Methods</em></a> section. To output formatted strings\nuse template strings or the <code>%</code> operator described in the\n<a><em>String Formatting Operations</em></a> section. In addition see the <a><em>String Services</em></a>\nsection. See also <a class=\"internal_link\" href=\"#unicode\"><code>unicode()</code></a>.</p></body>",
+    "examples": [
+      {
+        "id": 3607,
+        "title": "Read from a file"
+      },
+      {
+        "id": 3784,
+        "title": "Lowercase a string"
+      },
+      {
+        "id": 5532,
+        "title": "Decode a string"
+      },
+      {
+        "id": 3767,
+        "title": "Capitalize a string"
+      },
+      {
+        "id": 3768,
+        "title": "Center a string"
+      },
+      {
+        "id": 3800,
+        "title": "Uppercase a string"
+      },
+      {
+        "id": 3799,
+        "title": "Translate a string"
+      },
+      {
+        "id": 3783,
+        "title": "Left justify a string"
+      },
+      {
+        "id": 3789,
+        "title": "Right justify a string"
+      },
+      {
+        "id": 3798,
+        "title": "Title-case a string"
+      },
+      {
+        "id": 5538,
+        "title": "Get a character by ASCII code"
+      },
+      {
+        "id": 3801,
+        "title": "Fill a string with zeros"
+      },
+      {
+        "id": 3774,
+        "title": "Format a string using arguments"
+      },
+      {
+        "id": 3797,
+        "title": "Swap all character casing in a string"
+      },
+      {
+        "id": 3792,
+        "title": "Remove the last characters of a string"
+      },
+      {
+        "id": 2383,
+        "title": "Get the current global symbol table"
+      },
+      {
+        "id": 3785,
+        "title": "Remove the leading characters of a string"
+      },
+      {
+        "id": 2330,
+        "title": "Enumerate a sequence"
+      },
+      {
+        "id": 3782,
+        "title": "Join a list of strings on another string"
+      },
+      {
+        "id": 2397,
+        "title": "Convert a number into a hex string"
+      },
+      {
+        "id": 3796,
+        "title": "Strip characters off the ends of a string"
+      },
+      {
+        "id": 3772,
+        "title": "Change the size of tabs in a string"
+      },
+      {
+        "id": 3787,
+        "title": "Replace a old substring with a new substring"
+      },
+      {
+        "id": 2235,
+        "title": "Convert an integer to a binary string"
+      },
+      {
+        "id": 3606,
+        "title": "Convert an integer to an octal string"
+      },
+      {
+        "id": 3638,
+        "title": "Construct a static method for a class"
+      },
+      {
+        "id": 4461,
+        "title": "Construct a string"
+      },
+      {
+        "id": 3619,
+        "title": "Print an object"
+      },
+      {
+        "id": 5412,
+        "title": "Get raw input from `stdin`"
+      },
+      {
+        "id": 3639,
+        "title": "Get a string representation of an object"
+      },
+      {
+        "id": 3915,
+        "title": "Read bytes from a file"
+      },
+      {
+        "id": 3610,
+        "title": "Read a file in binary mode"
+      },
+      {
+        "id": 3854,
+        "title": "Close a file"
+      },
+      {
+        "id": 2317,
+        "title": "Check if an object appears callable"
+      },
+      {
+        "id": 2541,
+        "title": "Find the minimum value in a list"
+      },
+      {
+        "id": 2539,
+        "title": "Find the maximum value in a list"
+      },
+      {
+        "id": 3916,
+        "title": "Read the next line from a file"
+      },
+      {
+        "id": 3611,
+        "title": "Open the file for updating"
+      },
+      {
+        "id": 3769,
+        "title": "Count the occurrences of a substring"
+      },
+      {
+        "id": 5411,
+        "title": "Get raw input from `stdin` with a prompt"
+      },
+      {
+        "id": 3629,
+        "title": "Get a string containing a printable representation of an object"
+      },
+      {
+        "id": 3942,
+        "title": "Get the data in the buffer in a `memoryview` as a bytestring"
+      },
+      {
+        "id": 3918,
+        "title": "Set the current position of a file"
+      },
+      {
+        "id": 3920,
+        "title": "Set the relative position of a file"
+      },
+      {
+        "id": 3925,
+        "title": "Write a line to a file"
+      },
+      {
+        "id": 3842,
+        "title": "Get an iterator of keys from a dictionary"
+      },
+      {
+        "id": 3641,
+        "title": "Call a method of a parent or sibling class"
+      },
+      {
+        "id": 3924,
+        "title": "Truncate the size of the file"
+      },
+      {
+        "id": 3923,
+        "title": "Get the current position of a file"
+      },
+      {
+        "id": 3613,
+        "title": "Append text to the end of a file"
+      },
+      {
+        "id": 3911,
+        "title": "Flush the internal buffer of a file"
+      },
+      {
+        "id": 3835,
+        "title": "Get an iterator of the keys in a dictionary"
+      },
+      {
+        "id": 3841,
+        "title": "Get an iterator of  key-value pairs from a dictionary"
+      },
+      {
+        "id": 3637,
+        "title": "Generate a sorted list from an iterable object"
+      },
+      {
+        "id": 3926,
+        "title": "Write a sequence of lines to a file"
+      },
+      {
+        "id": 2433,
+        "title": "Check if an object is an instance of a class"
+      },
+      {
+        "id": 3937,
+        "title": "Get all the types of new line encountered when reading a file"
+      },
+      {
+        "id": 3919,
+        "title": "Get an iterator of all lines in a list"
+      }
+    ],
+    "usages": [
+      {
+        "code": "def foo(bar) -> int | str:",
+        "filename": "/Users/user/IdeaProjects/kitePython/Python-Algorithms/test.py",
+        "line": 14,
+        "begin_bytes": 252,
+        "begin_runes": 252
+      }
+    ],
+    "total_usages": 1
+  }
+}

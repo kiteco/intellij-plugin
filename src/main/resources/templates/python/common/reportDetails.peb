@@ -1,0 +1,29 @@
+{# context:
+    parent      with type com.kite.intellij.backend.model.Value | com.kite.intellij.backend.model.Symbol | com.kite.intellij.backend.model.SymbolExt
+    report      with type com.kite.intellij.backend.model.Report
+    hiDPI       with type boolean
+    dark        with type boolean
+#}
+{% set usedParent=parent %}
+{% if usedParent is not validId %}
+    {% set usedParent=parent.firstValue %}
+{% endif %}
+
+{% if report.descriptionHtml is not empty %}
+<div class="report-section report-section-docs">
+    <h2>Description</h2>
+    <div class="report-content">{{report.descriptionHtml | raw}}</div>
+</div>
+{% endif %}
+
+{% if report.definition is not null %}
+    {% set fileUrl=report.definition.filepath | kiteFileUrl("line"=report.definition.lineNumber) %}
+
+    {# The url is only non-empty if the file exist on the local system #}
+    {% if fileUrl is not empty %}
+        <div class="report-section">
+            <h2>Definition</h2>
+            <div class="definition report-content"><a href="{{fileUrl | escape("html")}}">{{report.definition.filepath | kiteFilename}}:{{report.definition.lineNumber}}</a></div>
+        </div>
+    {% endif %}
+{% endif %}

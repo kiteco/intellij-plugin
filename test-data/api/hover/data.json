@@ -1,0 +1,304 @@
+{
+  "language": "python",
+  "part_of_syntax": "name",
+  "symbol": [
+    {
+      "id": "",
+      "name": "requests",
+      "namespace": null,
+      "value": [
+        {
+          "id": "python;requests",
+          "kind": "module",
+          "repr": "requests",
+          "type": "module",
+          "type_id": "",
+          "synopsis": "Requests is an HTTP library, written in Python, for human beings. Basic GET\nusage:",
+          "details": {
+            "function": null,
+            "type": null,
+            "instance": null,
+            "module": {
+              "members": [
+                {
+                  "id": "python;requests.adapters",
+                  "name": "adapters",
+                  "namespace": {
+                    "id": "python;requests",
+                    "kind": "module",
+                    "repr": "requests",
+                    "type": "module",
+                    "type_id": ""
+                  },
+                  "value": [
+                    {
+                      "id": "python;requests.adapters",
+                      "kind": "module",
+                      "repr": "requests.adapters",
+                      "type": "module",
+                      "type_id": ""
+                    }
+                  ]
+                },
+                {
+                  "id": "python;requests.api",
+                  "name": "api",
+                  "namespace": {
+                    "id": "python;requests",
+                    "kind": "module",
+                    "repr": "requests",
+                    "type": "module",
+                    "type_id": ""
+                  },
+                  "value": [
+                    {
+                      "id": "python;requests.api",
+                      "kind": "module",
+                      "repr": "requests.api",
+                      "type": "module",
+                      "type_id": ""
+                    }
+                  ]
+                },
+                {
+                  "id": "python;requests.auth",
+                  "name": "auth",
+                  "namespace": {
+                    "id": "python;requests",
+                    "kind": "module",
+                    "repr": "requests",
+                    "type": "module",
+                    "type_id": ""
+                  },
+                  "value": [
+                    {
+                      "id": "python;requests.auth",
+                      "kind": "module",
+                      "repr": "requests.auth",
+                      "type": "module",
+                      "type_id": ""
+                    }
+                  ]
+                },
+                {
+                  "id": "python;requests.certs",
+                  "name": "certs",
+                  "namespace": {
+                    "id": "python;requests",
+                    "kind": "module",
+                    "repr": "requests",
+                    "type": "module",
+                    "type_id": ""
+                  },
+                  "value": [
+                    {
+                      "id": "python;requests.certs",
+                      "kind": "module",
+                      "repr": "requests.certs",
+                      "type": "module",
+                      "type_id": ""
+                    }
+                  ]
+                },
+                {
+                  "id": "python;requests.codes",
+                  "name": "codes",
+                  "namespace": {
+                    "id": "python;requests",
+                    "kind": "module",
+                    "repr": "requests",
+                    "type": "module",
+                    "type_id": ""
+                  },
+                  "value": [
+                    {
+                      "id": "python;requests.codes",
+                      "kind": "instance",
+                      "repr": "requests.codes",
+                      "type": "LookupDict",
+                      "type_id": "python;requests.structures.LookupDict"
+                    }
+                  ]
+                }
+              ],
+              "total_members": 42
+            }
+          },
+          "Ancestors": null
+        }
+      ],
+      "synopsis": ""
+    }
+  ],
+  "report": {
+    "definition": {
+      "filename": "",
+      "line": 1
+    },
+    "description_text": "text report",
+    "description_html": "html report",
+    "examples": [
+      {
+        "id": 1607,
+        "title": "Send a POST request with form data"
+      },
+      {
+        "id": 1611,
+        "title": "Send a GET request with query parameters"
+      },
+      {
+        "id": 1114,
+        "title": "Send a GET request"
+      },
+      {
+        "id": 4620,
+        "title": "Retrieve content of request"
+      }
+    ],
+    "usages": null,
+    "total_usages": 0,
+    "links": [
+      {
+        "title": "What are the differences between the urllib, urllib2, and requests module?",
+        "url": "https://stackoverflow.com/questions/2018026",
+        "stackoverflow": {
+          "score": 362
+        }
+      },
+      {
+        "title": "InsecurePlatformWarning: A true SSLContext object is not available. This prevents urllib3 from configuring SSL appropriately",
+        "url": "https://stackoverflow.com/questions/29134512",
+        "stackoverflow": {
+          "score": 263
+        }
+      },
+      {
+        "title": "SSL InsecurePlatform error when using Requests package",
+        "url": "https://stackoverflow.com/questions/29099404",
+        "stackoverflow": {
+          "score": 176
+        }
+      },
+      {
+        "title": "Python pip install fails: invalid command egg_info",
+        "url": "https://stackoverflow.com/questions/11425106",
+        "stackoverflow": {
+          "score": 164
+        }
+      },
+      {
+        "title": "ImportError: No module named requests",
+        "url": "https://stackoverflow.com/questions/17309288",
+        "stackoverflow": {
+          "score": 151
+        }
+      },
+      {
+        "title": "How to download image using requests",
+        "url": "https://stackoverflow.com/questions/13137817",
+        "stackoverflow": {
+          "score": 151
+        }
+      },
+      {
+        "title": "How to download large file in python with requests.py?",
+        "url": "https://stackoverflow.com/questions/16694907",
+        "stackoverflow": {
+          "score": 139
+        }
+      },
+      {
+        "title": "Python Requests throwing up SSLError",
+        "url": "https://stackoverflow.com/questions/10667960",
+        "stackoverflow": {
+          "score": 123
+        }
+      },
+      {
+        "title": "How can I see the entire HTTP request that's being sent by my Python application?",
+        "url": "https://stackoverflow.com/questions/10588644",
+        "stackoverflow": {
+          "score": 98
+        }
+      },
+      {
+        "title": "Installing python module within code",
+        "url": "https://stackoverflow.com/questions/12332975",
+        "stackoverflow": {
+          "score": 82
+        }
+      },
+      {
+        "title": "Basic http file downloading and saving to disk in python?",
+        "url": "https://stackoverflow.com/questions/19602931",
+        "stackoverflow": {
+          "score": 68
+        }
+      },
+      {
+        "title": "Suppress InsecureRequestWarning: Unverified HTTPS request is being made in Python2.6",
+        "url": "https://stackoverflow.com/questions/27981545",
+        "stackoverflow": {
+          "score": 64
+        }
+      },
+      {
+        "title": "How to turn off INFO logging in PySpark?",
+        "url": "https://stackoverflow.com/questions/25193488",
+        "stackoverflow": {
+          "score": 62
+        }
+      },
+      {
+        "title": "ab is erroring out with apr_socket_recv: Connection refused (61)",
+        "url": "https://stackoverflow.com/questions/7938869",
+        "stackoverflow": {
+          "score": 62
+        }
+      },
+      {
+        "title": "Python requests - print entire http request (raw)?",
+        "url": "https://stackoverflow.com/questions/20658572",
+        "stackoverflow": {
+          "score": 58
+        }
+      },
+      {
+        "title": "How do I disable the security certificate check in Python requests",
+        "url": "https://stackoverflow.com/questions/15445981",
+        "stackoverflow": {
+          "score": 50
+        }
+      },
+      {
+        "title": "pip install gives error: Unable to find vcvarsall.bat",
+        "url": "https://stackoverflow.com/questions/19830942",
+        "stackoverflow": {
+          "score": 44
+        }
+      },
+      {
+        "title": "Making a request to a RESTful API using python",
+        "url": "https://stackoverflow.com/questions/17301938",
+        "stackoverflow": {
+          "score": 43
+        }
+      },
+      {
+        "title": "Python Requests requests.exceptions.SSLError: [Errno 8] _ssl.c:504: EOF occurred in violation of protocol",
+        "url": "https://stackoverflow.com/questions/14102416",
+        "stackoverflow": {
+          "score": 42
+        }
+      },
+      {
+        "title": "How could I use requests in asyncio?",
+        "url": "https://stackoverflow.com/questions/22190403",
+        "stackoverflow": {
+          "score": 41
+        }
+      }
+    ],
+    "total_links": 50
+  }
+}

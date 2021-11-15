@@ -1,0 +1,515 @@
+{
+  "language": "python",
+  "value": {
+    "id": "python;__builtin__.int",
+    "kind": "type",
+    "repr": "int",
+    "type": "type",
+    "type_id": "python;__builtin__.type",
+    "synopsis": "Convert a number or string x to an integer, or return 0 if no\narguments are given.  If x is a number, it can be a plain integer, a long\ninteger, or a floating point number.  If x is floating point, the conversion\ntruncates towards zero.  If the argument is outside the integer range, the\nfunction returns a long object instead.\nIf x is not a number or if base is given, then x must be a string or\nUnicode object representing an integer literal in radix\nbase.  Optionally, the literal can be\npreceded by + or - (with no space in between) and surrounded by\nwhitespace.  A base-n literal consists of the digits 0 to n-1, with a\nto z (or A to Z) having\nvalues 10 to 35.  The default base is 10. The allowed values are 0 and 2-36.\nBase-2, -8, and -16 literals can be optionally prefixed with 0b/0B,\n0o/0O/0, or 0x/0X, as with integer literals in code.\nBase 0 means to interpret the string exactly as an integer literal, so that\nthe actual base is 2, 8, 10, or 16.\nThe integer type is described in Numeric Types — int, float, long, complex.",
+    "details": {
+      "function": null,
+      "type": {
+        "components": null,
+        "members": [
+          {
+            "id": "python;__builtin__.int.real",
+            "name": "real",
+            "namespace": {
+              "id": "python;__builtin__.int",
+              "kind": "type",
+              "repr": "int",
+              "type": "type",
+              "type_id": "python;__builtin__.type"
+            },
+            "value": [
+              {
+                "id": "python;__builtin__.int.real",
+                "kind": "unknown",
+                "repr": "int.real",
+                "type": "getset_descriptor",
+                "type_id": ""
+              }
+            ]
+          },
+          {
+            "id": "python;__builtin__.int.imag",
+            "name": "imag",
+            "namespace": {
+              "id": "python;__builtin__.int",
+              "kind": "type",
+              "repr": "int",
+              "type": "type",
+              "type_id": "python;__builtin__.type"
+            },
+            "value": [
+              {
+                "id": "python;__builtin__.int.imag",
+                "kind": "unknown",
+                "repr": "int.imag",
+                "type": "getset_descriptor",
+                "type_id": ""
+              }
+            ]
+          },
+          {
+            "id": "python;__builtin__.int.mro",
+            "name": "mro",
+            "namespace": {
+              "id": "python;__builtin__.int",
+              "kind": "type",
+              "repr": "int",
+              "type": "type",
+              "type_id": "python;__builtin__.type"
+            },
+            "value": [
+              {
+                "id": "python;__builtin__.type.mro",
+                "kind": "function",
+                "repr": "type.mro",
+                "type": "",
+                "type_id": ""
+              }
+            ]
+          },
+          {
+            "id": "python;__builtin__.int.bit_length",
+            "name": "bit_length",
+            "namespace": {
+              "id": "python;__builtin__.int",
+              "kind": "type",
+              "repr": "int",
+              "type": "type",
+              "type_id": "python;__builtin__.type"
+            },
+            "value": [
+              {
+                "id": "python;__builtin__.int.bit_length",
+                "kind": "function",
+                "repr": "int.bit_length",
+                "type": "",
+                "type_id": ""
+              }
+            ]
+          },
+          {
+            "id": "python;__builtin__.int.conjugate",
+            "name": "conjugate",
+            "namespace": {
+              "id": "python;__builtin__.int",
+              "kind": "type",
+              "repr": "int",
+              "type": "type",
+              "type_id": "python;__builtin__.type"
+            },
+            "value": [
+              {
+                "id": "python;__builtin__.int.conjugate",
+                "kind": "function",
+                "repr": "int.conjugate",
+                "type": "",
+                "type_id": ""
+              }
+            ]
+          }
+        ],
+        "total_members": 7,
+        "language_details": {
+          "python": {
+            "bases": null,
+            "constructor": {
+              "parameters": [
+                {
+                  "name": "x",
+                  "inferred_value": null,
+                  "synopsis": "",
+                  "language_details": {
+                    "python": {
+                      "default_value": [
+                        {
+                          "id": "",
+                          "kind": "instance",
+                          "repr": "...",
+                          "type": "str",
+                          "type_id": "python;__builtin__.str"
+                        }
+                      ],
+                      "annotation": null,
+                      "keyword_only": false
+                    }
+                  }
+                },
+                {
+                  "name": "base",
+                  "inferred_value": null,
+                  "synopsis": "",
+                  "language_details": {
+                    "python": {
+                      "default_value": [
+                        {
+                          "id": "",
+                          "kind": "instance",
+                          "repr": "...",
+                          "type": "str",
+                          "type_id": "python;__builtin__.str"
+                        }
+                      ],
+                      "annotation": null,
+                      "keyword_only": false
+                    }
+                  }
+                }
+              ],
+              "return_value": null,
+              "signatures": [
+                {
+                  "args": null,
+                  "language_details": {
+                    "python": {
+                      "kwargs": null
+                    }
+                  }
+                }
+              ],
+              "language_details": {
+                "python": {
+                  "receiver": {
+                    "name": "self",
+                    "inferred_value": null,
+                    "synopsis": "",
+                    "language_details": {
+                      "python": null
+                    }
+                  },
+                  "return_annotation": null
+                }
+              }
+            }
+          }
+        }
+      },
+      "instance": null,
+      "module": null
+    },
+    "ancestors": [
+      {
+        "id": "python;__builtin__",
+        "name": "__builtin__"
+      }
+    ]
+  },
+  "report": {
+    "definition": null,
+    "description_text": "Convert a number or string x to an integer, or return 0 if no\narguments are given.  If x is a number, it can be a plain integer, a long\ninteger, or a floating point number.  If x is floating point, the conversion\ntruncates towards zero.  If the argument is outside the integer range, the\nfunction returns a long object instead.\nIf x is not a number or if base is given, then x must be a string or\nUnicode object representing an integer literal in radix\nbase.  Optionally, the literal can be\npreceded by + or - (with no space in between) and surrounded by\nwhitespace.  A base-n literal consists of the digits 0 to n-1, with a\nto z (or A to Z) having\nvalues 10 to 35.  The default base is 10. The allowed values are 0 and 2-36.\nBase-2, -8, and -16 literals can be optionally prefixed with 0b/0B,\n0o/0O/0, or 0x/0X, as with integer literals in code.\nBase 0 means to interpret the string exactly as an integer literal, so that\nthe actual base is 2, 8, 10, or 16.\nThe integer type is described in Numeric Types — int, float, long, complex.",
+    "description_html": "\u003cbody\u003e\u003cp\u003eConvert a number or string \u003cem\u003ex\u003c/em\u003e to an integer, or return \u003ccode\u003e0\u003c/code\u003e if no\narguments are given.  If \u003cem\u003ex\u003c/em\u003e is a number, it can be a plain integer, a long\ninteger, or a floating point number.  If \u003cem\u003ex\u003c/em\u003e is floating point, the conversion\ntruncates towards zero.  If the argument is outside the integer range, the\nfunction returns a long object instead.\u003c/p\u003e\u003cp\u003eIf \u003cem\u003ex\u003c/em\u003e is not a number or if \u003cem\u003ebase\u003c/em\u003e is given, then \u003cem\u003ex\u003c/em\u003e must be a string or\nUnicode object representing an \u003ca\u003e\u003cem\u003einteger literal\u003c/em\u003e\u003c/a\u003e in radix\n\u003cem\u003ebase\u003c/em\u003e.  Optionally, the literal can be\npreceded by \u003ccode\u003e+\u003c/code\u003e or \u003ccode\u003e-\u003c/code\u003e (with no space in between) and surrounded by\nwhitespace.  A base-n literal consists of the digits 0 to n-1, with \u003ccode\u003ea\u003c/code\u003e\nto \u003ccode\u003ez\u003c/code\u003e (or \u003ccode\u003eA\u003c/code\u003e to \u003ccode\u003eZ\u003c/code\u003e) having\nvalues 10 to 35.  The default \u003cem\u003ebase\u003c/em\u003e is 10. The allowed values are 0 and 2-36.\nBase-2, -8, and -16 literals can be optionally prefixed with \u003ccode\u003e0b\u003c/code\u003e/\u003ccode\u003e0B\u003c/code\u003e,\n\u003ccode\u003e0o\u003c/code\u003e/\u003ccode\u003e0O\u003c/code\u003e/\u003ccode\u003e0\u003c/code\u003e, or \u003ccode\u003e0x\u003c/code\u003e/\u003ccode\u003e0X\u003c/code\u003e, as with integer literals in code.\nBase 0 means to interpret the string exactly as an integer literal, so that\nthe actual base is 2, 8, 10, or 16.\u003c/p\u003e\u003cp\u003eThe integer type is described in \u003ca\u003e\u003cem\u003eNumeric Types — int, float, long, complex\u003c/em\u003e\u003c/a\u003e.\u003c/p\u003e\u003c/body\u003e",
+    "examples": [
+      {
+        "id": 3813,
+        "title": "Get the size of a set"
+      },
+      {
+        "id": 3830,
+        "title": "Check the length of a dictionary"
+      },
+      {
+        "id": 2351,
+        "title": "Evaluate a string as code"
+      },
+      {
+        "id": 3773,
+        "title": "Find the first occurrence of a substring"
+      },
+      {
+        "id": 3809,
+        "title": "Pop an element off a sequence"
+      },
+      {
+        "id": 3769,
+        "title": "Count the occurrences of a substring"
+      },
+      {
+        "id": 3640,
+        "title": "Retrieve a sum of a sequence"
+      },
+      {
+        "id": 2391,
+        "title": "Hash a hashable object"
+      },
+      {
+        "id": 3828,
+        "title": "Remove an arbitrary element from a set"
+      },
+      {
+        "id": 2400,
+        "title": "Get a unique identifier for an object"
+      },
+      {
+        "id": 3615,
+        "title": "Convert a string character to ASCII value"
+      },
+      {
+        "id": 3766,
+        "title": "Count the occurrences of an element in a sequence"
+      },
+      {
+        "id": 3765,
+        "title": "Get the index of an element in a sequence"
+      },
+      {
+        "id": 3788,
+        "title": "Find the location of a substring from the right"
+      },
+      {
+        "id": 2448,
+        "title": "Iterate over a list using `iter`"
+      },
+      {
+        "id": 3625,
+        "title": "Apply a function cumulatively to the items of a sequence"
+      },
+      {
+        "id": 5533,
+        "title": "Get the index of a string where a subsequence is located"
+      },
+      {
+        "id": 3846,
+        "title": "Pop an item off of a dictionary"
+      },
+      {
+        "id": 2320,
+        "title": "Compare two values and return the outcome as an integer"
+      },
+      {
+        "id": 3848,
+        "title": "Set a default value for an item in a dictionary"
+      },
+      {
+        "id": 3617,
+        "title": "Exponentiate a number by another number"
+      },
+      {
+        "id": 2539,
+        "title": "Find the maximum value in a list"
+      },
+      {
+        "id": 2541,
+        "title": "Find the minimum value in a list"
+      },
+      {
+        "id": 2330,
+        "title": "Enumerate a sequence"
+      },
+      {
+        "id": 2543,
+        "title": "Get the next item from an iterator using `next`"
+      },
+      {
+        "id": 2230,
+        "title": "Compute the absolute value of a number"
+      },
+      {
+        "id": 3648,
+        "title": "Construct an `xrange` list"
+      },
+      {
+        "id": 4463,
+        "title": "Construct a list using list comprehension"
+      },
+      {
+        "id": 2383,
+        "title": "Get the current global symbol table"
+      },
+      {
+        "id": 3637,
+        "title": "Generate a sorted list from an iterable object"
+      },
+      {
+        "id": 5764,
+        "title": "Execute Python code in a string"
+      },
+      {
+        "id": 3839,
+        "title": "Get an item in a dictionary with a default value"
+      },
+      {
+        "id": 2319,
+        "title": "Define a class method"
+      },
+      {
+        "id": 5539,
+        "title": "Get the file descriptor of a file"
+      },
+      {
+        "id": 3923,
+        "title": "Get the current position of a file"
+      },
+      {
+        "id": 2542,
+        "title": "Find the minimum value in a list given a comparison function"
+      },
+      {
+        "id": 2540,
+        "title": "Find the maximum value in a list given a comparison function"
+      },
+      {
+        "id": 2357,
+        "title": "Apply a filter function to a list"
+      },
+      {
+        "id": 3843,
+        "title": "Get an iterator of values from a dictionary"
+      },
+      {
+        "id": 3646,
+        "title": "Get the dictionary attribute for a class"
+      },
+      {
+        "id": 3950,
+        "title": "Get the attribute dictionary of an object"
+      },
+      {
+        "id": 2327,
+        "title": "View list of names in the local scope"
+      },
+      {
+        "id": 2537,
+        "title": "Map a function to a list"
+      },
+      {
+        "id": 3757,
+        "title": "Construct a generator function"
+      },
+      {
+        "id": 3841,
+        "title": "Get an iterator of  key-value pairs from a dictionary"
+      },
+      {
+        "id": 2433,
+        "title": "Check if an object is an instance of a class"
+      },
+      {
+        "id": 3912,
+        "title": "Get the file descriptor integer that is used by the OS"
+      },
+      {
+        "id": 3620,
+        "title": "Set an instance variable to a property"
+      },
+      {
+        "id": 2382,
+        "title": "Get an attribute of an object using a string"
+      },
+      {
+        "id": 2352,
+        "title": "Check if an object is an instance of a certain type or class"
+      },
+      {
+        "id": 3313,
+        "title": "Check if a value is an integer"
+      }
+    ],
+    "usages": null,
+    "total_usages": 0,
+    "links": [
+      {
+        "title": "Python MySQLdb converters isn't working",
+        "url": "https://stackoverflow.com/questions/12898516",
+        "stackoverflow": {
+          "score": 5
+        }
+      },
+      {
+        "title": "Sanitize python slice?",
+        "url": "https://stackoverflow.com/questions/6246084",
+        "stackoverflow": {
+          "score": 4
+        }
+      },
+      {
+        "title": "Replace Pythons builtin type with custom one",
+        "url": "https://stackoverflow.com/questions/11787922",
+        "stackoverflow": {
+          "score": 3
+        }
+      },
+      {
+        "title": "Extracting frequencies from multidimensional FFT",
+        "url": "https://stackoverflow.com/questions/14582543",
+        "stackoverflow": {
+          "score": 3
+        }
+      },
+      {
+        "title": "Python - isinstance returns false",
+        "url": "https://stackoverflow.com/questions/29585099",
+        "stackoverflow": {
+          "score": 2
+        }
+      },
+      {
+        "title": "python types in list during comprehension",
+        "url": "https://stackoverflow.com/questions/22952000",
+        "stackoverflow": {
+          "score": 1
+        }
+      },
+      {
+        "title": "getting recarray into postgres using psycopg2",
+        "url": "https://stackoverflow.com/questions/5946034",
+        "stackoverflow": {
+          "score": 0
+        }
+      },
+      {
+        "title": "How can I tell where the `\u003ctype 'something'\u003e` was declared?",
+        "url": "https://stackoverflow.com/questions/20224438",
+        "stackoverflow": {
+          "score": 0
+        }
+      },
+      {
+        "title": "Sub-classing a built-in Python type such as int",
+        "url": "https://stackoverflow.com/questions/34032765",
+        "stackoverflow": {
+          "score": 0
+        }
+      },
+      {
+        "title": "Python error when calling Fourier transform code",
+        "url": "https://stackoverflow.com/questions/23778128",
+        "stackoverflow": {
+          "score": 0
+        }
+      },
+      {
+        "title": "python help usage issues",
+        "url": "https://stackoverflow.com/questions/25045178",
+        "stackoverflow": {
+          "score": 0
+        }
+      },
+      {
+        "title": "Fastest and/or most pythonic way to convert string into a number",
+        "url": "https://stackoverflow.com/questions/17259230",
+        "stackoverflow": {
+          "score": 0
+        }
+      },
+      {
+        "title": "Check if item in a Python list is an int/number",
+        "url": "https://stackoverflow.com/questions/38496967",
+        "stackoverflow": {
+          "score": 0
+        }
+      },
+      {
+        "title": "What characters need to be escaped for JSON.parse",
+        "url": "https://stackoverflow.com/questions/17563643",
+        "stackoverflow": {
+          "score": -1
+        }
+      }
+    ],
+    "total_links": 14
+  }
+}

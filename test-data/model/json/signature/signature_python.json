@@ -1,0 +1,72 @@
+{
+  "language": "python",
+  "calls": [
+    {
+      "funcName": "plot",
+      "callee": {
+        "id": "matplotlib.pyplot.plot",
+        "kind": "function",
+        "repr": "plot",
+        "type": "function",
+        "type_id": "__builtin__.function",
+        "synopsis": "Plot lines and/or markers to the\nAxes.  args is a variable length\nargument, allowing for multiple x, y pairs with an\noptional format string.  For example, each of the following is\nlegal:",
+        "details": {
+          "function": {
+            "parameters": null,
+            "return_annotation": null,
+            "return_value": null
+          }
+        }
+      },
+      "signatures": [
+        {
+          "args": [
+            {
+              "name": "x",
+              "types": [
+                {
+                  "id": "__builtin__.list",
+                  "name": "list",
+                  "examples": [
+                    "[]",
+                    "[0, 1]",
+                    "[0,1]"
+                  ]
+                },
+                {
+                  "id": "numpy.uint64",
+                  "name": "uint64",
+                  "examples": [
+                    "self.x if x is None else x"
+                  ]
+                },
+                {
+                  "id": "...",
+                  "name": "",
+                  "examples": null
+                }
+              ]
+            }
+          ],
+          "language_details": {
+            "python": {
+              "kwargs": [
+                {
+                  "name": "x",
+                  "types": [
+                    {
+                      "id": "__builtin__.list",
+                      "name": "list",
+                      "examples": []
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        }
+      ],
+      "arg_index": 0
+    }
+  ]
+}

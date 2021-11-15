@@ -1,0 +1,252 @@
+{
+  "part_of_syntax": "name",
+  "symbol": [
+    {
+      "id": "",
+      "name": "bool",
+      "namespace": null,
+      "value": [
+        {
+          "id": "__builtin__.bool",
+          "kind": "type",
+          "repr": "bool",
+          "type": "type",
+          "type_id": "__builtin__.type",
+          "synopsis": "",
+          "details": {
+            "type": {
+              "bases": [
+                {
+                  "id": "__builtin__.object",
+                  "name": "object",
+                  "module": "__builtin__",
+                  "module_id": "__builtin__"
+                }
+              ],
+              "components": null,
+              "members": [
+                {
+                  "id": "",
+                  "name": "bit_length",
+                  "namespace": null,
+                  "value": [
+                    {
+                      "id": "__builtin__.bool.bit_length",
+                      "kind": "function",
+                      "repr": "bit_length",
+                      "type": "FunctionType",
+                      "type_id": "types.FunctionType"
+                    }
+                  ]
+                },
+                {
+                  "id": "",
+                  "name": "conjugate",
+                  "namespace": null,
+                  "value": [
+                    {
+                      "id": "__builtin__.bool.conjugate",
+                      "kind": "function",
+                      "repr": "conjugate",
+                      "type": "FunctionType",
+                      "type_id": "types.FunctionType"
+                    }
+                  ]
+                },
+                {
+                  "id": "",
+                  "name": "denominator",
+                  "namespace": null,
+                  "value": [
+                    {
+                      "id": "",
+                      "kind": "instance",
+                      "repr": "int",
+                      "type": "int",
+                      "type_id": "__builtin__.int"
+                    }
+                  ]
+                },
+                {
+                  "id": "",
+                  "name": "imag",
+                  "namespace": null,
+                  "value": [
+                    {
+                      "id": "",
+                      "kind": "instance",
+                      "repr": "float",
+                      "type": "float",
+                      "type_id": "__builtin__.float"
+                    }
+                  ]
+                },
+                {
+                  "id": "",
+                  "name": "numerator",
+                  "namespace": null,
+                  "value": [
+                    {
+                      "id": "",
+                      "kind": "instance",
+                      "repr": "int",
+                      "type": "int",
+                      "type_id": "__builtin__.int"
+                    }
+                  ]
+                }
+              ],
+              "total_members": 53
+            }
+          }
+        }
+      ],
+      "synopsis": ""
+    }
+  ],
+  "report": {
+    "definition": null,
+    "description_text": "Convert a value to a Boolean, using the standard truth testing procedure.  If\nx is false or omitted, this returns False; otherwise it returns\nTrue. bool is also a class, which is a subclass of\nint. Class bool cannot be subclassed further.  Its only\ninstances are False and True.\n\nNew in version 2.2.1.\n\nChanged in version 2.3: If no argument is given, this function returns False.",
+    "description_html": "<body><p>Convert a value to a Boolean, using the standard truth testing procedure.  If\n<em>x</em> is false or omitted, this returns <a class=\"internal_link\" href=\"#False\"><code>False</code></a>; otherwise it returns\n<a class=\"internal_link\" href=\"#True\"><code>True</code></a>. <a class=\"internal_link\" href=\"#bool\"><code>bool</code></a> is also a class, which is a subclass of\n<a class=\"internal_link\" href=\"#int\"><code>int</code></a>. Class <a class=\"internal_link\" href=\"#bool\"><code>bool</code></a> cannot be subclassed further.  Its only\ninstances are <a class=\"internal_link\" href=\"#False\"><code>False</code></a> and <a class=\"internal_link\" href=\"#True\"><code>True</code></a>.</p><p>\n<span class=\"versionadded\">New in version 2.2.1.</span></p><p>\n<span class=\"versionchanged\">Changed in version 2.3: </span>If no argument is given, this function returns <a class=\"internal_link\" href=\"#False\"><code>False</code></a>.</p></body>",
+    "examples": [
+      {
+        "id": 2317,
+        "title": "Check if an object appears callable"
+      },
+      {
+        "id": 3778,
+        "title": "Check if all characters are lowercase"
+      },
+      {
+        "id": 3781,
+        "title": "Check if all characters are uppercase"
+      },
+      {
+        "id": 5352,
+        "title": "Check if a dictionary has a key"
+      },
+      {
+        "id": 3777,
+        "title": "Check if a string contains only digits"
+      },
+      {
+        "id": 3779,
+        "title": "Checks if all characters are whitespace characters"
+      },
+      {
+        "id": 3780,
+        "title": "Check if a string has title capitalization"
+      },
+      {
+        "id": 3815,
+        "title": "Check whether two sets are disjoint"
+      },
+      {
+        "id": 3776,
+        "title": "Check if a string contains only alphabetical characters"
+      },
+      {
+        "id": 3771,
+        "title": "Check whether a string has a particular suffix"
+      },
+      {
+        "id": 2839,
+        "title": "Construct a featureless object"
+      },
+      {
+        "id": 3795,
+        "title": "Check if a string starts with a prefix"
+      },
+      {
+        "id": 3775,
+        "title": "Check if a string contains only alpha-numeric characters"
+      },
+      {
+        "id": 3816,
+        "title": "Check whether a set is a subset"
+      },
+      {
+        "id": 2234,
+        "title": "Check if a string is either string or unicode"
+      },
+      {
+        "id": 3652,
+        "title": "Get the boolean value for objects"
+      },
+      {
+        "id": 2433,
+        "title": "Check if an object is an instance of a class"
+      },
+      {
+        "id": 3803,
+        "title": "Check whether a unicode string contain only digit values"
+      },
+      {
+        "id": 3802,
+        "title": "Check whether a unicode string contain only numeric values"
+      },
+      {
+        "id": 2233,
+        "title": "Check if all elements in a list evaluate to true"
+      },
+      {
+        "id": 2232,
+        "title": "Check if all elements in a list evaluate to true"
+      },
+      {
+        "id": 2388,
+        "title": "Check if an object has an attribute"
+      },
+      {
+        "id": 3794,
+        "title": "Split a string by new lines"
+      },
+      {
+        "id": 3745,
+        "title": "Perform boolean logic operations"
+      },
+      {
+        "id": 2434,
+        "title": "Check if a class is a subclass of another class"
+      },
+      {
+        "id": 5473,
+        "title": "Construct a boolean value"
+      },
+      {
+        "id": 3756,
+        "title": "Iterate through a sequence using its iterator"
+      },
+      {
+        "id": 2352,
+        "title": "Check if an object is an instance of a certain type or class"
+      },
+      {
+        "id": 3913,
+        "title": "Check if a file is connected to a TTY device"
+      },
+      {
+        "id": 3637,
+        "title": "Generate a sorted list from an iterable object"
+      },
+      {
+        "id": 3757,
+        "title": "Construct a generator function"
+      },
+      {
+        "id": 3914,
+        "title": "Get the next line of a file"
+      }
+    ],
+    "usages": [
+      {
+        "code": "def foo(bar) -> int | str | bool:",
+        "filename": "/Users/user/IdeaProjects/kitePython/Python-Algorithms/test.py",
+        "line": 14,
+        "begin_bytes": 258,
+        "begin_runes": 258
+      }
+    ],
+    "total_usages": 1
+  }
+}

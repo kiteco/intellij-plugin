@@ -1,0 +1,94 @@
+{
+  "language": "python",
+  "calls": [
+    {
+      "callee": {
+        "id": "",
+        "kind": "function",
+        "repr": "bloop.moop",
+        "type": "FunctionType",
+        "type_id": "python;;;;types.FunctionType",
+        "synopsis": "",
+        "details": {
+          "function": {
+            "parameters": null,
+            "return_value": [
+              {
+                "id": "",
+                "kind": "instance",
+                "repr": "dict",
+                "type": "dict",
+                "type_id": "python;;;;__builtin__.dict"
+              }
+            ],
+            "signatures": [
+              {
+                "args": null,
+                "language_details": {
+                  "python": {
+                    "kwargs": null
+                  }
+                }
+              }
+            ],
+            "language_details": {
+              "python": {
+                "receiver": {
+                  "name": "self",
+                  "inferred_value": [
+                    {
+                      "id": "",
+                      "kind": "instance",
+                      "repr": "bloop",
+                      "type": "bloop",
+                      "type_id": ""
+                    }
+                  ],
+                  "synopsis": "",
+                  "language_details": {
+                    "python": null
+                  }
+                },
+                "return_annotation": null
+              }
+            }
+          },
+          "type": null,
+          "instance": null,
+          "module": null
+        },
+        "ancestors": [
+          {
+            "id": "python;34408;d41d8cd98f00b204e9800998ecf8427e;::machine::customers:kite.com:source:python-test:whitelisted;",
+            "name": "whitelisted"
+          },
+          {
+            "id": "python;34408;d41d8cd98f00b204e9800998ecf8427e;::machine::customers:kite.com:source:python-test:whitelisted:test.py;",
+            "name": "test"
+          },
+          {
+            "id": "python;34408;d41d8cd98f00b204e9800998ecf8427e;::machine::customers:kite.com:source:python-test:whitelisted:test.py;bloop",
+            "name": "bloop"
+          }
+        ]
+      },
+      "func_name": "moop",
+      "signatures": [
+        {
+          "args": null,
+          "language_details": {
+            "python": {
+              "kwargs": null
+            }
+          }
+        }
+      ],
+      "arg_index": -1,
+      "language_details": {
+        "python": {
+          "in_kwargs": true
+        }
+      }
+    }
+  ]
+}

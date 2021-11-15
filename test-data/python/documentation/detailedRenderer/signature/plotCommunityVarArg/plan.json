@@ -1,0 +1,10 @@
+{
+  "name": "Community",
+  "status": "active",
+  "active_subscription": "community",
+  "features": {
+    "usages_webapp": true
+  },
+  "trial_days_remaining": 0,
+  "started_kite_pro_trial": true
+}

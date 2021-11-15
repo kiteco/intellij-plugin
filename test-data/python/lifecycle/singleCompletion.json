@@ -1,0 +1,11 @@
+{
+  "completions": [
+    {
+      "display": "format",
+      "insert": "format",
+      "hint": "function",
+      "documentation_text": "",
+      "documentation_html": ""
+    }
+  ]
+}

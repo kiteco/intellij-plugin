@@ -1,0 +1,1065 @@
+{
+  "language": "python",
+  "value": {
+    "id": "python;__builtin__.print",
+    "kind": "function",
+    "repr": "print",
+    "type": "builtin_function_or_method",
+    "type_id": "",
+    "synopsis": "Print objects to the stream file, separated by sep and followed by\nend.  sep, end and file, if present, must be given as keyword\narguments.\nAll non-keyword arguments are converted to strings like str() does and\nwritten to the stream, separated by sep and followed by end.  Both sep\nand end must be strings; they can also be None, which means to use the\ndefault values.  If no objects are given, print() will just write\nend.\nThe file argument must be an object with a write(string) method; if it\nis not present or None, sys.stdout will be used.  Output buffering\nis determined by file.  Use file.flush() to ensure, for instance,\nimmediate appearance on a screen.\nNote\nThis function is not normally available as a built-in since the name\nprint is recognized as the print statement.  To disable the\nstatement and use the print() function, use this future statement at\nthe top of your module:",
+    "details": {
+      "function": {
+        "parameters": [
+          {
+            "name": "sep",
+            "inferred_value": null,
+            "synopsis": "",
+            "language_details": {
+              "python": {
+                "default_value": [
+                  {
+                    "id": "",
+                    "kind": "instance",
+                    "repr": "...",
+                    "type": "str",
+                    "type_id": "python;__builtin__.str"
+                  }
+                ],
+                "annotation": null,
+                "keyword_only": false
+              }
+            }
+          },
+          {
+            "name": "end",
+            "inferred_value": null,
+            "synopsis": "",
+            "language_details": {
+              "python": {
+                "default_value": [
+                  {
+                    "id": "",
+                    "kind": "instance",
+                    "repr": "...",
+                    "type": "str",
+                    "type_id": "python;__builtin__.str"
+                  }
+                ],
+                "annotation": null,
+                "keyword_only": false
+              }
+            }
+          },
+          {
+            "name": "file",
+            "inferred_value": null,
+            "synopsis": "",
+            "language_details": {
+              "python": {
+                "default_value": [
+                  {
+                    "id": "",
+                    "kind": "instance",
+                    "repr": "...",
+                    "type": "str",
+                    "type_id": "python;__builtin__.str"
+                  }
+                ],
+                "annotation": null,
+                "keyword_only": false
+              }
+            }
+          }
+        ],
+        "return_value": null,
+        "signatures": [
+          {
+            "args": [
+              {
+                "name": "e",
+                "types": [
+                  {
+                    "id": "python;__builtin__.str",
+                    "name": "str",
+                    "examples": [
+                      "\"\"\"\"",
+                      "\"''\"",
+                      "\"\"\\n\"\""
+                    ]
+                  }
+                ]
+              }
+            ],
+            "language_details": {
+              "python": {
+                "kwargs": null
+              }
+            }
+          },
+          {
+            "args": null,
+            "language_details": {
+              "python": {
+                "kwargs": null
+              }
+            }
+          },
+          {
+            "args": [
+              {
+                "name": "e",
+                "types": [
+                  {
+                    "id": "python;__builtin__.str",
+                    "name": "str",
+                    "examples": [
+                      "\"\"\"\"",
+                      "\"''\"",
+                      "\"\"\\n\"\""
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "e",
+                "types": [
+                  {
+                    "id": "python;__builtin__.str",
+                    "name": "str",
+                    "examples": [
+                      "\"'\\n'\"",
+                      "\"\"\\n\"\"",
+                      "\"\"failed:\"\""
+                    ]
+                  },
+                  {
+                    "id": "python;__builtin__.int",
+                    "name": "int",
+                    "examples": [
+                      "2",
+                      "0",
+                      "1"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "language_details": {
+              "python": {
+                "kwargs": null
+              }
+            }
+          }
+        ],
+        "language_details": {
+          "python": {
+            "vararg": {
+              "name": "values",
+              "inferred_value": null,
+              "synopsis": "",
+              "language_details": {
+                "python": null
+              }
+            },
+            "return_annotation": null
+          }
+        }
+      },
+      "type": null,
+      "instance": null,
+      "module": null
+    },
+    "ancestors": [
+      {
+        "id": "python;__builtin__",
+        "name": "__builtin__"
+      }
+    ]
+  },
+  "report": {
+    "definition": null,
+    "description_text": "Print objects to the stream file, separated by sep and followed by\nend.  sep, end and file, if present, must be given as keyword\narguments.\nAll non-keyword arguments are converted to strings like str() does and\nwritten to the stream, separated by sep and followed by end.  Both sep\nand end must be strings; they can also be None, which means to use the\ndefault values.  If no objects are given, print() will just write\nend.\nThe file argument must be an object with a write(string) method; if it\nis not present or None, sys.stdout will be used.  Output buffering\nis determined by file.  Use file.flush() to ensure, for instance,\nimmediate appearance on a screen.\nNote\nThis function is not normally available as a built-in since the name\nprint is recognized as the print statement.  To disable the\nstatement and use the print() function, use this future statement at\nthe top of your module:",
+    "description_html": "\u003cbody\u003e\u003cp\u003ePrint \u003cem\u003eobjects\u003c/em\u003e to the stream \u003cem\u003efile\u003c/em\u003e, separated by \u003cem\u003esep\u003c/em\u003e and followed by\n\u003cem\u003eend\u003c/em\u003e.  \u003cem\u003esep\u003c/em\u003e, \u003cem\u003eend\u003c/em\u003e and \u003cem\u003efile\u003c/em\u003e, if present, must be given as keyword\narguments.\u003c/p\u003e\u003cp\u003eAll non-keyword arguments are converted to strings like \u003ca class=\"internal_link\" href=\"#str\"\u003e\u003ccode\u003estr()\u003c/code\u003e\u003c/a\u003e does and\nwritten to the stream, separated by \u003cem\u003esep\u003c/em\u003e and followed by \u003cem\u003eend\u003c/em\u003e.  Both \u003cem\u003esep\u003c/em\u003e\nand \u003cem\u003eend\u003c/em\u003e must be strings; they can also be \u003ccode\u003eNone\u003c/code\u003e, which means to use the\ndefault values.  If no \u003cem\u003eobjects\u003c/em\u003e are given, \u003ca class=\"internal_link\" href=\"#print\"\u003e\u003ccode\u003eprint()\u003c/code\u003e\u003c/a\u003e will just write\n\u003cem\u003eend\u003c/em\u003e.\u003c/p\u003e\u003cp\u003eThe \u003cem\u003efile\u003c/em\u003e argument must be an object with a \u003ccode\u003ewrite(string)\u003c/code\u003e method; if it\nis not present or \u003ccode\u003eNone\u003c/code\u003e, \u003ca class=\"internal_link\" href=\"#sys.stdout\"\u003e\u003ccode\u003esys.stdout\u003c/code\u003e\u003c/a\u003e will be used.  Output buffering\nis determined by \u003cem\u003efile\u003c/em\u003e.  Use \u003ccode\u003efile.flush()\u003c/code\u003e to ensure, for instance,\nimmediate appearance on a screen.\u003c/p\u003e\n\u003cp\u003eNote\u003c/p\u003e\n\u003cp\u003eThis function is not normally available as a built-in since the name\n\u003ccode\u003eprint\u003c/code\u003e is recognized as the \u003ca class=\"internal_link\" href=\"#print\"\u003e\u003ccode\u003eprint\u003c/code\u003e\u003c/a\u003e statement.  To disable the\nstatement and use the \u003ca class=\"internal_link\" href=\"#print\"\u003e\u003ccode\u003eprint()\u003c/code\u003e\u003c/a\u003e function, use this future statement at\nthe top of your module:\u003c/p\u003e\n\u003cpre class=\"lang-python\"\u003e\u003ccode\u003efrom __future__ import print_function\n\u003c/code\u003e\u003c/pre\u003e\n\n\u003cp\u003e\n\u003cspan class=\"versionadded\"\u003eNew in version 2.6.\u003c/span\u003e\u003c/p\u003e\u003c/body\u003e",
+    "examples": [
+      {
+        "id": 3622,
+        "title": "Generate a range of integers"
+      },
+      {
+        "id": 3607,
+        "title": "Read from a file"
+      },
+      {
+        "id": 3760,
+        "title": "Multiply a sequence "
+      },
+      {
+        "id": 5535,
+        "title": "Construct a `bytearray`"
+      },
+      {
+        "id": 5534,
+        "title": "Construct a `frozenset`"
+      },
+      {
+        "id": 3784,
+        "title": "Lowercase a string"
+      },
+      {
+        "id": 5532,
+        "title": "Decode a string"
+      },
+      {
+        "id": 3767,
+        "title": "Capitalize a string"
+      },
+      {
+        "id": 3634,
+        "title": "Construct a slice"
+      },
+      {
+        "id": 3768,
+        "title": "Center a string"
+      },
+      {
+        "id": 3800,
+        "title": "Uppercase a string"
+      },
+      {
+        "id": 3799,
+        "title": "Translate a string"
+      },
+      {
+        "id": 3759,
+        "title": "Concatenate two sequence types"
+      },
+      {
+        "id": 3812,
+        "title": "Sort a sequence"
+      },
+      {
+        "id": 3649,
+        "title": "Zip two sequences"
+      },
+      {
+        "id": 3783,
+        "title": "Left justify a string"
+      },
+      {
+        "id": 3789,
+        "title": "Right justify a string"
+      },
+      {
+        "id": 3798,
+        "title": "Title-case a string"
+      },
+      {
+        "id": 3619,
+        "title": "Print an object"
+      },
+      {
+        "id": 2839,
+        "title": "Construct a featureless object"
+      },
+      {
+        "id": 3631,
+        "title": "Round a number"
+      },
+      {
+        "id": 4459,
+        "title": "Construct a list"
+      },
+      {
+        "id": 2330,
+        "title": "Enumerate a sequence"
+      },
+      {
+        "id": 3630,
+        "title": "Get a reversed iterator"
+      },
+      {
+        "id": 4457,
+        "title": "Construct a set"
+      },
+      {
+        "id": 5538,
+        "title": "Get a character by ASCII code"
+      },
+      {
+        "id": 3791,
+        "title": "Split a string from the right "
+      },
+      {
+        "id": 3814,
+        "title": "Check for membership in set"
+      },
+      {
+        "id": 3801,
+        "title": "Fill a string with zeros"
+      },
+      {
+        "id": 3648,
+        "title": "Construct an `xrange` list"
+      },
+      {
+        "id": 4458,
+        "title": "Construct a dictionary"
+      },
+      {
+        "id": 5531,
+        "title": "Check if a variable contains `None`"
+      },
+      {
+        "id": 3813,
+        "title": "Get the size of a set"
+      },
+      {
+        "id": 2394,
+        "title": "View the built-in help text"
+      },
+      {
+        "id": 3951,
+        "title": "Get the class of an object"
+      },
+      {
+        "id": 2317,
+        "title": "Check if an object appears callable"
+      },
+      {
+        "id": 3830,
+        "title": "Check the length of a dictionary"
+      },
+      {
+        "id": 3778,
+        "title": "Check if all characters are lowercase"
+      },
+      {
+        "id": 3781,
+        "title": "Check if all characters are uppercase"
+      },
+      {
+        "id": 3794,
+        "title": "Split a string by new lines"
+      },
+      {
+        "id": 4463,
+        "title": "Construct a list using list comprehension"
+      },
+      {
+        "id": 3786,
+        "title": "Partition a string at a substring"
+      },
+      {
+        "id": 2383,
+        "title": "Get the current global symbol table"
+      },
+      {
+        "id": 2351,
+        "title": "Evaluate a string as code"
+      },
+      {
+        "id": 3774,
+        "title": "Format a string using arguments"
+      },
+      {
+        "id": 3745,
+        "title": "Perform boolean logic operations"
+      },
+      {
+        "id": 5410,
+        "title": "Cast a value as a long integer"
+      },
+      {
+        "id": 3957,
+        "title": "Get weak references to its immediate subclasses"
+      },
+      {
+        "id": 3797,
+        "title": "Swap all character casing in a string"
+      },
+      {
+        "id": 3773,
+        "title": "Find the first occurrence of a substring"
+      },
+      {
+        "id": 3792,
+        "title": "Remove the last characters of a string"
+      },
+      {
+        "id": 3829,
+        "title": "Remove all elements from a set"
+      },
+      {
+        "id": 5764,
+        "title": "Execute Python code in a string"
+      },
+      {
+        "id": 3809,
+        "title": "Pop an element off a sequence"
+      },
+      {
+        "id": 3807,
+        "title": "Append an element to a sequence"
+      },
+      {
+        "id": 3804,
+        "title": "Set an element in a sequence"
+      },
+      {
+        "id": 3810,
+        "title": "Remove an element from a sequence"
+      },
+      {
+        "id": 3617,
+        "title": "Exponentiate a number by another number"
+      },
+      {
+        "id": 3833,
+        "title": "Delete an item in a dictionary"
+      },
+      {
+        "id": 3836,
+        "title": "Remove all elements from a dictionary"
+      },
+      {
+        "id": 3769,
+        "title": "Count the occurrences of a substring"
+      },
+      {
+        "id": 3640,
+        "title": "Retrieve a sum of a sequence"
+      },
+      {
+        "id": 2319,
+        "title": "Define a class method"
+      },
+      {
+        "id": 5352,
+        "title": "Check if a dictionary has a key"
+      },
+      {
+        "id": 3949,
+        "title": "Check whether the memory is read only"
+      },
+      {
+        "id": 3777,
+        "title": "Check if a string contains only digits"
+      },
+      {
+        "id": 3779,
+        "title": "Checks if all characters are whitespace characters"
+      },
+      {
+        "id": 3785,
+        "title": "Remove the leading characters of a string"
+      },
+      {
+        "id": 3817,
+        "title": "Construct a union of two sets"
+      },
+      {
+        "id": 3849,
+        "title": "Update a dictionary using another dictionary"
+      },
+      {
+        "id": 3818,
+        "title": "Construct an intersection of two sets"
+      },
+      {
+        "id": 3793,
+        "title": "Split a string by a delimiter"
+      },
+      {
+        "id": 3655,
+        "title": "Compare numbers in different ways"
+      },
+      {
+        "id": 3782,
+        "title": "Join a list of strings on another string"
+      },
+      {
+        "id": 2391,
+        "title": "Hash a hashable object"
+      },
+      {
+        "id": 3828,
+        "title": "Remove an arbitrary element from a set"
+      },
+      {
+        "id": 2400,
+        "title": "Get a unique identifier for an object"
+      },
+      {
+        "id": 3811,
+        "title": "Reverse the order of a mutable sequence"
+      },
+      {
+        "id": 2397,
+        "title": "Convert a number into a hex string"
+      },
+      {
+        "id": 3615,
+        "title": "Convert a string character to ASCII value"
+      },
+      {
+        "id": 3808,
+        "title": "Append another sequence to a mutable sequence"
+      },
+      {
+        "id": 3647,
+        "title": "Get the dictionary attribute for a module"
+      },
+      {
+        "id": 3780,
+        "title": "Check if a string has title capitalization"
+      },
+      {
+        "id": 3651,
+        "title": "Import a package through the import function"
+      },
+      {
+        "id": 3657,
+        "title": "Perform numeric operations"
+      },
+      {
+        "id": 3825,
+        "title": "Add an element to a set"
+      },
+      {
+        "id": 3827,
+        "title": "Discard an element from a set"
+      },
+      {
+        "id": 2448,
+        "title": "Iterate over a list using `iter`"
+      },
+      {
+        "id": 3832,
+        "title": "Set an item in a dictionary"
+      },
+      {
+        "id": 3815,
+        "title": "Check whether two sets are disjoint"
+      },
+      {
+        "id": 3844,
+        "title": "Get a list of keys from a dictionary"
+      },
+      {
+        "id": 3850,
+        "title": "Get a list of values from a dictionary"
+      },
+      {
+        "id": 3947,
+        "title": "Get the number of dimensions in a `memoryview`"
+      },
+      {
+        "id": 3776,
+        "title": "Check if a string contains only alphabetical characters"
+      },
+      {
+        "id": 2231,
+        "title": "Compute the absolute value of a complex number"
+      },
+      {
+        "id": 3771,
+        "title": "Check whether a string has a particular suffix"
+      },
+      {
+        "id": 3796,
+        "title": "Strip characters off the ends of a string"
+      },
+      {
+        "id": 3772,
+        "title": "Change the size of tabs in a string"
+      },
+      {
+        "id": 3787,
+        "title": "Replace a old substring with a new substring"
+      },
+      {
+        "id": 2235,
+        "title": "Convert an integer to a binary string"
+      },
+      {
+        "id": 3606,
+        "title": "Convert an integer to an octal string"
+      },
+      {
+        "id": 2539,
+        "title": "Find the maximum value in a list"
+      },
+      {
+        "id": 3820,
+        "title": "Construct a symmetric difference of two sets"
+      },
+      {
+        "id": 2541,
+        "title": "Find the minimum value in a list"
+      },
+      {
+        "id": 2357,
+        "title": "Apply a filter function to a list"
+      },
+      {
+        "id": 3748,
+        "title": "Perform bitwise operations"
+      },
+      {
+        "id": 3854,
+        "title": "Close a file"
+      },
+      {
+        "id": 4461,
+        "title": "Construct a string"
+      },
+      {
+        "id": 3806,
+        "title": "Delete a slice of a sequence"
+      },
+      {
+        "id": 2533,
+        "title": "View the current local symbol table"
+      },
+      {
+        "id": 2326,
+        "title": "View all attributes of an object"
+      },
+      {
+        "id": 3819,
+        "title": "Construct a difference of two sets"
+      },
+      {
+        "id": 3633,
+        "title": "Set an attribute to a variable"
+      },
+      {
+        "id": 3765,
+        "title": "Get the index of an element in a sequence"
+      },
+      {
+        "id": 3766,
+        "title": "Count the occurrences of an element in a sequence"
+      },
+      {
+        "id": 3788,
+        "title": "Find the location of a substring from the right"
+      },
+      {
+        "id": 3611,
+        "title": "Open the file for updating"
+      },
+      {
+        "id": 5412,
+        "title": "Get raw input from `stdin`"
+      },
+      {
+        "id": 3847,
+        "title": "Pop an arbitrary item off of a dictionary"
+      },
+      {
+        "id": 3834,
+        "title": "Check if a key exists in a dictionary"
+      },
+      {
+        "id": 3842,
+        "title": "Get an iterator of keys from a dictionary"
+      },
+      {
+        "id": 3843,
+        "title": "Get an iterator of values from a dictionary"
+      },
+      {
+        "id": 3795,
+        "title": "Check if a string starts with a prefix"
+      },
+      {
+        "id": 3609,
+        "title": "Write to a file"
+      },
+      {
+        "id": 3646,
+        "title": "Get the dictionary attribute for a class"
+      },
+      {
+        "id": 3837,
+        "title": "Construct a shallow copy of a dictionary"
+      },
+      {
+        "id": 2230,
+        "title": "Compute the absolute value of a number"
+      },
+      {
+        "id": 5540,
+        "title": "Get the filename of a file"
+      },
+      {
+        "id": 3936,
+        "title": "Get the name of a file"
+      },
+      {
+        "id": 3610,
+        "title": "Read a file in binary mode"
+      },
+      {
+        "id": 3826,
+        "title": "Remove an element from a set"
+      },
+      {
+        "id": 3944,
+        "title": "Get the format for each element in a `memoryview`"
+      },
+      {
+        "id": 3945,
+        "title": "Get the size of each item in a `memoryview`"
+      },
+      {
+        "id": 3775,
+        "title": "Check if a string contains only alpha-numeric characters"
+      },
+      {
+        "id": 3803,
+        "title": "Check whether a unicode string contain only digit values"
+      },
+      {
+        "id": 3802,
+        "title": "Check whether a unicode string contain only numeric values"
+      },
+      {
+        "id": 3950,
+        "title": "Get the attribute dictionary of an object"
+      },
+      {
+        "id": 3816,
+        "title": "Check whether a set is a subset"
+      },
+      {
+        "id": 3638,
+        "title": "Construct a static method for a class"
+      },
+      {
+        "id": 3756,
+        "title": "Iterate through a sequence using its iterator"
+      },
+      {
+        "id": 3831,
+        "title": "Get the an item in a dictionary"
+      },
+      {
+        "id": 3790,
+        "title": "Partition a string at the last occurrence of a substring"
+      },
+      {
+        "id": 3643,
+        "title": "Get a type of an object"
+      },
+      {
+        "id": 2234,
+        "title": "Check if a string is either string or unicode"
+      },
+      {
+        "id": 3915,
+        "title": "Read bytes from a file"
+      },
+      {
+        "id": 2327,
+        "title": "View list of names in the local scope"
+      },
+      {
+        "id": 3821,
+        "title": "Take the union of multiple sets in place"
+      },
+      {
+        "id": 3853,
+        "title": "Get a view of values from a dictionary"
+      },
+      {
+        "id": 3851,
+        "title": "Get a view of items from a dictionary"
+      },
+      {
+        "id": 3758,
+        "title": "Check if an element is in a sequence"
+      },
+      {
+        "id": 3852,
+        "title": "Get a view of keys from a dictionary"
+      },
+      {
+        "id": 3823,
+        "title": "Take the difference of multiple sets in place"
+      },
+      {
+        "id": 3822,
+        "title": "Take the intersect of multiple sets in place"
+      },
+      {
+        "id": 5539,
+        "title": "Get the file descriptor of a file"
+      },
+      {
+        "id": 3840,
+        "title": "Get a list of key-value pairs from a dictionary"
+      },
+      {
+        "id": 3948,
+        "title": "Get a tuple of each dimension size in a `memoryview`"
+      },
+      {
+        "id": 3625,
+        "title": "Apply a function cumulatively to the items of a sequence"
+      },
+      {
+        "id": 3652,
+        "title": "Get the boolean value for objects"
+      },
+      {
+        "id": 2537,
+        "title": "Map a function to a list"
+      },
+      {
+        "id": 3835,
+        "title": "Get an iterator of the keys in a dictionary"
+      },
+      {
+        "id": 3824,
+        "title": "Take the symmetric difference of two sets in place"
+      },
+      {
+        "id": 3953,
+        "title": "Get the name of the class or type of an object"
+      },
+      {
+        "id": 5533,
+        "title": "Get the index of a string where a subsequence is located"
+      },
+      {
+        "id": 3918,
+        "title": "Set the current position of a file"
+      },
+      {
+        "id": 3920,
+        "title": "Set the relative position of a file"
+      },
+      {
+        "id": 3639,
+        "title": "Get a string representation of an object"
+      },
+      {
+        "id": 3846,
+        "title": "Pop an item off of a dictionary"
+      },
+      {
+        "id": 2320,
+        "title": "Compare two values and return the outcome as an integer"
+      },
+      {
+        "id": 3839,
+        "title": "Get an item in a dictionary with a default value"
+      },
+      {
+        "id": 3841,
+        "title": "Get an iterator of  key-value pairs from a dictionary"
+      },
+      {
+        "id": 3927,
+        "title": "Check if a file is closed"
+      },
+      {
+        "id": 2328,
+        "title": "Compute the quotient and remainder of dividing two numbers"
+      },
+      {
+        "id": 2543,
+        "title": "Get the next item from an iterator using `next`"
+      },
+      {
+        "id": 3637,
+        "title": "Generate a sorted list from an iterable object"
+      },
+      {
+        "id": 3838,
+        "title": "Construct a dictionary from multiple keys mapped to the same values"
+      },
+      {
+        "id": 3916,
+        "title": "Read the next line from a file"
+      },
+      {
+        "id": 3923,
+        "title": "Get the current position of a file"
+      },
+      {
+        "id": 2433,
+        "title": "Check if an object is an instance of a class"
+      },
+      {
+        "id": 2325,
+        "title": "Delete an attribute from an object"
+      },
+      {
+        "id": 3933,
+        "title": "Get the mode for the file"
+      },
+      {
+        "id": 3925,
+        "title": "Write a line to a file"
+      },
+      {
+        "id": 3952,
+        "title": "Get a tuple of base classes of an object"
+      },
+      {
+        "id": 3613,
+        "title": "Append text to the end of a file"
+      },
+      {
+        "id": 5411,
+        "title": "Get raw input from `stdin` with a prompt"
+      },
+      {
+        "id": 3940,
+        "title": "Convert an object that follows the buffer protocol to a `memoryview`"
+      },
+      {
+        "id": 2388,
+        "title": "Check if an object has an attribute"
+      },
+      {
+        "id": 3620,
+        "title": "Set an instance variable to a property"
+      },
+      {
+        "id": 3954,
+        "title": "Get a tuple of all parent classes of an object"
+      },
+      {
+        "id": 3848,
+        "title": "Set a default value for an item in a dictionary"
+      },
+      {
+        "id": 3924,
+        "title": "Truncate the size of the file"
+      },
+      {
+        "id": 3805,
+        "title": "Set an iterator to a slice in a sequence"
+      },
+      {
+        "id": 3942,
+        "title": "Get the data in the buffer in a `memoryview` as a bytestring"
+      },
+      {
+        "id": 3757,
+        "title": "Construct a generator function"
+      },
+      {
+        "id": 3644,
+        "title": "Get a unicode string of a character from its unicode integer"
+      },
+      {
+        "id": 3911,
+        "title": "Flush the internal buffer of a file"
+      },
+      {
+        "id": 2840,
+        "title": "Construct a new-style class"
+      },
+      {
+        "id": 2542,
+        "title": "Find the minimum value in a list given a comparison function"
+      },
+      {
+        "id": 2540,
+        "title": "Find the maximum value in a list given a comparison function"
+      },
+      {
+        "id": 3914,
+        "title": "Get the next line of a file"
+      },
+      {
+        "id": 3917,
+        "title": "Get all the lines from a file as a list"
+      },
+      {
+        "id": 3919,
+        "title": "Get an iterator of all lines in a list"
+      },
+      {
+        "id": 3641,
+        "title": "Call a method of a parent or sibling class"
+      },
+      {
+        "id": 3913,
+        "title": "Check if a file is connected to a TTY device"
+      },
+      {
+        "id": 3629,
+        "title": "Get a string containing a printable representation of an object"
+      },
+      {
+        "id": 2233,
+        "title": "Check if all elements in a list evaluate to true"
+      },
+      {
+        "id": 2232,
+        "title": "Check if all elements in a list evaluate to true"
+      },
+      {
+        "id": 3938,
+        "title": "Check whether a space character needs to be printed"
+      },
+      {
+        "id": 3926,
+        "title": "Write a sequence of lines to a file"
+      },
+      {
+        "id": 3912,
+        "title": "Get the file descriptor integer that is used by the OS"
+      },
+      {
+        "id": 3943,
+        "title": "Get the data in the buffer in a `memoryview` as a list of integers"
+      },
+      {
+        "id": 3946,
+        "title": "Get the shape of the memory in a `memoryview` as a N-dimensional array"
+      },
+      {
+        "id": 2434,
+        "title": "Check if a class is a subclass of another class"
+      },
+      {
+        "id": 2352,
+        "title": "Check if an object is an instance of a certain type or class"
+      },
+      {
+        "id": 3937,
+        "title": "Get all the types of new line encountered when reading a file"
+      },
+      {
+        "id": 2382,
+        "title": "Get an attribute of an object using a string"
+      }
+    ],
+    "usages": null,
+    "total_usages": 0,
+    "links": [
+      {
+        "title": "Is it possible to mock Python's built in print function?",
+        "url": "https://stackoverflow.com/questions/12998908",
+        "stackoverflow": {
+          "score": 18
+        }
+      },
+      {
+        "title": "python - prevent IOError: [Errno 5] Input/output error when running without stdout",
+        "url": "https://stackoverflow.com/questions/38238139",
+        "stackoverflow": {
+          "score": 0
+        }
+      }
+    ],
+    "total_links": 2
+  }
+}

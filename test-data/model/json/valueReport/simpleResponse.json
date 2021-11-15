@@ -1,0 +1,2841 @@
+{
+  "value": {
+    "id": "__builtin__",
+    "kind": "module",
+    "repr": "__builtin__",
+    "type": "module",
+    "type_id": "__builtin__.module",
+    "synopsis": "A reference to the module containing builtins, and its name as a string.",
+    "details": {
+      "module": {
+        "total_members": 141,
+        "members": [
+          {
+            "id": "__builtin__.abs",
+            "name": "abs",
+            "namespace": {
+              "id": "__builtin__",
+              "kind": "module",
+              "repr": "__builtin__",
+              "type": "module",
+              "type_id": "__builtin__.module"
+            },
+            "value": [
+              {
+                "id": "__builtin__.abs",
+                "kind": "function",
+                "repr": "abs",
+                "type": "type",
+                "type_id": "__builtin__.type"
+              }
+            ]
+          },
+          {
+            "id": "__builtin__.all",
+            "name": "all",
+            "namespace": {
+              "id": "__builtin__",
+              "kind": "module",
+              "repr": "__builtin__",
+              "type": "module",
+              "type_id": "__builtin__.module"
+            },
+            "value": [
+              {
+                "id": "__builtin__.all",
+                "kind": "function",
+                "repr": "all",
+                "type": "type",
+                "type_id": "__builtin__.type"
+              }
+            ]
+          },
+          {
+            "id": "__builtin__.any",
+            "name": "any",
+            "namespace": {
+              "id": "__builtin__",
+              "kind": "module",
+              "repr": "__builtin__",
+              "type": "module",
+              "type_id": "__builtin__.module"
+            },
+            "value": [
+              {
+                "id": "__builtin__.any",
+                "kind": "function",
+                "repr": "any",
+                "type": "type",
+                "type_id": "__builtin__.type"
+              }
+            ]
+          },
+          {
+            "id": "__builtin__.apply",
+            "name": "apply",
+            "namespace": {
+              "id": "__builtin__",
+              "kind": "module",
+              "repr": "__builtin__",
+              "type": "module",
+              "type_id": "__builtin__.module"
+            },
+            "value": [
+              {
+                "id": "__builtin__.apply",
+                "kind": "function",
+                "repr": "apply",
+                "type": "type",
+                "type_id": "__builtin__.type"
+              }
+            ]
+          },
+          {
+            "id": "exceptions.ArithmeticError",
+            "name": "ArithmeticError",
+            "namespace": {
+              "id": "__builtin__",
+              "kind": "module",
+              "repr": "__builtin__",
+              "type": "module",
+              "type_id": "__builtin__.module"
+            },
+            "value": [
+              {
+                "id": "exceptions.ArithmeticError",
+                "kind": "type",
+                "repr": "ArithmeticError",
+                "type": "type",
+                "type_id": "__builtin__.type"
+              }
+            ]
+          },
+          {
+            "id": "future_builtins.ascii",
+            "name": "ascii",
+            "namespace": {
+              "id": "__builtin__",
+              "kind": "module",
+              "repr": "__builtin__",
+              "type": "module",
+              "type_id": "__builtin__.module"
+            },
+            "value": [
+              {
+                "id": "future_builtins.ascii",
+                "kind": "function",
+                "repr": "ascii",
+                "type": "type",
+                "type_id": "__builtin__.type"
+              }
+            ]
+          },
+          {
+            "id": "exceptions.AssertionError",
+            "name": "AssertionError",
+            "namespace": {
+              "id": "__builtin__",
+              "kind": "module",
+              "repr": "__builtin__",
+              "type": "module",
+              "type_id": "__builtin__.module"
+            },
+            "value": [
+              {
+                "id": "exceptions.AssertionError",
+                "kind": "type",
+                "repr": "AssertionError",
+                "type": "type",
+                "type_id": "__builtin__.type"
+              }
+            ]
+          },
+          {
+            "id": "exceptions.AttributeError",
+            "name": "AttributeError",
+            "namespace": {
+              "id": "__builtin__",
+              "kind": "module",
+              "repr": "__builtin__",
+              "type": "module",
+              "type_id": "__builtin__.module"
+            },
+            "value": [
+              {
+                "id": "exceptions.AttributeError",
+                "kind": "type",
+                "repr": "AttributeError",
+                "type": "type",
+                "type_id": "__builtin__.type"
+              }
+            ]
+          },
+          {
+            "id": "exceptions.BaseException",
+            "name": "BaseException",
+            "namespace": {
+              "id": "__builtin__",
+              "kind": "module",
+              "repr": "__builtin__",
+              "type": "module",
+              "type_id": "__builtin__.module"
+            },
+            "value": [
+              {
+                "id": "exceptions.BaseException",
+                "kind": "type",
+                "repr": "BaseException",
+                "type": "type",
+                "type_id": "__builtin__.type"
+              }
+            ]
+          },
+          {
+            "id": "__builtin__.basestring",
+            "name": "basestring",
+            "namespace": {
+              "id": "__builtin__",
+              "kind": "module",
+              "repr": "__builtin__",
+              "type": "module",
+              "type_id": "__builtin__.module"
+            },
+            "value": [
+              {
+                "id": "__builtin__.basestring",
+                "kind": "type",
+                "repr": "basestring",
+                "type": "type",
+                "type_id": "__builtin__.type"
+              }
+            ]
+          },
+          {
+            "id": "__builtin__.bin",
+            "name": "bin",
+            "namespace": {
+              "id": "__builtin__",
+              "kind": "module",
+              "repr": "__builtin__",
+              "type": "module",
+              "type_id": "__builtin__.module"
+            },
+            "value": [
+              {
+                "id": "__builtin__.bin",
+                "kind": "function",
+                "repr": "bin",
+                "type": "type",
+                "type_id": "__builtin__.type"
+              }
+            ]
+          },
+          {
+            "id": "__builtin__.bool",
+            "name": "bool",
+            "namespace": {
+              "id": "__builtin__",
+              "kind": "module",
+              "repr": "__builtin__",
+              "type": "module",
+              "type_id": "__builtin__.module"
+            },
+            "value": [
+              {
+                "id": "__builtin__.bool",
+                "kind": "type",
+                "repr": "bool",
+                "type": "type",
+                "type_id": "__builtin__.type"
+              }
+            ]
+          },
+          {
+            "id": "__builtin__.buffer",
+            "name": "buffer",
+            "namespace": {
+              "id": "__builtin__",
+              "kind": "module",
+              "repr": "__builtin__",
+              "type": "module",
+              "type_id": "__builtin__.module"
+            },
+            "value": [
+              {
+                "id": "__builtin__.buffer",
+                "kind": "type",
+                "repr": "buffer",
+                "type": "type",
+                "type_id": "__builtin__.type"
+              }
+            ]
+          },
+          {
+            "id": "exceptions.BufferError",
+            "name": "BufferError",
+            "namespace": {
+              "id": "__builtin__",
+              "kind": "module",
+              "repr": "__builtin__",
+              "type": "module",
+              "type_id": "__builtin__.module"
+            },
+            "value": [
+              {
+                "id": "exceptions.BufferError",
+                "kind": "type",
+                "repr": "BufferError",
+                "type": "type",
+                "type_id": "__builtin__.type"
+              }
+            ]
+          },
+          {
+            "id": "__builtin__.bytearray",
+            "name": "bytearray",
+            "namespace": {
+              "id": "__builtin__",
+              "kind": "module",
+              "repr": "__builtin__",
+              "type": "module",
+              "type_id": "__builtin__.module"
+            },
+            "value": [
+              {
+                "id": "__builtin__.bytearray",
+                "kind": "type",
+                "repr": "bytearray",
+                "type": "type",
+                "type_id": "__builtin__.type"
+              }
+            ]
+          },
+          {
+            "id": "__builtin__.str",
+            "name": "bytes",
+            "namespace": {
+              "id": "__builtin__",
+              "kind": "module",
+              "repr": "__builtin__",
+              "type": "module",
+              "type_id": "__builtin__.module"
+            },
+            "value": [
+              {
+                "id": "__builtin__.str",
+                "kind": "type",
+                "repr": "str",
+                "type": "type",
+                "type_id": "__builtin__.type"
+              }
+            ]
+          },
+          {
+            "id": "exceptions.BytesWarning",
+            "name": "BytesWarning",
+            "namespace": {
+              "id": "__builtin__",
+              "kind": "module",
+              "repr": "__builtin__",
+              "type": "module",
+              "type_id": "__builtin__.module"
+            },
+            "value": [
+              {
+                "id": "exceptions.BytesWarning",
+                "kind": "type",
+                "repr": "BytesWarning",
+                "type": "type",
+                "type_id": "__builtin__.type"
+              }
+            ]
+          },
+          {
+            "id": "__builtin__.callable",
+            "name": "callable",
+            "namespace": {
+              "id": "__builtin__",
+              "kind": "module",
+              "repr": "__builtin__",
+              "type": "module",
+              "type_id": "__builtin__.module"
+            },
+            "value": [
+              {
+                "id": "__builtin__.callable",
+                "kind": "function",
+                "repr": "callable",
+                "type": "type",
+                "type_id": "__builtin__.type"
+              }
+            ]
+          },
+          {
+            "id": "__builtin__.chr",
+            "name": "chr",
+            "namespace": {
+              "id": "__builtin__",
+              "kind": "module",
+              "repr": "__builtin__",
+              "type": "module",
+              "type_id": "__builtin__.module"
+            },
+            "value": [
+              {
+                "id": "__builtin__.chr",
+                "kind": "function",
+                "repr": "chr",
+                "type": "type",
+                "type_id": "__builtin__.type"
+              }
+            ]
+          },
+          {
+            "id": "__builtin__.classmethod",
+            "name": "classmethod",
+            "namespace": {
+              "id": "__builtin__",
+              "kind": "module",
+              "repr": "__builtin__",
+              "type": "module",
+              "type_id": "__builtin__.module"
+            },
+            "value": [
+              {
+                "id": "__builtin__.classmethod",
+                "kind": "type",
+                "repr": "classmethod",
+                "type": "type",
+                "type_id": "__builtin__.type"
+              }
+            ]
+          },
+          {
+            "id": "__builtin__.cmp",
+            "name": "cmp",
+            "namespace": {
+              "id": "__builtin__",
+              "kind": "module",
+              "repr": "__builtin__",
+              "type": "module",
+              "type_id": "__builtin__.module"
+            },
+            "value": [
+              {
+                "id": "__builtin__.cmp",
+                "kind": "function",
+                "repr": "cmp",
+                "type": "type",
+                "type_id": "__builtin__.type"
+              }
+            ]
+          },
+          {
+            "id": "__builtin__.coerce",
+            "name": "coerce",
+            "namespace": {
+              "id": "__builtin__",
+              "kind": "module",
+              "repr": "__builtin__",
+              "type": "module",
+              "type_id": "__builtin__.module"
+            },
+            "value": [
+              {
+                "id": "__builtin__.coerce",
+                "kind": "function",
+                "repr": "coerce",
+                "type": "type",
+                "type_id": "__builtin__.type"
+              }
+            ]
+          },
+          {
+            "id": "__builtin__.compile",
+            "name": "compile",
+            "namespace": {
+              "id": "__builtin__",
+              "kind": "module",
+              "repr": "__builtin__",
+              "type": "module",
+              "type_id": "__builtin__.module"
+            },
+            "value": [
+              {
+                "id": "__builtin__.compile",
+                "kind": "function",
+                "repr": "compile",
+                "type": "type",
+                "type_id": "__builtin__.type"
+              }
+            ]
+          },
+          {
+            "id": "__builtin__.complex",
+            "name": "complex",
+            "namespace": {
+              "id": "__builtin__",
+              "kind": "module",
+              "repr": "__builtin__",
+              "type": "module",
+              "type_id": "__builtin__.module"
+            },
+            "value": [
+              {
+                "id": "__builtin__.complex",
+                "kind": "type",
+                "repr": "complex",
+                "type": "type",
+                "type_id": "__builtin__.type"
+              }
+            ]
+          },
+          {
+            "id": "",
+            "name": "copyright",
+            "namespace": {
+              "id": "__builtin__",
+              "kind": "module",
+              "repr": "__builtin__",
+              "type": "module",
+              "type_id": "__builtin__.module"
+            },
+            "value": [
+              {
+                "id": "",
+                "kind": "instance",
+                "repr": "",
+                "type": "",
+                "type_id": ""
+              }
+            ]
+          },
+          {
+            "id": "__builtin__.credits",
+            "name": "credits",
+            "namespace": {
+              "id": "__builtin__",
+              "kind": "module",
+              "repr": "__builtin__",
+              "type": "module",
+              "type_id": "__builtin__.module"
+            },
+            "value": [
+              {
+                "id": "__builtin__.credits",
+                "kind": "instance",
+                "repr": "credits",
+                "type": "",
+                "type_id": ""
+              }
+            ]
+          },
+          {
+            "id": "__builtin__.delattr",
+            "name": "delattr",
+            "namespace": {
+              "id": "__builtin__",
+              "kind": "module",
+              "repr": "__builtin__",
+              "type": "module",
+              "type_id": "__builtin__.module"
+            },
+            "value": [
+              {
+                "id": "__builtin__.delattr",
+                "kind": "function",
+                "repr": "delattr",
+                "type": "type",
+                "type_id": "__builtin__.type"
+              }
+            ]
+          },
+          {
+            "id": "exceptions.DeprecationWarning",
+            "name": "DeprecationWarning",
+            "namespace": {
+              "id": "__builtin__",
+              "kind": "module",
+              "repr": "__builtin__",
+              "type": "module",
+              "type_id": "__builtin__.module"
+            },
+            "value": [
+              {
+                "id": "exceptions.DeprecationWarning",
+                "kind": "type",
+                "repr": "DeprecationWarning",
+                "type": "type",
+                "type_id": "__builtin__.type"
+              }
+            ]
+          },
+          {
+            "id": "__builtin__.dict",
+            "name": "dict",
+            "namespace": {
+              "id": "__builtin__",
+              "kind": "module",
+              "repr": "__builtin__",
+              "type": "module",
+              "type_id": "__builtin__.module"
+            },
+            "value": [
+              {
+                "id": "__builtin__.dict",
+                "kind": "type",
+                "repr": "dict",
+                "type": "type",
+                "type_id": "__builtin__.type"
+              }
+            ]
+          },
+          {
+            "id": "__builtin__.dir",
+            "name": "dir",
+            "namespace": {
+              "id": "__builtin__",
+              "kind": "module",
+              "repr": "__builtin__",
+              "type": "module",
+              "type_id": "__builtin__.module"
+            },
+            "value": [
+              {
+                "id": "__builtin__.dir",
+                "kind": "function",
+                "repr": "dir",
+                "type": "type",
+                "type_id": "__builtin__.type"
+              }
+            ]
+          },
+          {
+            "id": "__builtin__.divmod",
+            "name": "divmod",
+            "namespace": {
+              "id": "__builtin__",
+              "kind": "module",
+              "repr": "__builtin__",
+              "type": "module",
+              "type_id": "__builtin__.module"
+            },
+            "value": [
+              {
+                "id": "__builtin__.divmod",
+                "kind": "function",
+                "repr": "divmod",
+                "type": "type",
+                "type_id": "__builtin__.type"
+              }
+            ]
+          },
+          {
+            "id": "IPython.lib.deepreload._dreload",
+            "name": "dreload",
+            "namespace": {
+              "id": "__builtin__",
+              "kind": "module",
+              "repr": "__builtin__",
+              "type": "module",
+              "type_id": "__builtin__.module"
+            },
+            "value": [
+              {
+                "id": "IPython.lib.deepreload._dreload",
+                "kind": "function",
+                "repr": "_dreload",
+                "type": "type",
+                "type_id": "__builtin__.type"
+              }
+            ]
+          },
+          {
+            "id": "",
+            "name": "Ellipsis",
+            "namespace": {
+              "id": "__builtin__",
+              "kind": "module",
+              "repr": "__builtin__",
+              "type": "module",
+              "type_id": "__builtin__.module"
+            },
+            "value": [
+              {
+                "id": "",
+                "kind": "instance",
+                "repr": "",
+                "type": "type",
+                "type_id": "__builtin__.type"
+              }
+            ]
+          },
+          {
+            "id": "__builtin__.enumerate",
+            "name": "enumerate",
+            "namespace": {
+              "id": "__builtin__",
+              "kind": "module",
+              "repr": "__builtin__",
+              "type": "module",
+              "type_id": "__builtin__.module"
+            },
+            "value": [
+              {
+                "id": "__builtin__.enumerate",
+                "kind": "type",
+                "repr": "enumerate",
+                "type": "type",
+                "type_id": "__builtin__.type"
+              }
+            ]
+          },
+          {
+            "id": "exceptions.EnvironmentError",
+            "name": "EnvironmentError",
+            "namespace": {
+              "id": "__builtin__",
+              "kind": "module",
+              "repr": "__builtin__",
+              "type": "module",
+              "type_id": "__builtin__.module"
+            },
+            "value": [
+              {
+                "id": "exceptions.EnvironmentError",
+                "kind": "type",
+                "repr": "EnvironmentError",
+                "type": "type",
+                "type_id": "__builtin__.type"
+              }
+            ]
+          },
+          {
+            "id": "exceptions.EOFError",
+            "name": "EOFError",
+            "namespace": {
+              "id": "__builtin__",
+              "kind": "module",
+              "repr": "__builtin__",
+              "type": "module",
+              "type_id": "__builtin__.module"
+            },
+            "value": [
+              {
+                "id": "exceptions.EOFError",
+                "kind": "type",
+                "repr": "EOFError",
+                "type": "type",
+                "type_id": "__builtin__.type"
+              }
+            ]
+          },
+          {
+            "id": "__builtin__.eval",
+            "name": "eval",
+            "namespace": {
+              "id": "__builtin__",
+              "kind": "module",
+              "repr": "__builtin__",
+              "type": "module",
+              "type_id": "__builtin__.module"
+            },
+            "value": [
+              {
+                "id": "__builtin__.eval",
+                "kind": "function",
+                "repr": "eval",
+                "type": "type",
+                "type_id": "__builtin__.type"
+              }
+            ]
+          },
+          {
+            "id": "exceptions.Exception",
+            "name": "Exception",
+            "namespace": {
+              "id": "__builtin__",
+              "kind": "module",
+              "repr": "__builtin__",
+              "type": "module",
+              "type_id": "__builtin__.module"
+            },
+            "value": [
+              {
+                "id": "exceptions.Exception",
+                "kind": "type",
+                "repr": "Exception",
+                "type": "type",
+                "type_id": "__builtin__.type"
+              }
+            ]
+          },
+          {
+            "id": "__builtin__.execfile",
+            "name": "execfile",
+            "namespace": {
+              "id": "__builtin__",
+              "kind": "module",
+              "repr": "__builtin__",
+              "type": "module",
+              "type_id": "__builtin__.module"
+            },
+            "value": [
+              {
+                "id": "__builtin__.execfile",
+                "kind": "function",
+                "repr": "execfile",
+                "type": "type",
+                "type_id": "__builtin__.type"
+              }
+            ]
+          },
+          {
+            "id": "__builtin__.exit",
+            "name": "exit",
+            "namespace": {
+              "id": "__builtin__",
+              "kind": "module",
+              "repr": "__builtin__",
+              "type": "module",
+              "type_id": "__builtin__.module"
+            },
+            "value": [
+              {
+                "id": "__builtin__.exit",
+                "kind": "instance",
+                "repr": "exit",
+                "type": "",
+                "type_id": ""
+              }
+            ]
+          },
+          {
+            "id": "",
+            "name": "False",
+            "namespace": {
+              "id": "__builtin__",
+              "kind": "module",
+              "repr": "__builtin__",
+              "type": "module",
+              "type_id": "__builtin__.module"
+            },
+            "value": [
+              {
+                "id": "",
+                "kind": "instance",
+                "repr": "",
+                "type": "type",
+                "type_id": "__builtin__.type"
+              }
+            ]
+          },
+          {
+            "id": "__builtin__.file",
+            "name": "file",
+            "namespace": {
+              "id": "__builtin__",
+              "kind": "module",
+              "repr": "__builtin__",
+              "type": "module",
+              "type_id": "__builtin__.module"
+            },
+            "value": [
+              {
+                "id": "__builtin__.file",
+                "kind": "type",
+                "repr": "file",
+                "type": "type",
+                "type_id": "__builtin__.type"
+              }
+            ]
+          },
+          {
+            "id": "__builtin__.filter",
+            "name": "filter",
+            "namespace": {
+              "id": "__builtin__",
+              "kind": "module",
+              "repr": "__builtin__",
+              "type": "module",
+              "type_id": "__builtin__.module"
+            },
+            "value": [
+              {
+                "id": "__builtin__.filter",
+                "kind": "function",
+                "repr": "filter",
+                "type": "type",
+                "type_id": "__builtin__.type"
+              }
+            ]
+          },
+          {
+            "id": "__builtin__.float",
+            "name": "float",
+            "namespace": {
+              "id": "__builtin__",
+              "kind": "module",
+              "repr": "__builtin__",
+              "type": "module",
+              "type_id": "__builtin__.module"
+            },
+            "value": [
+              {
+                "id": "__builtin__.float",
+                "kind": "type",
+                "repr": "float",
+                "type": "type",
+                "type_id": "__builtin__.type"
+              }
+            ]
+          },
+          {
+            "id": "exceptions.FloatingPointError",
+            "name": "FloatingPointError",
+            "namespace": {
+              "id": "__builtin__",
+              "kind": "module",
+              "repr": "__builtin__",
+              "type": "module",
+              "type_id": "__builtin__.module"
+            },
+            "value": [
+              {
+                "id": "exceptions.FloatingPointError",
+                "kind": "type",
+                "repr": "FloatingPointError",
+                "type": "type",
+                "type_id": "__builtin__.type"
+              }
+            ]
+          },
+          {
+            "id": "__builtin__.format",
+            "name": "format",
+            "namespace": {
+              "id": "__builtin__",
+              "kind": "module",
+              "repr": "__builtin__",
+              "type": "module",
+              "type_id": "__builtin__.module"
+            },
+            "value": [
+              {
+                "id": "__builtin__.format",
+                "kind": "function",
+                "repr": "format",
+                "type": "type",
+                "type_id": "__builtin__.type"
+              }
+            ]
+          },
+          {
+            "id": "__builtin__.frozenset",
+            "name": "frozenset",
+            "namespace": {
+              "id": "__builtin__",
+              "kind": "module",
+              "repr": "__builtin__",
+              "type": "module",
+              "type_id": "__builtin__.module"
+            },
+            "value": [
+              {
+                "id": "__builtin__.frozenset",
+                "kind": "type",
+                "repr": "frozenset",
+                "type": "type",
+                "type_id": "__builtin__.type"
+              }
+            ]
+          },
+          {
+            "id": "exceptions.FutureWarning",
+            "name": "FutureWarning",
+            "namespace": {
+              "id": "__builtin__",
+              "kind": "module",
+              "repr": "__builtin__",
+              "type": "module",
+              "type_id": "__builtin__.module"
+            },
+            "value": [
+              {
+                "id": "exceptions.FutureWarning",
+                "kind": "type",
+                "repr": "FutureWarning",
+                "type": "type",
+                "type_id": "__builtin__.type"
+              }
+            ]
+          },
+          {
+            "id": "exceptions.GeneratorExit",
+            "name": "GeneratorExit",
+            "namespace": {
+              "id": "__builtin__",
+              "kind": "module",
+              "repr": "__builtin__",
+              "type": "module",
+              "type_id": "__builtin__.module"
+            },
+            "value": [
+              {
+                "id": "exceptions.GeneratorExit",
+                "kind": "type",
+                "repr": "GeneratorExit",
+                "type": "type",
+                "type_id": "__builtin__.type"
+              }
+            ]
+          },
+          {
+            "id": "IPython.core.interactiveshell.TerminalInteractiveShell.get_ipython",
+            "name": "get_ipython",
+            "namespace": {
+              "id": "__builtin__",
+              "kind": "module",
+              "repr": "__builtin__",
+              "type": "module",
+              "type_id": "__builtin__.module"
+            },
+            "value": [
+              {
+                "id": "IPython.core.interactiveshell.TerminalInteractiveShell.get_ipython",
+                "kind": "function",
+                "repr": "get_ipython",
+                "type": "type",
+                "type_id": "__builtin__.type"
+              }
+            ]
+          },
+          {
+            "id": "__builtin__.getattr",
+            "name": "getattr",
+            "namespace": {
+              "id": "__builtin__",
+              "kind": "module",
+              "repr": "__builtin__",
+              "type": "module",
+              "type_id": "__builtin__.module"
+            },
+            "value": [
+              {
+                "id": "__builtin__.getattr",
+                "kind": "function",
+                "repr": "getattr",
+                "type": "type",
+                "type_id": "__builtin__.type"
+              }
+            ]
+          },
+          {
+            "id": "__builtin__.globals",
+            "name": "globals",
+            "namespace": {
+              "id": "__builtin__",
+              "kind": "module",
+              "repr": "__builtin__",
+              "type": "module",
+              "type_id": "__builtin__.module"
+            },
+            "value": [
+              {
+                "id": "__builtin__.globals",
+                "kind": "function",
+                "repr": "globals",
+                "type": "type",
+                "type_id": "__builtin__.type"
+              }
+            ]
+          },
+          {
+            "id": "__builtin__.hasattr",
+            "name": "hasattr",
+            "namespace": {
+              "id": "__builtin__",
+              "kind": "module",
+              "repr": "__builtin__",
+              "type": "module",
+              "type_id": "__builtin__.module"
+            },
+            "value": [
+              {
+                "id": "__builtin__.hasattr",
+                "kind": "function",
+                "repr": "hasattr",
+                "type": "type",
+                "type_id": "__builtin__.type"
+              }
+            ]
+          },
+          {
+            "id": "__builtin__.hash",
+            "name": "hash",
+            "namespace": {
+              "id": "__builtin__",
+              "kind": "module",
+              "repr": "__builtin__",
+              "type": "module",
+              "type_id": "__builtin__.module"
+            },
+            "value": [
+              {
+                "id": "__builtin__.hash",
+                "kind": "function",
+                "repr": "hash",
+                "type": "type",
+                "type_id": "__builtin__.type"
+              }
+            ]
+          },
+          {
+            "id": "",
+            "name": "help",
+            "namespace": {
+              "id": "__builtin__",
+              "kind": "module",
+              "repr": "__builtin__",
+              "type": "module",
+              "type_id": "__builtin__.module"
+            },
+            "value": [
+              {
+                "id": "",
+                "kind": "instance",
+                "repr": "",
+                "type": "",
+                "type_id": ""
+              }
+            ]
+          },
+          {
+            "id": "__builtin__.hex",
+            "name": "hex",
+            "namespace": {
+              "id": "__builtin__",
+              "kind": "module",
+              "repr": "__builtin__",
+              "type": "module",
+              "type_id": "__builtin__.module"
+            },
+            "value": [
+              {
+                "id": "__builtin__.hex",
+                "kind": "function",
+                "repr": "hex",
+                "type": "type",
+                "type_id": "__builtin__.type"
+              }
+            ]
+          },
+          {
+            "id": "__builtin__.id",
+            "name": "id",
+            "namespace": {
+              "id": "__builtin__",
+              "kind": "module",
+              "repr": "__builtin__",
+              "type": "module",
+              "type_id": "__builtin__.module"
+            },
+            "value": [
+              {
+                "id": "__builtin__.id",
+                "kind": "function",
+                "repr": "id",
+                "type": "type",
+                "type_id": "__builtin__.type"
+              }
+            ]
+          },
+          {
+            "id": "exceptions.ImportError",
+            "name": "ImportError",
+            "namespace": {
+              "id": "__builtin__",
+              "kind": "module",
+              "repr": "__builtin__",
+              "type": "module",
+              "type_id": "__builtin__.module"
+            },
+            "value": [
+              {
+                "id": "exceptions.ImportError",
+                "kind": "type",
+                "repr": "ImportError",
+                "type": "type",
+                "type_id": "__builtin__.type"
+              }
+            ]
+          },
+          {
+            "id": "exceptions.ImportWarning",
+            "name": "ImportWarning",
+            "namespace": {
+              "id": "__builtin__",
+              "kind": "module",
+              "repr": "__builtin__",
+              "type": "module",
+              "type_id": "__builtin__.module"
+            },
+            "value": [
+              {
+                "id": "exceptions.ImportWarning",
+                "kind": "type",
+                "repr": "ImportWarning",
+                "type": "type",
+                "type_id": "__builtin__.type"
+              }
+            ]
+          },
+          {
+            "id": "exceptions.IndentationError",
+            "name": "IndentationError",
+            "namespace": {
+              "id": "__builtin__",
+              "kind": "module",
+              "repr": "__builtin__",
+              "type": "module",
+              "type_id": "__builtin__.module"
+            },
+            "value": [
+              {
+                "id": "exceptions.IndentationError",
+                "kind": "type",
+                "repr": "IndentationError",
+                "type": "type",
+                "type_id": "__builtin__.type"
+              }
+            ]
+          },
+          {
+            "id": "exceptions.IndexError",
+            "name": "IndexError",
+            "namespace": {
+              "id": "__builtin__",
+              "kind": "module",
+              "repr": "__builtin__",
+              "type": "module",
+              "type_id": "__builtin__.module"
+            },
+            "value": [
+              {
+                "id": "exceptions.IndexError",
+                "kind": "type",
+                "repr": "IndexError",
+                "type": "type",
+                "type_id": "__builtin__.type"
+              }
+            ]
+          },
+          {
+            "id": "__builtin__.input",
+            "name": "input",
+            "namespace": {
+              "id": "__builtin__",
+              "kind": "module",
+              "repr": "__builtin__",
+              "type": "module",
+              "type_id": "__builtin__.module"
+            },
+            "value": [
+              {
+                "id": "__builtin__.input",
+                "kind": "function",
+                "repr": "input",
+                "type": "type",
+                "type_id": "__builtin__.type"
+              }
+            ]
+          },
+          {
+            "id": "__builtin__.int",
+            "name": "int",
+            "namespace": {
+              "id": "__builtin__",
+              "kind": "module",
+              "repr": "__builtin__",
+              "type": "module",
+              "type_id": "__builtin__.module"
+            },
+            "value": [
+              {
+                "id": "__builtin__.int",
+                "kind": "type",
+                "repr": "int",
+                "type": "type",
+                "type_id": "__builtin__.type"
+              }
+            ]
+          },
+          {
+            "id": "__builtin__.intern",
+            "name": "intern",
+            "namespace": {
+              "id": "__builtin__",
+              "kind": "module",
+              "repr": "__builtin__",
+              "type": "module",
+              "type_id": "__builtin__.module"
+            },
+            "value": [
+              {
+                "id": "__builtin__.intern",
+                "kind": "function",
+                "repr": "intern",
+                "type": "type",
+                "type_id": "__builtin__.type"
+              }
+            ]
+          },
+          {
+            "id": "exceptions.IOError",
+            "name": "IOError",
+            "namespace": {
+              "id": "__builtin__",
+              "kind": "module",
+              "repr": "__builtin__",
+              "type": "module",
+              "type_id": "__builtin__.module"
+            },
+            "value": [
+              {
+                "id": "exceptions.IOError",
+                "kind": "type",
+                "repr": "IOError",
+                "type": "type",
+                "type_id": "__builtin__.type"
+              }
+            ]
+          },
+          {
+            "id": "__builtin__.isinstance",
+            "name": "isinstance",
+            "namespace": {
+              "id": "__builtin__",
+              "kind": "module",
+              "repr": "__builtin__",
+              "type": "module",
+              "type_id": "__builtin__.module"
+            },
+            "value": [
+              {
+                "id": "__builtin__.isinstance",
+                "kind": "function",
+                "repr": "isinstance",
+                "type": "type",
+                "type_id": "__builtin__.type"
+              }
+            ]
+          },
+          {
+            "id": "__builtin__.issubclass",
+            "name": "issubclass",
+            "namespace": {
+              "id": "__builtin__",
+              "kind": "module",
+              "repr": "__builtin__",
+              "type": "module",
+              "type_id": "__builtin__.module"
+            },
+            "value": [
+              {
+                "id": "__builtin__.issubclass",
+                "kind": "function",
+                "repr": "issubclass",
+                "type": "type",
+                "type_id": "__builtin__.type"
+              }
+            ]
+          },
+          {
+            "id": "__builtin__.iter",
+            "name": "iter",
+            "namespace": {
+              "id": "__builtin__",
+              "kind": "module",
+              "repr": "__builtin__",
+              "type": "module",
+              "type_id": "__builtin__.module"
+            },
+            "value": [
+              {
+                "id": "__builtin__.iter",
+                "kind": "function",
+                "repr": "iter",
+                "type": "type",
+                "type_id": "__builtin__.type"
+              }
+            ]
+          },
+          {
+            "id": "exceptions.KeyboardInterrupt",
+            "name": "KeyboardInterrupt",
+            "namespace": {
+              "id": "__builtin__",
+              "kind": "module",
+              "repr": "__builtin__",
+              "type": "module",
+              "type_id": "__builtin__.module"
+            },
+            "value": [
+              {
+                "id": "exceptions.KeyboardInterrupt",
+                "kind": "type",
+                "repr": "KeyboardInterrupt",
+                "type": "type",
+                "type_id": "__builtin__.type"
+              }
+            ]
+          },
+          {
+            "id": "exceptions.KeyError",
+            "name": "KeyError",
+            "namespace": {
+              "id": "__builtin__",
+              "kind": "module",
+              "repr": "__builtin__",
+              "type": "module",
+              "type_id": "__builtin__.module"
+            },
+            "value": [
+              {
+                "id": "exceptions.KeyError",
+                "kind": "type",
+                "repr": "KeyError",
+                "type": "type",
+                "type_id": "__builtin__.type"
+              }
+            ]
+          },
+          {
+            "id": "__builtin__.len",
+            "name": "len",
+            "namespace": {
+              "id": "__builtin__",
+              "kind": "module",
+              "repr": "__builtin__",
+              "type": "module",
+              "type_id": "__builtin__.module"
+            },
+            "value": [
+              {
+                "id": "__builtin__.len",
+                "kind": "function",
+                "repr": "len",
+                "type": "type",
+                "type_id": "__builtin__.type"
+              }
+            ]
+          },
+          {
+            "id": "__builtin__.license",
+            "name": "license",
+            "namespace": {
+              "id": "__builtin__",
+              "kind": "module",
+              "repr": "__builtin__",
+              "type": "module",
+              "type_id": "__builtin__.module"
+            },
+            "value": [
+              {
+                "id": "__builtin__.license",
+                "kind": "instance",
+                "repr": "license",
+                "type": "",
+                "type_id": ""
+              }
+            ]
+          },
+          {
+            "id": "__builtin__.list",
+            "name": "list",
+            "namespace": {
+              "id": "__builtin__",
+              "kind": "module",
+              "repr": "__builtin__",
+              "type": "module",
+              "type_id": "__builtin__.module"
+            },
+            "value": [
+              {
+                "id": "__builtin__.list",
+                "kind": "type",
+                "repr": "list",
+                "type": "type",
+                "type_id": "__builtin__.type"
+              }
+            ]
+          },
+          {
+            "id": "__builtin__.locals",
+            "name": "locals",
+            "namespace": {
+              "id": "__builtin__",
+              "kind": "module",
+              "repr": "__builtin__",
+              "type": "module",
+              "type_id": "__builtin__.module"
+            },
+            "value": [
+              {
+                "id": "__builtin__.locals",
+                "kind": "function",
+                "repr": "locals",
+                "type": "type",
+                "type_id": "__builtin__.type"
+              }
+            ]
+          },
+          {
+            "id": "__builtin__.long",
+            "name": "long",
+            "namespace": {
+              "id": "__builtin__",
+              "kind": "module",
+              "repr": "__builtin__",
+              "type": "module",
+              "type_id": "__builtin__.module"
+            },
+            "value": [
+              {
+                "id": "__builtin__.long",
+                "kind": "type",
+                "repr": "long",
+                "type": "type",
+                "type_id": "__builtin__.type"
+              }
+            ]
+          },
+          {
+            "id": "exceptions.LookupError",
+            "name": "LookupError",
+            "namespace": {
+              "id": "__builtin__",
+              "kind": "module",
+              "repr": "__builtin__",
+              "type": "module",
+              "type_id": "__builtin__.module"
+            },
+            "value": [
+              {
+                "id": "exceptions.LookupError",
+                "kind": "type",
+                "repr": "LookupError",
+                "type": "type",
+                "type_id": "__builtin__.type"
+              }
+            ]
+          },
+          {
+            "id": "__builtin__.map",
+            "name": "map",
+            "namespace": {
+              "id": "__builtin__",
+              "kind": "module",
+              "repr": "__builtin__",
+              "type": "module",
+              "type_id": "__builtin__.module"
+            },
+            "value": [
+              {
+                "id": "__builtin__.map",
+                "kind": "function",
+                "repr": "map",
+                "type": "type",
+                "type_id": "__builtin__.type"
+              }
+            ]
+          },
+          {
+            "id": "__builtin__.max",
+            "name": "max",
+            "namespace": {
+              "id": "__builtin__",
+              "kind": "module",
+              "repr": "__builtin__",
+              "type": "module",
+              "type_id": "__builtin__.module"
+            },
+            "value": [
+              {
+                "id": "__builtin__.max",
+                "kind": "function",
+                "repr": "max",
+                "type": "type",
+                "type_id": "__builtin__.type"
+              }
+            ]
+          },
+          {
+            "id": "exceptions.MemoryError",
+            "name": "MemoryError",
+            "namespace": {
+              "id": "__builtin__",
+              "kind": "module",
+              "repr": "__builtin__",
+              "type": "module",
+              "type_id": "__builtin__.module"
+            },
+            "value": [
+              {
+                "id": "exceptions.MemoryError",
+                "kind": "type",
+                "repr": "MemoryError",
+                "type": "type",
+                "type_id": "__builtin__.type"
+              }
+            ]
+          },
+          {
+            "id": "__builtin__.memoryview",
+            "name": "memoryview",
+            "namespace": {
+              "id": "__builtin__",
+              "kind": "module",
+              "repr": "__builtin__",
+              "type": "module",
+              "type_id": "__builtin__.module"
+            },
+            "value": [
+              {
+                "id": "__builtin__.memoryview",
+                "kind": "type",
+                "repr": "memoryview",
+                "type": "type",
+                "type_id": "__builtin__.type"
+              }
+            ]
+          },
+          {
+            "id": "__builtin__.min",
+            "name": "min",
+            "namespace": {
+              "id": "__builtin__",
+              "kind": "module",
+              "repr": "__builtin__",
+              "type": "module",
+              "type_id": "__builtin__.module"
+            },
+            "value": [
+              {
+                "id": "__builtin__.min",
+                "kind": "function",
+                "repr": "min",
+                "type": "type",
+                "type_id": "__builtin__.type"
+              }
+            ]
+          },
+          {
+            "id": "exceptions.NameError",
+            "name": "NameError",
+            "namespace": {
+              "id": "__builtin__",
+              "kind": "module",
+              "repr": "__builtin__",
+              "type": "module",
+              "type_id": "__builtin__.module"
+            },
+            "value": [
+              {
+                "id": "exceptions.NameError",
+                "kind": "type",
+                "repr": "NameError",
+                "type": "type",
+                "type_id": "__builtin__.type"
+              }
+            ]
+          },
+          {
+            "id": "__builtin__.next",
+            "name": "next",
+            "namespace": {
+              "id": "__builtin__",
+              "kind": "module",
+              "repr": "__builtin__",
+              "type": "module",
+              "type_id": "__builtin__.module"
+            },
+            "value": [
+              {
+                "id": "__builtin__.next",
+                "kind": "function",
+                "repr": "next",
+                "type": "type",
+                "type_id": "__builtin__.type"
+              }
+            ]
+          },
+          {
+            "id": "",
+            "name": "None",
+            "namespace": {
+              "id": "__builtin__",
+              "kind": "module",
+              "repr": "__builtin__",
+              "type": "module",
+              "type_id": "__builtin__.module"
+            },
+            "value": [
+              {
+                "id": "",
+                "kind": "instance",
+                "repr": "",
+                "type": "type",
+                "type_id": "__builtin__.type"
+              }
+            ]
+          },
+          {
+            "id": "",
+            "name": "NotImplemented",
+            "namespace": {
+              "id": "__builtin__",
+              "kind": "module",
+              "repr": "__builtin__",
+              "type": "module",
+              "type_id": "__builtin__.module"
+            },
+            "value": [
+              {
+                "id": "",
+                "kind": "instance",
+                "repr": "",
+                "type": "type",
+                "type_id": "__builtin__.type"
+              }
+            ]
+          },
+          {
+            "id": "exceptions.NotImplementedError",
+            "name": "NotImplementedError",
+            "namespace": {
+              "id": "__builtin__",
+              "kind": "module",
+              "repr": "__builtin__",
+              "type": "module",
+              "type_id": "__builtin__.module"
+            },
+            "value": [
+              {
+                "id": "exceptions.NotImplementedError",
+                "kind": "type",
+                "repr": "NotImplementedError",
+                "type": "type",
+                "type_id": "__builtin__.type"
+              }
+            ]
+          },
+          {
+            "id": "__builtin__.object",
+            "name": "object",
+            "namespace": {
+              "id": "__builtin__",
+              "kind": "module",
+              "repr": "__builtin__",
+              "type": "module",
+              "type_id": "__builtin__.module"
+            },
+            "value": [
+              {
+                "id": "__builtin__.object",
+                "kind": "type",
+                "repr": "object",
+                "type": "type",
+                "type_id": "__builtin__.type"
+              }
+            ]
+          },
+          {
+            "id": "__builtin__.oct",
+            "name": "oct",
+            "namespace": {
+              "id": "__builtin__",
+              "kind": "module",
+              "repr": "__builtin__",
+              "type": "module",
+              "type_id": "__builtin__.module"
+            },
+            "value": [
+              {
+                "id": "__builtin__.oct",
+                "kind": "function",
+                "repr": "oct",
+                "type": "type",
+                "type_id": "__builtin__.type"
+              }
+            ]
+          },
+          {
+            "id": "__builtin__.open",
+            "name": "open",
+            "namespace": {
+              "id": "__builtin__",
+              "kind": "module",
+              "repr": "__builtin__",
+              "type": "module",
+              "type_id": "__builtin__.module"
+            },
+            "value": [
+              {
+                "id": "__builtin__.open",
+                "kind": "function",
+                "repr": "open",
+                "type": "type",
+                "type_id": "__builtin__.type"
+              }
+            ]
+          },
+          {
+            "id": "__builtin__.ord",
+            "name": "ord",
+            "namespace": {
+              "id": "__builtin__",
+              "kind": "module",
+              "repr": "__builtin__",
+              "type": "module",
+              "type_id": "__builtin__.module"
+            },
+            "value": [
+              {
+                "id": "__builtin__.ord",
+                "kind": "function",
+                "repr": "ord",
+                "type": "type",
+                "type_id": "__builtin__.type"
+              }
+            ]
+          },
+          {
+            "id": "exceptions.OSError",
+            "name": "OSError",
+            "namespace": {
+              "id": "__builtin__",
+              "kind": "module",
+              "repr": "__builtin__",
+              "type": "module",
+              "type_id": "__builtin__.module"
+            },
+            "value": [
+              {
+                "id": "exceptions.OSError",
+                "kind": "type",
+                "repr": "OSError",
+                "type": "type",
+                "type_id": "__builtin__.type"
+              }
+            ]
+          },
+          {
+            "id": "exceptions.OverflowError",
+            "name": "OverflowError",
+            "namespace": {
+              "id": "__builtin__",
+              "kind": "module",
+              "repr": "__builtin__",
+              "type": "module",
+              "type_id": "__builtin__.module"
+            },
+            "value": [
+              {
+                "id": "exceptions.OverflowError",
+                "kind": "type",
+                "repr": "OverflowError",
+                "type": "type",
+                "type_id": "__builtin__.type"
+              }
+            ]
+          },
+          {
+            "id": "exceptions.PendingDeprecationWarning",
+            "name": "PendingDeprecationWarning",
+            "namespace": {
+              "id": "__builtin__",
+              "kind": "module",
+              "repr": "__builtin__",
+              "type": "module",
+              "type_id": "__builtin__.module"
+            },
+            "value": [
+              {
+                "id": "exceptions.PendingDeprecationWarning",
+                "kind": "type",
+                "repr": "PendingDeprecationWarning",
+                "type": "type",
+                "type_id": "__builtin__.type"
+              }
+            ]
+          },
+          {
+            "id": "__builtin__.pow",
+            "name": "pow",
+            "namespace": {
+              "id": "__builtin__",
+              "kind": "module",
+              "repr": "__builtin__",
+              "type": "module",
+              "type_id": "__builtin__.module"
+            },
+            "value": [
+              {
+                "id": "__builtin__.pow",
+                "kind": "function",
+                "repr": "pow",
+                "type": "type",
+                "type_id": "__builtin__.type"
+              }
+            ]
+          },
+          {
+            "id": "__builtin__.print",
+            "name": "print",
+            "namespace": {
+              "id": "__builtin__",
+              "kind": "module",
+              "repr": "__builtin__",
+              "type": "module",
+              "type_id": "__builtin__.module"
+            },
+            "value": [
+              {
+                "id": "__builtin__.print",
+                "kind": "function",
+                "repr": "print",
+                "type": "type",
+                "type_id": "__builtin__.type"
+              }
+            ]
+          },
+          {
+            "id": "__builtin__.property",
+            "name": "property",
+            "namespace": {
+              "id": "__builtin__",
+              "kind": "module",
+              "repr": "__builtin__",
+              "type": "module",
+              "type_id": "__builtin__.module"
+            },
+            "value": [
+              {
+                "id": "__builtin__.property",
+                "kind": "unknown",
+                "repr": "property",
+                "type": "type",
+                "type_id": "__builtin__.type"
+              }
+            ]
+          },
+          {
+            "id": "__builtin__.quit",
+            "name": "quit",
+            "namespace": {
+              "id": "__builtin__",
+              "kind": "module",
+              "repr": "__builtin__",
+              "type": "module",
+              "type_id": "__builtin__.module"
+            },
+            "value": [
+              {
+                "id": "__builtin__.quit",
+                "kind": "instance",
+                "repr": "quit",
+                "type": "",
+                "type_id": ""
+              }
+            ]
+          },
+          {
+            "id": "__builtin__.range",
+            "name": "range",
+            "namespace": {
+              "id": "__builtin__",
+              "kind": "module",
+              "repr": "__builtin__",
+              "type": "module",
+              "type_id": "__builtin__.module"
+            },
+            "value": [
+              {
+                "id": "__builtin__.range",
+                "kind": "function",
+                "repr": "range",
+                "type": "type",
+                "type_id": "__builtin__.type"
+              }
+            ]
+          },
+          {
+            "id": "__builtin__.raw_input",
+            "name": "raw_input",
+            "namespace": {
+              "id": "__builtin__",
+              "kind": "module",
+              "repr": "__builtin__",
+              "type": "module",
+              "type_id": "__builtin__.module"
+            },
+            "value": [
+              {
+                "id": "__builtin__.raw_input",
+                "kind": "function",
+                "repr": "raw_input",
+                "type": "type",
+                "type_id": "__builtin__.type"
+              }
+            ]
+          },
+          {
+            "id": "__builtin__.reduce",
+            "name": "reduce",
+            "namespace": {
+              "id": "__builtin__",
+              "kind": "module",
+              "repr": "__builtin__",
+              "type": "module",
+              "type_id": "__builtin__.module"
+            },
+            "value": [
+              {
+                "id": "__builtin__.reduce",
+                "kind": "function",
+                "repr": "reduce",
+                "type": "type",
+                "type_id": "__builtin__.type"
+              }
+            ]
+          },
+          {
+            "id": "exceptions.ReferenceError",
+            "name": "ReferenceError",
+            "namespace": {
+              "id": "__builtin__",
+              "kind": "module",
+              "repr": "__builtin__",
+              "type": "module",
+              "type_id": "__builtin__.module"
+            },
+            "value": [
+              {
+                "id": "exceptions.ReferenceError",
+                "kind": "type",
+                "repr": "ReferenceError",
+                "type": "type",
+                "type_id": "__builtin__.type"
+              }
+            ]
+          },
+          {
+            "id": "__builtin__.reload",
+            "name": "reload",
+            "namespace": {
+              "id": "__builtin__",
+              "kind": "module",
+              "repr": "__builtin__",
+              "type": "module",
+              "type_id": "__builtin__.module"
+            },
+            "value": [
+              {
+                "id": "__builtin__.reload",
+                "kind": "function",
+                "repr": "reload",
+                "type": "type",
+                "type_id": "__builtin__.type"
+              }
+            ]
+          },
+          {
+            "id": "__builtin__.repr",
+            "name": "repr",
+            "namespace": {
+              "id": "__builtin__",
+              "kind": "module",
+              "repr": "__builtin__",
+              "type": "module",
+              "type_id": "__builtin__.module"
+            },
+            "value": [
+              {
+                "id": "__builtin__.repr",
+                "kind": "function",
+                "repr": "repr",
+                "type": "type",
+                "type_id": "__builtin__.type"
+              }
+            ]
+          },
+          {
+            "id": "__builtin__.reversed",
+            "name": "reversed",
+            "namespace": {
+              "id": "__builtin__",
+              "kind": "module",
+              "repr": "__builtin__",
+              "type": "module",
+              "type_id": "__builtin__.module"
+            },
+            "value": [
+              {
+                "id": "__builtin__.reversed",
+                "kind": "type",
+                "repr": "reversed",
+                "type": "type",
+                "type_id": "__builtin__.type"
+              }
+            ]
+          },
+          {
+            "id": "__builtin__.round",
+            "name": "round",
+            "namespace": {
+              "id": "__builtin__",
+              "kind": "module",
+              "repr": "__builtin__",
+              "type": "module",
+              "type_id": "__builtin__.module"
+            },
+            "value": [
+              {
+                "id": "__builtin__.round",
+                "kind": "function",
+                "repr": "round",
+                "type": "type",
+                "type_id": "__builtin__.type"
+              }
+            ]
+          },
+          {
+            "id": "exceptions.RuntimeError",
+            "name": "RuntimeError",
+            "namespace": {
+              "id": "__builtin__",
+              "kind": "module",
+              "repr": "__builtin__",
+              "type": "module",
+              "type_id": "__builtin__.module"
+            },
+            "value": [
+              {
+                "id": "exceptions.RuntimeError",
+                "kind": "type",
+                "repr": "RuntimeError",
+                "type": "type",
+                "type_id": "__builtin__.type"
+              }
+            ]
+          },
+          {
+            "id": "exceptions.RuntimeWarning",
+            "name": "RuntimeWarning",
+            "namespace": {
+              "id": "__builtin__",
+              "kind": "module",
+              "repr": "__builtin__",
+              "type": "module",
+              "type_id": "__builtin__.module"
+            },
+            "value": [
+              {
+                "id": "exceptions.RuntimeWarning",
+                "kind": "type",
+                "repr": "RuntimeWarning",
+                "type": "type",
+                "type_id": "__builtin__.type"
+              }
+            ]
+          },
+          {
+            "id": "__builtin__.set",
+            "name": "set",
+            "namespace": {
+              "id": "__builtin__",
+              "kind": "module",
+              "repr": "__builtin__",
+              "type": "module",
+              "type_id": "__builtin__.module"
+            },
+            "value": [
+              {
+                "id": "__builtin__.set",
+                "kind": "type",
+                "repr": "set",
+                "type": "type",
+                "type_id": "__builtin__.type"
+              }
+            ]
+          },
+          {
+            "id": "__builtin__.setattr",
+            "name": "setattr",
+            "namespace": {
+              "id": "__builtin__",
+              "kind": "module",
+              "repr": "__builtin__",
+              "type": "module",
+              "type_id": "__builtin__.module"
+            },
+            "value": [
+              {
+                "id": "__builtin__.setattr",
+                "kind": "function",
+                "repr": "setattr",
+                "type": "type",
+                "type_id": "__builtin__.type"
+              }
+            ]
+          },
+          {
+            "id": "__builtin__.slice",
+            "name": "slice",
+            "namespace": {
+              "id": "__builtin__",
+              "kind": "module",
+              "repr": "__builtin__",
+              "type": "module",
+              "type_id": "__builtin__.module"
+            },
+            "value": [
+              {
+                "id": "__builtin__.slice",
+                "kind": "type",
+                "repr": "slice",
+                "type": "type",
+                "type_id": "__builtin__.type"
+              }
+            ]
+          },
+          {
+            "id": "__builtin__.sorted",
+            "name": "sorted",
+            "namespace": {
+              "id": "__builtin__",
+              "kind": "module",
+              "repr": "__builtin__",
+              "type": "module",
+              "type_id": "__builtin__.module"
+            },
+            "value": [
+              {
+                "id": "__builtin__.sorted",
+                "kind": "function",
+                "repr": "sorted",
+                "type": "type",
+                "type_id": "__builtin__.type"
+              }
+            ]
+          },
+          {
+            "id": "exceptions.StandardError",
+            "name": "StandardError",
+            "namespace": {
+              "id": "__builtin__",
+              "kind": "module",
+              "repr": "__builtin__",
+              "type": "module",
+              "type_id": "__builtin__.module"
+            },
+            "value": [
+              {
+                "id": "exceptions.StandardError",
+                "kind": "type",
+                "repr": "StandardError",
+                "type": "type",
+                "type_id": "__builtin__.type"
+              }
+            ]
+          },
+          {
+            "id": "__builtin__.staticmethod",
+            "name": "staticmethod",
+            "namespace": {
+              "id": "__builtin__",
+              "kind": "module",
+              "repr": "__builtin__",
+              "type": "module",
+              "type_id": "__builtin__.module"
+            },
+            "value": [
+              {
+                "id": "__builtin__.staticmethod",
+                "kind": "type",
+                "repr": "staticmethod",
+                "type": "type",
+                "type_id": "__builtin__.type"
+              }
+            ]
+          },
+          {
+            "id": "exceptions.StopIteration",
+            "name": "StopIteration",
+            "namespace": {
+              "id": "__builtin__",
+              "kind": "module",
+              "repr": "__builtin__",
+              "type": "module",
+              "type_id": "__builtin__.module"
+            },
+            "value": [
+              {
+                "id": "exceptions.StopIteration",
+                "kind": "type",
+                "repr": "StopIteration",
+                "type": "type",
+                "type_id": "__builtin__.type"
+              }
+            ]
+          },
+          {
+            "id": "__builtin__.str",
+            "name": "str",
+            "namespace": {
+              "id": "__builtin__",
+              "kind": "module",
+              "repr": "__builtin__",
+              "type": "module",
+              "type_id": "__builtin__.module"
+            },
+            "value": [
+              {
+                "id": "__builtin__.str",
+                "kind": "type",
+                "repr": "str",
+                "type": "type",
+                "type_id": "__builtin__.type"
+              }
+            ]
+          },
+          {
+            "id": "__builtin__.sum",
+            "name": "sum",
+            "namespace": {
+              "id": "__builtin__",
+              "kind": "module",
+              "repr": "__builtin__",
+              "type": "module",
+              "type_id": "__builtin__.module"
+            },
+            "value": [
+              {
+                "id": "__builtin__.sum",
+                "kind": "function",
+                "repr": "sum",
+                "type": "type",
+                "type_id": "__builtin__.type"
+              }
+            ]
+          },
+          {
+            "id": "__builtin__.super",
+            "name": "super",
+            "namespace": {
+              "id": "__builtin__",
+              "kind": "module",
+              "repr": "__builtin__",
+              "type": "module",
+              "type_id": "__builtin__.module"
+            },
+            "value": [
+              {
+                "id": "__builtin__.super",
+                "kind": "type",
+                "repr": "super",
+                "type": "type",
+                "type_id": "__builtin__.type"
+              }
+            ]
+          },
+          {
+            "id": "exceptions.SyntaxError",
+            "name": "SyntaxError",
+            "namespace": {
+              "id": "__builtin__",
+              "kind": "module",
+              "repr": "__builtin__",
+              "type": "module",
+              "type_id": "__builtin__.module"
+            },
+            "value": [
+              {
+                "id": "exceptions.SyntaxError",
+                "kind": "type",
+                "repr": "SyntaxError",
+                "type": "type",
+                "type_id": "__builtin__.type"
+              }
+            ]
+          },
+          {
+            "id": "exceptions.SyntaxWarning",
+            "name": "SyntaxWarning",
+            "namespace": {
+              "id": "__builtin__",
+              "kind": "module",
+              "repr": "__builtin__",
+              "type": "module",
+              "type_id": "__builtin__.module"
+            },
+            "value": [
+              {
+                "id": "exceptions.SyntaxWarning",
+                "kind": "type",
+                "repr": "SyntaxWarning",
+                "type": "type",
+                "type_id": "__builtin__.type"
+              }
+            ]
+          },
+          {
+            "id": "exceptions.SystemError",
+            "name": "SystemError",
+            "namespace": {
+              "id": "__builtin__",
+              "kind": "module",
+              "repr": "__builtin__",
+              "type": "module",
+              "type_id": "__builtin__.module"
+            },
+            "value": [
+              {
+                "id": "exceptions.SystemError",
+                "kind": "type",
+                "repr": "SystemError",
+                "type": "type",
+                "type_id": "__builtin__.type"
+              }
+            ]
+          },
+          {
+            "id": "exceptions.SystemExit",
+            "name": "SystemExit",
+            "namespace": {
+              "id": "__builtin__",
+              "kind": "module",
+              "repr": "__builtin__",
+              "type": "module",
+              "type_id": "__builtin__.module"
+            },
+            "value": [
+              {
+                "id": "exceptions.SystemExit",
+                "kind": "type",
+                "repr": "SystemExit",
+                "type": "type",
+                "type_id": "__builtin__.type"
+              }
+            ]
+          },
+          {
+            "id": "exceptions.TabError",
+            "name": "TabError",
+            "namespace": {
+              "id": "__builtin__",
+              "kind": "module",
+              "repr": "__builtin__",
+              "type": "module",
+              "type_id": "__builtin__.module"
+            },
+            "value": [
+              {
+                "id": "exceptions.TabError",
+                "kind": "type",
+                "repr": "TabError",
+                "type": "type",
+                "type_id": "__builtin__.type"
+              }
+            ]
+          },
+          {
+            "id": "",
+            "name": "True",
+            "namespace": {
+              "id": "__builtin__",
+              "kind": "module",
+              "repr": "__builtin__",
+              "type": "module",
+              "type_id": "__builtin__.module"
+            },
+            "value": [
+              {
+                "id": "",
+                "kind": "instance",
+                "repr": "",
+                "type": "type",
+                "type_id": "__builtin__.type"
+              }
+            ]
+          },
+          {
+            "id": "__builtin__.tuple",
+            "name": "tuple",
+            "namespace": {
+              "id": "__builtin__",
+              "kind": "module",
+              "repr": "__builtin__",
+              "type": "module",
+              "type_id": "__builtin__.module"
+            },
+            "value": [
+              {
+                "id": "__builtin__.tuple",
+                "kind": "type",
+                "repr": "tuple",
+                "type": "type",
+                "type_id": "__builtin__.type"
+              }
+            ]
+          },
+          {
+            "id": "__builtin__.type",
+            "name": "type",
+            "namespace": {
+              "id": "__builtin__",
+              "kind": "module",
+              "repr": "__builtin__",
+              "type": "module",
+              "type_id": "__builtin__.module"
+            },
+            "value": [
+              {
+                "id": "__builtin__.type",
+                "kind": "type",
+                "repr": "type",
+                "type": "type",
+                "type_id": "__builtin__.type"
+              }
+            ]
+          },
+          {
+            "id": "exceptions.TypeError",
+            "name": "TypeError",
+            "namespace": {
+              "id": "__builtin__",
+              "kind": "module",
+              "repr": "__builtin__",
+              "type": "module",
+              "type_id": "__builtin__.module"
+            },
+            "value": [
+              {
+                "id": "exceptions.TypeError",
+                "kind": "type",
+                "repr": "TypeError",
+                "type": "type",
+                "type_id": "__builtin__.type"
+              }
+            ]
+          },
+          {
+            "id": "exceptions.UnboundLocalError",
+            "name": "UnboundLocalError",
+            "namespace": {
+              "id": "__builtin__",
+              "kind": "module",
+              "repr": "__builtin__",
+              "type": "module",
+              "type_id": "__builtin__.module"
+            },
+            "value": [
+              {
+                "id": "exceptions.UnboundLocalError",
+                "kind": "type",
+                "repr": "UnboundLocalError",
+                "type": "type",
+                "type_id": "__builtin__.type"
+              }
+            ]
+          },
+          {
+            "id": "__builtin__.unichr",
+            "name": "unichr",
+            "namespace": {
+              "id": "__builtin__",
+              "kind": "module",
+              "repr": "__builtin__",
+              "type": "module",
+              "type_id": "__builtin__.module"
+            },
+            "value": [
+              {
+                "id": "__builtin__.unichr",
+                "kind": "function",
+                "repr": "unichr",
+                "type": "type",
+                "type_id": "__builtin__.type"
+              }
+            ]
+          },
+          {
+            "id": "__builtin__.unicode",
+            "name": "unicode",
+            "namespace": {
+              "id": "__builtin__",
+              "kind": "module",
+              "repr": "__builtin__",
+              "type": "module",
+              "type_id": "__builtin__.module"
+            },
+            "value": [
+              {
+                "id": "__builtin__.unicode",
+                "kind": "type",
+                "repr": "unicode",
+                "type": "type",
+                "type_id": "__builtin__.type"
+              }
+            ]
+          },
+          {
+            "id": "exceptions.UnicodeDecodeError",
+            "name": "UnicodeDecodeError",
+            "namespace": {
+              "id": "__builtin__",
+              "kind": "module",
+              "repr": "__builtin__",
+              "type": "module",
+              "type_id": "__builtin__.module"
+            },
+            "value": [
+              {
+                "id": "exceptions.UnicodeDecodeError",
+                "kind": "type",
+                "repr": "UnicodeDecodeError",
+                "type": "type",
+                "type_id": "__builtin__.type"
+              }
+            ]
+          },
+          {
+            "id": "exceptions.UnicodeEncodeError",
+            "name": "UnicodeEncodeError",
+            "namespace": {
+              "id": "__builtin__",
+              "kind": "module",
+              "repr": "__builtin__",
+              "type": "module",
+              "type_id": "__builtin__.module"
+            },
+            "value": [
+              {
+                "id": "exceptions.UnicodeEncodeError",
+                "kind": "type",
+                "repr": "UnicodeEncodeError",
+                "type": "type",
+                "type_id": "__builtin__.type"
+              }
+            ]
+          },
+          {
+            "id": "exceptions.UnicodeError",
+            "name": "UnicodeError",
+            "namespace": {
+              "id": "__builtin__",
+              "kind": "module",
+              "repr": "__builtin__",
+              "type": "module",
+              "type_id": "__builtin__.module"
+            },
+            "value": [
+              {
+                "id": "exceptions.UnicodeError",
+                "kind": "type",
+                "repr": "UnicodeError",
+                "type": "type",
+                "type_id": "__builtin__.type"
+              }
+            ]
+          },
+          {
+            "id": "exceptions.UnicodeTranslateError",
+            "name": "UnicodeTranslateError",
+            "namespace": {
+              "id": "__builtin__",
+              "kind": "module",
+              "repr": "__builtin__",
+              "type": "module",
+              "type_id": "__builtin__.module"
+            },
+            "value": [
+              {
+                "id": "exceptions.UnicodeTranslateError",
+                "kind": "type",
+                "repr": "UnicodeTranslateError",
+                "type": "type",
+                "type_id": "__builtin__.type"
+              }
+            ]
+          },
+          {
+            "id": "exceptions.UnicodeWarning",
+            "name": "UnicodeWarning",
+            "namespace": {
+              "id": "__builtin__",
+              "kind": "module",
+              "repr": "__builtin__",
+              "type": "module",
+              "type_id": "__builtin__.module"
+            },
+            "value": [
+              {
+                "id": "exceptions.UnicodeWarning",
+                "kind": "type",
+                "repr": "UnicodeWarning",
+                "type": "type",
+                "type_id": "__builtin__.type"
+              }
+            ]
+          },
+          {
+            "id": "exceptions.UserWarning",
+            "name": "UserWarning",
+            "namespace": {
+              "id": "__builtin__",
+              "kind": "module",
+              "repr": "__builtin__",
+              "type": "module",
+              "type_id": "__builtin__.module"
+            },
+            "value": [
+              {
+                "id": "exceptions.UserWarning",
+                "kind": "type",
+                "repr": "UserWarning",
+                "type": "type",
+                "type_id": "__builtin__.type"
+              }
+            ]
+          },
+          {
+            "id": "exceptions.ValueError",
+            "name": "ValueError",
+            "namespace": {
+              "id": "__builtin__",
+              "kind": "module",
+              "repr": "__builtin__",
+              "type": "module",
+              "type_id": "__builtin__.module"
+            },
+            "value": [
+              {
+                "id": "exceptions.ValueError",
+                "kind": "type",
+                "repr": "ValueError",
+                "type": "type",
+                "type_id": "__builtin__.type"
+              }
+            ]
+          },
+          {
+            "id": "__builtin__.vars",
+            "name": "vars",
+            "namespace": {
+              "id": "__builtin__",
+              "kind": "module",
+              "repr": "__builtin__",
+              "type": "module",
+              "type_id": "__builtin__.module"
+            },
+            "value": [
+              {
+                "id": "__builtin__.vars",
+                "kind": "function",
+                "repr": "vars",
+                "type": "type",
+                "type_id": "__builtin__.type"
+              }
+            ]
+          },
+          {
+            "id": "exceptions.Warning",
+            "name": "Warning",
+            "namespace": {
+              "id": "__builtin__",
+              "kind": "module",
+              "repr": "__builtin__",
+              "type": "module",
+              "type_id": "__builtin__.module"
+            },
+            "value": [
+              {
+                "id": "exceptions.Warning",
+                "kind": "type",
+                "repr": "Warning",
+                "type": "type",
+                "type_id": "__builtin__.type"
+              }
+            ]
+          },
+          {
+            "id": "__builtin__.xrange",
+            "name": "xrange",
+            "namespace": {
+              "id": "__builtin__",
+              "kind": "module",
+              "repr": "__builtin__",
+              "type": "module",
+              "type_id": "__builtin__.module"
+            },
+            "value": [
+              {
+                "id": "__builtin__.xrange",
+                "kind": "type",
+                "repr": "xrange",
+                "type": "type",
+                "type_id": "__builtin__.type"
+              }
+            ]
+          },
+          {
+            "id": "exceptions.ZeroDivisionError",
+            "name": "ZeroDivisionError",
+            "namespace": {
+              "id": "__builtin__",
+              "kind": "module",
+              "repr": "__builtin__",
+              "type": "module",
+              "type_id": "__builtin__.module"
+            },
+            "value": [
+              {
+                "id": "exceptions.ZeroDivisionError",
+                "kind": "type",
+                "repr": "ZeroDivisionError",
+                "type": "type",
+                "type_id": "__builtin__.type"
+              }
+            ]
+          },
+          {
+            "id": "__builtin__.zip",
+            "name": "zip",
+            "namespace": {
+              "id": "__builtin__",
+              "kind": "module",
+              "repr": "__builtin__",
+              "type": "module",
+              "type_id": "__builtin__.module"
+            },
+            "value": [
+              {
+                "id": "__builtin__.zip",
+                "kind": "function",
+                "repr": "zip",
+                "type": "type",
+                "type_id": "__builtin__.type"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "report": {
+    "description_text": "A reference to the module containing builtins, and its name as a string.",
+    "description_html": "<body><p>A reference to the module containing builtins, and its name as a string.</p></body>"
+  }
+}

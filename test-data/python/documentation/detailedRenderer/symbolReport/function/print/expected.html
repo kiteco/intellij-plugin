@@ -1,0 +1,28 @@
+<div class="page-start">
+<table class="kite-table">
+<tbody>
+<tr>
+<td class="small"><span class="lower_opacity namespace">__builtin__</span>.<span class="function-name">print</span><span>(</span><span> )</span></td>
+<td class="small aligned_right lower_opacity">function</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="report-section report-section-docs">
+<h2>Description</h2>
+<div class="report-content">
+<p>Print <em>objects</em> to the stream <em>file</em>, separated by <em>sep</em> and followed by <em>end</em>. <em>sep</em>, <em>end</em> and <em>file</em>, if present, must be given as keyword arguments.</p>
+<p>All non-keyword arguments are converted to strings like <a class="internal_link" href="#str"><code>str()</code></a> does and written to the stream, separated by <em>sep</em> and followed by <em>end</em>. Both <em>sep</em> and <em>end</em> must be strings; they can also be <code>None</code>, which means to use the default values. If no <em>objects</em> are given, <a class="internal_link" href="#print"><code>print()</code></a> will just write <em>end</em>.</p>
+<p>The <em>file</em> argument must be an object with a <code>write(string)</code> method; if it is not present or <code>None</code>, <a class="internal_link" href="#sys.stdout"><code>sys.stdout</code></a> will be used. Output buffering is determined by <em>file</em>. Use <code>file.flush()</code> to ensure, for instance, immediate appearance on a screen.</p>
+<p>Note</p>
+<p>This function is not normally available as a built-in since the name <code>print</code> is recognized as the <a class="internal_link" href="#print"><code>print</code></a> statement. To disable the statement and use the <a class="internal_link" href="#print"><code>print()</code></a> function, use this future statement at the top of your module:</p>
+<pre class="lang-python"><code>from __future__ import print_function
+</code></pre>
+<p> <span class="versionadded">New in version 2.6.</span></p>
+</div>
+</div>
+<div class="buffer-zone"></div>
+<div class="kite-link">
+<a class="open-in-web-link" href="kite-internal:/externalDocs?id=python%3B__builtin__.print">Open in Web</a>
+<img class="kite-logo kite-logo_small-margin" src="/icons/kite_small_disabled.png" width="16" height="16" />
+</div>

@@ -1,0 +1,2 @@
+def x<caret>():
+    return

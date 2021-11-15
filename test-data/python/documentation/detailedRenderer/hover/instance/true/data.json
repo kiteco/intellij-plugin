@@ -1,0 +1,50 @@
+{
+  "part_of_syntax": "name",
+  "symbol": [
+    {
+      "id": "",
+      "name": "True",
+      "namespace": null,
+      "value": [
+        {
+          "id": "__builtin__.True",
+          "kind": "instance",
+          "repr": "True",
+          "type": "bool",
+          "type_id": "__builtin__.bool",
+          "synopsis": "",
+          "details": {
+            "instance": {
+              "type": [
+                {
+                  "id": "__builtin__.bool",
+                  "kind": "type",
+                  "repr": "bool",
+                  "type": "type",
+                  "type_id": "__builtin__.type"
+                }
+              ]
+            }
+          }
+        }
+      ],
+      "synopsis": ""
+    }
+  ],
+  "report": {
+    "definition": null,
+    "description_text": "No documentation available",
+    "description_html": "<body><p>No documentation available</p></body>",
+    "examples": null,
+    "usages": [
+      {
+        "code": "x = True",
+        "filename": "/Users/user/IdeaProjects/kitePython/Python-Algorithms/test.py",
+        "line": 19,
+        "begin_bytes": 297,
+        "begin_runes": 297
+      }
+    ],
+    "total_usages": 1
+  }
+}

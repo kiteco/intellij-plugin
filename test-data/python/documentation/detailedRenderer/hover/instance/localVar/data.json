@@ -1,0 +1,92 @@
+{
+  "part_of_syntax": "name",
+  "symbol": [
+    {
+      "id": "",
+      "name": "x",
+      "namespace": null,
+      "value": [
+        {
+          "id": "__builtin__.True",
+          "kind": "instance",
+          "repr": "True",
+          "type": "bool",
+          "type_id": "__builtin__.bool",
+          "synopsis": "",
+          "details": {
+            "instance": {
+              "type": [
+                {
+                  "id": "__builtin__.bool",
+                  "kind": "type",
+                  "repr": "bool",
+                  "type": "type",
+                  "type_id": "__builtin__.type"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "id": "",
+          "kind": "instance",
+          "repr": "1",
+          "type": "int",
+          "type_id": "__builtin__.int",
+          "synopsis": "",
+          "details": {
+            "instance": {
+              "type": [
+                {
+                  "id": "__builtin__.int",
+                  "kind": "type",
+                  "repr": "int",
+                  "type": "type",
+                  "type_id": "__builtin__.type"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "id": "",
+          "kind": "instance",
+          "repr": "2",
+          "type": "int",
+          "type_id": "__builtin__.int",
+          "synopsis": "",
+          "details": {
+            "instance": {
+              "type": [
+                {
+                  "id": "__builtin__.int",
+                  "kind": "type",
+                  "repr": "int",
+                  "type": "type",
+                  "type_id": "__builtin__.type"
+                }
+              ]
+            }
+          }
+        }
+      ],
+      "synopsis": ""
+    }
+  ],
+  "report": {
+    "definition": null,
+    "description_text": "No documentation available",
+    "description_html": "<body><p>No documentation available</p></body>",
+    "examples": null,
+    "usages": [
+      {
+        "code": "print(x)",
+        "filename": "/Users/user/IdeaProjects/kitePython/Python-Algorithms/test.py",
+        "line": 22,
+        "begin_bytes": 327,
+        "begin_runes": 327
+      }
+    ],
+    "total_usages": 1
+  }
+}

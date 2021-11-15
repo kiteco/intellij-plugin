@@ -1,0 +1,418 @@
+{
+  "language": "python",
+  "calls": [
+    {
+      "callee": {
+        "id": "python;;;;numpy.core.fromnumeric.amax",
+        "kind": "function",
+        "repr": "numpy.core.fromnumeric.amax",
+        "type": "",
+        "type_id": "",
+        "synopsis": "Return the maximum of an array or maximum along an axis.",
+        "details": {
+          "function": {
+            "parameters": [
+              {
+                "name": "a",
+                "inferred_value": null,
+                "synopsis": "",
+                "language_details": {
+                  "python": {
+                    "default_value": null,
+                    "annotation": null,
+                    "keyword_only": false
+                  }
+                }
+              },
+              {
+                "name": "axis",
+                "inferred_value": null,
+                "synopsis": "",
+                "language_details": {
+                  "python": {
+                    "default_value": [
+                      {
+                        "id": "python;;;;__builtin__.None",
+                        "kind": "instance",
+                        "repr": "None",
+                        "type": "NoneType",
+                        "type_id": "python;;;;types.NoneType"
+                      }
+                    ],
+                    "annotation": null,
+                    "keyword_only": false
+                  }
+                }
+              },
+              {
+                "name": "out",
+                "inferred_value": null,
+                "synopsis": "",
+                "language_details": {
+                  "python": {
+                    "default_value": [
+                      {
+                        "id": "python;;;;__builtin__.None",
+                        "kind": "instance",
+                        "repr": "None",
+                        "type": "NoneType",
+                        "type_id": "python;;;;types.NoneType"
+                      }
+                    ],
+                    "annotation": null,
+                    "keyword_only": false
+                  }
+                }
+              },
+              {
+                "name": "keepdims",
+                "inferred_value": null,
+                "synopsis": "",
+                "language_details": {
+                  "python": {
+                    "default_value": [
+                      {
+                        "id": "",
+                        "kind": "instance",
+                        "repr": "\"\u003cclass 'numpy._globals._NoValue'\u003e\"",
+                        "type": "str",
+                        "type_id": "python;;;;__builtin__.str"
+                      }
+                    ],
+                    "annotation": null,
+                    "keyword_only": false
+                  }
+                }
+              }
+            ],
+            "return_value": [
+              {
+                "id": "",
+                "kind": "instance",
+                "repr": "numpy.ndarray",
+                "type": "ndarray",
+                "type_id": "python;;;;numpy.ndarray"
+              },
+              {
+                "id": "",
+                "kind": "instance",
+                "repr": "numpy.int64",
+                "type": "int64",
+                "type_id": "python;;;;numpy.int64"
+              }
+            ],
+            "signatures": [
+              {
+                "args": [
+                  {
+                    "name": "a",
+                    "types": [
+                      {
+                        "id": "python;__builtin__.list",
+                        "name": "list",
+                        "examples": [
+                          "[angle_cos( cnt[i], cnt[(i+1) % 4], cnt[(i+2) % 4] ) for i in xrange(4)]",
+                          "[np.max(np.fabs(x)), np.max(np.fabs(y))]",
+                          "[dwarf, paru*0.001]"
+                        ]
+                      },
+                      {
+                        "id": "python;numpy.uint64",
+                        "name": "uint64",
+                        "examples": null
+                      },
+                      {
+                        "id": "python;...",
+                        "name": "",
+                        "examples": null
+                      }
+                    ]
+                  }
+                ],
+                "language_details": {
+                  "python": {
+                    "kwargs": null
+                  }
+                }
+              },
+              {
+                "args": [
+                  {
+                    "name": "a",
+                    "types": [
+                      {
+                        "id": "python;__builtin__.list",
+                        "name": "list",
+                        "examples": [
+                          "[angle_cos( cnt[i], cnt[(i+1) % 4], cnt[(i+2) % 4] ) for i in xrange(4)]",
+                          "[np.max(np.fabs(x)), np.max(np.fabs(y))]",
+                          "[dwarf, paru*0.001]"
+                        ]
+                      },
+                      {
+                        "id": "python;numpy.uint64",
+                        "name": "uint64",
+                        "examples": null
+                      },
+                      {
+                        "id": "python;...",
+                        "name": "",
+                        "examples": null
+                      }
+                    ]
+                  }
+                ],
+                "language_details": {
+                  "python": {
+                    "kwargs": [
+                      {
+                        "name": "axis",
+                        "types": [
+                          {
+                            "id": "python;__builtin__.int",
+                            "name": "int",
+                            "examples": [
+                              "0",
+                              "1",
+                              "2"
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                }
+              },
+              {
+                "args": [
+                  {
+                    "name": "a",
+                    "types": [
+                      {
+                        "id": "python;__builtin__.list",
+                        "name": "list",
+                        "examples": [
+                          "[angle_cos( cnt[i], cnt[(i+1) % 4], cnt[(i+2) % 4] ) for i in xrange(4)]",
+                          "[np.max(np.fabs(x)), np.max(np.fabs(y))]",
+                          "[dwarf, paru*0.001]"
+                        ]
+                      },
+                      {
+                        "id": "python;numpy.uint64",
+                        "name": "uint64",
+                        "examples": null
+                      },
+                      {
+                        "id": "python;...",
+                        "name": "",
+                        "examples": null
+                      }
+                    ]
+                  },
+                  {
+                    "name": "np_axis",
+                    "types": [
+                      {
+                        "id": "python;__builtin__.int",
+                        "name": "int",
+                        "examples": [
+                          "0",
+                          "1",
+                          "2"
+                        ]
+                      },
+                      {
+                        "id": "python;__builtin__.bool",
+                        "name": "bool",
+                        "examples": null
+                      },
+                      {
+                        "id": "python;...",
+                        "name": "",
+                        "examples": null
+                      }
+                    ]
+                  }
+                ],
+                "language_details": {
+                  "python": {
+                    "kwargs": null
+                  }
+                }
+              }
+            ],
+            "language_details": {
+              "python": {
+                "return_annotation": null
+              }
+            }
+          },
+          "type": null,
+          "instance": null,
+          "module": null
+        },
+        "ancestors": [
+          {
+            "id": "python;;;;numpy",
+            "name": "numpy"
+          },
+          {
+            "id": "python;;;;numpy.core",
+            "name": "core"
+          },
+          {
+            "id": "python;;;;numpy.core.fromnumeric",
+            "name": "fromnumeric"
+          }
+        ]
+      },
+      "func_name": "amax",
+      "signatures": [
+        {
+          "args": [
+            {
+              "name": "a",
+              "types": [
+                {
+                  "id": "python;__builtin__.list",
+                  "name": "list",
+                  "examples": [
+                    "[angle_cos( cnt[i], cnt[(i+1) % 4], cnt[(i+2) % 4] ) for i in xrange(4)]",
+                    "[np.max(np.fabs(x)), np.max(np.fabs(y))]",
+                    "[dwarf, paru*0.001]"
+                  ]
+                },
+                {
+                  "id": "python;numpy.uint64",
+                  "name": "uint64",
+                  "examples": null
+                },
+                {
+                  "id": "python;...",
+                  "name": "",
+                  "examples": null
+                }
+              ]
+            }
+          ],
+          "language_details": {
+            "python": {
+              "kwargs": null
+            }
+          }
+        },
+        {
+          "args": [
+            {
+              "name": "a",
+              "types": [
+                {
+                  "id": "python;__builtin__.list",
+                  "name": "list",
+                  "examples": [
+                    "[angle_cos( cnt[i], cnt[(i+1) % 4], cnt[(i+2) % 4] ) for i in xrange(4)]",
+                    "[np.max(np.fabs(x)), np.max(np.fabs(y))]",
+                    "[dwarf, paru*0.001]"
+                  ]
+                },
+                {
+                  "id": "python;numpy.uint64",
+                  "name": "uint64",
+                  "examples": null
+                },
+                {
+                  "id": "python;...",
+                  "name": "",
+                  "examples": null
+                }
+              ]
+            }
+          ],
+          "language_details": {
+            "python": {
+              "kwargs": [
+                {
+                  "name": "axis",
+                  "types": [
+                    {
+                      "id": "python;__builtin__.int",
+                      "name": "int",
+                      "examples": [
+                        "0",
+                        "1",
+                        "2"
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        },
+        {
+          "args": [
+            {
+              "name": "a",
+              "types": [
+                {
+                  "id": "python;__builtin__.list",
+                  "name": "list",
+                  "examples": [
+                    "[angle_cos( cnt[i], cnt[(i+1) % 4], cnt[(i+2) % 4] ) for i in xrange(4)]",
+                    "[np.max(np.fabs(x)), np.max(np.fabs(y))]",
+                    "[dwarf, paru*0.001]"
+                  ]
+                },
+                {
+                  "id": "python;numpy.uint64",
+                  "name": "uint64",
+                  "examples": null
+                },
+                {
+                  "id": "python;...",
+                  "name": "",
+                  "examples": null
+                }
+              ]
+            },
+            {
+              "name": "np_axis",
+              "types": [
+                {
+                  "id": "python;__builtin__.int",
+                  "name": "int",
+                  "examples": [
+                    "0",
+                    "1",
+                    "2"
+                  ]
+                },
+                {
+                  "id": "python;__builtin__.bool",
+                  "name": "bool",
+                  "examples": null
+                },
+                {
+                  "id": "python;...",
+                  "name": "",
+                  "examples": null
+                }
+              ]
+            }
+          ],
+          "language_details": {
+            "python": {
+              "kwargs": null
+            }
+          }
+        }
+      ],
+      "arg_index": 0,
+      "language_details": {
+        "python": {
+          "in_kwargs": false
+        }
+      }
+    }
+  ]
+}

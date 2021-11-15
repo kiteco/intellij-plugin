@@ -1,0 +1,108 @@
+{
+  "part_of_syntax": "name",
+  "symbol": [
+    {
+      "id": "",
+      "name": "AddNumToPic",
+      "namespace": null,
+      "value": [
+        {
+          "id": "",
+          "kind": "type",
+          "repr": "AddNumToPic",
+          "type": "type",
+          "type_id": "__builtin__.type",
+          "synopsis": "",
+          "details": {
+            "type": {
+              "bases": [
+                {
+                  "id": "__builtin__.object",
+                  "name": "object",
+                  "module": "__builtin__",
+                  "module_id": "__builtin__"
+                }
+              ],
+              "components": null,
+              "members": [
+                {
+                  "id": "__builtin__.None",
+                  "name": "font",
+                  "namespace": null,
+                  "value": [
+                    {
+                      "id": "__builtin__.None",
+                      "kind": "instance",
+                      "repr": "types.NoneType",
+                      "type": "NoneType",
+                      "type_id": "types.NoneType"
+                    }
+                  ]
+                },
+                {
+                  "id": "__builtin__.None",
+                  "name": "img",
+                  "namespace": null,
+                  "value": [
+                    {
+                      "id": "__builtin__.None",
+                      "kind": "instance",
+                      "repr": "types.NoneType",
+                      "type": "NoneType",
+                      "type_id": "types.NoneType"
+                    }
+                  ]
+                },
+                {
+                  "id": "",
+                  "name": "__bases__",
+                  "namespace": null,
+                  "value": [
+                    {
+                      "id": "",
+                      "kind": "instance",
+                      "repr": "list",
+                      "type": "list",
+                      "type_id": "__builtin__.list"
+                    }
+                  ]
+                },
+                {
+                  "id": "",
+                  "name": "__class__",
+                  "namespace": null,
+                  "value": [
+                    {
+                      "id": "",
+                      "kind": "type",
+                      "repr": "AddNumToPic",
+                      "type": "type",
+                      "type_id": "__builtin__.type"
+                    }
+                  ]
+                },
+                {
+                  "id": "",
+                  "name": "__delattr__",
+                  "namespace": null,
+                  "value": null
+                }
+              ],
+              "total_members": 22
+            }
+          }
+        }
+      ],
+      "synopsis": ""
+    }
+  ],
+  "report": {
+    "description_text": "",
+    "description_html": "",
+    "examples": null,
+    "usages": null,
+    "total_usages": 0,
+    "links": null,
+    "total_links": 0
+  }
+}

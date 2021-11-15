@@ -1,0 +1,22 @@
+{
+  "completions": [
+    {
+      "snippet": {
+        "text": "json as j",
+        "placeholders": []
+      },
+      "replace": {
+        "begin": 7,
+        "end": 8
+      },
+      "display": "json as j",
+      "documentation": {
+        "text": "JSON (JavaScript Object Notation) \u003c http://json.org ( #http://json.org ) \u003e is a subset of JavaScript syntax (ECMA-262 3rd edition) used as a lightweight data interchange format.\n\njson ( #json ) exposes an API familiar to users of the standard library marshal ( #marshal ) and pickle ( #pickle ) modules. It is the externally maintained version of the json ( #json ) library contained in Python 2.6, but maintains compatibility with Python 2.4 and Python 2.5 and (currently) has significant performanc"
+      },
+      "web_id": "json",
+      "local_id": "python;;;;json",
+      "hint": "module",
+      "smart": false
+    }
+  ]
+}

@@ -1,0 +1,279 @@
+{
+  "language": "python",
+  "parameters": [
+    {
+      "name": "a",
+      "default_value": null,
+      "inferred_value": [
+        {
+          "id": "",
+          "kind": "instance",
+          "repr": "1",
+          "type": "int",
+          "type_id": "__builtin__.int"
+        }
+      ],
+      "annotation": null,
+      "keyword_only": false,
+      "synopsis": ""
+    },
+    {
+      "name": "b",
+      "default_value": null,
+      "inferred_value": [
+        {
+          "id": "",
+          "kind": "instance",
+          "repr": "4",
+          "type": "int",
+          "type_id": "__builtin__.int"
+        }
+      ],
+      "annotation": null,
+      "keyword_only": false,
+      "synopsis": ""
+    },
+    {
+      "name": "c",
+      "default_value": null,
+      "inferred_value": [
+        {
+          "id": "",
+          "kind": "instance",
+          "repr": "5",
+          "type": "int",
+          "type_id": "__builtin__.int"
+        }
+      ],
+      "annotation": null,
+      "keyword_only": false,
+      "synopsis": ""
+    }
+  ],
+  "return_value": [
+    {
+      "id": "",
+      "kind": "instance",
+      "repr": "int",
+      "type": "int",
+      "type_id": "__builtin__.int"
+    }
+  ],
+  "signatures": [
+    {
+      "args": [
+        {
+          "name": "url",
+          "types": [
+            {
+              "examples": [
+                "\"'http://www.citibikenyc.com/stations/json'\"",
+                "\"'https://api.github.com/user'\"",
+                "\"'https://graph.facebook.com/fql'\""
+              ],
+              "id": "__builtin__.str",
+              "name": "str"
+            }
+          ]
+        }
+      ],
+      "kwargs": null
+    },
+    {
+      "args": [
+        {
+          "name": "url",
+          "types": [
+            {
+              "examples": [
+                "\"'http://www.citibikenyc.com/stations/json'\"",
+                "\"'https://api.github.com/user'\"",
+                "\"'https://graph.facebook.com/fql'\""
+              ],
+              "id": "__builtin__.str",
+              "name": "str"
+            }
+          ]
+        }
+      ],
+      "kwargs": [
+        {
+          "name": "params",
+          "types": [
+            {
+              "examples": [
+                "{'access_token': access_token}",
+                "{'access_token': token.token}",
+                "{}"
+              ],
+              "id": "__builtin__.dict",
+              "name": "dict"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "args": [
+        {
+          "name": "url",
+          "types": [
+            {
+              "examples": [
+                "\"'http://www.citibikenyc.com/stations/json'\"",
+                "\"'https://api.github.com/user'\"",
+                "\"'https://graph.facebook.com/fql'\""
+              ],
+              "id": "__builtin__.str",
+              "name": "str"
+            }
+          ]
+        }
+      ],
+      "kwargs": [
+        {
+          "name": "headers",
+          "types": [
+            {
+              "examples": [
+                "{\n                'content-type': 'application/json', 'accept': 'application/json', 'x-aspose-client' : 'PYTHONSDK/v1.0'\n            }",
+                "{'Accept': 'application/json'}",
+                "{'content-type': 'application/json'}"
+              ],
+              "id": "__builtin__.dict",
+              "name": "dict"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "args": [
+        {
+          "name": "url",
+          "types": [
+            {
+              "examples": [
+                "\"'http://www.citibikenyc.com/stations/json'\"",
+                "\"'https://api.github.com/user'\"",
+                "\"'https://graph.facebook.com/fql'\""
+              ],
+              "id": "__builtin__.str",
+              "name": "str"
+            }
+          ]
+        }
+      ],
+      "kwargs": [
+        {
+          "name": "auth",
+          "types": [
+            {
+              "examples": [
+                "(username, password)",
+                "(self.username, self.password)",
+                "(USER,PW)"
+              ],
+              "id": "__builtin__.tuple",
+              "name": "tuple"
+            },
+            {
+              "examples": [
+                "HTTPBasicAuth(self.api_token,'api_token') if self.auth == \"token\" else HTTPBasicAuth(self.username.self.password)"
+              ],
+              "id": "requests.auth.HTTPBasicAuth",
+              "name": "HTTPBasicAuth"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "args": [
+        {
+          "name": "url",
+          "types": [
+            {
+              "examples": [
+                "\"'http://www.citibikenyc.com/stations/json'\"",
+                "\"'https://api.github.com/user'\"",
+                "\"'https://graph.facebook.com/fql'\""
+              ],
+              "id": "__builtin__.str",
+              "name": "str"
+            }
+          ]
+        }
+      ],
+      "kwargs": [
+        {
+          "name": "stream",
+          "types": [
+            {
+              "examples": [
+                "True if self.read_size > 0 else False"
+              ],
+              "id": "__builtin__.bool",
+              "name": "bool"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "language_details": {
+    "python": {
+      "return_annotation": null,
+      "kwarg": {
+        "name": "a",
+        "default_value": null,
+        "inferred_value": [
+          {
+            "id": "",
+            "kind": "instance",
+            "repr": "1",
+            "type": "int",
+            "type_id": "__builtin__.int"
+          }
+        ],
+        "annotation": null,
+        "keyword_only": false,
+        "synopsis": ""
+      },
+      "kwarg_parameters": [
+        {
+          "annotation": null,
+          "default_value": null,
+          "inferred_value": [
+            {
+              "id": "",
+              "kind": "instance",
+              "repr": "bool",
+              "type": "bool",
+              "type_id": "__builtin__.bool"
+            }
+          ],
+          "keyword_only": false,
+          "name": "use_decimal",
+          "synopsis": ""
+        },
+        {
+          "annotation": null,
+          "default_value": null,
+          "inferred_value": [
+            {
+              "id": "",
+              "kind": "instance",
+              "repr": "str",
+              "type": "str",
+              "type_id": "__builtin__.str"
+            }
+          ],
+          "keyword_only": false,
+          "name": "content_type",
+          "synopsis": ""
+        }
+      ]
+    }
+  }
+}

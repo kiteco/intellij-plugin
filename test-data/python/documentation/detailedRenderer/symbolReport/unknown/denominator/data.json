@@ -1,0 +1,42 @@
+{
+    "language": "python",
+    "symbol": {
+        "id": "python;__builtin__.int.denominator",
+        "name": "denominator",
+        "namespace": {
+            "id": "python;__builtin__.int",
+            "kind": "type",
+            "repr": "int",
+            "type": "type",
+            "type_id": "python;__builtin__.type"
+        },
+        "value": [
+            {
+                "id": "python;__builtin__.int.denominator",
+                "kind": "unknown",
+                "repr": "int.denominator",
+                "type": "getset_descriptor",
+                "type_id": "python;",
+                "synopsis": "the denominator of a rational number in lowest terms",
+                "detail": null,
+                "details": {
+                    "function": null,
+                    "type": null,
+                    "instance": null,
+                    "module": null
+                }
+            }
+        ],
+        "synopsis": ""
+    },
+    "report": {
+        "definition": null,
+        "description_text": "the denominator of a rational number in lowest terms",
+        "description_html": "<body>\n\n\n<p>the denominator of a rational number in lowest terms</p>\n</body>",
+        "examples": null,
+        "usages": null,
+        "total_usages": 0,
+        "links": null,
+        "total_links": 0
+    }
+}

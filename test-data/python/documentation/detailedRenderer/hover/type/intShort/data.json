@@ -1,0 +1,328 @@
+{
+  "part_of_syntax": "name",
+  "symbol": [
+    {
+      "id": "",
+      "name": "int",
+      "namespace": null,
+      "value": [
+        {
+          "id": "__builtin__.int",
+          "kind": "type",
+          "repr": "int",
+          "type": "type",
+          "type_id": "__builtin__.type",
+          "synopsis": "",
+          "details": {
+            "type": {
+              "bases": [
+                {
+                  "id": "__builtin__.object",
+                  "name": "object",
+                  "module": "__builtin__",
+                  "module_id": "__builtin__"
+                }
+              ],
+              "components": null,
+              "members": [
+                {
+                  "id": "",
+                  "name": "bit_length",
+                  "namespace": null,
+                  "value": [
+                    {
+                      "id": "__builtin__.int.bit_length",
+                      "kind": "function",
+                      "repr": "bit_length",
+                      "type": "FunctionType",
+                      "type_id": "types.FunctionType"
+                    }
+                  ]
+                },
+                {
+                  "id": "",
+                  "name": "conjugate",
+                  "namespace": null,
+                  "value": [
+                    {
+                      "id": "__builtin__.int.conjugate",
+                      "kind": "function",
+                      "repr": "conjugate",
+                      "type": "FunctionType",
+                      "type_id": "types.FunctionType"
+                    }
+                  ]
+                },
+                {
+                  "id": "",
+                  "name": "denominator",
+                  "namespace": null,
+                  "value": [
+                    {
+                      "id": "",
+                      "kind": "instance",
+                      "repr": "int",
+                      "type": "int",
+                      "type_id": "__builtin__.int"
+                    }
+                  ]
+                },
+                {
+                  "id": "",
+                  "name": "imag",
+                  "namespace": null,
+                  "value": [
+                    {
+                      "id": "",
+                      "kind": "instance",
+                      "repr": "float",
+                      "type": "float",
+                      "type_id": "__builtin__.float"
+                    }
+                  ]
+                },
+                {
+                  "id": "",
+                  "name": "numerator",
+                  "namespace": null,
+                  "value": [
+                    {
+                      "id": "",
+                      "kind": "instance",
+                      "repr": "int",
+                      "type": "int",
+                      "type_id": "__builtin__.int"
+                    }
+                  ]
+                }
+              ],
+              "total_members": 53
+            }
+          }
+        }
+      ],
+      "synopsis": ""
+    }
+  ],
+  "report": {
+    "definition": null,
+    "description_text": "Convert a number or string x to an integer, or return 0 if no\narguments are given.  If x is a number, it can be a plain integer, a long\ninteger, or a floating point number.  If x is floating point, the conversion\ntruncates towards zero.  If the argument is outside the integer range, the\nfunction returns a long object instead.\nIf x is not a number or if base is given, then x must be a string or\nUnicode object representing an integer literal in radix\nbase.  Optionally, the literal can be\npreceded by + or - (with no space in between) and surrounded by\nwhitespace.  A base-n literal consists of the digits 0 to n-1, with a\nto z (or A to Z) having\nvalues 10 to 35.  The default base is 10. The allowed values are 0 and 2-36.\nBase-2, -8, and -16 literals can be optionally prefixed with 0b/0B,\n0o/0O/0, or 0x/0X, as with integer literals in code.\nBase 0 means to interpret the string exactly as an integer literal, so that\nthe actual base is 2, 8, 10, or 16.\nThe integer type is described in Numeric Types — int, float, long, complex.",
+    "description_html": "<body><p>Convert a number or string <em>x</em> to an integer, or return <code>0</code> if no\narguments are given.  If <em>x</em> is a number, it can be a plain integer, a long\ninteger, or a floating point number.  If <em>x</em> is floating point, the conversion\ntruncates towards zero.  If the argument is outside the integer range, the\nfunction returns a long object instead.</p><p>If <em>x</em> is not a number or if <em>base</em> is given, then <em>x</em> must be a string or\nUnicode object representing an <a><em>integer literal</em></a> in radix\n<em>base</em>.  Optionally, the literal can be\npreceded by <code>+</code> or <code>-</code> (with no space in between) and surrounded by\nwhitespace.  A base-n literal consists of the digits 0 to n-1, with <code>a</code>\nto <code>z</code> (or <code>A</code> to <code>Z</code>) having\nvalues 10 to 35.  The default <em>base</em> is 10. The allowed values are 0 and 2-36.\nBase-2, -8, and -16 literals can be optionally prefixed with <code>0b</code>/<code>0B</code>,\n<code>0o</code>/<code>0O</code>/<code>0</code>, or <code>0x</code>/<code>0X</code>, as with integer literals in code.\nBase 0 means to interpret the string exactly as an integer literal, so that\nthe actual base is 2, 8, 10, or 16.</p><p>The integer type is described in <a><em>Numeric Types — int, float, long, complex</em></a>.</p></body>",
+    "examples": [
+      {
+        "id": 3813,
+        "title": "Get the size of a set"
+      },
+      {
+        "id": 3830,
+        "title": "Check the length of a dictionary"
+      },
+      {
+        "id": 2351,
+        "title": "Evaluate a string as code"
+      },
+      {
+        "id": 3773,
+        "title": "Find the first occurrence of a substring"
+      },
+      {
+        "id": 3809,
+        "title": "Pop an element off a sequence"
+      },
+      {
+        "id": 3769,
+        "title": "Count the occurrences of a substring"
+      },
+      {
+        "id": 3640,
+        "title": "Retrieve a sum of a sequence"
+      },
+      {
+        "id": 2391,
+        "title": "Hash a hashable object"
+      },
+      {
+        "id": 3828,
+        "title": "Remove an arbitrary element from a set"
+      },
+      {
+        "id": 2400,
+        "title": "Get a unique identifier for an object"
+      },
+      {
+        "id": 3615,
+        "title": "Convert a string character to ASCII value"
+      },
+      {
+        "id": 3766,
+        "title": "Count the occurrences of an element in a sequence"
+      },
+      {
+        "id": 3765,
+        "title": "Get the index of an element in a sequence"
+      },
+      {
+        "id": 3788,
+        "title": "Find the location of a substring from the right"
+      },
+      {
+        "id": 2448,
+        "title": "Iterate over a list using `iter`"
+      },
+      {
+        "id": 3625,
+        "title": "Apply a function cumulatively to the items of a sequence"
+      },
+      {
+        "id": 5533,
+        "title": "Get the index of a string where a subsequence is located"
+      },
+      {
+        "id": 3846,
+        "title": "Pop an item off of a dictionary"
+      },
+      {
+        "id": 2320,
+        "title": "Compare two values and return the outcome as an integer"
+      },
+      {
+        "id": 3848,
+        "title": "Set a default value for an item in a dictionary"
+      },
+      {
+        "id": 3617,
+        "title": "Exponentiate a number by another number"
+      },
+      {
+        "id": 2539,
+        "title": "Find the maximum value in a list"
+      },
+      {
+        "id": 2541,
+        "title": "Find the minimum value in a list"
+      },
+      {
+        "id": 2330,
+        "title": "Enumerate a sequence"
+      },
+      {
+        "id": 2543,
+        "title": "Get the next item from an iterator using `next`"
+      },
+      {
+        "id": 2230,
+        "title": "Compute the absolute value of a number"
+      },
+      {
+        "id": 3648,
+        "title": "Construct an `xrange` list"
+      },
+      {
+        "id": 4463,
+        "title": "Construct a list using list comprehension"
+      },
+      {
+        "id": 2383,
+        "title": "Get the current global symbol table"
+      },
+      {
+        "id": 3637,
+        "title": "Generate a sorted list from an iterable object"
+      },
+      {
+        "id": 5764,
+        "title": "Execute Python code in a string"
+      },
+      {
+        "id": 3839,
+        "title": "Get an item in a dictionary with a default value"
+      },
+      {
+        "id": 2319,
+        "title": "Define a class method"
+      },
+      {
+        "id": 5539,
+        "title": "Get the file descriptor of a file"
+      },
+      {
+        "id": 3923,
+        "title": "Get the current position of a file"
+      },
+      {
+        "id": 2542,
+        "title": "Find the minimum value in a list given a comparison function"
+      },
+      {
+        "id": 2540,
+        "title": "Find the maximum value in a list given a comparison function"
+      },
+      {
+        "id": 2357,
+        "title": "Apply a filter function to a list"
+      },
+      {
+        "id": 3843,
+        "title": "Get an iterator of values from a dictionary"
+      },
+      {
+        "id": 3646,
+        "title": "Get the dictionary attribute for a class"
+      },
+      {
+        "id": 3950,
+        "title": "Get the attribute dictionary of an object"
+      },
+      {
+        "id": 2327,
+        "title": "View list of names in the local scope"
+      },
+      {
+        "id": 2537,
+        "title": "Map a function to a list"
+      },
+      {
+        "id": 3757,
+        "title": "Construct a generator function"
+      },
+      {
+        "id": 3841,
+        "title": "Get an iterator of  key-value pairs from a dictionary"
+      },
+      {
+        "id": 2433,
+        "title": "Check if an object is an instance of a class"
+      },
+      {
+        "id": 3912,
+        "title": "Get the file descriptor integer that is used by the OS"
+      },
+      {
+        "id": 3620,
+        "title": "Set an instance variable to a property"
+      },
+      {
+        "id": 2382,
+        "title": "Get an attribute of an object using a string"
+      },
+      {
+        "id": 2352,
+        "title": "Check if an object is an instance of a certain type or class"
+      },
+      {
+        "id": 3313,
+        "title": "Check if a value is an integer"
+      }
+    ],
+    "usages": [
+      {
+        "code": "def foo(bar) -> int:",
+        "filename": "/Users/user/IdeaProjects/kitePython/Python-Algorithms/test.py",
+        "line": 14,
+        "begin_bytes": 246,
+        "begin_runes": 246
+      }
+    ],
+    "total_usages": 1
+  }
+}

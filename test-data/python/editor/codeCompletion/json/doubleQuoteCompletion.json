@@ -1,0 +1,22 @@
+{
+  "completions": [
+    {
+      "snippet": {
+        "text": "\"content",
+        "placeholders": []
+      },
+      "replace": {
+        "begin": 7,
+        "end": 8
+      },
+      "display": "\"content",
+      "documentation": {
+        "text": "dummy content"
+      },
+      "web_id": "json",
+      "local_id": "python;;;;json",
+      "hint": "module",
+      "smart": false
+    }
+  ]
+}

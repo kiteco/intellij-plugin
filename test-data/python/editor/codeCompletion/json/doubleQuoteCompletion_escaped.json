@@ -1,0 +1,40 @@
+{
+  "completions": [
+    {
+      "snippet": {
+        "text": "\"content",
+        "placeholders": []
+      },
+      "replace": {
+        "begin": 23,
+        "end": 23
+      },
+      "display": "\"content",
+      "documentation": {
+        "text": "dummy content"
+      },
+      "web_id": "json",
+      "local_id": "python;;;;json",
+      "hint": "module",
+      "smart": false
+    },
+    {
+      "snippet": {
+        "text": "\"content",
+        "placeholders": []
+      },
+      "replace": {
+        "begin": 23,
+        "end": 23
+      },
+      "display": "\"content",
+      "documentation": {
+        "text": "dummy content"
+      },
+      "web_id": "json",
+      "local_id": "python;;;;json",
+      "hint": "module",
+      "smart": false
+    }
+  ]
+}

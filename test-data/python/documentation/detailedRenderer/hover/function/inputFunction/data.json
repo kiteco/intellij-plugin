@@ -1,0 +1,54 @@
+{
+  "part_of_syntax": "name",
+  "symbol": [
+    {
+      "id": "",
+      "name": "input_function",
+      "namespace": null,
+      "value": [
+        {
+          "id": "__builtin__.raw_input",
+          "kind": "function",
+          "repr": "raw_input",
+          "type": "builtin_function_or_method",
+          "type_id": "__builtin__.builtin_function_or_method",
+          "synopsis": "If the prompt argument is present, it is written to standard output without a\ntrailing newline.  The function then reads a line from input, converts it to a\nstring (stripping a trailing newline), and returns that. When EOF is read,\nEOFError is raised. Example:"
+        },
+        {
+          "id": "__builtin__.input",
+          "kind": "function",
+          "repr": "input",
+          "type": "builtin_function_or_method",
+          "type_id": "__builtin__.builtin_function_or_method",
+          "synopsis": "Equivalent to eval(raw_input(prompt)).\nThis function does not catch user errors. If the input is not syntactically\nvalid, a SyntaxError will be raised. Other exceptions may be raised if\nthere is an error during evaluation.\nIf the readline module was loaded, then input() will use it to\nprovide elaborate line editing and history features.\nConsider using the raw_input() function for general input from users."
+        }
+      ],
+      "synopsis": ""
+    }
+  ],
+  "report": {
+    "definition": null,
+    "description_text": "If the prompt argument is present, it is written to standard output without a\ntrailing newline.  The function then reads a line from input, converts it to a\nstring (stripping a trailing newline), and returns that. When EOF is read,\nEOFError is raised. Example:",
+    "description_html": "<body><p>If the <em>prompt</em> argument is present, it is written to standard output without a\ntrailing newline.  The function then reads a line from input, converts it to a\nstring (stripping a trailing newline), and returns that. When EOF is read,\n<a class=\"internal_link\" href=\"#exceptions.EOFError\"><code>EOFError</code></a> is raised. Example:</p><pre class=\"lang-python\"><code>&gt;&gt;&gt; s = raw_input(&#39;--&gt; &#39;)\n--&gt; Monty Python&#39;s Flying Circus\n&gt;&gt;&gt; s\n&#34;Monty Python&#39;s Flying Circus&#34;\n</code></pre>\n<p>If the <a><code>readline</code></a> module was loaded, then <a class=\"internal_link\" href=\"#raw_input\"><code>raw_input()</code></a> will use it to\nprovide elaborate line editing and history features.</p></body>",
+    "examples": [
+      {
+        "id": 5412,
+        "title": "Get raw input from `stdin`"
+      },
+      {
+        "id": 5411,
+        "title": "Get raw input from `stdin` with a prompt"
+      }
+    ],
+    "usages": [
+      {
+        "code": "    user_input = input_function('Enter numbers separated by a comma:\\n')",
+        "filename": "/Users/user/IdeaProjects/kitePython/Python-Algorithms/sorts/bubble_sort.py",
+        "line": 50,
+        "begin_bytes": 1271,
+        "begin_runes": 1271
+      }
+    ],
+    "total_usages": 1
+  }
+}

@@ -1,0 +1,220 @@
+{
+  "part_of_syntax": "attr",
+  "symbol": [
+    {
+      "id": "matplotlib.pyplot.plot",
+      "name": "plot",
+      "namespace": {
+        "id": "matplotlib.pyplot",
+        "kind": "module",
+        "repr": "matplotlib.pyplot",
+        "type": "module",
+        "type_id": ""
+      },
+      "value": [
+        {
+          "id": "matplotlib.pyplot.plot",
+          "kind": "function",
+          "repr": "plot",
+          "type": "function",
+          "type_id": "",
+          "synopsis": "Plot lines and/or markers to the\nAxes.  args is a variable length\nargument, allowing for multiple x, y pairs with an\noptional format string.  For example, each of the following is\nlegal:",
+          "details": {
+            "function": {
+              "parameters": null,
+              "language_details": {
+                "python": {
+                  "vararg": {
+                    "name": "args",
+                    "default_value": null,
+                    "inferred_value": null,
+                    "annotation": null,
+                    "keyword_only": false,
+                    "synopsis": ""
+                  },
+                  "kwarg": {
+                    "name": "kwargs",
+                    "default_value": null,
+                    "inferred_value": null,
+                    "annotation": null,
+                    "keyword_only": false,
+                    "synopsis": ""
+                  },
+                  "return_annotation": null
+                }
+              },
+              "return_value": null
+            }
+          }
+        }
+      ],
+      "synopsis": ""
+    }
+  ],
+  "report": {
+    "definition": {
+      "filename": "/usr/local/lib/python2.7/dist-packages/matplotlib/pyplot.py",
+      "line": 3152
+    },
+    "description_text": "Plot lines and/or markers to the\nAxes.  args is a variable length\nargument, allowing for multiple x, y pairs with an\noptional format string.  For example, each of the following is\nlegal:",
+    "description_html": "<body>\n\n\n<p>Plot lines and/or markers to the\n<a href=\"#matplotlib.axes.Axes\" class=\"internal_link\">Axes</a>.  <em>args</em> is a variable length\nargument, allowing for multiple <em>x</em>, <em>y</em> pairs with an\noptional format string.  For example, each of the following is\nlegal:</p>\n<pre class=\"lang-python\"><code>plot(x, y)        # plot x and y using default line style and color\nplot(x, y, &#39;bo&#39;)  # plot x and y using blue circle markers\nplot(y)           # plot y using x as index array 0..N-1\nplot(y, &#39;r+&#39;)     # ditto, but with red plusses\n</code></pre>\n<p>If <em>x</em> and/or <em>y</em> is 2-dimensional, then the corresponding columns\nwill be plotted.</p>\n<p>If used with labeled data, make sure that the color spec is not\nincluded as an element in data, as otherwise the last case\n<code>plot(&#34;v&#34;,&#34;r&#34;,</code><code> </code><code>data={&#34;v&#34;:...,</code><code> </code><code>&#34;r&#34;:...)</code>\ncan be interpreted as the first case which would do <code>plot(v, r)</code>\nusing the default line style and color.</p>\n<p>If not used with labeled data (i.e., without a data argument),\nan arbitrary number of <em>x</em>, <em>y</em>, <em>fmt</em> groups can be specified, as in:</p>\n<pre class=\"lang-python\"><code>a.plot(x1, y1, &#39;g^&#39;, x2, y2, &#39;g-&#39;)\n</code></pre>\n<p>Return value is a list of lines that were added.</p>\n<p>By default, each line is assigned a different style specified by a\n&#39;style cycle&#39;.  To change this behavior, you can edit the\naxes.prop_cycle rcParam.</p>\n<p>The following format string characters are accepted to control\nthe line style or marker:</p>\n<table><tr valign=\"bottom\"><th>character</th><th>description</th></tr><tr valign=\"top\"><td><code>&#39;-&#39;</code></td><td>solid line style</td></tr><tr valign=\"top\"><td><code>&#39;--&#39;</code></td><td>dashed line style</td></tr><tr valign=\"top\"><td><code>&#39;-.&#39;</code></td><td>dash-dot line style</td></tr><tr valign=\"top\"><td><code>&#39;:&#39;</code></td><td>dotted line style</td></tr><tr valign=\"top\"><td><code>&#39;.&#39;</code></td><td>point marker</td></tr><tr valign=\"top\"><td><code>&#39;,&#39;</code></td><td>pixel marker</td></tr><tr valign=\"top\"><td><code>&#39;o&#39;</code></td><td>circle marker</td></tr><tr valign=\"top\"><td><code>&#39;v&#39;</code></td><td>triangle_down marker</td></tr><tr valign=\"top\"><td><code>&#39;^&#39;</code></td><td>triangle_up marker</td></tr><tr valign=\"top\"><td><code>&#39;&lt;&#39;</code></td><td>triangle_left marker</td></tr><tr valign=\"top\"><td><code>&#39;&gt;&#39;</code></td><td>triangle_right marker</td></tr><tr valign=\"top\"><td><code>&#39;1&#39;</code></td><td>tri_down marker</td></tr><tr valign=\"top\"><td><code>&#39;2&#39;</code></td><td>tri_up marker</td></tr><tr valign=\"top\"><td><code>&#39;3&#39;</code></td><td>tri_left marker</td></tr><tr valign=\"top\"><td><code>&#39;4&#39;</code></td><td>tri_right marker</td></tr><tr valign=\"top\"><td><code>&#39;s&#39;</code></td><td>square marker</td></tr><tr valign=\"top\"><td><code>&#39;p&#39;</code></td><td>pentagon marker</td></tr><tr valign=\"top\"><td><code>&#39;*&#39;</code></td><td>star marker</td></tr><tr valign=\"top\"><td><code>&#39;h&#39;</code></td><td>hexagon1 marker</td></tr><tr valign=\"top\"><td><code>&#39;H&#39;</code></td><td>hexagon2 marker</td></tr><tr valign=\"top\"><td><code>&#39;+&#39;</code></td><td>plus marker</td></tr><tr valign=\"top\"><td><code>&#39;x&#39;</code></td><td>x marker</td></tr><tr valign=\"top\"><td><code>&#39;D&#39;</code></td><td>diamond marker</td></tr><tr valign=\"top\"><td><code>&#39;d&#39;</code></td><td>thin_diamond marker</td></tr><tr valign=\"top\"><td><code>&#39;|&#39;</code></td><td>vline marker</td></tr><tr valign=\"top\"><td><code>&#39;_&#39;</code></td><td>hline marker</td></tr></table>\n<p>The following color abbreviations are supported:</p>\n<table><tr valign=\"bottom\"><th>character</th><th>color</th></tr><tr valign=\"top\"><td>&#39;b&#39;</td><td>blue</td></tr><tr valign=\"top\"><td>&#39;g&#39;</td><td>green</td></tr><tr valign=\"top\"><td>&#39;r&#39;</td><td>red</td></tr><tr valign=\"top\"><td>&#39;c&#39;</td><td>cyan</td></tr><tr valign=\"top\"><td>&#39;m&#39;</td><td>magenta</td></tr><tr valign=\"top\"><td>&#39;y&#39;</td><td>yellow</td></tr><tr valign=\"top\"><td>&#39;k&#39;</td><td>black</td></tr><tr valign=\"top\"><td>&#39;w&#39;</td><td>white</td></tr></table>\n<p>In addition, you can specify colors in many weird and\nwonderful ways, including full names (<code>&#39;green&#39;</code>), hex\nstrings (<code>&#39;#008000&#39;</code>), RGB or RGBA tuples (<code>(0,1,0,1)</code>) or\ngrayscale intensities as a string (<code>&#39;0.8&#39;</code>).  Of these, the\nstring specifications can be used in place of a <code>fmt</code> group,\nbut the tuple forms can be used only as <code>kwargs</code>.</p>\n<p>Line styles and colors are combined in a single format string, as in\n<code>&#39;bo&#39;</code> for blue circles.</p>\n<p>The <em>kwargs</em> can be used to set line properties (any property that has\na <code>set_*</code> method).  You can use this to set a line label (for auto\nlegends), linewidth, anitialising, marker face color, etc.  Here is an\nexample:</p>\n<pre class=\"lang-python\"><code>plot([1,2,3], [1,2,3], &#39;go-&#39;, label=&#39;line 1&#39;, linewidth=2)\nplot([1,2,3], [1,4,9], &#39;rs&#39;,  label=&#39;line 2&#39;)\naxis([0, 4, 0, 10])\nlegend()\n</code></pre>\n<p>If you make multiple lines with one plot command, the kwargs\napply to all those lines, e.g.:</p>\n<pre class=\"lang-python\"><code>plot(x1, y1, x2, y2, antialiased=False)\n</code></pre>\n<p>Neither line will be antialiased.</p>\n<p>You do not need to use format strings, which are just\nabbreviations.  All of the line properties can be controlled\nby keyword arguments.  For example, you can set the color,\nmarker, linestyle, and markercolor with:</p>\n<pre class=\"lang-python\"><code>plot(x, y, color=&#39;green&#39;, linestyle=&#39;dashed&#39;, marker=&#39;o&#39;,\n     markerfacecolor=&#39;blue&#39;, markersize=12).\n</code></pre>\n<p>See <a href=\"#matplotlib.lines.Line2D\" class=\"internal_link\">Line2D</a> for details.</p>\n<p>The kwargs are <a href=\"#matplotlib.lines.Line2D\" class=\"internal_link\">Line2D</a> properties:</p>\n\nagg_filter: unknown\nalpha: float (0.0 transparent through 1.0 opaque)\nanimated: [True | False]\nantialiased or aa: [True | False]\naxes: an <a href=\"#matplotlib.axes.Axes\" class=\"internal_link\">Axes</a> instance\nclip_box: a <a href=\"#matplotlib.transforms.Bbox\" class=\"internal_link\">Bbox</a> instance\nclip_on: [True | False]\nclip_path: [ (<a href=\"#matplotlib.path.Path\" class=\"internal_link\">Path</a>, <a href=\"#matplotlib.transforms.Transform\" class=\"internal_link\">Transform</a>) | <a href=\"#matplotlib.patches.Patch\" class=\"internal_link\">Patch</a> | None ]\ncolor or c: any matplotlib color\ncontains: a callable function\ndash_capstyle: [&#39;butt&#39; | &#39;round&#39; | &#39;projecting&#39;]\ndash_joinstyle: [&#39;miter&#39; | &#39;round&#39; | &#39;bevel&#39;]\ndashes: sequence of on/off ink in points\ndrawstyle: [&#39;default&#39; | &#39;steps&#39; | &#39;steps-pre&#39; | &#39;steps-mid&#39; | &#39;steps-post&#39;]\nfigure: a <a href=\"#matplotlib.figure.Figure\" class=\"internal_link\">Figure</a> instance\nfillstyle: [&#39;full&#39; | &#39;left&#39; | &#39;right&#39; | &#39;bottom&#39; | &#39;top&#39; | &#39;none&#39;]\ngid: an id string\nlabel: string or anything printable with &#39;%s&#39; conversion.\nlinestyle or ls: [&#39;solid&#39; | &#39;dashed&#39;, &#39;dashdot&#39;, &#39;dotted&#39; | (offset, on-off-dash-seq) | <code>&#39;-&#39;</code> | <code>&#39;--&#39;</code> | <code>&#39;-.&#39;</code> | <code>&#39;:&#39;</code> | <code>&#39;None&#39;</code> | <code>&#39; &#39;</code> | <code>&#39;&#39;</code>]\nlinewidth or lw: float value in points\nmarker: <a>A valid marker style <matplotlib.markers></a>\nmarkeredgecolor or mec: any matplotlib color\nmarkeredgewidth or mew: float value in points\nmarkerfacecolor or mfc: any matplotlib color\nmarkerfacecoloralt or mfcalt: any matplotlib color\nmarkersize or ms: float\nmarkevery: [None | int | length-2 tuple of int | slice | list/array of int | float | length-2 tuple of float]\npath_effects: unknown\npicker: float distance in points or callable pick function <code>fn(artist, event)</code>\npickradius: float distance in points\nrasterized: [True | False | None]\nsketch_params: unknown\nsnap: unknown\nsolid_capstyle: [&#39;butt&#39; | &#39;round&#39; |  &#39;projecting&#39;]\nsolid_joinstyle: [&#39;miter&#39; | &#39;round&#39; | &#39;bevel&#39;]\ntransform: a <a href=\"#matplotlib.transforms.Transform\" class=\"internal_link\">Transform</a> instance\nurl: a url string\nvisible: [True | False]\nxdata: 1D array\nydata: 1D array\nzorder: any number\n<p>kwargs <em>scalex</em> and <em>scaley</em>, if defined, are passed on to\n<a href=\"#matplotlib.axes.Axes.autoscale_view\" class=\"internal_link\">autoscale_view</a> to determine\nwhether the <em>x</em> and <em>y</em> axes are autoscaled; the default is\n<em>True</em>.</p>\n\n<h1>Notes</h1>\n<p>In addition to the above described arguments, this function can take a\n<strong>data</strong> keyword argument. If such a <strong>data</strong> argument is given, the\nfollowing arguments are replaced by <strong>data[&lt;arg&gt;]</strong>:</p>\n<ul><li>All arguments with the following names: &#39;y&#39;, &#39;x&#39;.</li></ul>\n<p>Additional kwargs: hold = [True|False] overrides default hold state</p>\n\n</body>",
+    "examples": [
+      {
+        "id": 1854,
+        "title": "Plot a line graph"
+      },
+      {
+        "id": 5554,
+        "title": "Close a plot"
+      },
+      {
+        "id": 1886,
+        "title": "Clear a figure"
+      },
+      {
+        "id": 4984,
+        "title": "Change y-axis limits"
+      },
+      {
+        "id": 4985,
+        "title": "Change x-axis limits"
+      },
+      {
+        "id": 1864,
+        "title": "Style a line graph"
+      },
+      {
+        "id": 5560,
+        "title": "Change plot properties"
+      },
+      {
+        "id": 1861,
+        "title": "Plot a functionÂ "
+      },
+      {
+        "id": 1871,
+        "title": "Change axis tick positions"
+      },
+      {
+        "id": 1857,
+        "title": "Plot a scatterplot"
+      },
+      {
+        "id": 1872,
+        "title": "Add axis titles"
+      },
+      {
+        "id": 1867,
+        "title": "Add text to plot"
+      },
+      {
+        "id": 1881,
+        "title": "Add a figure legend"
+      },
+      {
+        "id": 1873,
+        "title": "Add a title to a graph"
+      },
+      {
+        "id": 5001,
+        "title": "Change axis title fontsize"
+      },
+      {
+        "id": 5559,
+        "title": "Dynamically change plot configurations"
+      },
+      {
+        "id": 5558,
+        "title": "Dynamically change global configurations"
+      },
+      {
+        "id": 1875,
+        "title": "Change the figure size"
+      },
+      {
+        "id": 1856,
+        "title": "Plot a scatterplot with default x-values"
+      },
+      {
+        "id": 1855,
+        "title": "Plot a line graph with default x-values"
+      },
+      {
+        "id": 1879,
+        "title": "Add figure titles"
+      },
+      {
+        "id": 1870,
+        "title": "Change x-axis tick labels"
+      },
+      {
+        "id": 1866,
+        "title": "Add text to plot as TeX"
+      },
+      {
+        "id": 1858,
+        "title": "Change axes bounds"
+      },
+      {
+        "id": 1863,
+        "title": "Plot 2 subplotsÂ "
+      },
+      {
+        "id": 1878,
+        "title": "Plot a line graph using a `ggplot` stylesheet"
+      },
+      {
+        "id": 4987,
+        "title": "Save a plot as an `PNG` image"
+      },
+      {
+        "id": 2194,
+        "title": "Plot 2 lines on the same graph"
+      },
+      {
+        "id": 1880,
+        "title": "Add a figure legend at the \"best\" position"
+      },
+      {
+        "id": 5007,
+        "title": "Draw a grid on a plot"
+      },
+      {
+        "id": 4998,
+        "title": "Hide a plot axis"
+      },
+      {
+        "id": 5004,
+        "title": "Plot a scatterplot with text annotation"
+      },
+      {
+        "id": 4997,
+        "title": "Place a legend outside of plot axes"
+      },
+      {
+        "id": 1868,
+        "title": "Add annotation and arrow to plot"
+      },
+      {
+        "id": 1874,
+        "title": "Plot 2 subplots that share an x-axisÂ "
+      },
+      {
+        "id": 2378,
+        "title": "Plot data from a CSV file as a scatterplot"
+      }
+    ],
+    "usages": [
+      {
+        "code": "matplotlib.pyplot.plot()",
+        "filename": "/Users/user/IdeaProjects/kitePython/Python-Algorithms/test2.py",
+        "line": 1,
+        "begin_bytes": 18,
+        "begin_runes": 18
+      }
+    ],
+    "total_usages": 1,
+    "links": null,
+    "total_links": 0
+  }
+}

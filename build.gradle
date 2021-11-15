@@ -1,0 +1,195 @@
+buildscript {
+    dependencies {
+        classpath 'com.vladsch.flexmark:flexmark-all:0.62.2'
+    }
+}
+
+plugins {
+    id "org.jetbrains.changelog" version '0.6.2'
+    id "org.jetbrains.intellij" version "1.2.1"
+}
+
+apply plugin: 'org.jetbrains.changelog'
+
+repositories {
+    mavenCentral()
+}
+
+version = file("${project.rootDir}/pluginVersion.txt").getText('UTF-8')
+
+ext {
+    // skip python source and plugin
+    skipPython = System.getenv('skipPython') == 'true' || System.getProperty('skipPython', 'false') == "true"
+    // skip python plugin only
+    skipPythonPlugin = skipPython || System.getenv('skipPythonPlugin') == 'true' || System.getProperty('skipPythonPlugin', 'false') == "true"
+
+    // skip go plugin by default
+    skipGoPlugin = System.getenv('skipGoPlugin') == 'true' || System.getProperty('skipGoPlugin', 'true') == "true"
+
+    mySourceDirs = ['src/main/java']
+    myResourceDirs = ['src/main/resources']
+    myTestSourceDirs = ['src/test/java']
+
+    myPlugins = []
+    myPlugins.addAll(System.getProperty('additionalPlugins', '').tokenize(','))
+}
+
+allprojects {
+    apply plugin: 'java'
+    sourceCompatibility = '1.8'
+    targetCompatibility = '1.8'
+
+    compileJava.options.encoding = "UTF-8"
+    compileTestJava.options.encoding = "UTF-8"
+
+    if (skipPython) {
+        println("Not adding src/main/java-python because python plugin source root was disabled.")
+    } else {
+        mySourceDirs << 'src/main/java-python'
+    }
+
+    sourceSets.main.java.srcDirs = mySourceDirs
+    sourceSets.main.resources.srcDirs = myResourceDirs
+    sourceSets.test.java.srcDirs = myTestSourceDirs
+    println("Using source dirs ${sourceSets.main.java.srcDirs}")
+    println("Using resource dirs ${sourceSets.main.resources.srcDirs}")
+    println("Using test source dirs ${sourceSets.test.java.srcDirs}")
+
+    jar {
+        baseName "kite-plugin-unobfuscated"
+    }
+
+    dependencies {
+        implementation("io.pebbletemplates:pebble:3.0.5") {
+            exclude group: 'org.slf4j', module: 'slf4j-api'
+            exclude group: 'com.google.guava', module: 'guava'
+        }
+
+        implementation('com.google.code.findbugs:jsr305:3.0.2')
+
+        implementation("com.rollbar:rollbar-java:1.7.5") {
+            exclude group: 'org.slf4j', module: 'slf4j-api'
+        }
+
+        implementation("org.xhtmlrenderer:flying-saucer-core:9.1.20")
+
+        implementation("org.jsoup:jsoup:1.11.3")
+
+        implementation("org.eclipse.jetty:jetty-client:9.4.10.v20180503")
+
+        testImplementation("org.nanohttpd:nanohttpd:2.3.1")
+    }
+
+    if (System.getenv('idePath') != null) {
+        println("Using local IDE SDK path ${System.getenv('idePath')}.")
+        intellij.localPath System.getenv('idePath')
+    } else if (System.getProperty('ideVersion') != null) {
+        println("Using local IDE SDK path ${System.getProperty('ideVersion')}.")
+        intellij.version System.getProperty('ideVersion')
+    } else {
+        println("Using idea dependency...")
+        intellij.version = project.property("ideaVersion")
+    }
+
+    if (!skipPythonPlugin) {
+        if (System.getenv('pycharmPlugin') != null && new File(System.getenv('pycharmPlugin')).exists()) {
+            println("Using local PyCharm plugin in ${System.getenv('pycharmPlugin')}.")
+            // gradle-intellij is supporting absolute paths to jar/zip files as external dependencies
+            myPlugins << System.getenv('pycharmPlugin') << 'yaml'
+        } else {
+            println("Using PyCharm plugin dependency resolving for ${project.property("pycharmPlugin")}.")
+            myPlugins << project.property("pycharmPlugin") << 'yaml'
+        }
+    }
+
+    if (!skipGoPlugin) {
+        if (System.getenv('goPlugin') != null && project.file(System.getenv('goPlugin')).exists()) {
+            println("Using local Go plugin in ${System.getenv('goPlugin')}.")
+            // gradle-intellij is supporting absolute paths to jar/zip files as external dependencies
+            myPlugins << System.getenv('goPlugin')
+        } else {
+            println("Using Go plugin dependency resolving for ${project.property("goPlugin")}.")
+            myPlugins << project.property("goPlugin")
+        }
+    }
+
+    println("Plugin dependencies: ${myPlugins}")
+
+    buildSearchableOptions.enabled = false
+    jarSearchableOptions.enabled = false
+
+    changelog {
+        version = "${project.version}"
+        path = "${project.projectDir}/plugin-changelog.md"
+        header = { "[${project.version}]" }
+        headerParserRegex = ~/\d+\.\d+\.\d+/
+        itemPrefix = "-"
+        keepUnreleasedSection = true
+        unreleasedTerm = "[Unreleased]"
+        groups = ["Changed"]
+    }
+
+    intellij {
+        plugins = myPlugins
+        pluginName = 'kite-pycharm'
+        updateSinceUntilBuild = false
+        downloadSources = true
+    }
+
+    patchPluginXml {
+        sinceBuild = "${project.property("sinceBuild")}"
+        untilBuild = "${project.property("untilBuild")}"
+
+        pluginDescription = com.vladsch.flexmark.html.HtmlRenderer.builder(new com.vladsch.flexmark.util.data.MutableDataSet()).build()
+                .render(com.vladsch.flexmark.parser.Parser.builder(new com.vladsch.flexmark.util.data.MutableDataSet()).build().parse(file("plugin-description.md").text))
+        changeNotes = changelog.getLatest().toHTML()
+    }
+
+    apply plugin: 'org.jetbrains.intellij'
+
+    // The runIde task added by the intellij plugin inherits from JavaExec
+    tasks.withType(JavaExec) {
+        systemProperties System.properties.findAll { ((String) it.key).startsWith("kite.") }
+    }
+
+    runIde {
+        def jreVersion = System.getProperty("jbrVersion", "")
+        if (jreVersion != "") {
+            jbrVersion jreVersion
+        }
+    }
+
+    test {
+        // for some reason the Python plugin requires Java on newer builds,
+        // even though it's using an optional dependency
+        intellij.plugins.value(intellij.plugins.get() + "java")
+
+        systemProperty "file.encoding", "UTF-8"
+        systemProperty 'kite.testCase.updateReferenceRendering', System.getProperty('kite.testCase.updateReferenceRendering', 'false')
+        environment 'NO_FS_ROOTS_ACCESS_CHECK', 'true'
+        testLogging {
+            events "passed", "skipped", "failed", "standardOut", "standardError"
+            exceptionFormat "full"
+            showCauses true
+            showExceptions true
+            showStackTraces true
+        }
+    }
+
+    gradle.projectsEvaluated {
+        tasks.withType(JavaCompile) {
+            options.compilerArgs << "-Xlint:unchecked" << "-Xlint:deprecation"
+        }
+    }
+}
+
+runIde {
+    maxHeapSize = "1g"
+}
+
+tasks.named("buildPlugin") {
+    from("$projectDir") {
+        include "pluginVersion.txt"
+        into ""
+    }
+}

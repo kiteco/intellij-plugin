@@ -1,0 +1,115 @@
+{
+  "bases": [
+    {
+      "id": "__builtin__.object",
+      "name": "object",
+      "module": "__builtin__",
+      "module_id": "__builtin__"
+    }
+  ],
+  "components": null,
+  "members": [
+    {
+      "id": "__builtin__.int.bit_length",
+      "name": "bit_length",
+      "namespace": {
+        "id": "__builtin__.int",
+        "kind": "type",
+        "repr": "int",
+        "type": "type",
+        "type_id": "__builtin__.type"
+      },
+      "value": [
+        {
+          "id": "__builtin__.int.bit_length",
+          "kind": "function",
+          "repr": "int.bit_length",
+          "type": "FunctionType",
+          "type_id": "types.FunctionType"
+        }
+      ]
+    },
+    {
+      "id": "__builtin__.int.conjugate",
+      "name": "conjugate",
+      "namespace": {
+        "id": "__builtin__.int",
+        "kind": "type",
+        "repr": "int",
+        "type": "type",
+        "type_id": "__builtin__.type"
+      },
+      "value": [
+        {
+          "id": "__builtin__.int.conjugate",
+          "kind": "function",
+          "repr": "int.conjugate",
+          "type": "FunctionType",
+          "type_id": "types.FunctionType"
+        }
+      ]
+    },
+    {
+      "id": "__builtin__.int.denominator",
+      "name": "denominator",
+      "namespace": {
+        "id": "__builtin__.int",
+        "kind": "type",
+        "repr": "int",
+        "type": "type",
+        "type_id": "__builtin__.type"
+      },
+      "value": [
+        {
+          "id": "",
+          "kind": "instance",
+          "repr": "int",
+          "type": "int",
+          "type_id": "__builtin__.int"
+        }
+      ]
+    },
+    {
+      "id": "__builtin__.int.imag",
+      "name": "imag",
+      "namespace": {
+        "id": "__builtin__.int",
+        "kind": "type",
+        "repr": "int",
+        "type": "type",
+        "type_id": "__builtin__.type"
+      },
+      "value": [
+        {
+          "id": "",
+          "kind": "instance",
+          "repr": "float",
+          "type": "float",
+          "type_id": "__builtin__.float"
+        }
+      ]
+    },
+    {
+      "id": "__builtin__.int.numerator",
+      "name": "numerator",
+      "namespace": {
+        "id": "__builtin__.int",
+        "kind": "type",
+        "repr": "int",
+        "type": "type",
+        "type_id": "__builtin__.type"
+      },
+      "value": [
+        {
+          "id": "",
+          "kind": "instance",
+          "repr": "int",
+          "type": "int",
+          "type_id": "__builtin__.int"
+        }
+      ]
+    }
+  ],
+  "total_members": 53,
+  "constructor": null
+}

@@ -1,0 +1,281 @@
+{# @pebvariable name="dark" type="java.lang.Boolean" #}
+{# @pebvariable name="light" type="java.lang.Boolean" #}
+{# @pebvariable name="windows" type="java.lang.Boolean" #}
+{# @pebvariable name="mac" type="java.lang.Boolean" #}
+{# @pebvariable name="linux" type="java.lang.Boolean" #}
+{# @pebvariable name="hiDPI" type="java.lang.Boolean" #}
+
+{# @pebvariable name="textColor" type="java.awt.Color" #}
+{# @pebvariable name="bgColor" type="java.awt.Color" #}
+{# @pebvariable name="caretRowColor" type="java.awt.Color" #}
+{# @pebvariable name="fontSize" type="java.lang.Integer" #}
+{# @pebvariable name="fontFamilyEditor" type="java.lang.String" #}
+
+{# @pebvariable name="textStyle" type="com.kite.intellij.lang.documentation.RenderStyle" #}
+{# @pebvariable name="callStyle" type="com.kite.intellij.lang.documentation.RenderStyle" #}
+{# @pebvariable name="parenStyle" type="com.kite.intellij.lang.documentation.RenderStyle" #}
+{# @pebvariable name="paramStyle" type="com.kite.intellij.lang.documentation.RenderStyle" #}
+{# @pebvariable name="commaStyle" type="com.kite.intellij.lang.documentation.RenderStyle" #}
+{# @pebvariable name="kwArgStyle" type="com.kite.intellij.lang.documentation.RenderStyle" #}
+{# @pebvariable name="opSignArgStyle" type="com.kite.intellij.lang.documentation.RenderStyle" #}
+{# @pebvariable name="builtinNameStyle" type="com.kite.intellij.lang.documentation.RenderStyle" #}
+{# @pebvariable name="bracketStyle" type="com.kite.intellij.lang.documentation.RenderStyle" #}
+{# @pebvariable name="unusedStyle" type="com.kite.intellij.lang.documentation.RenderStyle" #}
+{# @pebvariable name="linkStyle" type="com.kite.intellij.lang.documentation.RenderStyle" #}
+
+{#
+    The block "body" can be overridden.
+    Context:
+       dark
+            true if the dark color schema is active
+       light
+            true if the light color schema is active
+
+       windows
+            true if the current OS is Windows
+       mac
+            true if the current OS is Mac
+       linux
+            true if the current OS is Linux
+
+       bgColor
+            java.awt.Color the currently active UI theme (normal vs. darcula themes), e.g. #eeeeee
+       textColor
+            java.awt.Color color which specifies the currently configured text color, e.g. #eeeeee
+
+       fontSize
+            the base font size in pt to use for the rendering
+       fontFamily
+            the name of the font family to use for the rendering
+       fontFamilyEditor
+            the name of the font family used for code in IntelliJ's editor
+       hiDPI
+            true if the current system has a high DPI resolution or is a retina screen
+#}
+
+{# Renders a parameterExample definition
+   @param arg The style to render as CSS properties
+#}
+{% macro style(selector, s, colorOpacity=null, background=true) %}
+  {% if s.isValid == true %}
+    {{- selector -}} {
+        {%- if s.foreground is not null -%}color: {{ s.foreground | kiteColor("opacity"=colorOpacity, "bgColor"=s.background) }};{%- endif -%}
+        {%- if background and (s.background is not null) -%}background-color: {{ s.background | kiteColor() }};{%- endif -%}
+        {%- if s.boldFont -%}font-weight: bold;{%- endif -%}
+        {%- if s.italicFont -%}font-style: italic; {%- endif -%}
+    }
+  {% endif %}
+{% endmacro %}
+
+{# Renders three sets of styles. use .op-100, .op-80 and .op-67 on the element or a parent to choose the color opacity. op-100 is the default #}
+{% macro styles(selector, s, background=true) %}
+    {{ style(selector + ".op-33" + ", .op-33 " + selector, s, colorOpacity=0.33, background=background) }}
+    {{ style(selector + ".op-40" + ", .op-40 " + selector, s, colorOpacity=0.40, background=background) }}
+    {{ style(selector + ".op-50" + ", .op-50 " + selector, s, colorOpacity=0.50, background=background) }}
+    {{ style(selector + ".op-67" + ", .op-67 " + selector, s, colorOpacity=0.67, background=background) }}
+    {{ style(selector + ".op-75" + ", .op-75 " + selector, s, colorOpacity=0.75, background=background) }}
+    {{ style(selector + ".op-80" + ", .op-80 " + selector, s, colorOpacity=0.80, background=background) }}
+    {{ style(selector + ", " + selector + ".op-100" + ", .op-100 " + selector, s, colorOpacity=1.0, background=background) }}
+{% endmacro %}
+
+{# Make the macros available in all templates which extend this base template #}
+{% import "common/macros.peb" %}
+
+<html>
+<head>
+    <style type="text/css">
+        html, body, div, p, pre, code, h1, h2, h3, h4, h5, table, td, tr, th {
+            margin: 0;
+            padding: 0;
+            border: none;
+            outline: none;
+        }
+
+        html {
+            {# background-color: {% if dark %}{{ bgColor | kiteColor("darker"=3) }}{% else %}{{ bgColor | kiteColor() }}{% endif %}; #}
+            {# background-color: {{ bgColor }}; #}
+
+            color: {{ textColor | kiteColor() }};
+            {# px instead of pt, pt would be right but due to a bug in Flyingsaucer pt is scaled to a wrong size but px is treated as pt instead #}
+            font-family: "{{fontFamily}}", {%- if windows == true -%}"Verdana", {%- elseif mac -%}"Helvetica Neue", {%- endif -%}"sans-serif";
+            font-size: {{fontSize}}px;
+        }
+
+        /* don't render the text style's background as this style is special */
+        {{ styles(".style-text", textStyle, background=false) }}
+        {{ styles(".style-call", callStyle, background=false) }}
+        {{ styles(".style-paren", parenStyle, background=false) }}
+        {{ styles(".style-param", paramStyle, background=false) }}
+        {{ styles(".style-comma", commaStyle, background=false) }}
+        {{ styles(".style-kw-arg", kwArgStyle, background=false) }}
+        {{ styles(".style-opsign-arg", opSignArgStyle, background=false) }}
+        {{ styles(".style-builtin-name", builtinNameStyle, background=false) }}
+        {{ styles(".style-bracket", bracketStyle, background=false) }}
+        {{ styles(".style-unused", unusedStyle, background=false) }}
+        {{ styles(".style-link", linkStyle, background=false) }}
+
+        .style-text.active, .active .style-text,
+        .style-param.active, .active .style-param,
+        .style-kw-arg.active, .active .style-kw-arg {
+            background-color: {{ caretRowColor | kiteColor() }} !important;
+            font-style: italic;
+        }
+
+        a.active.style-text {
+            background-color: {% if dark %}{{ bgColor | kiteColor("darker"=3) }}{% else %}{{ bgColor | kiteColor() }}{% endif %} !important;
+            text-decoration: underline;
+        }
+
+        .kite-link, .kite-link-flow, .open-docs-link {
+            height: 12px;
+            line-height: 12px;
+            text-align: right;
+        }
+
+        body.hover .kite-link-flow,
+        body.signatures .kite-link-flow {
+            text-align: left;
+        }
+
+        .report-section {
+            margin-top: 0.75em;
+        }
+
+        .report-content {
+            margin-left: 0.5em;
+        }
+
+        .align-right {
+            text-align: right;
+         }
+        .hover-hint {
+            color: {{ builtinNameStyle | kiteColor("opacity"=0.50) }};
+        }
+
+        {{ styles("a", linkStyle, background=false) }}
+        a {
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .code, code, pre {
+            font-family: "{{fontFamilyEditor}}", monospace;
+        }
+
+        pre {
+            margin: 0.5em 0.75em;
+            white-space: pre-wrap;
+        }
+
+        table {
+            border-collapse: collapse;
+            border-spacing: 0;
+            width:100%;
+        }
+
+        .heading table {
+            width: auto;
+        }
+
+        .heading td {
+            vertical-align: middle;
+        }
+
+        .heading .heading-text {
+            color: {{ textStyle | kiteColor("opacity"=0.67) }};
+        }
+
+        .heading .heading-text.active {
+            color: {{ textStyle | kiteColor() }};
+            font-style: normal;
+        }
+
+        .heading a.toggle-link {
+            color: {{ linkStyle | kiteColor("opacity"=0.50) }};
+            margin-left: 1.25em;
+        }
+
+        .content-container {
+            background-color: {% if dark %}{{ bgColor | kiteColor("darker"=3) }}{% else %}{{ bgColor | kiteColor() }}{% endif %};
+            font-size: 0.9em;
+            padding: 0.4em 0.6em;
+        }
+
+        body.signatures a.open-docs-link,
+        body.signatures a.show-popular-patterns-link,
+        body.signatures a.show-kwargs-link {
+            color: {{ linkStyle | kiteColor("opacity"=0.50) }};
+            margin-right: 0.75em;
+        }
+
+        a.link {
+            font-size: {{ roundNearest(fontSize * 0.9) }}px;
+        }
+
+        .heading a.toggle-link:hover,
+        body.signatures a.open-docs-link:hover,
+        body.signatures a.show-popular-patterns-link:hover,
+        body.signatures a.show-kwargs-link:hover {
+            color: {{ linkStyle | kiteColor() }};
+        }
+
+        body.hover a.footer-link {
+            color: {{ linkStyle | kiteColor("opacity"=0.50) }};
+            margin-right: 0.75em;
+        }
+
+        body.hover a.footer-link:hover {
+            color: {{ linkStyle | kiteColor() }};
+        }
+
+        .signature-info, .signature-pattern {
+            padding-left: 1em;
+            text-indent: -1em;
+        }
+
+        .inferred-kwarg, .signature-pattern {
+            margin-top: 0.25em;
+        }
+
+        .signature-pattern .style-param {
+            color: {{ paramStyle | kiteColor("opacity"=0.50) }};
+        }
+
+        .signature-pattern .style-kw-arg {
+            color: {{ kwArgStyle | kiteColor("opacity"=0.50) }};
+        }
+
+        .signature-pattern .style-opsign-arg {
+            color: {{ opSignArgStyle | kiteColor("opacity"=0.50) }};
+        }
+
+        .footer {
+            margin-top: 0.75em;
+        }
+
+        .footer td {
+            height: 100%;
+            vertical-align: middle;
+        }
+
+        .footer td.icon-container {
+            width: {{ roundNearest(fontSize * 0.9) }}px;
+        }
+
+        .footer td.icon-container img {
+            vertical-align: middle;
+            height: {{ roundNearest(fontSize * 0.9) }}px;
+            width: {{ roundNearest(fontSize * 0.9) }}px;
+        }
+    </style>
+</head>
+<body id="{{ "short" | escape("html")}}" class="{{ bodyClass | escape("html") }}">
+    <div class="content-container">
+    {% block body %}
+        {# Content replaced by child templates. #}
+    {% endblock %}
+    </div>
+</body>
+</html>

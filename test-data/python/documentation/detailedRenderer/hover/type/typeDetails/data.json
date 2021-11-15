@@ -1,0 +1,127 @@
+{
+  "language": "python",
+  "part_of_syntax": "attr",
+  "symbol": [
+    {
+      "id": "",
+      "name": "ClassName",
+      "parent": {
+        "id": "",
+        "name": "file1"
+      },
+      "namespace": {
+        "id": "",
+        "kind": "module",
+        "repr": "file1",
+        "type": "ModuleType",
+        "type_id": "python;;;;types.ModuleType"
+      },
+      "value": [
+        {
+          "id": "",
+          "kind": "type",
+          "repr": "ClassName",
+          "type": "type",
+          "type_id": "python;;;;__builtin__.type",
+          "synopsis": "Documentation for ClassName, this is just a test file",
+          "details": {
+            "function": null,
+            "type": {
+              "components": null,
+              "members": [
+                {
+                  "id": "",
+                  "name": "mro",
+                  "parent": {
+                    "id": "",
+                    "name": "ClassName"
+                  },
+                  "namespace": {
+                    "id": "",
+                    "kind": "type",
+                    "repr": "ClassName",
+                    "type": "type",
+                    "type_id": "python;;;;__builtin__.type"
+                  },
+                  "value": [
+                    {
+                      "id": "python;;;;__builtin__.type.mro",
+                      "kind": "function",
+                      "repr": "type.mro",
+                      "type": "",
+                      "type_id": ""
+                    }
+                  ]
+                },
+                {
+                  "id": "",
+                  "name": "testing_method",
+                  "parent": {
+                    "id": "",
+                    "name": "ClassName"
+                  },
+                  "namespace": {
+                    "id": "",
+                    "kind": "type",
+                    "repr": "ClassName",
+                    "type": "type",
+                    "type_id": "python;;;;__builtin__.type"
+                  },
+                  "value": [
+                    {
+                      "id": "",
+                      "kind": "function",
+                      "repr": "ClassName.testing_method",
+                      "type": "FunctionType",
+                      "type_id": "python;;;;types.FunctionType"
+                    }
+                  ]
+                }
+              ],
+              "total_members": 2,
+              "language_details": {
+                "python": {
+                  "bases": [
+                    {
+                      "id": "python;;;;__builtin__.object",
+                      "name": "object",
+                      "module": "__builtin__",
+                      "module_id": "python;;;;__builtin__"
+                    }
+                  ],
+                  "constructor": null
+                }
+              }
+            },
+            "instance": null,
+            "module": null
+          },
+          "ancestors": [
+            {
+              "id": "python;-1;kite_local;:whitelisted;",
+              "name": "whitelisted"
+            },
+            {
+              "id": "python;-1;kite_local;:whitelisted:file1.py;",
+              "name": "file1"
+            }
+          ]
+        }
+      ],
+      "synopsis": ""
+    }
+  ],
+  "report": {
+    "definition": {
+      "filename": "/whitelisted/file1.py",
+      "line": 1
+    },
+    "description_text": "Documentation for ClassName, this is just a test file",
+    "description_html": "\u003cbody\u003e\u003cpre class=\"raw-docs\" data-tabLen=\"4\"\u003e\u003cdiv class=\"raw-docs-line\"\u003e\u003c/div\u003e\u003cdiv class=\"raw-docs-line\"\u003eDocumentation for ClassName, this is just a test file\u003c/div\u003e\u003cdiv class=\"raw-docs-line\"\u003e\u003c/div\u003e\u003c/pre\u003e\u003c/body\u003e",
+    "examples": null,
+    "usages": null,
+    "total_usages": 0,
+    "links": null,
+    "total_links": 0
+  }
+}

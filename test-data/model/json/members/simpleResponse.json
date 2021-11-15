@@ -1,0 +1,50 @@
+{
+  "total": 3,
+  "start": 0,
+  "end": 1,
+  "members": [
+    {
+      "id": "",
+      "name": "requests",
+      "namespace": null,
+      "value": [
+        {
+          "id": "requests",
+          "kind": "module",
+          "repr": "external:requests",
+          "type": "module",
+          "type_id": "__builtin__.module",
+          "synopsis": "",
+          "details": {
+            "module": {
+              "total_members": 2,
+              "members": [
+                {
+                  "id": "requests.models.Response",
+                  "name": "Response",
+                  "namespace": {
+                    "id": "requests",
+                    "kind": "module",
+                    "repr": "external:requests",
+                    "type": "module",
+                    "type_id": "__builtin__.module"
+                  },
+                  "value": [
+                    {
+                      "id": "requests.models.Response",
+                      "kind": "type",
+                      "repr": "external:requests.models.Response",
+                      "type": "type",
+                      "type_id": "__builtin__.type"
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        }
+      ],
+      "synopsis": "symbol `requests`"
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+<div class="page-start">
+<table class="kite-table">
+<tbody>
+<tr>
+<td class="small"><span class="instance-name"></span></td>
+<td class="small lower_opacity aligned_right">type </td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="report-section report-section-docs">
+<h2>Description</h2>
+<div class="report-content">
+<p>When set to a value other than <code>None</code>, this variable defines the default value for the <em>dir</em> argument to all the functions defined in this module.</p>
+<p>If <code>tempdir</code> is unset or <code>None</code> at any call to any of the above functions, Python searches a standard list of directories and sets <em>tempdir</em> to the first one which the calling user can create files in. The list is:</p>
+<ol>
+<li>The directory named by the <span></span><code>TMPDIR</code> environment variable.</li>
+<li>The directory named by the <span></span><code>TEMP</code> environment variable.</li>
+<li>The directory named by the <span></span><code>TMP</code> environment variable.</li>
+<li>A platform-specific location:
+<ul>
+<li>On RiscOS, the directory named by the <span></span><code>Wimp$ScrapDir</code> environment variable.</li>
+<li>On Windows, the directories <code>C:\TEMP</code>, <code>C:\TMP</code>, <code>\TEMP</code>, and <code>\TMP</code>, in that order.</li>
+<li>On all other platforms, the directories <code>/tmp</code>, <code>/var/tmp</code>, and <code>/usr/tmp</code>, in that order.</li>
+</ul> </li>
+<li>As a last resort, the current working directory.</li>
+</ol>
+</div>
+</div>

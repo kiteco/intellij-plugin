@@ -1,0 +1,14 @@
+{# @pebvariable name="symbol" type="com.kite.intellij.backend.model.SymbolExt" #}
+{# @pebvariable name="value" type="com.kite.intellij.backend.model.ValueExt" #}
+{# context:
+    symbol
+#}
+
+{% set value = symbol != null ? symbol.firstValue : value %}
+{% set detail = value.detail %}
+<table>
+    <tr>
+        <td><span class="code style-text">{{- symbol != null ? symbol.name : value.representation -}}</span></td>
+        <td class="align-right"><span class="hover-hint">{{- values(detail.instanceType) -}}</span></td>
+    </tr>
+</table>

@@ -1,0 +1,1033 @@
+{
+  "part_of_syntax": "attr",
+  "symbol": [
+    {
+      "id": "json.dumps",
+      "name": "dumps",
+      "namespace": {
+        "id": "json",
+        "kind": "module",
+        "repr": "json",
+        "type": "module",
+        "type_id": ""
+      },
+      "value": [
+        {
+          "id": "json.dumps",
+          "kind": "function",
+          "repr": "json.dumps",
+          "type": "function",
+          "type_id": "",
+          "synopsis": "Serialize obj to a JSON formatted str using this conversion\ntable.  If ensure_ascii is False, the result may\ncontain non-ASCII characters and the return value may be a unicode\ninstance.\nThe arguments have the same meaning as in dump().\nNote\nKeys in key/value pairs of JSON are always of the type str. When\na dictionary is converted into JSON, all the keys of the dictionary are\ncoerced to strings. As a result of this, if a dictionary is converted\ninto JSON and then back into a dictionary, the dictionary",
+          "details": {
+            "function": {
+              "parameters": [
+                {
+                  "name": "obj",
+                  "default_value": null,
+                  "inferred_value": null,
+                  "annotation": null,
+                  "keyword_only": false,
+                  "synopsis": ""
+                },
+                {
+                  "name": "skipkeys",
+                  "default_value": null,
+                  "inferred_value": null,
+                  "annotation": null,
+                  "keyword_only": false,
+                  "synopsis": ""
+                },
+                {
+                  "name": "ensure_ascii",
+                  "default_value": null,
+                  "inferred_value": null,
+                  "annotation": null,
+                  "keyword_only": false,
+                  "synopsis": ""
+                },
+                {
+                  "name": "check_circular",
+                  "default_value": null,
+                  "inferred_value": null,
+                  "annotation": null,
+                  "keyword_only": false,
+                  "synopsis": ""
+                },
+                {
+                  "name": "allow_nan",
+                  "default_value": null,
+                  "inferred_value": null,
+                  "annotation": null,
+                  "keyword_only": false,
+                  "synopsis": ""
+                },
+                {
+                  "name": "cls",
+                  "default_value": null,
+                  "inferred_value": null,
+                  "annotation": null,
+                  "keyword_only": false,
+                  "synopsis": ""
+                },
+                {
+                  "name": "indent",
+                  "default_value": null,
+                  "inferred_value": null,
+                  "annotation": null,
+                  "keyword_only": false,
+                  "synopsis": ""
+                },
+                {
+                  "name": "separators",
+                  "default_value": null,
+                  "inferred_value": null,
+                  "annotation": null,
+                  "keyword_only": false,
+                  "synopsis": ""
+                },
+                {
+                  "name": "encoding",
+                  "default_value": null,
+                  "inferred_value": null,
+                  "annotation": null,
+                  "keyword_only": false,
+                  "synopsis": ""
+                },
+                {
+                  "name": "default",
+                  "default_value": null,
+                  "inferred_value": null,
+                  "annotation": null,
+                  "keyword_only": false,
+                  "synopsis": ""
+                },
+                {
+                  "name": "sort_keys",
+                  "default_value": null,
+                  "inferred_value": null,
+                  "annotation": null,
+                  "keyword_only": false,
+                  "synopsis": ""
+                }
+              ],
+              "language_details": {
+                "python": {
+                  "kwarg": {
+                    "name": "kw",
+                    "default_value": null,
+                    "inferred_value": null,
+                    "annotation": null,
+                    "keyword_only": false,
+                    "synopsis": ""
+                  },
+                  "kwarg_parameters": [
+                    {
+                      "name": "use_decimal",
+                      "default_value": null,
+                      "inferred_value": [
+                        {
+                          "id": "",
+                          "kind": "instance",
+                          "repr": "bool",
+                          "type": "bool",
+                          "type_id": "__builtin__.bool"
+                        }
+                      ],
+                      "annotation": null,
+                      "keyword_only": false,
+                      "synopsis": ""
+                    },
+                    {
+                      "name": "content_type",
+                      "default_value": null,
+                      "inferred_value": [
+                        {
+                          "id": "",
+                          "kind": "instance",
+                          "repr": "str",
+                          "type": "str",
+                          "type_id": "__builtin__.str"
+                        }
+                      ],
+                      "annotation": null,
+                      "keyword_only": false,
+                      "synopsis": ""
+                    },
+                    {
+                      "name": "mimetype",
+                      "default_value": null,
+                      "inferred_value": [
+                        {
+                          "id": "",
+                          "kind": "instance",
+                          "repr": "str",
+                          "type": "str",
+                          "type_id": "__builtin__.str"
+                        }
+                      ],
+                      "annotation": null,
+                      "keyword_only": false,
+                      "synopsis": ""
+                    },
+                    {
+                      "name": "intent",
+                      "default_value": null,
+                      "inferred_value": [
+                        {
+                          "id": "",
+                          "kind": "instance",
+                          "repr": "int",
+                          "type": "int",
+                          "type_id": "__builtin__.int"
+                        }
+                      ],
+                      "annotation": null,
+                      "keyword_only": false,
+                      "synopsis": ""
+                    },
+                    {
+                      "name": "serializers",
+                      "default_value": null,
+                      "inferred_value": null,
+                      "annotation": null,
+                      "keyword_only": false,
+                      "synopsis": ""
+                    },
+                    {
+                      "name": "double_precision",
+                      "default_value": null,
+                      "inferred_value": [
+                        {
+                          "id": "",
+                          "kind": "instance",
+                          "repr": "int",
+                          "type": "int",
+                          "type_id": "__builtin__.int"
+                        }
+                      ],
+                      "annotation": null,
+                      "keyword_only": false,
+                      "synopsis": ""
+                    },
+                    {
+                      "name": "escape_forward_slashes",
+                      "default_value": null,
+                      "inferred_value": [
+                        {
+                          "id": "",
+                          "kind": "instance",
+                          "repr": "bool",
+                          "type": "bool",
+                          "type_id": "__builtin__.bool"
+                        }
+                      ],
+                      "annotation": null,
+                      "keyword_only": false,
+                      "synopsis": ""
+                    },
+                    {
+                      "name": "index",
+                      "default_value": null,
+                      "inferred_value": [
+                        {
+                          "id": "",
+                          "kind": "instance",
+                          "repr": "int",
+                          "type": "int",
+                          "type_id": "__builtin__.int"
+                        }
+                      ],
+                      "annotation": null,
+                      "keyword_only": false,
+                      "synopsis": ""
+                    },
+                    {
+                      "name": "includes",
+                      "default_value": null,
+                      "inferred_value": [
+                        {
+                          "id": "",
+                          "kind": "instance",
+                          "repr": "NoneType",
+                          "type": "NoneType",
+                          "type_id": ""
+                        }
+                      ],
+                      "annotation": null,
+                      "keyword_only": false,
+                      "synopsis": ""
+                    },
+                    {
+                      "name": "datetimeencoder",
+                      "default_value": null,
+                      "inferred_value": [
+                        {
+                          "id": "",
+                          "kind": "instance",
+                          "repr": "function",
+                          "type": "function",
+                          "type_id": ""
+                        }
+                      ],
+                      "annotation": null,
+                      "keyword_only": false,
+                      "synopsis": ""
+                    },
+                    {
+                      "name": "float_round",
+                      "default_value": null,
+                      "inferred_value": [
+                        {
+                          "id": "",
+                          "kind": "instance",
+                          "repr": "int",
+                          "type": "int",
+                          "type_id": "__builtin__.int"
+                        }
+                      ],
+                      "annotation": null,
+                      "keyword_only": false,
+                      "synopsis": ""
+                    },
+                    {
+                      "name": "proxyMap",
+                      "default_value": null,
+                      "inferred_value": [
+                        {
+                          "id": "",
+                          "kind": "instance",
+                          "repr": "dict",
+                          "type": "dict",
+                          "type_id": "__builtin__.dict"
+                        },
+                        {
+                          "id": "",
+                          "kind": "instance",
+                          "repr": "NoneType",
+                          "type": "NoneType",
+                          "type_id": ""
+                        }
+                      ],
+                      "annotation": null,
+                      "keyword_only": false,
+                      "synopsis": ""
+                    },
+                    {
+                      "name": "status",
+                      "default_value": null,
+                      "inferred_value": [
+                        {
+                          "id": "",
+                          "kind": "instance",
+                          "repr": "int",
+                          "type": "int",
+                          "type_id": "__builtin__.int"
+                        }
+                      ],
+                      "annotation": null,
+                      "keyword_only": false,
+                      "synopsis": ""
+                    },
+                    {
+                      "name": "namedtuple_as_object",
+                      "default_value": null,
+                      "inferred_value": [
+                        {
+                          "id": "",
+                          "kind": "instance",
+                          "repr": "bool",
+                          "type": "bool",
+                          "type_id": "__builtin__.bool"
+                        }
+                      ],
+                      "annotation": null,
+                      "keyword_only": false,
+                      "synopsis": ""
+                    },
+                    {
+                      "name": "excludes",
+                      "default_value": null,
+                      "inferred_value": [
+                        {
+                          "id": "",
+                          "kind": "instance",
+                          "repr": "NoneType",
+                          "type": "NoneType",
+                          "type_id": ""
+                        }
+                      ],
+                      "annotation": null,
+                      "keyword_only": false,
+                      "synopsis": ""
+                    },
+                    {
+                      "name": "camel_case",
+                      "default_value": null,
+                      "inferred_value": [
+                        {
+                          "id": "",
+                          "kind": "instance",
+                          "repr": "bool",
+                          "type": "bool",
+                          "type_id": "__builtin__.bool"
+                        }
+                      ],
+                      "annotation": null,
+                      "keyword_only": false,
+                      "synopsis": ""
+                    },
+                    {
+                      "name": "html_safe",
+                      "default_value": null,
+                      "inferred_value": [
+                        {
+                          "id": "",
+                          "kind": "instance",
+                          "repr": "bool",
+                          "type": "bool",
+                          "type_id": "__builtin__.bool"
+                        }
+                      ],
+                      "annotation": null,
+                      "keyword_only": false,
+                      "synopsis": ""
+                    },
+                    {
+                      "name": "url_kwargs",
+                      "default_value": null,
+                      "inferred_value": [
+                        {
+                          "id": "",
+                          "kind": "instance",
+                          "repr": "dict",
+                          "type": "dict",
+                          "type_id": "__builtin__.dict"
+                        }
+                      ],
+                      "annotation": null,
+                      "keyword_only": false,
+                      "synopsis": ""
+                    },
+                    {
+                      "name": "ascii",
+                      "default_value": null,
+                      "inferred_value": [
+                        {
+                          "id": "",
+                          "kind": "instance",
+                          "repr": "bool",
+                          "type": "bool",
+                          "type_id": "__builtin__.bool"
+                        }
+                      ],
+                      "annotation": null,
+                      "keyword_only": false,
+                      "synopsis": ""
+                    },
+                    {
+                      "name": "ignore_attributes",
+                      "default_value": null,
+                      "inferred_value": [
+                        {
+                          "id": "",
+                          "kind": "instance",
+                          "repr": "list",
+                          "type": "list",
+                          "type_id": "__builtin__.list"
+                        }
+                      ],
+                      "annotation": null,
+                      "keyword_only": false,
+                      "synopsis": ""
+                    },
+                    {
+                      "name": "request",
+                      "default_value": null,
+                      "inferred_value": null,
+                      "annotation": null,
+                      "keyword_only": false,
+                      "synopsis": ""
+                    },
+                    {
+                      "name": "format",
+                      "default_value": null,
+                      "inferred_value": [
+                        {
+                          "id": "",
+                          "kind": "instance",
+                          "repr": "int",
+                          "type": "int",
+                          "type_id": "__builtin__.int"
+                        }
+                      ],
+                      "annotation": null,
+                      "keyword_only": false,
+                      "synopsis": ""
+                    },
+                    {
+                      "name": "ensure_asscii",
+                      "default_value": null,
+                      "inferred_value": [
+                        {
+                          "id": "",
+                          "kind": "instance",
+                          "repr": "bool",
+                          "type": "bool",
+                          "type_id": "__builtin__.bool"
+                        }
+                      ],
+                      "annotation": null,
+                      "keyword_only": false,
+                      "synopsis": ""
+                    },
+                    {
+                      "name": "model_version",
+                      "default_value": null,
+                      "inferred_value": null,
+                      "annotation": null,
+                      "keyword_only": false,
+                      "synopsis": ""
+                    },
+                    {
+                      "name": "orient",
+                      "default_value": null,
+                      "inferred_value": [
+                        {
+                          "id": "",
+                          "kind": "instance",
+                          "repr": "str",
+                          "type": "str",
+                          "type_id": "__builtin__.str"
+                        }
+                      ],
+                      "annotation": null,
+                      "keyword_only": false,
+                      "synopsis": ""
+                    },
+                    {
+                      "name": "timezone",
+                      "default_value": null,
+                      "inferred_value": [
+                        {
+                          "id": "",
+                          "kind": "instance",
+                          "repr": "NoneType",
+                          "type": "NoneType",
+                          "type_id": ""
+                        }
+                      ],
+                      "annotation": null,
+                      "keyword_only": false,
+                      "synopsis": ""
+                    },
+                    {
+                      "name": "sort_keysv",
+                      "default_value": null,
+                      "inferred_value": [
+                        {
+                          "id": "",
+                          "kind": "instance",
+                          "repr": "bool",
+                          "type": "bool",
+                          "type_id": "__builtin__.bool"
+                        }
+                      ],
+                      "annotation": null,
+                      "keyword_only": false,
+                      "synopsis": ""
+                    },
+                    {
+                      "name": "url_args",
+                      "default_value": null,
+                      "inferred_value": [
+                        {
+                          "id": "",
+                          "kind": "instance",
+                          "repr": "list",
+                          "type": "list",
+                          "type_id": "__builtin__.list"
+                        }
+                      ],
+                      "annotation": null,
+                      "keyword_only": false,
+                      "synopsis": ""
+                    },
+                    {
+                      "name": "extra",
+                      "default_value": null,
+                      "inferred_value": [
+                        {
+                          "id": "",
+                          "kind": "instance",
+                          "repr": "NoneType",
+                          "type": "NoneType",
+                          "type_id": ""
+                        }
+                      ],
+                      "annotation": null,
+                      "keyword_only": false,
+                      "synopsis": ""
+                    }
+                  ],
+                  "return_annotation": null
+                }
+              },
+              "return_value": null,
+              "signatures": [
+                {
+                  "args": [
+                    {
+                      "name": "obj",
+                      "types": [
+                        {
+                          "id": "__builtin__.dict",
+                          "name": "dict",
+                          "examples": [
+                            "{}",
+                            "{'success': True}",
+                            "{\"message\": message}"
+                          ]
+                        },
+                        {
+                          "id": "__builtin__.str",
+                          "name": "str",
+                          "examples": [
+                            "\"'Invalid state parameter.'\"",
+                            "\"'Failed to upgrade the authorization code.'\"",
+                            "\"'Current user not connected.'\""
+                          ]
+                        },
+                        {
+                          "id": "...",
+                          "name": "",
+                          "examples": null
+                        }
+                      ]
+                    }
+                  ],
+                  "kwargs": null
+                },
+                {
+                  "args": [
+                    {
+                      "name": "obj",
+                      "types": [
+                        {
+                          "id": "__builtin__.dict",
+                          "name": "dict",
+                          "examples": [
+                            "{}",
+                            "{'success': True}",
+                            "{\"message\": message}"
+                          ]
+                        },
+                        {
+                          "id": "__builtin__.str",
+                          "name": "str",
+                          "examples": [
+                            "\"'Invalid state parameter.'\"",
+                            "\"'Failed to upgrade the authorization code.'\"",
+                            "\"'Current user not connected.'\""
+                          ]
+                        },
+                        {
+                          "id": "...",
+                          "name": "",
+                          "examples": null
+                        }
+                      ]
+                    }
+                  ],
+                  "kwargs": [
+                    {
+                      "name": "indent",
+                      "types": [
+                        {
+                          "id": "__builtin__.int",
+                          "name": "int",
+                          "examples": [
+                            "4",
+                            "2",
+                            "1"
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "args": [
+                    {
+                      "name": "obj",
+                      "types": [
+                        {
+                          "id": "__builtin__.dict",
+                          "name": "dict",
+                          "examples": [
+                            "{}",
+                            "{'success': True}",
+                            "{\"message\": message}"
+                          ]
+                        },
+                        {
+                          "id": "__builtin__.str",
+                          "name": "str",
+                          "examples": [
+                            "\"'Invalid state parameter.'\"",
+                            "\"'Failed to upgrade the authorization code.'\"",
+                            "\"'Current user not connected.'\""
+                          ]
+                        },
+                        {
+                          "id": "...",
+                          "name": "",
+                          "examples": null
+                        }
+                      ]
+                    }
+                  ],
+                  "kwargs": [
+                    {
+                      "name": "indent",
+                      "types": [
+                        {
+                          "id": "__builtin__.int",
+                          "name": "int",
+                          "examples": [
+                            "4",
+                            "2",
+                            "1"
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "name": "sort_keys",
+                      "types": [
+                        {
+                          "id": "__builtin__.bool",
+                          "name": "bool",
+                          "examples": [
+                            "True if pretty else False"
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "args": [
+                    {
+                      "name": "obj",
+                      "types": [
+                        {
+                          "id": "__builtin__.dict",
+                          "name": "dict",
+                          "examples": [
+                            "{}",
+                            "{'success': True}",
+                            "{\"message\": message}"
+                          ]
+                        },
+                        {
+                          "id": "__builtin__.str",
+                          "name": "str",
+                          "examples": [
+                            "\"'Invalid state parameter.'\"",
+                            "\"'Failed to upgrade the authorization code.'\"",
+                            "\"'Current user not connected.'\""
+                          ]
+                        },
+                        {
+                          "id": "...",
+                          "name": "",
+                          "examples": null
+                        }
+                      ]
+                    }
+                  ],
+                  "kwargs": [
+                    {
+                      "name": "cls",
+                      "types": [
+                        {
+                          "id": "__builtin__.type",
+                          "name": "type",
+                          "examples": [
+                            "json.JSONEncoder if self.compact else DateJSONEncoder"
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "args": [
+                    {
+                      "name": "obj",
+                      "types": [
+                        {
+                          "id": "__builtin__.dict",
+                          "name": "dict",
+                          "examples": [
+                            "{}",
+                            "{'success': True}",
+                            "{\"message\": message}"
+                          ]
+                        },
+                        {
+                          "id": "__builtin__.str",
+                          "name": "str",
+                          "examples": [
+                            "\"'Invalid state parameter.'\"",
+                            "\"'Failed to upgrade the authorization code.'\"",
+                            "\"'Current user not connected.'\""
+                          ]
+                        },
+                        {
+                          "id": "...",
+                          "name": "",
+                          "examples": null
+                        }
+                      ]
+                    }
+                  ],
+                  "kwargs": [
+                    {
+                      "name": "default",
+                      "types": [
+                        {
+                          "id": "new.function",
+                          "name": "function",
+                          "examples": null
+                        },
+                        {
+                          "id": "__builtin__.function",
+                          "name": "function",
+                          "examples": [
+                            "lambda o: o.__dict__",
+                            "lambda o: dict((k, v) for k, v in o.__dict__.iteritems())",
+                            "lambda obj: obj.__dict__"
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        }
+      ],
+      "synopsis": ""
+    }
+  ],
+  "report": {
+    "definition": {
+      "filename": "",
+      "line": 193
+    },
+    "description_text": "Serialize obj to a JSON formatted str using this conversion\ntable.  If ensure_ascii is False, the result may\ncontain non-ASCII characters and the return value may be a unicode\ninstance.\nThe arguments have the same meaning as in dump().\nNote\nKeys in key/value pairs of JSON are always of the type str. When\na dictionary is converted into JSON, all the keys of the dictionary are\ncoerced to strings. As a result of this, if a dictionary is converted\ninto JSON and then back into a dictionary, the dictionary may not equal\nthe original one. That is, loads(dumps(x)) != x if x has non-string\nkeys.",
+    "description_html": "<body><p>Serialize <em>obj</em> to a JSON formatted <a><code>str</code></a> using this <a><em>conversion\ntable</em></a>.  If <em>ensure_ascii</em> is <code>False</code>, the result may\ncontain non-ASCII characters and the return value may be a <a><code>unicode</code></a>\ninstance.</p><p>The arguments have the same meaning as in <a class=\"internal_link\" href=\"#json.dump\"><code>dump()</code></a>.</p>\n<p>Note</p>\n<p>Keys in key/value pairs of JSON are always of the type <a><code>str</code></a>. When\na dictionary is converted into JSON, all the keys of the dictionary are\ncoerced to strings. As a result of this, if a dictionary is converted\ninto JSON and then back into a dictionary, the dictionary may not equal\nthe original one. That is, <code>loads(dumps(x))</code><code> </code><code>!=</code><code> </code><code>x</code> if x has non-string\nkeys.</p>\n</body>",
+    "examples": [
+      {
+        "id": 327,
+        "title": "Encode Python primitives to JSON strings"
+      },
+      {
+        "id": 329,
+        "title": "Encode a `dict` to a JSON string"
+      },
+      {
+        "id": 328,
+        "title": "Encode a `list` to a JSON string"
+      },
+      {
+        "id": 4759,
+        "title": "Escape special characters when encoding strings to JSON"
+      },
+      {
+        "id": 326,
+        "title": "Encode a `dict` to a JSON string with sorted keys"
+      },
+      {
+        "id": 337,
+        "title": "Encode a `dict` to a JSON string with custom separators"
+      },
+      {
+        "id": 336,
+        "title": "Encode a `dict` to a JSON string without spaces in separators"
+      },
+      {
+        "id": 338,
+        "title": "Encode a `dict` to a JSON string with indentation"
+      },
+      {
+        "id": 2880,
+        "title": "Convert a `dict` to a JSON string without allowing `NaN`"
+      },
+      {
+        "id": 343,
+        "title": "Encode a custom object with an extended JSONEncoder"
+      },
+      {
+        "id": 4767,
+        "title": "Encode a custom object to JSON using serialization of the class"
+      }
+    ],
+    "usages": [
+      {
+        "code": "json.dumps()",
+        "filename": "/home/user/source/python-test/TestModule/test.py",
+        "line": 3,
+        "begin_bytes": 13,
+        "begin_runes": 13
+      }
+    ],
+    "total_usages": 1,
+    "links": [
+      {
+        "title": "How to make a class JSON serializable",
+        "url": "https://stackoverflow.com/questions/3768895",
+        "stackoverflow": {
+          "score": 326
+        }
+      },
+      {
+        "title": "How to get string objects instead of Unicode ones from JSON in Python?",
+        "url": "https://stackoverflow.com/questions/956867",
+        "stackoverflow": {
+          "score": 181
+        }
+      },
+      {
+        "title": "Saving utf-8 texts in json.dumps as UTF8, not as \\u escape sequence",
+        "url": "https://stackoverflow.com/questions/18337407",
+        "stackoverflow": {
+          "score": 139
+        }
+      },
+      {
+        "title": "json.dumps vs flask.jsonify",
+        "url": "https://stackoverflow.com/questions/7907596",
+        "stackoverflow": {
+          "score": 115
+        }
+      },
+      {
+        "title": "How to return json using Flask web framework",
+        "url": "https://stackoverflow.com/questions/13081532",
+        "stackoverflow": {
+          "score": 115
+        }
+      },
+      {
+        "title": "TransactionManagementError \"You can't execute queries until the end of the 'atomic' block\" while using signals, but only during Unit Testing",
+        "url": "https://stackoverflow.com/questions/21458387",
+        "stackoverflow": {
+          "score": 79
+        }
+      },
+      {
+        "title": "Python sets are not json serializable",
+        "url": "https://stackoverflow.com/questions/8230315",
+        "stackoverflow": {
+          "score": 74
+        }
+      },
+      {
+        "title": "How to serialize SqlAlchemy result to JSON?",
+        "url": "https://stackoverflow.com/questions/5022066",
+        "stackoverflow": {
+          "score": 71
+        }
+      },
+      {
+        "title": "Parse JSON in Python",
+        "url": "https://stackoverflow.com/questions/7771011",
+        "stackoverflow": {
+          "score": 63
+        }
+      },
+      {
+        "title": "Items in JSON object are out of order using \"json.dumps\"?",
+        "url": "https://stackoverflow.com/questions/10844064",
+        "stackoverflow": {
+          "score": 61
+        }
+      },
+      {
+        "title": "How to dynamically build a JSON object with Python?",
+        "url": "https://stackoverflow.com/questions/23110383",
+        "stackoverflow": {
+          "score": 56
+        }
+      },
+      {
+        "title": "Python's json module, converts int dictionary keys to strings",
+        "url": "https://stackoverflow.com/questions/1450957",
+        "stackoverflow": {
+          "score": 56
+        }
+      },
+      {
+        "title": "Python - json without whitespaces",
+        "url": "https://stackoverflow.com/questions/16311562",
+        "stackoverflow": {
+          "score": 53
+        }
+      },
+      {
+        "title": "Format floats with standard json module",
+        "url": "https://stackoverflow.com/questions/1447287",
+        "stackoverflow": {
+          "score": 53
+        }
+      },
+      {
+        "title": "Convert Python dictionary to JSON array",
+        "url": "https://stackoverflow.com/questions/14661051",
+        "stackoverflow": {
+          "score": 42
+        }
+      },
+      {
+        "title": "\"TypeError: (Integer) is not JSON serializable\" when serializing JSON in Python?",
+        "url": "https://stackoverflow.com/questions/11942364",
+        "stackoverflow": {
+          "score": 42
+        }
+      },
+      {
+        "title": "How to change json encoding behaviour for serializable python object?",
+        "url": "https://stackoverflow.com/questions/16405969",
+        "stackoverflow": {
+          "score": 38
+        }
+      },
+      {
+        "title": "JSON output sorting in Python",
+        "url": "https://stackoverflow.com/questions/2774361",
+        "stackoverflow": {
+          "score": 36
+        }
+      },
+      {
+        "title": "Making object JSON serializable with regular encoder",
+        "url": "https://stackoverflow.com/questions/18478287",
+        "stackoverflow": {
+          "score": 36
+        }
+      },
+      {
+        "title": "Django: \"TypeError: [] is not JSON serializable\" Why?",
+        "url": "https://stackoverflow.com/questions/2243002",
+        "stackoverflow": {
+          "score": 33
+        }
+      }
+    ],
+    "total_links": 50
+  }
+}

@@ -1,0 +1,100 @@
+{
+  "part_of_syntax": "name",
+  "symbol": [
+    {
+      "id": "",
+      "name": "AddNumToPic",
+      "namespace": null,
+      "value": [
+        {
+          "id": ":Users:user:test.py;AddNumToPic",
+          "kind": "type",
+          "repr": "AddNumToPic",
+          "type": "type",
+          "type_id": "__builtin__.type",
+          "synopsis": "",
+          "details": {
+            "type": {
+              "bases": [
+                {
+                  "id": "__builtin__.object",
+                  "name": "object",
+                  "module": "__builtin__",
+                  "module_id": "__builtin__"
+                }
+              ],
+              "components": null,
+              "members": [
+                {
+                  "id": ":Users:user:test.py;AddNumToPic.my",
+                  "name": "my",
+                  "namespace": null,
+                  "value": [
+                    {
+                      "id": ":Users:user:test.py;AddNumToPic.my",
+                      "kind": "function",
+                      "repr": "AddNumToPic.my",
+                      "type": "FunctionType",
+                      "type_id": "types.FunctionType"
+                    }
+                  ]
+                },
+                {
+                  "id": "",
+                  "name": "__bases__",
+                  "namespace": null,
+                  "value": [
+                    {
+                      "id": "",
+                      "kind": "instance",
+                      "repr": "list",
+                      "type": "list",
+                      "type_id": "__builtin__.list"
+                    }
+                  ]
+                },
+                {
+                  "id": ":Users:user:test.py;AddNumToPic",
+                  "name": "__class__",
+                  "namespace": null,
+                  "value": [
+                    {
+                      "id": ":Users:user:test.py;AddNumToPic",
+                      "kind": "type",
+                      "repr": "AddNumToPic",
+                      "type": "type",
+                      "type_id": "__builtin__.type"
+                    }
+                  ]
+                },
+                {
+                  "id": "",
+                  "name": "__delattr__",
+                  "namespace": null,
+                  "value": null
+                },
+                {
+                  "id": "",
+                  "name": "__dict__",
+                  "namespace": null,
+                  "value": null
+                }
+              ],
+              "total_members": 20
+            }
+          }
+        }
+      ],
+      "synopsis": ""
+    }
+  ],
+  "report": {
+    "description_text": "第 0000 题：将你的 QQ 头像（或者微博头像）右上角加上红色的数字， 类似于微信未读信息数量那种提示效果。 类似于图中效果",
+    "description_html": "<body><pre class=\"raw-docs\" data-tabLen=\"8\"><div class=\"raw-docs-line\"></div><div class=\"raw-docs-line\">第 0000 题：将你的 QQ 头像（或者微博头像）右上角加上红色的数字，</div><div class=\"raw-docs-line\">类似于微信未读信息数量那种提示效果。 类似于图中效果</div><div class=\"raw-docs-line\">    </div></pre></body>",
+    "examples": null,
+    "usages": null,
+    "total_usages": 0,
+    "links": null,
+    "total_links": 0
+  }
+}

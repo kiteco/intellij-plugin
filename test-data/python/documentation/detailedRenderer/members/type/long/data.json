@@ -1,0 +1,347 @@
+{
+  "language": "python",
+  "total": 7,
+  "start": 0,
+  "end": 7,
+  "members": [
+    {
+      "id": "",
+      "name": "mro",
+      "parent": {
+        "id": "python;;;;__builtin__.long",
+        "name": "long"
+      },
+      "namespace": {
+        "id": "python;;;;__builtin__.long",
+        "kind": "type",
+        "repr": "long",
+        "type": "type",
+        "type_id": "python;;;;__builtin__.type"
+      },
+      "value": [
+        {
+          "id": "python;;;;__builtin__.type.mro",
+          "kind": "function",
+          "repr": "type.mro",
+          "type": "",
+          "type_id": "",
+          "synopsis": "mro() -\u003e list\nreturn a type's method resolution order",
+          "details": {
+            "function": {
+              "parameters": null,
+              "return_value": null,
+              "signatures": [
+                {
+                  "args": null,
+                  "language_details": {
+                    "python": {
+                      "kwargs": null
+                    }
+                  }
+                },
+                {
+                  "args": [
+                    {
+                      "name": "cls",
+                      "types": [
+                        {
+                          "id": "python;__builtin__.type",
+                          "name": "type",
+                          "examples": null
+                        }
+                      ]
+                    }
+                  ],
+                  "language_details": {
+                    "python": {
+                      "kwargs": null
+                    }
+                  }
+                }
+              ],
+              "language_details": {
+                "python": {
+                  "receiver": {
+                    "name": "self",
+                    "inferred_value": null,
+                    "synopsis": "",
+                    "language_details": {
+                      "python": null
+                    }
+                  },
+                  "return_annotation": null
+                }
+              }
+            },
+            "type": null,
+            "instance": null,
+            "module": null
+          },
+          "ancestors": [
+            {
+              "id": "python;;;;__builtin__",
+              "name": "__builtin__"
+            },
+            {
+              "id": "python;;;;__builtin__.type",
+              "name": "type"
+            }
+          ]
+        }
+      ],
+      "synopsis": ""
+    },
+    {
+      "id": "python;;;;__builtin__.long;bit_length",
+      "name": "bit_length",
+      "parent": {
+        "id": "python;;;;__builtin__.long",
+        "name": "long"
+      },
+      "namespace": {
+        "id": "python;;;;__builtin__.long",
+        "kind": "type",
+        "repr": "long",
+        "type": "type",
+        "type_id": "python;;;;__builtin__.type"
+      },
+      "value": [
+        {
+          "id": "python;;;;__builtin__.long.bit_length",
+          "kind": "function",
+          "repr": "long.bit_length",
+          "type": "",
+          "type_id": "",
+          "synopsis": "Return the number of bits necessary to represent an integer in binary,\nexcluding the sign and leading zeros:",
+          "details": {
+            "function": null,
+            "type": null,
+            "instance": null,
+            "module": null
+          },
+          "ancestors": [
+            {
+              "id": "python;;;;__builtin__",
+              "name": "__builtin__"
+            },
+            {
+              "id": "python;;;;__builtin__.long",
+              "name": "long"
+            }
+          ]
+        }
+      ],
+      "synopsis": ""
+    },
+    {
+      "id": "python;;;;__builtin__.long;conjugate",
+      "name": "conjugate",
+      "parent": {
+        "id": "python;;;;__builtin__.long",
+        "name": "long"
+      },
+      "namespace": {
+        "id": "python;;;;__builtin__.long",
+        "kind": "type",
+        "repr": "long",
+        "type": "type",
+        "type_id": "python;;;;__builtin__.type"
+      },
+      "value": [
+        {
+          "id": "python;;;;__builtin__.long.conjugate",
+          "kind": "function",
+          "repr": "long.conjugate",
+          "type": "",
+          "type_id": "",
+          "synopsis": "Returns self, the complex conjugate of any long.",
+          "details": {
+            "function": null,
+            "type": null,
+            "instance": null,
+            "module": null
+          },
+          "ancestors": [
+            {
+              "id": "python;;;;__builtin__",
+              "name": "__builtin__"
+            },
+            {
+              "id": "python;;;;__builtin__.long",
+              "name": "long"
+            }
+          ]
+        }
+      ],
+      "synopsis": ""
+    },
+    {
+      "id": "python;;;;__builtin__.long;denominator",
+      "name": "denominator",
+      "parent": {
+        "id": "python;;;;__builtin__.long",
+        "name": "long"
+      },
+      "namespace": {
+        "id": "python;;;;__builtin__.long",
+        "kind": "type",
+        "repr": "long",
+        "type": "type",
+        "type_id": "python;;;;__builtin__.type"
+      },
+      "value": [
+        {
+          "id": "python;;;;__builtin__.long.denominator",
+          "kind": "unknown",
+          "repr": "long.denominator",
+          "type": "",
+          "type_id": "",
+          "synopsis": "the denominator of a rational number in lowest terms",
+          "details": {
+            "function": null,
+            "type": null,
+            "instance": null,
+            "module": null
+          },
+          "ancestors": [
+            {
+              "id": "python;;;;__builtin__",
+              "name": "__builtin__"
+            },
+            {
+              "id": "python;;;;__builtin__.long",
+              "name": "long"
+            }
+          ]
+        }
+      ],
+      "synopsis": ""
+    },
+    {
+      "id": "python;;;;__builtin__.long;imag",
+      "name": "imag",
+      "parent": {
+        "id": "python;;;;__builtin__.long",
+        "name": "long"
+      },
+      "namespace": {
+        "id": "python;;;;__builtin__.long",
+        "kind": "type",
+        "repr": "long",
+        "type": "type",
+        "type_id": "python;;;;__builtin__.type"
+      },
+      "value": [
+        {
+          "id": "python;;;;__builtin__.long.imag",
+          "kind": "unknown",
+          "repr": "long.imag",
+          "type": "",
+          "type_id": "",
+          "synopsis": "the imaginary part of a complex number",
+          "details": {
+            "function": null,
+            "type": null,
+            "instance": null,
+            "module": null
+          },
+          "ancestors": [
+            {
+              "id": "python;;;;__builtin__",
+              "name": "__builtin__"
+            },
+            {
+              "id": "python;;;;__builtin__.long",
+              "name": "long"
+            }
+          ]
+        }
+      ],
+      "synopsis": ""
+    },
+    {
+      "id": "python;;;;__builtin__.long;numerator",
+      "name": "numerator",
+      "parent": {
+        "id": "python;;;;__builtin__.long",
+        "name": "long"
+      },
+      "namespace": {
+        "id": "python;;;;__builtin__.long",
+        "kind": "type",
+        "repr": "long",
+        "type": "type",
+        "type_id": "python;;;;__builtin__.type"
+      },
+      "value": [
+        {
+          "id": "python;;;;__builtin__.long.numerator",
+          "kind": "unknown",
+          "repr": "long.numerator",
+          "type": "",
+          "type_id": "",
+          "synopsis": "the numerator of a rational number in lowest terms",
+          "details": {
+            "function": null,
+            "type": null,
+            "instance": null,
+            "module": null
+          },
+          "ancestors": [
+            {
+              "id": "python;;;;__builtin__",
+              "name": "__builtin__"
+            },
+            {
+              "id": "python;;;;__builtin__.long",
+              "name": "long"
+            }
+          ]
+        }
+      ],
+      "synopsis": ""
+    },
+    {
+      "id": "python;;;;__builtin__.long;real",
+      "name": "real",
+      "parent": {
+        "id": "python;;;;__builtin__.long",
+        "name": "long"
+      },
+      "namespace": {
+        "id": "python;;;;__builtin__.long",
+        "kind": "type",
+        "repr": "long",
+        "type": "type",
+        "type_id": "python;;;;__builtin__.type"
+      },
+      "value": [
+        {
+          "id": "python;;;;__builtin__.long.real",
+          "kind": "unknown",
+          "repr": "long.real",
+          "type": "",
+          "type_id": "",
+          "synopsis": "the real part of a complex number",
+          "details": {
+            "function": null,
+            "type": null,
+            "instance": null,
+            "module": null
+          },
+          "ancestors": [
+            {
+              "id": "python;;;;__builtin__",
+              "name": "__builtin__"
+            },
+            {
+              "id": "python;;;;__builtin__.long",
+              "name": "long"
+            }
+          ]
+        }
+      ],
+      "synopsis": ""
+    }
+  ]
+}

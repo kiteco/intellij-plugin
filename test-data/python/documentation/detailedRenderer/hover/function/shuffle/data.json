@@ -1,0 +1,84 @@
+{
+  "part_of_syntax": "attr",
+  "symbol": [
+    {
+      "id": "random.shuffle",
+      "name": "shuffle",
+      "namespace": {
+        "id": "random",
+        "kind": "module",
+        "repr": "random",
+        "type": "module",
+        "type_id": "__builtin__.module"
+      },
+      "value": [
+        {
+          "id": "",
+          "kind": "function",
+          "repr": "external:{instance of __builtin__.instancemethod}",
+          "type": "instancemethod",
+          "type_id": "__builtin__.instancemethod",
+          "synopsis": "Shuffle the sequence x in place. The optional argument random is a\n0-argument function returning a random float in [0.0, 1.0); by default, this is\nthe function random().\nNote that for even rather small len(x), the total number of permutations of\nx is larger than the period of most random number generators; this implies\nthat most permutations of a long sequence can never be generated.",
+          "details": {
+            "function": {
+              "parameters": [
+                {
+                  "name": "self",
+                  "default_value": null,
+                  "inferred_value": null,
+                  "annotation": null,
+                  "keyword_only": false,
+                  "synopsis": ""
+                },
+                {
+                  "name": "x",
+                  "default_value": null,
+                  "inferred_value": null,
+                  "annotation": null,
+                  "keyword_only": false,
+                  "synopsis": ""
+                },
+                {
+                  "name": "random",
+                  "default_value": null,
+                  "inferred_value": null,
+                  "annotation": null,
+                  "keyword_only": false,
+                  "synopsis": ""
+                }
+              ],
+              "return_value": null,
+              "return_annotation": null
+            }
+          }
+        }
+      ],
+      "synopsis": ""
+    }
+  ],
+  "report": {
+    "definition": null,
+    "description_text": "Shuffle the sequence x in place. The optional argument random is a\n0-argument function returning a random float in [0.0, 1.0); by default, this is\nthe function random().\nNote that for even rather small len(x), the total number of permutations of\nx is larger than the period of most random number generators; this implies\nthat most permutations of a long sequence can never be generated.",
+    "description_html": "<body><p>Shuffle the sequence <em>x</em> in place. The optional argument <em>random</em> is a\n0-argument function returning a random float in [0.0, 1.0); by default, this is\nthe function <a><code>random()</code></a>.</p><p>Note that for even rather small <code>len(x)</code>, the total number of permutations of\n<em>x</em> is larger than the period of most random number generators; this implies\nthat most permutations of a long sequence can never be generated.</p></body>",
+    "examples": [
+      {
+        "id": 578,
+        "title": "Shuffle a list in place"
+      },
+      {
+        "id": 579,
+        "title": "Shuffle a list in place given a randomize function"
+      }
+    ],
+    "usages": [
+      {
+        "code": "        random.shuffle(collection)",
+        "filename": "/Users/user/IdeaProjects/kitePython/Python-Algorithms/sorts/bogosort.py",
+        "line": 37,
+        "begin_bytes": 950,
+        "begin_runes": 950
+      }
+    ],
+    "total_usages": 1
+  }
+}

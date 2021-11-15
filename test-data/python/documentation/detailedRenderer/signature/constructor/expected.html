@@ -1,0 +1,156 @@
+<div class="content-container">
+<div class="signature-info code">
+<span class="function-name style-call">gevent.pywsgi.WSGIServer</span>
+<span class="open-parens style-paren">(</span>
+<span class="op-40"><span class=" style-param">listener</span></span>
+<span class="style-comma">,</span>
+<span> </span>
+<span class="op-40"><span class=" style-kw-arg">application</span><span class="style-opsign-arg">=</span><span class="style-param">None</span></span>
+<span class="style-comma">,</span>
+<span> </span>
+<span class="op-40"><span class=" style-kw-arg">backlog</span><span class="style-opsign-arg">=</span><span class="style-param">None</span></span>
+<span class="style-comma">,</span>
+<span> </span>
+<span class="op-40"><span class=" style-kw-arg">spawn</span><span class="style-opsign-arg">=</span><span class="style-param">"default"</span></span>
+<span class="style-comma">,</span>
+<span> </span>
+<span class="op-40"><span class=" style-kw-arg">log</span><span class="style-opsign-arg">=</span><span class="style-param">"default"</span></span>
+<span class="style-comma">,</span>
+<span> </span>
+<span class="op-40"><span class=" style-kw-arg">error_log</span><span class="style-opsign-arg">=</span><span class="style-param">"default"</span></span>
+<span class="style-comma">,</span>
+<span> </span>
+<span class="op-40"><span class=" style-kw-arg">handler_class</span><span class="style-opsign-arg">=</span><span class="style-param">None</span></span>
+<span class="style-comma">,</span>
+<span> </span>
+<span class="op-40"><span class=" style-kw-arg">environ</span><span class="style-opsign-arg">=</span><span class="style-param">None</span></span>
+<span class="style-comma">,</span>
+<span> </span>
+<span class="op-100"><span class="active style-kw-arg">**ssl_args</span></span>
+<span class="style-paren">)</span>
+</div>
+<div class="signature-details">
+<div class="report-section">
+<div class="heading">
+<table>
+<tr>
+<td><span class="heading-text ">**ssl_args</span></td>
+<td><a class="link toggle-link" href="kite-internal:/signature?expandPopularPatterns=true&amp;expandKwarg=false&amp;inKwargs=true">Hide</a></td>
+</tr>
+</table>
+</div>
+<div class="report-content op-40">
+<div class="inferred-kwarg code ">
+<span class="style-param">certfile</span>
+<span class="style-opsign-arg">:</span>&nbsp;
+<span class="style-bracket">[</span>
+<span class="style-builtin-name">str</span>
+<span class="style-bracket">]</span>
+</div>
+<div class="inferred-kwarg code ">
+<span class="style-param">keyfile</span>
+<span class="style-opsign-arg">:</span>&nbsp;
+<span class="style-bracket">[</span>
+<span class="style-builtin-name">str</span>
+<span class="style-bracket">]</span>
+</div>
+<div class="inferred-kwarg code ">
+<span class="style-param">ca_certs</span>
+<span class="style-opsign-arg">:</span>&nbsp;
+<span class="style-bracket">[</span>
+<span class="style-builtin-name">str</span>
+<span class="style-comma">,</span>
+<span> </span>
+<span class="style-builtin-name">list</span>
+<span class="style-bracket">]</span>
+</div>
+<div class="inferred-kwarg code ">
+<span class="style-param">cert_reqs</span>
+<span class="style-opsign-arg">:</span>&nbsp;
+<span class="style-bracket">[</span>
+<span class="style-builtin-name">int</span>
+<span class="style-bracket">]</span>
+</div>
+</div>
+</div>
+</div>
+<div class="report-section op-80">
+<div class="heading">
+<table>
+<tr>
+<td><span class="heading-text">HOW OTHERS USED THIS</span></td>
+<td><a class="link toggle-link" href="kite-internal:/signature?expandPopularPatterns=false&amp;expandKwarg=true&amp;inKwargs=true">Hide</a></td>
+</tr>
+</table>
+</div>
+<div class="report-content code">
+<div class="signature-pattern">
+<span class="function-name style-call">WSGIServer</span>
+<span class="open-parens style-paren">(</span>
+<span class="style-param">address</span>
+<span class="style-comma">,</span>
+<span> </span>
+<span class="style-param">listener</span>
+<span class="style-paren">)</span>
+</div>
+<div class="signature-pattern">
+<span class="function-name style-call">WSGIServer</span>
+<span class="open-parens style-paren">(</span>
+<span class="style-param">address</span>
+<span class="style-comma">,</span>
+<span> </span>
+<span class="style-param">listener</span>
+<span class="style-comma">,</span>
+<span> </span>
+<span class="style-kw-arg">handler_class</span>
+<span class="style-opsign-arg">=</span>
+<span class="style-unused">&lt;type&gt;</span>
+<span class="style-paren">)</span>
+</div>
+<div class="signature-pattern">
+<span class="function-name style-call">WSGIServer</span>
+<span class="open-parens style-paren">(</span>
+<span class="style-param">address</span>
+<span class="style-comma">,</span>
+<span> </span>
+<span class="style-param">listener</span>
+<span class="style-comma">,</span>
+<span> </span>
+<span class="style-kw-arg">log</span>
+<span class="style-opsign-arg">=</span>
+<span class="style-param">"'default'"</span>
+<span class="style-paren">)</span>
+</div>
+<div class="signature-pattern">
+<span class="function-name style-call">WSGIServer</span>
+<span class="open-parens style-paren">(</span>
+<span class="style-param">address</span>
+<span class="style-comma">,</span>
+<span> </span>
+<span class="style-param">listener</span>
+<span class="style-comma">,</span>
+<span> </span>
+<span class="style-kw-arg">spawn</span>
+<span class="style-opsign-arg">=</span>
+<span class="style-param">"'default'"</span>
+<span class="style-paren">)</span>
+</div>
+<div class="signature-pattern">
+<span class="function-name style-call">WSGIServer</span>
+<span class="open-parens style-paren">(</span>
+<span class="style-param">address</span>
+<span class="style-paren">)</span>
+</div>
+</div>
+</div>
+<div class="footer">
+<div class="kite-link-flow">
+<table>
+<tr>
+<td class="text"> <a class="link open-docs-link" href="kite://docs/python;;;;gevent.pywsgi.WSGIServer">Docs</a> </td>
+<td class="icon-container"><img class="kite-logo" src="/icons/kite_mini_disabled.png" /></td>
+</tr>
+</table>
+</div>
+</div>
+</div>

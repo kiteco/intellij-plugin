@@ -1,0 +1,82 @@
+{
+  "part_of_syntax": "attr",
+  "symbol": [
+    {
+      "id": ":Users:user:Python-Algorithms:test.py;Counter;increment",
+      "name": "increment",
+      "namespace": {
+        "id": ":Users:user:Python-Algorithms:test.py;Counter",
+        "kind": "type",
+        "repr": "Counter",
+        "type": "type",
+        "type_id": "__builtin__.type"
+      },
+      "value": [
+        {
+          "id": ":Users:user:Python-Algorithms:test.py;Counter.increment",
+          "kind": "function",
+          "repr": "increment",
+          "type": "FunctionType",
+          "type_id": "types.FunctionType",
+          "synopsis": "",
+          "details": {
+            "function": {
+              "receiver": {
+                "name": "self",
+                "default_value": null,
+                "inferred_value": [
+                  {
+                    "id": "",
+                    "kind": "instance",
+                    "repr": "instance:test:Counter",
+                    "type": "Counter",
+                    "type_id": ":Users:user:Python-Algorithms:test.py;Counter"
+                  }
+                ],
+                "annotation": null,
+                "keyword_only": false,
+                "synopsis": ""
+              },
+              "parameters": [
+                {
+                  "name": "n",
+                  "default_value": null,
+                  "inferred_value": null,
+                  "annotation": null,
+                  "keyword_only": false,
+                  "synopsis": ""
+                }
+              ],
+              "return_value": [
+                {
+                  "id": "",
+                  "kind": "instance",
+                  "repr": "0",
+                  "type": "int",
+                  "type_id": "__builtin__.int"
+                }
+              ],
+              "return_annotation": null
+            }
+          }
+        }
+      ],
+      "synopsis": ""
+    }
+  ],
+  "report": {
+    "description_text": "",
+    "description_html": "",
+    "examples": null,
+    "usages": [
+      {
+        "code": "Counter.increment",
+        "filename": "/Users/user/IdeaProjects/kitePython/Python-Algorithms/test.py",
+        "line": 15,
+        "begin_bytes": 271,
+        "begin_runes": 271
+      }
+    ],
+    "total_usages": 1
+  }
+}

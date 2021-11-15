@@ -1,0 +1,682 @@
+{
+  "language": "python",
+  "language_details": {
+    "python": null
+  },
+  "components": null,
+  "members": [
+    {
+      "id": "__builtin__.int.bit_length",
+      "name": "bit_length",
+      "namespace": {
+        "id": "__builtin__.int",
+        "kind": "type",
+        "repr": "int",
+        "type": "type",
+        "type_id": "__builtin__.type"
+      },
+      "value": [
+        {
+          "id": "__builtin__.int.bit_length",
+          "kind": "function",
+          "repr": "int.bit_length",
+          "type": "FunctionType",
+          "type_id": "types.FunctionType"
+        }
+      ]
+    },
+    {
+      "id": "__builtin__.int.conjugate",
+      "name": "conjugate",
+      "namespace": {
+        "id": "__builtin__.int",
+        "kind": "type",
+        "repr": "int",
+        "type": "type",
+        "type_id": "__builtin__.type"
+      },
+      "value": [
+        {
+          "id": "__builtin__.int.conjugate",
+          "kind": "function",
+          "repr": "int.conjugate",
+          "type": "FunctionType",
+          "type_id": "types.FunctionType"
+        }
+      ]
+    },
+    {
+      "id": "__builtin__.int.denominator",
+      "name": "denominator",
+      "namespace": {
+        "id": "__builtin__.int",
+        "kind": "type",
+        "repr": "int",
+        "type": "type",
+        "type_id": "__builtin__.type"
+      },
+      "value": [
+        {
+          "id": "",
+          "kind": "instance",
+          "repr": "int",
+          "type": "int",
+          "type_id": "__builtin__.int"
+        }
+      ]
+    },
+    {
+      "id": "__builtin__.int.imag",
+      "name": "imag",
+      "namespace": {
+        "id": "__builtin__.int",
+        "kind": "type",
+        "repr": "int",
+        "type": "type",
+        "type_id": "__builtin__.type"
+      },
+      "value": [
+        {
+          "id": "",
+          "kind": "instance",
+          "repr": "float",
+          "type": "float",
+          "type_id": "__builtin__.float"
+        }
+      ]
+    },
+    {
+      "id": "__builtin__.int.numerator",
+      "name": "numerator",
+      "namespace": {
+        "id": "__builtin__.int",
+        "kind": "type",
+        "repr": "int",
+        "type": "type",
+        "type_id": "__builtin__.type"
+      },
+      "value": [
+        {
+          "id": "",
+          "kind": "instance",
+          "repr": "int",
+          "type": "int",
+          "type_id": "__builtin__.int"
+        }
+      ]
+    }
+  ],
+  "total_members": 53,
+  "constructor": {
+    "parameters": [
+      {
+        "name": "self",
+        "default_value": null,
+        "inferred_value": null,
+        "annotation": null,
+        "keyword_only": false,
+        "synopsis": "",
+        "language_details": {
+          "python": null
+        }
+      },
+      {
+        "name": "listener",
+        "default_value": null,
+        "inferred_value": null,
+        "annotation": null,
+        "keyword_only": false,
+        "synopsis": "",
+        "language_details": {
+          "python": null
+        }
+      },
+      {
+        "name": "application",
+        "default_value": null,
+        "inferred_value": null,
+        "annotation": null,
+        "keyword_only": false,
+        "synopsis": "",
+        "language_details": {
+          "python": null
+        }
+      },
+      {
+        "name": "backlog",
+        "default_value": null,
+        "inferred_value": null,
+        "annotation": null,
+        "keyword_only": false,
+        "synopsis": "",
+        "language_details": {
+          "python": null
+        }
+      },
+      {
+        "name": "spawn",
+        "default_value": null,
+        "inferred_value": null,
+        "annotation": null,
+        "keyword_only": false,
+        "synopsis": "",
+        "language_details": {
+          "python": null
+        }
+      },
+      {
+        "name": "log",
+        "default_value": null,
+        "inferred_value": null,
+        "annotation": null,
+        "keyword_only": false,
+        "synopsis": "",
+        "language_details": {
+          "python": null
+        }
+      },
+      {
+        "name": "error_log",
+        "default_value": null,
+        "inferred_value": null,
+        "annotation": null,
+        "keyword_only": false,
+        "synopsis": "",
+        "language_details": {
+          "python": null
+        }
+      },
+      {
+        "name": "handler_class",
+        "default_value": null,
+        "inferred_value": null,
+        "annotation": null,
+        "keyword_only": false,
+        "synopsis": "",
+        "language_details": {
+          "python": null
+        }
+      },
+      {
+        "name": "environ",
+        "default_value": null,
+        "inferred_value": null,
+        "annotation": null,
+        "keyword_only": false,
+        "synopsis": "",
+        "language_details": {
+          "python": null
+        }
+      }
+    ],
+    "kwarg": {
+      "name": "ssl_args",
+      "default_value": null,
+      "inferred_value": null,
+      "annotation": null,
+      "keyword_only": false,
+      "synopsis": "",
+      "language_details": {
+        "python": null
+      }
+    },
+    "kwarg_parameters": [
+      {
+        "name": "certfile",
+        "default_value": null,
+        "inferred_value": [
+          {
+            "id": "python;",
+            "kind": "instance",
+            "repr": "str",
+            "type": "str",
+            "type_id": "python;__builtin__.str"
+          }
+        ],
+        "annotation": null,
+        "keyword_only": false,
+        "synopsis": "",
+        "language_details": {
+          "python": null
+        }
+      },
+      {
+        "name": "keyfile",
+        "default_value": null,
+        "inferred_value": [
+          {
+            "id": "python;",
+            "kind": "instance",
+            "repr": "str",
+            "type": "str",
+            "type_id": "python;__builtin__.str"
+          }
+        ],
+        "annotation": null,
+        "keyword_only": false,
+        "synopsis": "",
+        "language_details": {
+          "python": null
+        }
+      },
+      {
+        "name": "ca_certs",
+        "default_value": null,
+        "inferred_value": [
+          {
+            "id": "python;",
+            "kind": "instance",
+            "repr": "str",
+            "type": "str",
+            "type_id": "python;__builtin__.str"
+          },
+          {
+            "id": "python;",
+            "kind": "instance",
+            "repr": "list",
+            "type": "list",
+            "type_id": "python;__builtin__.list"
+          }
+        ],
+        "annotation": null,
+        "keyword_only": false,
+        "synopsis": "",
+        "language_details": {
+          "python": null
+        }
+      },
+      {
+        "name": "cert_reqs",
+        "default_value": null,
+        "inferred_value": [
+          {
+            "id": "python;",
+            "kind": "instance",
+            "repr": "int",
+            "type": "int",
+            "type_id": "python;__builtin__.int"
+          }
+        ],
+        "annotation": null,
+        "keyword_only": false,
+        "synopsis": "",
+        "language_details": {
+          "python": null
+        }
+      }
+    ],
+    "return_value": null,
+    "return_annotation": null,
+    "signatures": [
+      {
+        "args": [
+          {
+            "name": "address",
+            "types": [
+              {
+                "id": "python;__builtin__.tuple",
+                "name": "tuple",
+                "examples": [
+                  "(self.host, self.port)",
+                  "('', 5000)",
+                  "(host, port)"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "listener",
+            "types": [
+              {
+                "id": "python;flask.app.Flask",
+                "name": "Flask",
+                "examples": null
+              },
+              {
+                "id": "python;new.function",
+                "name": "function",
+                "examples": null
+              }
+            ]
+          }
+        ],
+        "kwargs": null,
+        "language_details": {
+          "python": {
+            "kwargs": null
+          }
+        }
+      },
+      {
+        "args": [
+          {
+            "name": "address",
+            "types": [
+              {
+                "id": "python;__builtin__.tuple",
+                "name": "tuple",
+                "examples": [
+                  "(self.host, self.port)",
+                  "('', 5000)",
+                  "(host, port)"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "listener",
+            "types": [
+              {
+                "id": "python;flask.app.Flask",
+                "name": "Flask",
+                "examples": null
+              },
+              {
+                "id": "python;new.function",
+                "name": "function",
+                "examples": null
+              }
+            ]
+          }
+        ],
+        "kwargs": [
+          {
+            "name": "handler_class",
+            "types": [
+              {
+                "id": "python;__builtin__.type",
+                "name": "type",
+                "examples": null
+              },
+              {
+                "id": "python;Tix.NoneType",
+                "name": "NoneType",
+                "examples": null
+              }
+            ]
+          }
+        ],
+        "language_details": {
+          "python": {
+            "kwargs": [
+              {
+                "name": "handler_class",
+                "types": [
+                  {
+                    "id": "python;__builtin__.type",
+                    "name": "type",
+                    "examples": null
+                  },
+                  {
+                    "id": "python;Tix.NoneType",
+                    "name": "NoneType",
+                    "examples": null
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      },
+      {
+        "args": [
+          {
+            "name": "address",
+            "types": [
+              {
+                "id": "python;__builtin__.tuple",
+                "name": "tuple",
+                "examples": [
+                  "(self.host, self.port)",
+                  "('', 5000)",
+                  "(host, port)"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "listener",
+            "types": [
+              {
+                "id": "python;flask.app.Flask",
+                "name": "Flask",
+                "examples": null
+              },
+              {
+                "id": "python;new.function",
+                "name": "function",
+                "examples": null
+              }
+            ]
+          }
+        ],
+        "kwargs": [
+          {
+            "name": "log",
+            "types": [
+              {
+                "id": "python;__builtin__.str",
+                "name": "str",
+                "examples": [
+                  "\"'default'\"",
+                  "\"'default' if self._mock_server.debug else None\"",
+                  "\"'default' if self.__debug else None\""
+                ]
+              }
+            ]
+          }
+        ],
+        "language_details": {
+          "python": {
+            "kwargs": [
+              {
+                "name": "log",
+                "types": [
+                  {
+                    "id": "python;__builtin__.str",
+                    "name": "str",
+                    "examples": [
+                      "\"'default'\"",
+                      "\"'default' if self._mock_server.debug else None\"",
+                      "\"'default' if self.__debug else None\""
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      },
+      {
+        "args": [
+          {
+            "name": "address",
+            "types": [
+              {
+                "id": "python;__builtin__.tuple",
+                "name": "tuple",
+                "examples": [
+                  "(self.host, self.port)",
+                  "('', 5000)",
+                  "(host, port)"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "listener",
+            "types": [
+              {
+                "id": "python;flask.app.Flask",
+                "name": "Flask",
+                "examples": null
+              },
+              {
+                "id": "python;new.function",
+                "name": "function",
+                "examples": null
+              }
+            ]
+          }
+        ],
+        "kwargs": [
+          {
+            "name": "spawn",
+            "types": [
+              {
+                "id": "python;__builtin__.str",
+                "name": "str",
+                "examples": [
+                  "\"'default'\""
+                ]
+              }
+            ]
+          }
+        ],
+        "language_details": {
+          "python": {
+            "kwargs": [
+              {
+                "name": "spawn",
+                "types": [
+                  {
+                    "id": "python;__builtin__.str",
+                    "name": "str",
+                    "examples": [
+                      "\"'default'\""
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      },
+      {
+        "args": [
+          {
+            "name": "address",
+            "types": [
+              {
+                "id": "python;__builtin__.tuple",
+                "name": "tuple",
+                "examples": [
+                  "(self.host, self.port)",
+                  "('', 5000)",
+                  "(host, port)"
+                ]
+              }
+            ]
+          }
+        ],
+        "kwargs": null,
+        "language_details": {
+          "python": {
+            "kwargs": null
+          }
+        }
+      }
+    ],
+    "language_details": {
+      "python": {
+        "kwarg": {
+          "name": "ssl_args",
+          "default_value": null,
+          "inferred_value": null,
+          "annotation": null,
+          "keyword_only": false,
+          "synopsis": "",
+          "language_details": {
+            "python": null
+          }
+        },
+        "kwarg_parameters": [
+          {
+            "name": "certfile",
+            "default_value": null,
+            "inferred_value": [
+              {
+                "id": "python;",
+                "kind": "instance",
+                "repr": "str",
+                "type": "str",
+                "type_id": "python;__builtin__.str"
+              }
+            ],
+            "annotation": null,
+            "keyword_only": false,
+            "synopsis": "",
+            "language_details": {
+              "python": null
+            }
+          },
+          {
+            "name": "keyfile",
+            "default_value": null,
+            "inferred_value": [
+              {
+                "id": "python;",
+                "kind": "instance",
+                "repr": "str",
+                "type": "str",
+                "type_id": "python;__builtin__.str"
+              }
+            ],
+            "annotation": null,
+            "keyword_only": false,
+            "synopsis": "",
+            "language_details": {
+              "python": null
+            }
+          },
+          {
+            "name": "ca_certs",
+            "default_value": null,
+            "inferred_value": [
+              {
+                "id": "python;",
+                "kind": "instance",
+                "repr": "str",
+                "type": "str",
+                "type_id": "python;__builtin__.str"
+              },
+              {
+                "id": "python;",
+                "kind": "instance",
+                "repr": "list",
+                "type": "list",
+                "type_id": "python;__builtin__.list"
+              }
+            ],
+            "annotation": null,
+            "keyword_only": false,
+            "synopsis": "",
+            "language_details": {
+              "python": null
+            }
+          },
+          {
+            "name": "cert_reqs",
+            "default_value": null,
+            "inferred_value": [
+              {
+                "id": "python;",
+                "kind": "instance",
+                "repr": "int",
+                "type": "int",
+                "type_id": "python;__builtin__.int"
+              }
+            ],
+            "annotation": null,
+            "keyword_only": false,
+            "synopsis": "",
+            "language_details": {
+              "python": null
+            }
+          }
+        ],
+        "return_annotation": null
+      }
+    }
+  }
+}

@@ -1,0 +1,296 @@
+{
+  "part_of_syntax": "name",
+  "symbol": [
+    {
+      "id": "",
+      "name": "math",
+      "namespace": null,
+      "value": [
+        {
+          "id": "math",
+          "kind": "module",
+          "repr": "math",
+          "type": "module",
+          "type_id": "",
+          "synopsis": "This module is always available.  It provides access to the\nmathematical functions defined by the C standard.",
+          "details": {
+            "module": {
+              "members": [
+                {
+                  "id": "math.acos",
+                  "name": "acos",
+                  "namespace": {
+                    "id": "math",
+                    "kind": "module",
+                    "repr": "math",
+                    "type": "module",
+                    "type_id": ""
+                  },
+                  "value": [
+                    {
+                      "id": "math.acos",
+                      "kind": "function",
+                      "repr": "acos",
+                      "type": "type",
+                      "type_id": "__builtin__.type"
+                    }
+                  ]
+                },
+                {
+                  "id": "math.acosh",
+                  "name": "acosh",
+                  "namespace": {
+                    "id": "math",
+                    "kind": "module",
+                    "repr": "math",
+                    "type": "module",
+                    "type_id": ""
+                  },
+                  "value": [
+                    {
+                      "id": "math.acosh",
+                      "kind": "function",
+                      "repr": "acosh",
+                      "type": "type",
+                      "type_id": "__builtin__.type"
+                    }
+                  ]
+                },
+                {
+                  "id": "math.asin",
+                  "name": "asin",
+                  "namespace": {
+                    "id": "math",
+                    "kind": "module",
+                    "repr": "math",
+                    "type": "module",
+                    "type_id": ""
+                  },
+                  "value": [
+                    {
+                      "id": "math.asin",
+                      "kind": "function",
+                      "repr": "asin",
+                      "type": "type",
+                      "type_id": "__builtin__.type"
+                    }
+                  ]
+                },
+                {
+                  "id": "math.asinh",
+                  "name": "asinh",
+                  "namespace": {
+                    "id": "math",
+                    "kind": "module",
+                    "repr": "math",
+                    "type": "module",
+                    "type_id": ""
+                  },
+                  "value": [
+                    {
+                      "id": "math.asinh",
+                      "kind": "function",
+                      "repr": "asinh",
+                      "type": "type",
+                      "type_id": "__builtin__.type"
+                    }
+                  ]
+                },
+                {
+                  "id": "math.atan",
+                  "name": "atan",
+                  "namespace": {
+                    "id": "math",
+                    "kind": "module",
+                    "repr": "math",
+                    "type": "module",
+                    "type_id": ""
+                  },
+                  "value": [
+                    {
+                      "id": "math.atan",
+                      "kind": "function",
+                      "repr": "atan",
+                      "type": "type",
+                      "type_id": "__builtin__.type"
+                    }
+                  ]
+                }
+              ],
+              "total_members": 44
+            }
+          }
+        }
+      ],
+      "synopsis": ""
+    }
+  ],
+  "report": {
+    "definition": null,
+    "description_text": "This module is always available.  It provides access to the\nmathematical functions defined by the C standard.",
+    "description_html": "<body>\n\n\n<p>This module is always available.  It provides access to the\nmathematical functions defined by the C standard.</p>\n</body>",
+    "examples": [
+      {
+        "id": 474,
+        "title": "Compute a square root"
+      },
+      {
+        "id": 480,
+        "title": "Compute theÂ floor of a `float`"
+      },
+      {
+        "id": 478,
+        "title": "ComputeÂ the log of number given a base"
+      },
+      {
+        "id": 475,
+        "title": "ComputeÂ the sine of radians"
+      }
+    ],
+    "usages": null,
+    "total_usages": 0,
+    "links": [
+      {
+        "title": "Speed comparison with Project Euler: C vs Python vs Erlang vs Haskell",
+        "url": "https://stackoverflow.com/questions/6964392",
+        "stackoverflow": {
+          "score": 490
+        }
+      },
+      {
+        "title": "ImportError: Cannot import name X",
+        "url": "https://stackoverflow.com/questions/9252543",
+        "stackoverflow": {
+          "score": 167
+        }
+      },
+      {
+        "title": "Safest way to convert float to integer in python?",
+        "url": "https://stackoverflow.com/questions/3387655",
+        "stackoverflow": {
+          "score": 123
+        }
+      },
+      {
+        "title": "When is hash(n) == n in Python?",
+        "url": "https://stackoverflow.com/questions/37612524",
+        "stackoverflow": {
+          "score": 94
+        }
+      },
+      {
+        "title": "Python: why are * and ** faster than / and sqrt()?",
+        "url": "https://stackoverflow.com/questions/8068019",
+        "stackoverflow": {
+          "score": 77
+        }
+      },
+      {
+        "title": "Statistics: combinations in Python",
+        "url": "https://stackoverflow.com/questions/3025162",
+        "stackoverflow": {
+          "score": 73
+        }
+      },
+      {
+        "title": "Python - abs vs fabs",
+        "url": "https://stackoverflow.com/questions/10772302",
+        "stackoverflow": {
+          "score": 63
+        }
+      },
+      {
+        "title": "Haversine Formula in Python (Bearing and Distance between two GPS points)",
+        "url": "https://stackoverflow.com/questions/4913349",
+        "stackoverflow": {
+          "score": 63
+        }
+      },
+      {
+        "title": "How to calculate a mod b in python?",
+        "url": "https://stackoverflow.com/questions/991027",
+        "stackoverflow": {
+          "score": 59
+        }
+      },
+      {
+        "title": "Most useful Python modules from the standard library?",
+        "url": "https://stackoverflow.com/questions/1453952",
+        "stackoverflow": {
+          "score": 50
+        }
+      },
+      {
+        "title": "Log to the base 2 in python",
+        "url": "https://stackoverflow.com/questions/3719631",
+        "stackoverflow": {
+          "score": 47
+        }
+      },
+      {
+        "title": "ImportError: No module named dateutil.parser",
+        "url": "https://stackoverflow.com/questions/20853474",
+        "stackoverflow": {
+          "score": 39
+        }
+      },
+      {
+        "title": "Locating the centroid (center of mass) of spherical polygons",
+        "url": "https://stackoverflow.com/questions/19897187",
+        "stackoverflow": {
+          "score": 37
+        }
+      },
+      {
+        "title": "How to calc square root in python?",
+        "url": "https://stackoverflow.com/questions/9595135",
+        "stackoverflow": {
+          "score": 36
+        }
+      },
+      {
+        "title": "Efficient method of calculating density of irregularly spaced points",
+        "url": "https://stackoverflow.com/questions/6652671",
+        "stackoverflow": {
+          "score": 36
+        }
+      },
+      {
+        "title": "Randomly change the prompt in the Python interpreter",
+        "url": "https://stackoverflow.com/questions/33668998",
+        "stackoverflow": {
+          "score": 36
+        }
+      },
+      {
+        "title": "How to best perform Multiprocessing within requests with the python Tornado server?",
+        "url": "https://stackoverflow.com/questions/15375336",
+        "stackoverflow": {
+          "score": 32
+        }
+      },
+      {
+        "title": "Compare two images the python/linux way",
+        "url": "https://stackoverflow.com/questions/1927660",
+        "stackoverflow": {
+          "score": 31
+        }
+      },
+      {
+        "title": "log2 in python math module",
+        "url": "https://stackoverflow.com/questions/2993214",
+        "stackoverflow": {
+          "score": 31
+        }
+      },
+      {
+        "title": "Why is math.factorial much slower in Python 2.x than 3.x?",
+        "url": "https://stackoverflow.com/questions/9815252",
+        "stackoverflow": {
+          "score": 30
+        }
+      }
+    ],
+    "total_links": 50
+  }
+}

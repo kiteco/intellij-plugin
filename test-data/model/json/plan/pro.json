@@ -1,0 +1,11 @@
+{
+  "name": "Pro",
+  "status": "active",
+  "active_subscription": "pro",
+  "features": {
+    "usages_webapp": true,
+    "usages_editor": true
+  },
+  "trial_days_remaining": 0,
+  "started_kite_pro_trial": true
+}

@@ -1,0 +1,249 @@
+{
+  "language": "python",
+  "part_of_syntax": "name",
+  "symbol": [
+    {
+      "id": "python;34408;d41d8cd98f00b204e9800998ecf8427e;:home:user:source:python-test:TestModule:whitelisted:foo.py;;myFunction",
+      "name": "myFunction",
+      "namespace": {
+        "id": "python;34408;d41d8cd98f00b204e9800998ecf8427e;:home:user:source:python-test:TestModule:whitelisted:foo.py;",
+        "kind": "module",
+        "repr": "foo",
+        "type": "ModuleType",
+        "type_id": "python;types.ModuleType"
+      },
+      "value": [
+        {
+          "id": "python;34408;d41d8cd98f00b204e9800998ecf8427e;:home:user:source:python-test:TestModule:whitelisted:foo.py;myFunction",
+          "kind": "function",
+          "repr": "myFunction",
+          "type": "FunctionType",
+          "type_id": "python;types.FunctionType",
+          "synopsis": "",
+          "details": {
+            "function": {
+              "parameters": [
+                {
+                  "name": "a",
+                  "inferred_value": [
+                    {
+                      "id": "",
+                      "kind": "instance",
+                      "repr": "123",
+                      "type": "int",
+                      "type_id": "python;__builtin__.int"
+                    },
+                    {
+                      "id": "",
+                      "kind": "instance",
+                      "repr": "abc",
+                      "type": "str",
+                      "type_id": "python;__builtin__.str"
+                    }
+                  ],
+                  "synopsis": "",
+                  "language_details": {
+                    "python": {
+                      "default_value": null,
+                      "annotation": null,
+                      "keyword_only": false
+                    }
+                  }
+                },
+                {
+                  "name": "b",
+                  "inferred_value": [
+                    {
+                      "id": "",
+                      "kind": "instance",
+                      "repr": "abc",
+                      "type": "str",
+                      "type_id": "python;__builtin__.str"
+                    },
+                    {
+                      "id": "python;__builtin__.True",
+                      "kind": "instance",
+                      "repr": "true",
+                      "type": "bool",
+                      "type_id": "python;__builtin__.bool"
+                    }
+                  ],
+                  "synopsis": "",
+                  "language_details": {
+                    "python": {
+                      "default_value": null,
+                      "annotation": null,
+                      "keyword_only": false
+                    }
+                  }
+                }
+              ],
+              "return_value": [
+                {
+                  "id": "",
+                  "kind": "instance",
+                  "repr": "123",
+                  "type": "str",
+                  "type_id": "python;__builtin__.str"
+                },
+                {
+                  "id": "",
+                  "kind": "instance",
+                  "repr": "123",
+                  "type": "int",
+                  "type_id": "python;__builtin__.int"
+                }
+              ],
+              "signatures": [
+                {
+                  "args": [
+                    {
+                      "name": "a",
+                      "types": [
+                        {
+                          "id": "python;__builtin__.int",
+                          "name": "int",
+                          "examples": [
+                            "123"
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "name": "b",
+                      "types": [
+                        {
+                          "id": "python;__builtin__.str",
+                          "name": "str",
+                          "examples": [
+                            "\"\"abc\"\""
+                          ]
+                        }
+                      ]
+                    }
+                  ],
+                  "language_details": {
+                    "python": {
+                      "kwargs": null
+                    }
+                  }
+                }
+              ],
+              "language_details": {
+                "python": {
+                  "vararg": {
+                    "name": "myVararg",
+                    "inferred_value": null,
+                    "synopsis": "",
+                    "language_details": {
+                      "python": null
+                    }
+                  },
+                  "kwarg": {
+                    "name": "myKwarg",
+                    "inferred_value": null,
+                    "synopsis": "",
+                    "language_details": {
+                      "python": null
+                    }
+                  },
+                  "kwarg_parameters": [
+                    {
+                      "name": "myKwArg1",
+                      "inferred_value": [
+                        {
+                          "id": "",
+                          "kind": "instance",
+                          "repr": "42",
+                          "type": "int",
+                          "type_id": "python;__builtin__.int"
+                        },
+                        {
+                          "id": "",
+                          "kind": "instance",
+                          "repr": "7",
+                          "type": "str",
+                          "type_id": "python;__builtin__.str"
+                        }
+                      ],
+                      "synopsis": "",
+                      "language_details": {
+                        "python": null
+                      }
+                    },
+                    {
+                      "name": "myKwarg2",
+                      "inferred_value": [
+                        {
+                          "id": "",
+                          "kind": "instance",
+                          "repr": "123",
+                          "type": "int",
+                          "type_id": "python;__builtin__.int"
+                        }
+                      ],
+                      "synopsis": "",
+                      "language_details": {
+                        "python": null
+                      }
+                    }
+                  ],
+                  "return_annotation": null
+                }
+              }
+            },
+            "type": null,
+            "instance": null,
+            "module": null
+          },
+          "ancestors": [
+            {
+              "id": "python;34408;d41d8cd98f00b204e9800998ecf8427e;:home:user:source:python-test:TestModule:whitelisted;",
+              "name": "whitelisted"
+            },
+            {
+              "id": "python;34408;d41d8cd98f00b204e9800998ecf8427e;:home:user:source:python-test:TestModule:whitelisted:foo.py;",
+              "name": "foo"
+            }
+          ]
+        }
+      ],
+      "synopsis": ""
+    }
+  ],
+  "report": {
+    "definition": {
+      "filename": "/home/user/source/python-test/TestModule/whitelisted/foo.py",
+      "line": 5
+    },
+    "description_text": "MyFunction prints the values it receives",
+    "description_html": "MyFunction prints the values it receives",
+    "examples": null,
+    "usages": [
+      {
+        "code": "myFunction(123, \"abc\")",
+        "filename": "/home/user/source/python-test/TestModule/whitelisted/foo.py",
+        "line": 4,
+        "begin_bytes": 60,
+        "begin_runes": 60
+      },
+      {
+        "code": "myFunction(\"abc\", True)",
+        "filename": "/home/user/source/python-test/TestModule/whitelisted/foo.py",
+        "line": 5,
+        "begin_bytes": 83,
+        "begin_runes": 83
+      },
+      {
+        "code": "myFunction(\"abc\", True, 123, 234, myKwArg1=42)",
+        "filename": "/home/user/source/python-test/TestModule/whitelisted/foo.py",
+        "line": 6,
+        "begin_bytes": 107,
+        "begin_runes": 107
+      }
+    ],
+    "total_usages": 6,
+    "links": null,
+    "total_links": 0
+  }
+}

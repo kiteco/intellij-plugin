@@ -1,0 +1,269 @@
+{
+  "language": "python",
+  "calls": [
+    {
+      "callee": {
+        "id": "python;;;;__builtin__.print",
+        "kind": "function",
+        "repr": "print",
+        "type": "",
+        "type_id": "",
+        "synopsis": "Print objects to the stream file, separated by sep and followed by\nend.  sep, end and file, if present, must be given as keyword\narguments.\nAll non-keyword arguments are converted to strings like str() does and\nwritten to the stream, separated by sep and followed by end.  Both sep\nand end must be strings; they can also be None, which means to use the\ndefault values.  If no objects are given, print() will just write\nend.\nThe file argument must be an object with a write(string) method; if it\nis not present or None, sys.stdout will be used.  Output buffering\nis determined by file.  Use file.flush() to ensure, for instance,\nimmediate appearance on a screen.\nNote\nThis function is not normally available as a built-in since the name\nprint is recognized as the print statement.  To disable the\nstatement and use the print() function, use this future statement at\nthe top of your module:",
+        "details": {
+          "function": {
+            "parameters": [
+              {
+                "name": "sep",
+                "inferred_value": null,
+                "synopsis": "",
+                "language_details": {
+                  "python": {
+                    "default_value": [
+                      {
+                        "id": "",
+                        "kind": "instance",
+                        "repr": "\"...\"",
+                        "type": "str",
+                        "type_id": "python;;;;__builtin__.str"
+                      }
+                    ],
+                    "annotation": null,
+                    "keyword_only": false
+                  }
+                }
+              },
+              {
+                "name": "end",
+                "inferred_value": null,
+                "synopsis": "",
+                "language_details": {
+                  "python": {
+                    "default_value": [
+                      {
+                        "id": "",
+                        "kind": "instance",
+                        "repr": "\"...\"",
+                        "type": "str",
+                        "type_id": "python;;;;__builtin__.str"
+                      }
+                    ],
+                    "annotation": null,
+                    "keyword_only": false
+                  }
+                }
+              },
+              {
+                "name": "file",
+                "inferred_value": null,
+                "synopsis": "",
+                "language_details": {
+                  "python": {
+                    "default_value": [
+                      {
+                        "id": "",
+                        "kind": "instance",
+                        "repr": "\"...\"",
+                        "type": "str",
+                        "type_id": "python;;;;__builtin__.str"
+                      }
+                    ],
+                    "annotation": null,
+                    "keyword_only": false
+                  }
+                }
+              }
+            ],
+            "return_value": null,
+            "signatures": [
+              {
+                "args": [
+                  {
+                    "name": "e",
+                    "types": [
+                      {
+                        "id": "python;__builtin__.str",
+                        "name": "str",
+                        "examples": [
+                          "\"\"\"\"",
+                          "\"''\"",
+                          "\"\"\\n\"\""
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "language_details": {
+                  "python": {
+                    "kwargs": null
+                  }
+                }
+              },
+              {
+                "args": null,
+                "language_details": {
+                  "python": {
+                    "kwargs": null
+                  }
+                }
+              },
+              {
+                "args": [
+                  {
+                    "name": "e",
+                    "types": [
+                      {
+                        "id": "python;__builtin__.str",
+                        "name": "str",
+                        "examples": [
+                          "\"\"\"\"",
+                          "\"''\"",
+                          "\"\"\\n\"\""
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "e",
+                    "types": [
+                      {
+                        "id": "python;__builtin__.str",
+                        "name": "str",
+                        "examples": [
+                          "\"'\\n'\"",
+                          "\"\"\\n\"\"",
+                          "\"\"failed:\"\""
+                        ]
+                      },
+                      {
+                        "id": "python;__builtin__.int",
+                        "name": "int",
+                        "examples": [
+                          "2",
+                          "0",
+                          "1"
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "language_details": {
+                  "python": {
+                    "kwargs": null
+                  }
+                }
+              }
+            ],
+            "language_details": {
+              "python": {
+                "vararg": {
+                  "name": "values",
+                  "inferred_value": null,
+                  "synopsis": "",
+                  "language_details": {
+                    "python": null
+                  }
+                },
+                "return_annotation": null
+              }
+            }
+          },
+          "type": null,
+          "instance": null,
+          "module": null
+        },
+        "ancestors": [
+          {
+            "id": "python;;;;__builtin__",
+            "name": "__builtin__"
+          }
+        ]
+      },
+      "func_name": "print",
+      "signatures": [
+        {
+          "args": [
+            {
+              "name": "e",
+              "types": [
+                {
+                  "id": "python;__builtin__.str",
+                  "name": "str",
+                  "examples": [
+                    "\"\"\"\"",
+                    "\"''\"",
+                    "\"\"\\n\"\""
+                  ]
+                }
+              ]
+            }
+          ],
+          "language_details": {
+            "python": {
+              "kwargs": null
+            }
+          }
+        },
+        {
+          "args": null,
+          "language_details": {
+            "python": {
+              "kwargs": null
+            }
+          }
+        },
+        {
+          "args": [
+            {
+              "name": "e",
+              "types": [
+                {
+                  "id": "python;__builtin__.str",
+                  "name": "str",
+                  "examples": [
+                    "\"\"\"\"",
+                    "\"''\"",
+                    "\"\"\\n\"\""
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "e",
+              "types": [
+                {
+                  "id": "python;__builtin__.str",
+                  "name": "str",
+                  "examples": [
+                    "\"'\\n'\"",
+                    "\"\"\\n\"\"",
+                    "\"\"failed:\"\""
+                  ]
+                },
+                {
+                  "id": "python;__builtin__.int",
+                  "name": "int",
+                  "examples": [
+                    "2",
+                    "0",
+                    "1"
+                  ]
+                }
+              ]
+            }
+          ],
+          "language_details": {
+            "python": {
+              "kwargs": null
+            }
+          }
+        }
+      ],
+      "arg_index": 0,
+      "language_details": {
+        "python": {
+          "in_kwargs": false
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+{# @pebvariable name="content" type="java.lang.String" #}
+{# context:
+        content
+#}
+
+{% extends "common/base.peb" %}
+
+{% block body %}
+    {{ content }}
+{% endblock %}

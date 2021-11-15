@@ -1,0 +1,364 @@
+{
+  "completions": [
+    {
+      "snippet": {
+        "text": "sys",
+        "placeholders": []
+      },
+      "replace": {
+        "begin": 7,
+        "end": 8
+      },
+      "display": "sys",
+      "documentation": {
+        "text": "This module provides access to some objects used or maintained by the interpreter and to functions that interact strongly with the interpreter.\n\nDynamic objects:\n\nargv -- command line arguments; argv[0] is the script pathname if known path -- module search path; path[0] is the script directory, else '' modules -- dictionary of loaded modules\n\ndisplayhook -- called to show results in an interactive session excepthook -- called to handle any uncaught exception other than SystemExit\n\nTo customize p"
+      },
+      "web_id": "sys",
+      "local_id": "python;;;;sys",
+      "hint": "module",
+      "smart": false
+    },
+    {
+      "snippet": {
+        "text": "sklearn",
+        "placeholders": []
+      },
+      "replace": {
+        "begin": 7,
+        "end": 8
+      },
+      "display": "sklearn",
+      "documentation": {
+        "text": "**********************************\nMachine learning module for Python\n**********************************\n\nsklearn is a Python module integrating classical machine learning algorithms in the tightly-knit world of scientific Python packages (numpy, scipy, matplotlib).\n\nIt aims to provide simple and efficient solutions to learning problems that are accessible to everybody and reusable in various contexts: machine-learning as a versatile tool for science and engineering.\n\nSee http://scikit-learn.org"
+      },
+      "web_id": "sklearn",
+      "local_id": "python;;;;sklearn",
+      "hint": "module",
+      "smart": false
+    },
+    {
+      "snippet": {
+        "text": "sqlalchemy",
+        "placeholders": []
+      },
+      "replace": {
+        "begin": 7,
+        "end": 8
+      },
+      "display": "sqlalchemy",
+      "documentation": {
+        "text": ""
+      },
+      "web_id": "sqlalchemy",
+      "local_id": "python;;;;sqlalchemy",
+      "hint": "module",
+      "smart": false
+    },
+    {
+      "snippet": {
+        "text": "scipy",
+        "placeholders": []
+      },
+      "replace": {
+        "begin": 7,
+        "end": 8
+      },
+      "display": "scipy",
+      "documentation": {
+        "text": "************************************************\nSciPy: A scientific computing package for Python\n************************************************\n\nDocumentation is available in the docstrings and online at http://docs.scipy.org ( #http://docs.scipy.org ) .\n\n********\nContents\n********\n\nSciPy imports all the functions from the NumPy namespace, and in addition provides:\n\n***********\nSubpackages\n***********\n\nUsing any of these subpackages requires an explicit import. For example, import scipy.clust"
+      },
+      "web_id": "scipy",
+      "local_id": "python;;;;scipy",
+      "hint": "module",
+      "smart": false
+    },
+    {
+      "snippet": {
+        "text": "setuptools",
+        "placeholders": []
+      },
+      "replace": {
+        "begin": 7,
+        "end": 8
+      },
+      "display": "setuptools",
+      "documentation": {
+        "text": "Extensions to the 'distutils' for large or complex distributions"
+      },
+      "web_id": "setuptools",
+      "local_id": "python;;;;setuptools",
+      "hint": "module",
+      "smart": false
+    },
+    {
+      "snippet": {
+        "text": "subprocess",
+        "placeholders": []
+      },
+      "replace": {
+        "begin": 7,
+        "end": 8
+      },
+      "display": "subprocess",
+      "documentation": {
+        "text": "subprocess - Subprocesses with accessible I/O streams\n\nThis module allows you to spawn processes, connect to their input/output/error pipes, and obtain their return codes. This module intends to replace several older modules and functions:\n\nos.system os.spawn* os.popen* popen2.* commands.*\n\nInformation about how the subprocess module can be used to replace these modules and functions can be found below.\n\n***************************\nUsing the subprocess module\n***************************\n\nThis mo"
+      },
+      "web_id": "subprocess",
+      "local_id": "python;;;;subprocess",
+      "hint": "module",
+      "smart": false
+    },
+    {
+      "snippet": {
+        "text": "selenium",
+        "placeholders": []
+      },
+      "replace": {
+        "begin": 7,
+        "end": 8
+      },
+      "display": "selenium",
+      "documentation": {
+        "text": ""
+      },
+      "web_id": "selenium",
+      "local_id": "python;;;;selenium",
+      "hint": "module",
+      "smart": false
+    },
+    {
+      "snippet": {
+        "text": "socket",
+        "placeholders": []
+      },
+      "replace": {
+        "begin": 7,
+        "end": 8
+      },
+      "display": "socket",
+      "documentation": {
+        "text": "This module provides socket operations and some related functions. On Unix, it supports IP (Internet Protocol) and Unix domain sockets. On other systems, it only supports IP. Functions specific for a socket are available as methods of the socket object.\n\nFunctions:\n\nsocket() -- create a new socket object socketpair() -- create a pair of new socket objects [*] fromfd() -- create a socket object from an open file descriptor [*] gethostname() -- return the current hostname gethostbyname() -- map a "
+      },
+      "web_id": "socket",
+      "local_id": "python;;;;socket",
+      "hint": "module",
+      "smart": false
+    },
+    {
+      "snippet": {
+        "text": "six",
+        "placeholders": []
+      },
+      "replace": {
+        "begin": 7,
+        "end": 8
+      },
+      "display": "six",
+      "documentation": {
+        "text": "Utilities for writing code that runs on Python 2 and 3"
+      },
+      "web_id": "six",
+      "local_id": "python;;;;six",
+      "hint": "module",
+      "smart": false
+    },
+    {
+      "snippet": {
+        "text": "string",
+        "placeholders": []
+      },
+      "replace": {
+        "begin": 7,
+        "end": 8
+      },
+      "display": "string",
+      "documentation": {
+        "text": "A collection of string operations (most are no longer used).\n\nWarning: most of the code you see here isn't normally used nowadays. Beginning with Python 1.6, many of these functions are implemented as methods on the standard string object. They used to be implemented by a built-in module called strop, but strop is now obsolete itself.\n\nPublic module variables:\n\nwhitespace -- a string containing all characters considered whitespace lowercase -- a string containing all characters considered lowerc"
+      },
+      "web_id": "string",
+      "local_id": "python;;;;string",
+      "hint": "module",
+      "smart": false
+    },
+    {
+      "snippet": {
+        "text": "shutil",
+        "placeholders": []
+      },
+      "replace": {
+        "begin": 7,
+        "end": 8
+      },
+      "display": "shutil",
+      "documentation": {
+        "text": "Utility functions for copying and archiving files and directory trees.\n\nXXX The functions here don't copy the resource fork or other metadata on Mac."
+      },
+      "web_id": "shutil",
+      "local_id": "python;;;;shutil",
+      "hint": "module",
+      "smart": false
+    },
+    {
+      "snippet": {
+        "text": "scrapy",
+        "placeholders": []
+      },
+      "replace": {
+        "begin": 7,
+        "end": 8
+      },
+      "display": "scrapy",
+      "documentation": {
+        "text": "Scrapy - a web crawling and web scraping framework written for Python"
+      },
+      "web_id": "scrapy",
+      "local_id": "python;;;;scrapy",
+      "hint": "module",
+      "smart": false
+    },
+    {
+      "snippet": {
+        "text": "south",
+        "placeholders": []
+      },
+      "replace": {
+        "begin": 7,
+        "end": 8
+      },
+      "display": "south",
+      "documentation": {
+        "text": "South - Useable migrations for Django apps"
+      },
+      "web_id": "south",
+      "local_id": "python;;;;south",
+      "hint": "module",
+      "smart": false
+    },
+    {
+      "snippet": {
+        "text": "struct",
+        "placeholders": []
+      },
+      "replace": {
+        "begin": 7,
+        "end": 8
+      },
+      "display": "struct",
+      "documentation": {
+        "text": "Functions to convert between Python values and C structs represented as Python strings. It uses format strings (explained below) as compact descriptions of the lay-out of the C structs and the intended conversion to/from Python values.\n\nThe optional first format char indicates byte order, size and alignment: @: native order, size \u0026 alignment (default) =: native order, std. size \u0026 alignment \u003c: little-endian, std. size \u0026 alignment \u003e: big-endian, std. size \u0026 alignment !: same as \u003e\n\nThe remaining ch"
+      },
+      "web_id": "struct",
+      "local_id": "python;;;;struct",
+      "hint": "module",
+      "smart": false
+    },
+    {
+      "snippet": {
+        "text": "sqlite3",
+        "placeholders": []
+      },
+      "replace": {
+        "begin": 7,
+        "end": 8
+      },
+      "display": "sqlite3",
+      "documentation": {
+        "text": ""
+      },
+      "web_id": "sqlite3",
+      "local_id": "python;;;;sqlite3",
+      "hint": "module",
+      "smart": false
+    },
+    {
+      "snippet": {
+        "text": "skimage",
+        "placeholders": []
+      },
+      "replace": {
+        "begin": 7,
+        "end": 8
+      },
+      "display": "skimage",
+      "documentation": {
+        "text": "Image Processing SciKit (Toolbox for SciPy)\n\nscikit-image (a.k.a. skimage ) is a collection of algorithms for image processing and computer vision.\n\nThe main package of skimage only provides a few utilities for converting between image data types; for most features, you need to import one of the following subpackages:\n\n***********\nSubpackages\n***********\n\ncolor Color space conversion. data Test images and example data. draw Drawing primitives (lines, text, etc.) that operate on NumPy arrays. exp"
+      },
+      "web_id": "skimage",
+      "local_id": "python;;;;skimage",
+      "hint": "module",
+      "smart": false
+    },
+    {
+      "snippet": {
+        "text": "signal",
+        "placeholders": []
+      },
+      "replace": {
+        "begin": 7,
+        "end": 8
+      },
+      "display": "signal",
+      "documentation": {
+        "text": "This module provides mechanisms to use signal handlers in Python.\n\nFunctions:\n\nalarm() -- cause SIGALRM after a specified time [Unix only] setitimer() -- cause a signal (described below) after a specified\n\nfloat time and the timer may restart then [Unix only]\n\ngetitimer() -- get current value of timer [Unix only] signal() -- set the action for a given signal getsignal() -- get the signal action for a given signal pause() -- wait until a signal arrives [Unix only] default_int_handler() -- default"
+      },
+      "web_id": "signal",
+      "local_id": "python;;;;signal",
+      "hint": "module",
+      "smart": false
+    },
+    {
+      "snippet": {
+        "text": "simplejson as json",
+        "placeholders": []
+      },
+      "replace": {
+        "begin": 7,
+        "end": 8
+      },
+      "display": "simplejson as json",
+      "documentation": {
+        "text": "JSON (JavaScript Object Notation) \u003c http://json.org ( #http://json.org ) \u003e is a subset of JavaScript syntax (ECMA-262 3rd edition) used as a lightweight data interchange format.\n\nsimplejson ( #simplejson ) exposes an API familiar to users of the standard library marshal ( #marshal ) and pickle ( #pickle ) modules. It is the externally maintained version of the json ( #json ) library contained in Python 2.6, but maintains compatibility back to Python 2.5 and (currently) has significant performanc"
+      },
+      "web_id": "simplejson",
+      "local_id": "python;;;;simplejson",
+      "hint": "module",
+      "smart": false
+    },
+    {
+      "snippet": {
+        "text": "sphinx",
+        "placeholders": []
+      },
+      "replace": {
+        "begin": 7,
+        "end": 8
+      },
+      "display": "sphinx",
+      "documentation": {
+        "text": "******\nSphinx\n******\n\nThe Sphinx documentation toolchain.\n\ncopyright: Copyright 2007-2016 by the Sphinx team, see AUTHORS.\nlicense: BSD, see LICENSE for details."
+      },
+      "web_id": "sphinx",
+      "local_id": "python;;;;sphinx",
+      "hint": "module",
+      "smart": false
+    },
+    {
+      "snippet": {
+        "text": "serial",
+        "placeholders": []
+      },
+      "replace": {
+        "begin": 7,
+        "end": 8
+      },
+      "display": "serial",
+      "documentation": {
+        "text": ""
+      },
+      "web_id": "serial",
+      "local_id": "python;;;;serial",
+      "hint": "module",
+      "smart": false
+    }
+  ]
+}

@@ -1,0 +1,152 @@
+{
+  "part_of_syntax": "name",
+  "symbol": [
+    {
+      "id": "",
+      "name": "random",
+      "namespace": null,
+      "value": [
+        {
+          "id": "random",
+          "kind": "module",
+          "repr": "random",
+          "type": "module",
+          "type_id": "__builtin__.module",
+          "synopsis": "",
+          "details": {
+            "module": {
+              "members": [
+                {
+                  "id": "",
+                  "name": "betavariate",
+                  "namespace": {
+                    "id": "random",
+                    "kind": "module",
+                    "repr": "random",
+                    "type": "module",
+                    "type_id": "__builtin__.module"
+                  },
+                  "value": [
+                    {
+                      "id": "",
+                      "kind": "function",
+                      "repr": "",
+                      "type": "type",
+                      "type_id": "__builtin__.type"
+                    }
+                  ]
+                },
+                {
+                  "id": "",
+                  "name": "BPF",
+                  "namespace": {
+                    "id": "random",
+                    "kind": "module",
+                    "repr": "random",
+                    "type": "module",
+                    "type_id": "__builtin__.module"
+                  },
+                  "value": [
+                    {
+                      "id": "",
+                      "kind": "instance",
+                      "repr": "",
+                      "type": "type",
+                      "type_id": "__builtin__.type"
+                    }
+                  ]
+                },
+                {
+                  "id": "",
+                  "name": "choice",
+                  "namespace": {
+                    "id": "random",
+                    "kind": "module",
+                    "repr": "random",
+                    "type": "module",
+                    "type_id": "__builtin__.module"
+                  },
+                  "value": [
+                    {
+                      "id": "",
+                      "kind": "function",
+                      "repr": "",
+                      "type": "type",
+                      "type_id": "__builtin__.type"
+                    }
+                  ]
+                },
+                {
+                  "id": "",
+                  "name": "division",
+                  "namespace": {
+                    "id": "random",
+                    "kind": "module",
+                    "repr": "random",
+                    "type": "module",
+                    "type_id": "__builtin__.module"
+                  },
+                  "value": [
+                    {
+                      "id": "",
+                      "kind": "instance",
+                      "repr": "",
+                      "type": "",
+                      "type_id": ""
+                    }
+                  ]
+                },
+                {
+                  "id": "",
+                  "name": "expovariate",
+                  "namespace": {
+                    "id": "random",
+                    "kind": "module",
+                    "repr": "random",
+                    "type": "module",
+                    "type_id": "__builtin__.module"
+                  },
+                  "value": [
+                    {
+                      "id": "",
+                      "kind": "function",
+                      "repr": "",
+                      "type": "type",
+                      "type_id": "__builtin__.type"
+                    }
+                  ]
+                }
+              ],
+              "total_members": 56
+            }
+          }
+        }
+      ],
+      "synopsis": ""
+    }
+  ],
+  "report": {
+    "description_text": "",
+    "description_html": "",
+    "examples": [
+      {
+        "id": 586,
+        "title": "Generate a `float` between 0 and 1, excluding 1"
+      },
+      {
+        "id": 569,
+        "title": "Generate a random value between two integers, inclusive"
+      },
+      {
+        "id": 583,
+        "title": "Sample random elements from a list"
+      },
+      {
+        "id": 4831,
+        "title": "Generate a random alphabetical string"
+      }
+    ],
+    "usages": null,
+    "total_usages": 0
+  }
+}

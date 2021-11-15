@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns="http://www.w3.org/2000/svg"
+   viewBox="0 0 16 16"
+   version="1.1"
+   width="12"
+   height="12">
+  <metadata
+     id="metadata18">
+  </metadata>
+  <title id="title6">kite-small-dark</title>
+  <g
+     id="Layer_2"
+     transform="matrix(0.11317018,0,0,0.11317018,1.6805771,-2.4199998e-8)">
+    <g id="Layer_1-2">
+      <polygon
+         class="cls-1"
+         points="99.68,80.81 58.52,59.82 36.66,100.95 84.01,141.38 "
+         id="polygon8"
+         style="fill:#929497" />
+      <polygon
+         class="cls-1"
+         points="0,69.64 27.45,93.08 54.14,45.95 102.71,69.09 111.68,34.43 39.44,0 "
+         id="polygon10"
+         style="fill:#929497" />
+    </g>
+  </g>
+</svg>

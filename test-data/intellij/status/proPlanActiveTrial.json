@@ -1,0 +1,10 @@
+{
+  "name": "Pro",
+  "status": "trialing",
+  "active_subscription": "pro",
+  "features": {
+    "usages_webapp": true
+  },
+  "trial_days_remaining": 7,
+  "started_kite_pro_trial": true
+}

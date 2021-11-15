@@ -1,0 +1,13 @@
+{
+  "name": "Enterprise",
+  "status": "active",
+  "active_subscription": "enterprise",
+  "features": {
+    "usages_webapp": true
+  },
+  "trial_days_remaining": 5,
+  "started_kite_pro_trial": false,
+  "referrals_credited": 4,
+  "max_referral_credits": 7,
+  "referral_days_credited": 2
+}

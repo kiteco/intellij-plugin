@@ -1,0 +1,11 @@
+{
+  "name": "Community with trial available",
+  "status": "active",
+  "active_subscription": "community",
+  "features": {},
+  "trial_days_remaining": 10,
+  "started_kite_pro_trial": false,
+  "referrals_credited": 10,
+  "max_referral_credits": 10,
+  "referral_days_credited": 2
+}

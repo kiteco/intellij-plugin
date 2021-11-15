@@ -1,0 +1,100 @@
+{
+  "language": "python",
+  "part_of_syntax": "name",
+  "symbol": [
+    {
+      "id": "python;3691;d41d8cd98f00b204e9800998ecf8427e;:home:user:source:python-test:TestModule:whitelisted:foo.py;;noKwargs",
+      "name": "noKwargs",
+      "namespace": null,
+      "value": [
+        {
+          "id": "python;3691;d41d8cd98f00b204e9800998ecf8427e;:home:user:source:python-test:TestModule:whitelisted:foo;noKwargs",
+          "kind": "function",
+          "repr": "noKwargs",
+          "type": "FunctionType",
+          "type_id": "python;types.FunctionType",
+          "synopsis": "",
+          "detail": {
+            "parameters": null,
+            "return_value": [
+              {
+                "id": "",
+                "kind": "instance",
+                "repr": "1",
+                "type": "int",
+                "type_id": "python;__builtin__.int"
+              }
+            ],
+            "return_annotation": null,
+            "signatures": [],
+            "language_details": {
+              "python": {
+                "return_annotation": null
+              }
+            }
+          },
+          "details": {
+            "function": {
+              "parameters": null,
+              "return_value": [
+                {
+                  "id": "",
+                  "kind": "instance",
+                  "repr": "1",
+                  "type": "int",
+                  "type_id": "python;__builtin__.int"
+                }
+              ],
+              "return_annotation": null,
+              "signatures": [],
+              "language_details": {
+                "python": {
+                  "return_annotation": null
+                }
+              }
+            },
+            "type": null,
+            "instance": null,
+            "module": null
+          },
+          "ancestors": [
+            {
+              "id": "python;3691;d41d8cd98f00b204e9800998ecf8427e;:home:user:source;",
+              "name": "source"
+            },
+            {
+              "id": "python;3691;d41d8cd98f00b204e9800998ecf8427e;:home:user:source:python-test;",
+              "name": "python-test"
+            },
+            {
+              "id": "python;3691;d41d8cd98f00b204e9800998ecf8427e;:home:user:source:python-test:TestModule;",
+              "name": "TestModule"
+            },
+            {
+              "id": "python;3691;d41d8cd98f00b204e9800998ecf8427e;:home:user:source:python-test:TestModule:whitelisted;",
+              "name": "whitelisted"
+            },
+            {
+              "id": "python;3691;d41d8cd98f00b204e9800998ecf8427e;:home:user:source:python-test:TestModule:whitelisted:foo.py;",
+              "name": "foo"
+            }
+          ]
+        }
+      ],
+      "synopsis": ""
+    }
+  ],
+  "report": {
+    "definition": {
+      "filename": "/home/user/TestModule/whitelisted/foo.py",
+      "line": 1
+    },
+    "description_text": "",
+    "description_html": "",
+    "examples": null,
+    "usages": null,
+    "total_usages": 0,
+    "links": null,
+    "total_links": 0
+  }
+}
