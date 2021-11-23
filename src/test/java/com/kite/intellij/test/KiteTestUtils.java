@@ -1,6 +1,5 @@
 package com.kite.intellij.test;
 
-import com.intellij.openapi.diagnostic.Logger;
 import com.intellij.openapi.editor.Editor;
 import com.intellij.openapi.fileEditor.FileEditorManager;
 import com.intellij.openapi.project.Project;
@@ -88,7 +87,7 @@ public class KiteTestUtils {
         htmlDocument.outputSettings(outputSettings);
 
         //condense spaces, remove spaces at line ends
-        Element bodyHtml = htmlDocument.body() != null ? htmlDocument.body() : htmlDocument;
+        Element bodyHtml = htmlDocument.body().hasText() ? htmlDocument.body() : htmlDocument;
         return trimHtmlWhitespace(bodyHtml.html());
     }
 
@@ -142,6 +141,11 @@ public class KiteTestUtils {
     }
 
     private static String trimHtmlWhitespace(String prettyHtml) {
-        return prettyHtml.replaceAll("[ ]+", " ").replaceAll("\\s*(\\r\\n|\\n|\\r)+\\s*", "\n");
+        return prettyHtml
+                .replaceAll("[ ]+", " ")
+                .replaceAll("\\s*(\\r\\n|\\n|\\r)+\\s*", "\n")
+                .replaceAll(" <span", "<span")
+                .replace("<html>\n<body></body>\n</html>", "")
+                .trim();
     }
 }
