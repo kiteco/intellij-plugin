@@ -1,6 +1,9 @@
 # Changelog
 The latest version is automatically published with the plugin. 
 
+## [1.9.6]
+- Compatibility with 2022.1
+- 
 ## [1.9.5]
 - Compatibility with 2021.3
 
