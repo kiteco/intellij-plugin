@@ -130,7 +130,7 @@ allprojects {
     }
 
     intellij {
-        version = '2022.1'
+        version = '2022.2'
         plugins = myPlugins
         pluginName = 'kite-pycharm'
         updateSinceUntilBuild = false
