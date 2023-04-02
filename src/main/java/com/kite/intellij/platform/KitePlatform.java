@@ -23,7 +23,7 @@ public class KitePlatform {
         }
 
         if (SystemInfo.isWindows) {
-            return true;
+	    return true;
         }
 
         if (SystemInfo.isLinux) {
