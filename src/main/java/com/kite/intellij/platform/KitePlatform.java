@@ -23,8 +23,7 @@ public class KitePlatform {
         }
 
         if (SystemInfo.isWindows) {
-            LOG.debug("OS: Windows " + SystemInfo.isWin7OrNewer + ", 64 bit: " + SystemInfo.is64Bit);
-            return SystemInfo.isWin7OrNewer /*&& SystemInfo.is64Bit*/; //the arch seems to equal the Java VM arch, but we need the installed OS architecture, disabled for now
+            return true;
         }
 
         if (SystemInfo.isLinux) {

@@ -135,8 +135,6 @@ public class KiteProjectManagerListener implements ProjectManagerListener {
      * @return {@code true} if the current IDE is incompatible with the autostart feature.
      */
     private static boolean disallowKitedAutostart() {
-        return SystemInfo.isWin7OrNewer
-                && !SystemInfo.isWin8OrNewer
-                && ApplicationInfo.getInstance().getBuild().getBaselineVersion() == 193;
+        return false;
     }
 }
