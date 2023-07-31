@@ -1,6 +1,6 @@
 .DS_Store
 .gradle
-.idea/workspace.xml
+.idea/*
 build/
 out/
 cache/
