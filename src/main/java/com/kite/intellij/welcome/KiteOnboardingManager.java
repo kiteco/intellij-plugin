@@ -157,7 +157,7 @@ public class KiteOnboardingManager {
         new KiteWelcomeNotification(
                 "We were unable to open the tutorial",
                 message.toString(),
-                NotificationType.ERROR, null
+                NotificationType.ERROR
         ).notify(project);
     }
 }

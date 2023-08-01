@@ -9,11 +9,12 @@ import com.intellij.openapi.diagnostic.Logger;
 import com.intellij.openapi.project.DumbAware;
 import com.intellij.openapi.project.DumbAwareAction;
 import com.intellij.openapi.project.Project;
-import com.intellij.openapi.project.ProjectManagerListener;
+import com.intellij.openapi.startup.ProjectActivity;
 import com.intellij.openapi.startup.StartupManager;
 import com.intellij.openapi.wm.WindowManager;
 import com.intellij.util.messages.MessageBusConnection;
 import com.kite.intellij.KiteConstants;
+import com.kite.intellij.KiteProjectLifecycleService;
 import com.kite.intellij.backend.KiteApiService;
 import com.kite.intellij.backend.KiteServerSettings;
 import com.kite.intellij.backend.http.KiteHttpException;
@@ -21,7 +22,10 @@ import com.kite.intellij.lang.KiteLanguage;
 import com.kite.intellij.settings.KiteSettingsService;
 import com.kite.intellij.startup.KiteAutostartListener;
 import com.kite.intellij.util.KiteBrowserUtil;
+import kotlin.Unit;
+import kotlin.coroutines.Continuation;
 import org.jetbrains.annotations.NotNull;
+import org.jetbrains.annotations.Nullable;
 
 import javax.annotation.Nonnull;
 import javax.swing.*;
@@ -33,17 +37,18 @@ import java.util.Set;
  * The notification contains a link to the public http url and an ignore action to suppress the message on next startup.
  *
   */
-public class KiteWelcomeProjectListener implements ProjectManagerListener, DumbAware {
+public class KiteWelcomeProjectListener implements ProjectActivity, DumbAware {
     private static final Logger LOG = Logger.getInstance("#kite.welcome");
 
+    @Nullable
     @Override
-    public void projectOpened(@NotNull Project project) {
-        StartupManager.getInstance(project).runWhenProjectIsInitialized(() -> {
+    public Object execute(@NotNull Project project, @NotNull Continuation<? super Unit> continuation) {
+        StartupManager.getInstance(project).runAfterOpened(() -> {
             Application app = ApplicationManager.getApplication();
-            MessageBusConnection connection = app.getMessageBus().connect(project);
+            MessageBusConnection connection = app.getMessageBus().connect(project.getService(KiteProjectLifecycleService.class));
 
             // if this plugin starts kited, then do onboarding as soon as it's available
-            connection.subscribe(KiteAutostartListener.TOPIC, () -> {
+            connection.subscribe(KiteAutostartListener.TOPIC, (KiteAutostartListener) () -> {
                 JFrame frame = WindowManager.getInstance().getFrame(project);
                 if (frame != null && frame.isActive()) {
                     app.executeOnPooledThread(() -> doOnboarding(project));
@@ -59,7 +64,9 @@ public class KiteWelcomeProjectListener implements ProjectManagerListener, DumbA
                 }
             }
         });
+        return null;
     }
+
 
     private void doOnboarding(@NotNull Project project) {
         assert ApplicationManager.getApplication().isUnitTestMode() || !ApplicationManager.getApplication().isDispatchThread();
@@ -96,7 +103,7 @@ public class KiteWelcomeProjectListener implements ProjectManagerListener, DumbA
             Notification notification = new KiteWelcomeNotification(
                     "Welcome to the future of programming.",
                     "Kite is now integrated with your IDE.",
-                    NotificationType.INFORMATION, null);
+                    NotificationType.INFORMATION);
             notification.addAction(new ShowKiteDocsAction(notification, "Learn how to use Kite"));
             notification.addAction(new DisableWelcomeInfoAction(notification));
             notification.notify(project);
@@ -114,7 +121,7 @@ public class KiteWelcomeProjectListener implements ProjectManagerListener, DumbA
 
             Notification notification = new KiteWelcomeNotification("Welcome to Kite!",
                     "We've setup an interactive tutorial for you, but we have docs to get you started too!<br/>",
-                    NotificationType.INFORMATION, null);
+                    NotificationType.INFORMATION);
             notification.addAction(new ShowKiteDocsAction(notification, "Learn more about Kite"));
             notification.addAction(new DisableWelcomeInfoAction(notification));
             notification.notify(project);

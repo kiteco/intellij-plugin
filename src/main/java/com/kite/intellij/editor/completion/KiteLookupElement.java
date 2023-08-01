@@ -41,6 +41,7 @@ import java.util.Set;
  * It defines how a code completion item will appear in the user interface.
  *
   */
+@SuppressWarnings("deprecation")
 public class KiteLookupElement extends LookupElement {
     private static final Logger LOG = Logger.getInstance("#kite.completion");
     private final KiteCompletion kiteData;

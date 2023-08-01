@@ -1,6 +1,6 @@
 package com.kite.intellij.backend.http;
 
-import com.intellij.openapi.components.ServiceManager;
+import com.intellij.openapi.application.ApplicationManager;
 
 import javax.annotation.Nonnull;
 import javax.annotation.Nullable;
@@ -15,7 +15,7 @@ import java.util.Map;
 public interface KiteHttpConnection {
     @Nonnull
     static KiteHttpConnection instance() {
-        return ServiceManager.getService(KiteHttpConnection.class);
+        return ApplicationManager.getApplication().getService(KiteHttpConnection.class);
     }
 
     /**

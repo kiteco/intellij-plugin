@@ -1,8 +1,8 @@
 package com.kite.intellij.startup;
 
-import com.intellij.openapi.application.PreloadingActivity;
-import com.intellij.openapi.progress.ProgressIndicator;
+import com.intellij.ide.ApplicationInitializedListener;
 import com.kite.intellij.ui.notifications.KiteNotifications;
+import kotlinx.coroutines.CoroutineScope;
 
 import javax.annotation.Nonnull;
 
@@ -10,12 +10,12 @@ import javax.annotation.Nonnull;
  * This preloading activity takes care of the Kite notification group.
  *
   */
-public class NotificationRegistration extends PreloadingActivity {
+public class NotificationRegistration implements ApplicationInitializedListener {
     public NotificationRegistration() {
     }
 
-    @Override
-    public void preload(@Nonnull ProgressIndicator indicator) {
+
+    public void execute(CoroutineScope asyncScope) {
         // access the Kite notification group to force it to initialize
         KiteNotifications.KITE_GROUP.getDisplayId();
     }

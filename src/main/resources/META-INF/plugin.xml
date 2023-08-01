@@ -23,15 +23,8 @@
 
     <!--@formatter:off-->
     <applicationListeners>
-        <listener topic="com.intellij.openapi.project.ProjectManagerListener"
-                  class="com.kite.intellij.welcome.KiteWelcomeProjectListener"/>
-
-        <listener topic="com.intellij.openapi.project.ProjectManagerListener"
-                  class="com.kite.intellij.startup.KiteProjectManagerListener"
-                  activeInTestMode="false" activeInHeadlessMode="false"/>
-        <listener topic="com.intellij.openapi.project.ProjectManagerListener"
-                  class="com.kite.intellij.notifications.KiteServiceNotificationsListener"
-                  activeInTestMode="false" activeInHeadlessMode="false"/>
+        <listener topic="com.intellij.ide.ApplicationInitializedListener"
+                class="com.kite.intellij.startup.NotificationRegistration" />
     </applicationListeners>
 
     <project-components>
@@ -83,9 +76,7 @@
 
         <actionPromoter id="kite.actionPromoter" implementation="com.kite.intellij.action.KiteParamActionPromoter"/>
 
-        <statusBarWidgetProvider implementation="com.kite.intellij.status.KiteStatusBarWidgetProvider"/>
-
-        <preloadingActivity implementation="com.kite.intellij.startup.NotificationRegistration" order="first" />
+        <statusBarWidgetFactory implementation="com.kite.intellij.status.KiteStatusBarWidgetFactory"/>
 
         <applicationConfigurable id="kite.configurable"
                                  groupId="language"
@@ -104,6 +95,15 @@
             <category>Kite</category>
             <descriptionDirectoryName>kiteCodeNavIntention</descriptionDirectoryName>
         </intentionAction>
+
+        <postStartupActivity implementation="com.kite.intellij.welcome.KiteWelcomeProjectListener"/>
+        <postStartupActivity implementation="com.kite.intellij.editor.events.DefaultEditorEventListener"/>
+        <postStartupActivity implementation="com.kite.intellij.startup.KiteProjectManagerListener"/>
+        <postStartupActivity implementation="com.kite.intellij.notifications.KiteServiceNotificationsListener"/>
+
+        <notificationGroup id="Kite"
+                           displayType="STICKY_BALLOON"
+                           isLogByDefault="true"/>
     </extensions>
 
     <extensions defaultExtensionNs="com.kite.intellij">

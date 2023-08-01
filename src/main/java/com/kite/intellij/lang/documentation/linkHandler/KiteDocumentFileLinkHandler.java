@@ -15,6 +15,7 @@ import org.apache.http.client.utils.URIBuilder;
 
 import javax.annotation.Nonnull;
 import java.net.URI;
+import java.util.List;
 import java.util.Optional;
 
 /**
@@ -79,8 +80,8 @@ public class KiteDocumentFileLinkHandler implements LinkHandler<DocumentFileLink
 
         VirtualFile file = fileOpt.get();
 
-        FileEditorProvider[] providers = FileEditorProviderManager.getInstance().getProviders(renderContext.getProject(), file);
-        if (providers.length > 0) {
+        List<FileEditorProvider> providers = FileEditorProviderManager.getInstance().getProviderList(renderContext.getProject(), file);
+        if (!providers.isEmpty()) {
             //configured line at column 0, the logical line passed to the descriptor seems to start at 0
             OpenFileDescriptor descriptor = new OpenFileDescriptor(renderContext.getProject(), file, linkData.getLine().orElse(1) - 1, 0);
             FileEditorManager.getInstance(renderContext.getProject()).openTextEditor(descriptor, true);

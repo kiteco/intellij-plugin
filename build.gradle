@@ -2,6 +2,9 @@ buildscript {
     dependencies {
         classpath 'com.vladsch.flexmark:flexmark-all:0.62.2'
     }
+    repositories {
+        mavenCentral()
+    }
 }
 
 plugins {
@@ -130,7 +133,7 @@ allprojects {
     }
 
     intellij {
-        version = '2023.1'
+        version = '2023.2'
         plugins = myPlugins
         pluginName = 'kite-pycharm'
         updateSinceUntilBuild = false

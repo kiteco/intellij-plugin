@@ -16,7 +16,8 @@ import javax.annotation.Nonnull;
  *
   */
 class KiteWelcomeNotification extends Notification implements KiteNotification, NotificationFullContent {
-    public KiteWelcomeNotification(@Nullable String title, @Nullable String content, @Nonnull NotificationType type, @Nullable NotificationListener listener) {
-        super(KiteNotifications.KITE_GROUP.getDisplayId(), Icons.KiteSmall, title, null, content, type, listener);
+    public KiteWelcomeNotification(@Nullable String title, @Nullable String content, @Nonnull NotificationType type) {
+        super(KiteNotifications.KITE_GROUP.getDisplayId(), title == null ? "Kite" : title, content == null ? "" : content, type);
+        this.setIcon(Icons.KiteSmall);
     }
 }

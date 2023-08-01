@@ -23,11 +23,8 @@ import java.util.concurrent.TimeUnit;
 @SuppressWarnings("ComponentNotRegistered")
 @TestOnly
 public class TestcaseEditorEventListener extends DefaultEditorEventListener {
-    public TestcaseEditorEventListener(Project project) {
-        super(project,
-                KiteConstants.DEFAULT_QUEUE_TIMEOUT_MILLIS,
-                CanonicalFilePathFactory.getInstance(),
-                KiteConstants.ALARM_DELAY_MILLIS);
+    public TestcaseEditorEventListener() {
+        super();
     }
 
     public static void sleepForQueueWork(Project project) throws InterruptedException {

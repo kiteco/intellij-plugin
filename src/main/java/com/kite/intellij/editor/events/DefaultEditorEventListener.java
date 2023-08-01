@@ -7,7 +7,6 @@ import com.intellij.ide.FrameStateListener;
 import com.intellij.openapi.Disposable;
 import com.intellij.openapi.application.Application;
 import com.intellij.openapi.application.ApplicationManager;
-import com.intellij.openapi.components.AbstractProjectComponent;
 import com.intellij.openapi.diagnostic.Logger;
 import com.intellij.openapi.editor.Caret;
 import com.intellij.openapi.editor.Document;
@@ -20,11 +19,15 @@ import com.intellij.openapi.editor.ex.FocusChangeListener;
 import com.intellij.openapi.fileEditor.FileDocumentManager;
 import com.intellij.openapi.fileEditor.FileEditorManager;
 import com.intellij.openapi.project.Project;
+import com.intellij.openapi.startup.ProjectActivity;
+import com.intellij.openapi.util.Disposer;
 import com.intellij.openapi.util.Key;
 import com.intellij.openapi.vfs.VirtualFile;
+import com.intellij.openapi.wm.IdeFrame;
 import com.intellij.psi.PsiDocumentManager;
 import com.intellij.util.Alarm;
 import com.kite.intellij.KiteConstants;
+import com.kite.intellij.KiteProjectLifecycleService;
 import com.kite.intellij.backend.KiteServerSettingsService;
 import com.kite.intellij.backend.model.EventType;
 import com.kite.intellij.backend.model.TextSelection;
@@ -33,7 +36,10 @@ import com.kite.intellij.lang.KiteLanguageSupport;
 import com.kite.intellij.platform.KitePlatform;
 import com.kite.intellij.platform.fs.CanonicalFilePath;
 import com.kite.intellij.platform.fs.CanonicalFilePathFactory;
+import kotlin.Unit;
+import kotlin.coroutines.Continuation;
 import org.jetbrains.annotations.NotNull;
+import org.jetbrains.annotations.Nullable;
 
 import javax.annotation.Nonnull;
 import java.awt.*;
@@ -45,8 +51,9 @@ import java.util.Set;
  * <p>
  * It will only react to events if the current platform is supported by Kite.
  *
-  */
-public class DefaultEditorEventListener extends AbstractProjectComponent implements EditorEventListener, FrameStateListener, Disposable {
+ */
+public class DefaultEditorEventListener implements EditorEventListener, ProjectActivity, FrameStateListener, Disposable {
+    private Project myProject;
     private static final Logger LOG = Logger.getInstance("#kite.editorEvent");
     private static final Key<Boolean> KEY_FLUSH_ON_DOC_COMMIT = Key.create("kite.docFlush");
 
@@ -56,26 +63,15 @@ public class DefaultEditorEventListener extends AbstractProjectComponent impleme
     private final int alarmDelayMillis;
     private final Set<CanonicalFilePath> currentlyModifiedDocuments = Sets.newConcurrentHashSet();
     private final CanonicalFilePathFactory filePathFactory;
-    private final FileEditorManager fileEditorManager;
+    private FileEditorManager fileEditorManager;
 
     //lock to synchronize on when accessing the request event maps
     private final Object requestLock = new Object();
 
-    @SuppressWarnings("unused")
-    public DefaultEditorEventListener(Project project) {
-        this(project,
-                KiteConstants.DEFAULT_QUEUE_TIMEOUT_MILLIS,
-                CanonicalFilePathFactory.getInstance(),
-                KiteConstants.ALARM_DELAY_MILLIS);
-    }
-
-    protected DefaultEditorEventListener(Project project, int queueIntervalMillis, CanonicalFilePathFactory filePathFactory, int alarmDelayMillis) {
-        super(project);
-
+    protected DefaultEditorEventListener() {
         this.eventQueue = new AsyncKiteEventQueue();
-        this.alarmDelayMillis = alarmDelayMillis;
-        this.fileEditorManager = FileEditorManager.getInstance(myProject);
-        this.filePathFactory = filePathFactory;
+        this.alarmDelayMillis = KiteConstants.ALARM_DELAY_MILLIS;
+        this.filePathFactory = CanonicalFilePathFactory.getInstance();
 
         this.editAlarm = new Alarm(Alarm.ThreadToUse.SWING_THREAD, this);
     }
@@ -113,13 +109,22 @@ public class DefaultEditorEventListener extends AbstractProjectComponent impleme
         eventQueue.stop();
     }
 
+
+    @Nullable
     @Override
-    public void projectOpened() {
+    public Object execute(@NotNull Project project, @NotNull Continuation<? super Unit> continuation) {
+        this.myProject = project;
+        this.fileEditorManager = FileEditorManager.getInstance(myProject);
+
         if (!KitePlatform.isOsVersionSupported()) {
-            return;
+            return null;
         }
 
-        eventQueue.start();
+        Disposer.register(project.getService(KiteProjectLifecycleService.class), this);
+
+        // This is strange. why could it be started twice?
+        if (!eventQueue.isRunning())
+            eventQueue.start();
 
         EditorFactory editorFactory = EditorFactory.getInstance();
 
@@ -230,11 +235,8 @@ public class DefaultEditorEventListener extends AbstractProjectComponent impleme
         }, this);
 
         ApplicationManager.getApplication().getMessageBus().connect(this).subscribe(FrameStateListener.TOPIC, this);
-    }
 
-    @Override
-    public void projectClosed() {
-        eventQueue.stop();
+        return null;
     }
 
     /**
@@ -242,7 +244,7 @@ public class DefaultEditorEventListener extends AbstractProjectComponent impleme
      * If there is a current editor open and if it has the focus then a focus event is send to kite.
      */
     @Override
-    public void onFrameActivated() {
+    public void onFrameActivated(@NotNull IdeFrame frame) {
         Editor editor = fileEditorManager.getSelectedTextEditor();
         if (editor == null) {
             return;

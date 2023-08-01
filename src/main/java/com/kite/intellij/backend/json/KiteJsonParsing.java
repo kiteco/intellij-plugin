@@ -31,6 +31,7 @@ import java.lang.reflect.Type;
  * Parsing of the model's JSON data structures. This implementation is thread-safe.
  *
   */
+@SuppressWarnings("deprecation")
 @Immutable
 @ThreadSafe
 public class KiteJsonParsing {

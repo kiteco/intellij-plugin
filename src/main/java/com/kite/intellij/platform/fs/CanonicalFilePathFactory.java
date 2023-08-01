@@ -1,5 +1,6 @@
 package com.kite.intellij.platform.fs;
 
+import com.intellij.openapi.application.ApplicationManager;
 import com.intellij.openapi.components.ServiceManager;
 import com.intellij.openapi.editor.Document;
 import com.intellij.openapi.editor.Editor;
@@ -17,7 +18,7 @@ import javax.annotation.Nullable;
 public interface CanonicalFilePathFactory {
     @Nonnull
     static CanonicalFilePathFactory getInstance() {
-        return ServiceManager.getService(CanonicalFilePathFactory.class);
+        return ApplicationManager.getApplication().getService(CanonicalFilePathFactory.class);
     }
 
     @Nullable

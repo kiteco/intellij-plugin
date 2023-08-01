@@ -140,19 +140,19 @@ public class KiteXHTMLPanel extends XHTMLPanel {
         public void setLevel(String logger, Level level) {
             Logger log = LOGGERS.get(logger);
             if (log != null) {
-                org.apache.log4j.Level targetLevel;
+                com.intellij.openapi.diagnostic.LogLevel targetLevel;
                 if (level == Level.ALL) {
-                    targetLevel = org.apache.log4j.Level.ERROR;
+                    targetLevel = com.intellij.openapi.diagnostic.LogLevel.ERROR;
                 } else if (level == Level.SEVERE) {
-                    targetLevel = org.apache.log4j.Level.ERROR;
+                    targetLevel = com.intellij.openapi.diagnostic.LogLevel.ERROR;
                 } else if (level == Level.WARNING) {
-                    targetLevel = org.apache.log4j.Level.WARN;
+                    targetLevel = com.intellij.openapi.diagnostic.LogLevel.WARNING;
                 } else if (level == Level.INFO) {
-                    targetLevel = org.apache.log4j.Level.INFO;
+                    targetLevel = com.intellij.openapi.diagnostic.LogLevel.INFO;
                 } else if (level == Level.FINE) {
-                    targetLevel = org.apache.log4j.Level.DEBUG;
+                    targetLevel = com.intellij.openapi.diagnostic.LogLevel.DEBUG;
                 } else {
-                    targetLevel = org.apache.log4j.Level.TRACE;
+                    targetLevel = com.intellij.openapi.diagnostic.LogLevel.TRACE;
                 }
 
                 log.setLevel(targetLevel);

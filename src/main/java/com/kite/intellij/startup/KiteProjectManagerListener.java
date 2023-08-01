@@ -5,14 +5,17 @@ import com.intellij.openapi.application.ApplicationInfo;
 import com.intellij.openapi.application.ApplicationManager;
 import com.intellij.openapi.diagnostic.Logger;
 import com.intellij.openapi.project.Project;
-import com.intellij.openapi.project.ProjectManagerListener;
+import com.intellij.openapi.startup.ProjectActivity;
 import com.intellij.openapi.startup.StartupManager;
 import com.intellij.openapi.util.SystemInfo;
 import com.intellij.openapi.util.io.FileUtilRt;
 import com.kite.intellij.platform.KiteDetector;
 import com.kite.intellij.platform.KiteInstallService;
 import com.kite.intellij.settings.KiteSettingsService;
+import kotlin.Unit;
+import kotlin.coroutines.Continuation;
 import org.jetbrains.annotations.NotNull;
+import org.jetbrains.annotations.Nullable;
 
 import java.io.File;
 import java.io.IOException;
@@ -25,14 +28,15 @@ import java.util.concurrent.TimeUnit;
  * notifications have to be displayed. The application listener has no project and may be executed before a project
  * window is shown.
  */
-public class KiteProjectManagerListener implements ProjectManagerListener {
+public class KiteProjectManagerListener implements ProjectActivity {
     private static final Logger LOG = Logger.getInstance("#kite.startup");
     private static volatile boolean firstProjectOpened;
 
+    @Nullable
     @Override
-    public void projectOpened(@NotNull Project project) {
+    public Object execute(@NotNull Project project, @NotNull Continuation<? super Unit> continuation) {
         if (project.isDefault() || firstProjectOpened) {
-            return;
+            return null;
         }
 
         StartupManager.getInstance(project).runAfterOpened(() -> {
@@ -45,8 +49,8 @@ public class KiteProjectManagerListener implements ProjectManagerListener {
                 ApplicationManager.getApplication().executeOnPooledThread(() -> onAppStarting(project));
             }
         });
+        return null;
     }
-
     private void onAppStarting(@NotNull Project project) {
         if (KiteDetector.getInstance().isRunning()) {
             return;

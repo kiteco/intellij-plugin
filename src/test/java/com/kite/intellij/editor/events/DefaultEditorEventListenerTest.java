@@ -252,15 +252,15 @@ public class DefaultEditorEventListenerTest extends KiteLightFixtureTest {
             }
         };
 
-        listener.addOverridingRequest(listener.pendingEditorChangeRequests, new MockDocument(), listener.editAlarm, () -> {
+        listener.addOverridingRequest(listener.getPendingEditorChangeRequests(), new MockDocument(), listener.getEditAlarm(), () -> {
             performedRequests.add("a");
         });
 
-        listener.addOverridingRequest(listener.pendingEditorChangeRequests, new MockDocument(), listener.editAlarm, () -> {
+        listener.addOverridingRequest(listener.getPendingEditorChangeRequests(), new MockDocument(), listener.getEditAlarm(), () -> {
             performedRequests.add("b");
         });
 
-        listener.addOverridingRequest(listener.pendingEditorChangeRequests, new MockDocument(), listener.editAlarm, () -> {
+        listener.addOverridingRequest(listener.getPendingEditorChangeRequests(), new MockDocument(), listener.getEditAlarm(), () -> {
             performedRequests.add("c");
         });
 

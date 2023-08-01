@@ -31,11 +31,10 @@ public class KiteDownloadPausedNotification {
     private static class PausedNotification extends Notification implements NotificationFullContent {
         private PausedNotification() {
             super(KiteNotifications.KITE_GROUP.getDisplayId(),
-                    Icons.KiteSmall,
-                    "Temporarily unable to install", "",
+                    "Temporarily unable to install",
                     "Kite requires the Kite Copilot to function. However, it cannot be downloaded for the next few weeks. This plugin will notify you when it's available again.",
-                    NotificationType.INFORMATION, null);
-
+                    NotificationType.INFORMATION);
+            this.setIcon(Icons.KiteSmall);
             addAction(new NotificationAction("Close") {
                 @Override
                 public void actionPerformed(@NotNull AnActionEvent e, @NotNull Notification notification) {

@@ -3,6 +3,7 @@ package com.kite.intellij.action.signatureInfo;
 import com.intellij.codeInsight.hint.HintManager;
 import com.intellij.codeInsight.hint.HintManagerImpl;
 import com.intellij.codeInsight.lookup.LookupManager;
+import com.intellij.codeInsight.lookup.LookupManagerListener;
 import com.intellij.codeInsight.lookup.impl.LookupImpl;
 import com.intellij.openapi.Disposable;
 import com.intellij.openapi.application.ApplicationManager;
@@ -66,6 +67,7 @@ import javax.xml.parsers.DocumentBuilderFactory;
 import javax.xml.parsers.ParserConfigurationException;
 import java.awt.*;
 import java.beans.PropertyChangeListener;
+import java.util.Objects;
 import java.util.Optional;
 import java.util.OptionalInt;
 
@@ -177,19 +179,19 @@ public class SignaturePopupController implements Disposable {
 
         this.htmlTextPopup.registerContentUpdateListener(htmlContentUpdateListener);
 
-        PropertyChangeListener lookupListener = evt -> {
+        LookupManagerListener lookupListener = (oldLookup, newLookup) -> {
             if (isDisposed()) {
                 return;
             }
 
-            if (LookupManager.PROP_ACTIVE_LOOKUP.equals(evt.getPropertyName())) {
-                LookupImpl lookup = (LookupImpl) evt.getNewValue();
+            if (Objects.equals(LookupManager.getActiveLookup(getEditor()), oldLookup)) {
+                LookupImpl lookup = (LookupImpl) newLookup;
                 if (lookup != null) {
                     adjustPositionForLookup();
                 }
             }
         };
-        LookupManager.getInstance(file.getProject()).addPropertyChangeListener(lookupListener, this);
+        file.getProject().getMessageBus().connect().subscribe(LookupManagerListener.TOPIC, lookupListener);
     }
 
     public void show(LinkRenderContext linkRenderContext, SignatureLinkData linkData, Calls signatureInfo) {

@@ -33,12 +33,12 @@ public class KiteDownloadUnpausedNotification {
     private static class UnpausedNotification extends Notification implements NotificationFullContent {
         private UnpausedNotification(@NotNull Runnable onInstallCallback) {
             super(KiteNotifications.KITE_GROUP.getDisplayId(),
-                    Icons.KiteSmall,
-                    "Kite", "",
+                    "Kite",
                     "The Kite Engine application is installable again. " +
                             "Kite requires the Kite Engine desktop application to provide completions and documentation. " +
                             "Please install it to use Kite.",
-                    NotificationType.INFORMATION, null);
+                    NotificationType.INFORMATION);
+            this.setIcon(Icons.KiteSmall);
 
             addAction(new NotificationAction("Install") {
                 @Override

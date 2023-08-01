@@ -82,7 +82,7 @@ public class KiteDelegatingEditorAction extends EditorAction implements KiteActi
     }
 
     @Override
-    protected void setShortcutSet(@NotNull ShortcutSet shortcutSet) {
+    public void setShortcutSet(@NotNull ShortcutSet shortcutSet) {
         //the shortcut must not be delegated because this breaks shortcuts in 163.x (no invocation of the action if the shortcut is pressed)
         //in that branch the registered action must have the shortcut itself, it seems
         super.setShortcutSet(shortcutSet);

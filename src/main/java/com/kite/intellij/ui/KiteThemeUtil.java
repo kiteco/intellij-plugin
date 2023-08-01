@@ -19,7 +19,6 @@ import java.awt.*;
  * look&feel.
  *
   */
-@SuppressWarnings("UseJBColor")
 public class KiteThemeUtil {
     private KiteThemeUtil() {
     }
@@ -47,7 +46,7 @@ public class KiteThemeUtil {
     public static Color getPanelBackground(EditorColorsScheme colorScheme) {
         if (isConsistentToLookAndFeel(colorScheme)) {
             //the default light look&feel has a yellow bg color in 161.x, at least
-            return new JBColor(() -> UIManager.getColor("Panel.background"));
+            return JBColor.lazy(() -> UIManager.getColor("Panel.background"));
         }
 
         //the theme doesn't fit to the look&feel, i.e. probably a light theme for a dark look&feel (or a dark theme for a light look&feel)
