@@ -173,7 +173,7 @@ public class DefaultEditorEventListenerTest extends KiteLightFixtureTest {
 
     @Test
     public void testOnFrameActivation() throws Exception {
-        DefaultEditorEventListener eventListener = (DefaultEditorEventListener) EditorEventListener.getInstance(getProject());
+        ProjectEditorEventListener eventListener = (ProjectEditorEventListener) EditorEventListener.getInstance(getProject());
 
         MockKiteApiService api = MockKiteApiService.getInstance();
         Assert.assertTrue("No api calls expected before the edit events", api.getCallHistory().isEmpty());
@@ -224,7 +224,7 @@ public class DefaultEditorEventListenerTest extends KiteLightFixtureTest {
         AtomicBoolean inAwaitCall = new AtomicBoolean(false);
         List<String> performedRequests = new CopyOnWriteArrayList<>();
 
-        DefaultEditorEventListener listener = new DefaultEditorEventListener(getProject(), 500, CanonicalFilePathFactory.getInstance(), 500) {
+        ProjectEditorEventListener listener = new ProjectEditorEventListener(getProject()) {
             @Override
             public void awaitEvents() {
                 awaitWasCalled.set(true);
@@ -252,15 +252,15 @@ public class DefaultEditorEventListenerTest extends KiteLightFixtureTest {
             }
         };
 
-        listener.addOverridingRequest(listener.getPendingEditorChangeRequests(), new MockDocument(), listener.getEditAlarm(), () -> {
+        listener.addOverridingRequest(listener.pendingEditorChangeRequests, new MockDocument(), listener.editAlarm, () -> {
             performedRequests.add("a");
         });
 
-        listener.addOverridingRequest(listener.getPendingEditorChangeRequests(), new MockDocument(), listener.getEditAlarm(), () -> {
+        listener.addOverridingRequest(listener.pendingEditorChangeRequests, new MockDocument(), listener.editAlarm, () -> {
             performedRequests.add("b");
         });
 
-        listener.addOverridingRequest(listener.getPendingEditorChangeRequests(), new MockDocument(), listener.getEditAlarm(), () -> {
+        listener.addOverridingRequest(listener.pendingEditorChangeRequests, new MockDocument(), listener.editAlarm, () -> {
             performedRequests.add("c");
         });
 
