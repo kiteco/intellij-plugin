@@ -133,7 +133,7 @@ allprojects {
     }
 
     intellij {
-        version = '2023.2'
+        version = '2023.3'
         plugins = myPlugins
         pluginName = 'kite-pycharm'
         updateSinceUntilBuild = false

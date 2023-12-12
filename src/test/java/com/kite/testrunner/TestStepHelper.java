@@ -6,7 +6,7 @@ import com.intellij.openapi.application.ModalityState;
 import com.intellij.psi.PsiDocumentManager;
 import com.kite.intellij.editor.events.TestcaseEditorEventListener;
 import com.kite.testrunner.model.TestStep;
-import org.apache.commons.lang.StringUtils;
+import org.apache.commons.lang3.StringUtils;
 import org.jetbrains.ide.PooledThreadExecutor;
 
 import javax.annotation.Nonnull;

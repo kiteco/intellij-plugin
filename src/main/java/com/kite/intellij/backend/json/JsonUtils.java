@@ -1,7 +1,7 @@
 package com.kite.intellij.backend.json;
 
 import com.google.gson.JsonPrimitive;
-import org.apache.commons.lang.StringUtils;
+import org.apache.commons.lang3.StringUtils;
 
 import javax.annotation.Nonnull;
 import javax.annotation.Nullable;

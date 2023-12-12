@@ -24,7 +24,7 @@ import com.kite.intellij.platform.fs.CanonicalFilePath;
 import com.kite.intellij.platform.fs.CanonicalFilePathFactory;
 import com.kite.intellij.util.PyCharmUtil;
 import gnu.trove.THashSet;
-import org.apache.commons.lang.StringUtils;
+import org.apache.commons.lang3.StringUtils;
 import org.jetbrains.annotations.NotNull;
 
 import javax.annotation.Nonnull;

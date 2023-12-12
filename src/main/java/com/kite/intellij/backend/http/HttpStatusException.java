@@ -1,6 +1,6 @@
 package com.kite.intellij.backend.http;
 
-import org.apache.commons.lang.StringUtils;
+import org.apache.commons.lang3.StringUtils;
 import org.jetbrains.annotations.NonNls;
 
 import javax.annotation.Nonnull;

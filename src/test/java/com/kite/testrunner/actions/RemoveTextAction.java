@@ -11,7 +11,7 @@ import com.kite.testrunner.TestContext;
 import com.kite.testrunner.TestRunnerUtil;
 import com.kite.testrunner.model.TestStep;
 import org.apache.commons.codec.digest.DigestUtils;
-import org.apache.commons.lang.StringUtils;
+import org.apache.commons.lang3.StringUtils;
 
 import java.nio.charset.StandardCharsets;
 

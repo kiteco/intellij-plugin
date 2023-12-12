@@ -6,7 +6,7 @@ import com.intellij.openapi.diagnostic.Logger;
 import com.kite.intellij.KiteConstants;
 import com.kite.monitoring.TimeTracker;
 import com.kite.monitoring.TimerTrackers;
-import org.apache.commons.lang.StringUtils;
+import org.apache.commons.lang3.StringUtils;
 import org.eclipse.jetty.client.HttpClient;
 import org.eclipse.jetty.client.HttpResponseException;
 import org.eclipse.jetty.client.api.ContentResponse;

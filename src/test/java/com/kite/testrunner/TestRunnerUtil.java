@@ -13,7 +13,7 @@ import com.intellij.testFramework.EdtTestUtil;
 import com.intellij.util.ThrowableRunnable;
 import com.kite.intellij.action.signatureInfo.KiteSignaturePopupManager;
 import com.kite.intellij.editor.events.TestcaseEditorEventListener;
-import org.apache.commons.lang.StringUtils;
+import org.apache.commons.lang3.StringUtils;
 import org.jetbrains.ide.PooledThreadExecutor;
 
 import javax.annotation.Nonnull;
