@@ -10,7 +10,7 @@ import com.kite.testrunner.TestContext;
 import com.kite.testrunner.TestFailedException;
 import com.kite.testrunner.TestRunnerUtil;
 import com.kite.testrunner.model.TestStep;
-import org.apache.commons.lang.StringUtils;
+import org.apache.commons.lang3.StringUtils;
 
 import java.util.Collections;
 import java.util.LinkedList;

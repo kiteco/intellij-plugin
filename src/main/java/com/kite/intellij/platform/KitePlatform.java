@@ -19,12 +19,14 @@ public class KitePlatform {
     public static boolean isOsVersionSupported() {
         if (SystemInfo.isMac) {
             LOG.debug("OS: Mac" + SystemInfo.getMacOSVersionCode());
-            return SystemInfo.isMacOSYosemite;
+
+            // Under JAVA 17, MAC already have enough version for this.
+            return true;
+            //return SystemInfo.isMacOSYosemite;
         }
 
         if (SystemInfo.isWindows) {
-            LOG.debug("OS: Windows " + SystemInfo.isWin7OrNewer + ", 64 bit: " + SystemInfo.is64Bit);
-            return SystemInfo.isWin7OrNewer /*&& SystemInfo.is64Bit*/; //the arch seems to equal the Java VM arch, but we need the installed OS architecture, disabled for now
+	    return true;
         }
 
         if (SystemInfo.isLinux) {

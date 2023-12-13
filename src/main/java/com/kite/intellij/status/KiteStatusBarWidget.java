@@ -66,7 +66,7 @@ public class KiteStatusBarWidget extends EditorBasedWidget implements IconLikeCu
         iconLabel = new JBLabel();
         iconLabel.putClientProperty(UIUtil.CENTER_TOOLTIP_DEFAULT, Boolean.TRUE);
         iconLabel.setOpaque(true);
-        iconLabel.setBorder(WidgetBorder.ICON);
+        //iconLabel.setBorder(WidgetBorder.ICON);
 
         connectionStatusListener = (connectionAvailable, error) -> {
             if (!connectionAvailable) {
@@ -126,7 +126,7 @@ public class KiteStatusBarWidget extends EditorBasedWidget implements IconLikeCu
     public void install(@Nonnull StatusBar statusBar) {
         super.install(statusBar);
 
-        Editor editor = FileEditorManager.getInstance(myProject).getSelectedTextEditor();
+        Editor editor = FileEditorManager.getInstance(getProject()).getSelectedTextEditor();
         CanonicalFilePath currentEditorFile = editor == null ? null : CanonicalFilePathFactory.getInstance().createFor(editor, CanonicalFilePathFactory.Context.Event);
         Pair<IconStatus, String> status = computeIconStatus(currentEditorFile, null, KiteApiService.getInstance());
         updateStatusbarIcon(status);
@@ -157,7 +157,6 @@ public class KiteStatusBarWidget extends EditorBasedWidget implements IconLikeCu
      *
      * @param event The event
      */
-    @Override
     public void selectionChanged(@NotNull FileEditorManagerEvent event) {
         refreshStatusIconAsync();
     }
@@ -237,7 +236,7 @@ public class KiteStatusBarWidget extends EditorBasedWidget implements IconLikeCu
                         kiteStatusResponse != null ? kiteStatusResponse.getButton() : null);
 
                 //the swing component must be made visible in the AWT EDT
-                UIUtil.invokeLaterIfNeeded(() -> popupController.show(KiteStatusBarWidget.this, myProject, model));
+                UIUtil.invokeLaterIfNeeded(() -> popupController.show(KiteStatusBarWidget.this, getProject(), model));
             } catch (Exception e) {
                 LOG.error("Error while retrieving kite status", e);
             }
@@ -308,7 +307,7 @@ public class KiteStatusBarWidget extends EditorBasedWidget implements IconLikeCu
     }
 
     private void closePopup() {
-        JBPopup currentPopup = popupController.getCurrentPopup(myProject);
+        JBPopup currentPopup = popupController.getCurrentPopup(getProject());
         if (currentPopup != null) {
             currentPopup.closeOk(null);
         }
@@ -316,7 +315,7 @@ public class KiteStatusBarWidget extends EditorBasedWidget implements IconLikeCu
 
     private void updateStatusbarIcon(@Nullable Pair<IconStatus, String> iconAndText) {
         // myProject may be null if this widget is already disposed
-        if (isDisposed() || myProject.isDisposed()) {
+        if (isDisposed() || getProject().isDisposed()) {
             return;
         }
 
@@ -332,7 +331,7 @@ public class KiteStatusBarWidget extends EditorBasedWidget implements IconLikeCu
                     // disabled for now, as Kite's message is too long
                     //iconLabel.setText(iconAndText.second);
                 } else {
-                    iconLabel.setBorder(WidgetBorder.ICON);
+                    //iconLabel.setBorder(WidgetBorder.ICON);
                 }
             });
         }

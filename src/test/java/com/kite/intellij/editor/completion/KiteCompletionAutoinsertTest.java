@@ -10,7 +10,7 @@ import com.kite.intellij.backend.http.test.MockKiteHttpConnection;
 import com.kite.intellij.editor.events.TestcaseEditorEventListener;
 import com.kite.intellij.settings.KiteSettingsService;
 import com.kite.intellij.test.KiteLightFixtureTest;
-import org.apache.commons.lang.StringUtils;
+import org.apache.commons.lang3.StringUtils;
 import org.jetbrains.annotations.NotNull;
 import org.junit.Assert;
 import org.junit.Test;

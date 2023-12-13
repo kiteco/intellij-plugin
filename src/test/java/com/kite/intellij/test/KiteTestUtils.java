@@ -7,7 +7,7 @@ import com.intellij.openapi.util.io.FileUtil;
 import com.intellij.openapi.util.io.StreamUtil;
 import com.intellij.psi.PsiFile;
 import com.intellij.testFramework.fixtures.CodeInsightTestFixture;
-import com.kite.intellij.editor.events.DefaultEditorEventListener;
+import com.kite.intellij.editor.events.ProjectEditorEventListener;
 import com.kite.intellij.editor.events.EditorEventListener;
 import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
@@ -133,11 +133,11 @@ public class KiteTestUtils {
     public static void emulateFocusEvent(PsiFile psiFile) {
         Project project = psiFile.getProject();
         Editor selectedTextEditor = FileEditorManager.getInstance(project).getSelectedTextEditor();
-        ((DefaultEditorEventListener) EditorEventListener.getInstance(project)).fileFocused(selectedTextEditor, psiFile.getVirtualFile());
+        ((ProjectEditorEventListener) EditorEventListener.getInstance(project)).fileFocused(selectedTextEditor, psiFile.getVirtualFile());
     }
 
     public static void emulatedFrameActivation(Project project) {
-        ((DefaultEditorEventListener) EditorEventListener.getInstance(project)).onFrameActivated();
+        ((ProjectEditorEventListener) EditorEventListener.getInstance(project)).onFrameActivated();
     }
 
     private static String trimHtmlWhitespace(String prettyHtml) {

@@ -21,7 +21,7 @@ import com.kite.intellij.backend.model.UserInfo;
 import com.kite.intellij.platform.KiteDetector;
 import com.kite.intellij.platform.fs.CanonicalFilePath;
 import com.kite.intellij.util.KiteBrowserUtil;
-import org.apache.commons.lang.StringUtils;
+import org.apache.commons.lang3.StringUtils;
 import org.jetbrains.annotations.NotNull;
 
 import javax.annotation.Nonnull;

@@ -1,7 +1,6 @@
 package com.kite.intellij.action.signatureInfo;
 
 import com.intellij.openapi.application.ApplicationManager;
-import com.intellij.openapi.components.ServiceManager;
 import com.intellij.openapi.diagnostic.Logger;
 import com.intellij.openapi.editor.Editor;
 import com.intellij.openapi.project.Project;
@@ -52,7 +51,7 @@ public class KiteSignaturePopupManager {
 
     @Nonnull
     public static KiteSignaturePopupManager getInstance(Project project) {
-        return ServiceManager.getService(project, KiteSignaturePopupManager.class);
+        return project.getService(KiteSignaturePopupManager.class);
     }
 
     @TestOnly

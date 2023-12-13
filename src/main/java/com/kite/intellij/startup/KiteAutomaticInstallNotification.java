@@ -33,11 +33,10 @@ public class KiteAutomaticInstallNotification {
     private static class InstallNotification extends Notification implements NotificationFullContent {
         private InstallNotification(@NotNull Runnable onInstallCallback) {
             super(KiteNotifications.KITE_GROUP.getDisplayId(),
-                    Icons.KiteSmall,
-                    "Kite", "",
+                    "Kite",
                     "Kite requires the Kite Copilot desktop application to provide completions and documentation. Please install it to use Kite.",
-                    NotificationType.INFORMATION, null);
-
+                    NotificationType.INFORMATION);
+            this.setIcon(Icons.KiteSmall);
             addAction(new NotificationAction("Install") {
                 @Override
                 public void actionPerformed(@NotNull AnActionEvent e, @NotNull Notification notification) {

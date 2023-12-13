@@ -1,7 +1,6 @@
 package com.kite.intellij.lang.documentation;
 
 import com.intellij.openapi.Disposable;
-import com.intellij.openapi.components.ServiceManager;
 import com.intellij.openapi.project.Project;
 import com.intellij.openapi.util.Disposer;
 
@@ -22,7 +21,7 @@ public class KiteDocumentationRendererService implements Disposable {
 
     @Nonnull
     public static KiteDocumentationRendererService getInstance(Project project) {
-        return ServiceManager.getService(project, KiteDocumentationRendererService.class);
+        return project.getService(KiteDocumentationRendererService.class);
     }
 
     public KiteDocumentationRenderer getDetailedRenderer() {

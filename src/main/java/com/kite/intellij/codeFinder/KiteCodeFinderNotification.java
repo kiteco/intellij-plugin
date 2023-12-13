@@ -17,6 +17,7 @@ import javax.annotation.Nonnull;
  */
 class KiteCodeFinderNotification extends Notification implements KiteNotification, NotificationFullContent {
     public KiteCodeFinderNotification(@Nullable String title, @Nullable String content, @Nonnull NotificationType type) {
-        super(KiteNotifications.KITE_GROUP.getDisplayId(), Icons.KiteSmall, title, null, content, type, null);
+        super(KiteNotifications.KITE_GROUP.getDisplayId(), title == null ? "Kite" : title,  content == null ? "" : content, type);
+        this.setIcon(Icons.KiteSmall);
     }
 }

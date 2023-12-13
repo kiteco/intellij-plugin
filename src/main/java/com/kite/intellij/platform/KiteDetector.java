@@ -1,6 +1,6 @@
 package com.kite.intellij.platform;
 
-import com.intellij.openapi.components.ServiceManager;
+import com.intellij.openapi.application.ApplicationManager;
 import com.intellij.openapi.util.SystemInfo;
 import com.kite.intellij.platform.exec.ExecutableDetector;
 import com.kite.intellij.platform.exec.GenericProcessLauncher;
@@ -51,7 +51,7 @@ public class KiteDetector implements ExecutableDetector, KiteProcessLauncher, Ki
 
     @Nonnull
     public static KiteDetector getInstance() {
-        return ServiceManager.getService(KiteDetector.class);
+        return ApplicationManager.getApplication().getService(KiteDetector.class);
     }
 
     @Override

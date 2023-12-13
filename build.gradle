@@ -2,11 +2,14 @@ buildscript {
     dependencies {
         classpath 'com.vladsch.flexmark:flexmark-all:0.62.2'
     }
+    repositories {
+        mavenCentral()
+    }
 }
 
 plugins {
     id "org.jetbrains.changelog" version '0.6.2'
-    id "org.jetbrains.intellij" version "1.2.1"
+    id 'org.jetbrains.intellij' version '1.5.2'
 }
 
 apply plugin: 'org.jetbrains.changelog'
@@ -36,8 +39,8 @@ ext {
 
 allprojects {
     apply plugin: 'java'
-    sourceCompatibility = '1.8'
-    targetCompatibility = '1.8'
+    sourceCompatibility = JavaVersion.VERSION_11
+    targetCompatibility = JavaVersion.VERSION_11
 
     compileJava.options.encoding = "UTF-8"
     compileTestJava.options.encoding = "UTF-8"
@@ -130,6 +133,7 @@ allprojects {
     }
 
     intellij {
+        version = '2023.3'
         plugins = myPlugins
         pluginName = 'kite-pycharm'
         updateSinceUntilBuild = false

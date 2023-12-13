@@ -1,6 +1,6 @@
 package com.kite.intellij.ui.html;
 
-import org.apache.commons.lang.StringUtils;
+import org.apache.commons.lang3.StringUtils;
 import org.jetbrains.annotations.Nullable;
 
 public class InvalidHTMLException extends RuntimeException {

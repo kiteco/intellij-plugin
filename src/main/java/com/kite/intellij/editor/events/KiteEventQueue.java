@@ -70,6 +70,12 @@ public interface KiteEventQueue {
      */
     void addEvent(KiteEvent newEvent);
 
+    /**
+     * Indicates the queue is running or not.
+     * @return weather the queue is running or not.
+     */
+    boolean isRunning();
+
     @FunctionalInterface
     interface KiteQueueComputable<T> {
         T compute() throws KiteHttpException;

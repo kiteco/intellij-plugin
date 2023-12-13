@@ -22,6 +22,7 @@ import java.util.concurrent.*;
   */
 public class AsyncKiteEventQueue implements KiteEventQueue {
     private static final Logger LOG = Logger.getInstance("#kite.eventQueue");
+    private boolean running = false;
 
     private final TransferQueue<KiteEvent> eventQueue = new LinkedTransferQueue<>();
 
@@ -36,6 +37,7 @@ public class AsyncKiteEventQueue implements KiteEventQueue {
 
         thread = new WorkerThread(eventQueue);
         thread.start();
+        this.running = true;
     }
 
     @Override
@@ -44,6 +46,12 @@ public class AsyncKiteEventQueue implements KiteEventQueue {
             thread.interrupt();
             thread = null;
         }
+        this.running = false;
+    }
+
+    @Override
+    public boolean isRunning() {
+        return running;
     }
 
     @Override

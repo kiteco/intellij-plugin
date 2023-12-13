@@ -15,7 +15,7 @@ import javax.annotation.Nonnull;
 import javax.annotation.Nullable;
 
 public class KiteNotifications {
-    public static final NotificationGroup KITE_GROUP = new NotificationGroup("Kite", NotificationDisplayType.STICKY_BALLOON, true);
+    public static final NotificationGroup KITE_GROUP = NotificationGroupManager.getInstance().getNotificationGroup("Kite");
 
     public static void showServiceNotification(@Nullable Project project, @Nonnull KiteServiceNotification kiteNotification) {
         // don't show more than one notification at a time
@@ -65,7 +65,8 @@ public class KiteNotifications {
 
     private static class KiteServiceUINotification extends Notification implements NotificationFullContent, KiteNotification {
         public KiteServiceUINotification(@NotNull NotificationType type) {
-            super(KiteNotifications.KITE_GROUP.getDisplayId(), Icons.KiteSmall, type);
+            super(KiteNotifications.KITE_GROUP.getDisplayId(), "", type);
+            this.setIcon(Icons.KiteSmall);
         }
     }
 }

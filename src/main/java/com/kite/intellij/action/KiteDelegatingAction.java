@@ -92,7 +92,7 @@ public class KiteDelegatingAction extends AnAction implements KiteAction {
     }
 
     @Override
-    protected void setShortcutSet(@NotNull ShortcutSet shortcutSet) {
+    public void setShortcutSet(@NotNull ShortcutSet shortcutSet) {
         //the shortcut must not be delegated because this breaks shortcuts in 163.x (no invocation of the action if the shortcut is pressed)
         //in that branch the registered action must have the shortcut itself, it seems
         super.setShortcutSet(shortcutSet);
@@ -132,10 +132,11 @@ public class KiteDelegatingAction extends AnAction implements KiteAction {
         return fallbackAction.isInInjectedContext();
     }
 
-    @Override
-    public boolean isTransparentUpdate() {
-        return fallbackAction.isTransparentUpdate();
-    }
+    //@Override
+    //@Deprecated
+    //public boolean isTransparentUpdate() {
+    //    return fallbackAction.isTransparentUpdate();
+    //}
 
     @Override
     public boolean isDumbAware() {
